@@ -1,0 +1,39 @@
+.
+├── node_modules
+├── public
+|   ├── favicon.ico
+|   ├── index.html
+|   ├── manifest.json
+|   └──  robots.txt
+|
+├── src
+|   ├── components
+|   │   └──  CountryPage.js
+|   |
+|   ├── data
+|   │   ├── asia
+|   │   |   └──  thailand
+|   │   |   |     └──  bangkok
+|   │   |   |     |     └──  bangkok.json
+|   │   |   |     |     └──  itinerary.json
+|   │   |   |     ├──  itinerary.json
+|   │   |   |     └──  thailand.json
+|   │   ├── europe
+|   │   ├── home
+|   │   ├── latinamerica
+|   │   └── middleeast
+|   |
+|   ├── App.css
+|   ├── App.js
+|   ├── App.text.js
+|   ├── index.css
+|   ├── index.js
+|   ├── logo.svg
+|   ├── reportWebVitals.js
+|   └──  setupTests.js
+|    
+├── .gitignore
+├── file-structure.txt
+├── package-lock.json
+├── package.json
+└── README.md

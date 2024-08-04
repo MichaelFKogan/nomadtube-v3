@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import './styles/buttons.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Country from './pages/Country';
+import City from './pages/City';
+import Category from './pages/Category';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar/>
+      <Routes>
+          <Route path="/" element={<Home />} />
+
+          {/* <Route path=":continent" element={<Continent />} /> */}
+          
+          <Route path=":continent/:country" element={<Country />} />
+
+          <Route path=":continent/:country/:city" element={<City />} />
+
+          <Route path=":continent/:country/:city/:category" element={<Category />} />
+
+          <Route path="*" element={<div><h1>404 Not Found</h1></div>} />
+        </Routes>
+      </Router>
     </div>
   );
 }

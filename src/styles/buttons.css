@@ -1,0 +1,67 @@
+button {
+    cursor: pointer;
+}
+
+button:hover {transform: scale(1.03);}
+button:active {transform: scale(.98);}
+
+.cities-wrapper button{
+    font-weight: bold;
+    background: black;
+    color: white;
+    border-radius: 6px;
+
+    border-radius: 4px;
+    width: 250px;
+    height: 50px;
+    box-shadow: 0px 0px 2px black;
+}
+
+.cities-wrapper button:hover{
+    transform: scale(1.01);
+}
+
+.categories-wrapper button{
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px 6px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 2px #ccc;
+}
+
+.image-plus{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index:3;
+    cursor: pointer;
+
+    font-weight: bold;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+
+    border-radius: 4px;
+    height: 25px;
+    width: 24px;
+    border: 0px;
+    box-shadow: 0 0 5px #666;
+}
+
+.image-plus:hover {transform: scale(1.04);}
+.image-plus:active {transform: scale(.98);}
+
+.pagination button{
+    width: 100px;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 6px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 35px;
+    right: 15px;
+    z-index: 4;
+    cursor: pointer;
+}
