@@ -64,7 +64,7 @@ function Home() {
         <div className="all">
 
         {/* PAGE TITLE */}
-            <h1>All</h1>
+            <h1>💯 All</h1>
 
         <TotalVideos/>
 

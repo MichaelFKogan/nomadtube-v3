@@ -1,46 +1,87 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import Card from "../components/Card"
-import Breadcrumbs from "../components/Breadcrumbs"
+import PageBanner from '../components/PageBanner';
 import TotalVideos from "../components/TotalVideos"
+import Breadcrumbs from "../components/Breadcrumbs"
+import Cards from "../components/Cards"
+import Pagination from "../components/Pagination"
 
-const ITEMS_PER_PAGE = 20;
+const ITEMS_PER_PAGE = 400;
+const INITIAL_CARDS_TO_SHOW = 40;
+const INCREMENT_CARDS = 40;
 
 function City() {
     const { continent, country, city, category } = useParams();
-    const cityData = require(`../data/${continent}/${country}/${city}/${city}.json`);
+    const data = require(`../data/${continent}/${country}/${city}/${city}.json`);
 
     const capitalizedContinent= continent.charAt(0).toUpperCase() + continent.slice(1);
     const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1);
     const capitalizedCity = city.charAt(0).toUpperCase() + city.slice(1);
 
-    // Add pagination
+    const imgRoute = city === data.categoryRoute ? country : city;
+
+    // Code For Pagination and Infinite Scroll
     const [currentPage, setCurrentPage] = useState(1);
-    const totalPages = Math.ceil(cityData.videos.length / ITEMS_PER_PAGE);
+    const totalPages = Math.ceil(data.videos.length / ITEMS_PER_PAGE);
+    
+    const [numCardsToShow, setNumCardsToShow] = useState(INITIAL_CARDS_TO_SHOW);
+    const loadMoreRef = useRef(null);
 
     const handlePageChange = (newPage) => {
         if (newPage > 0 && newPage <= totalPages) {
             setCurrentPage(newPage);
+            setNumCardsToShow(INITIAL_CARDS_TO_SHOW); // Reset for new page
         }
     };
 
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-    const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, cityData.videos.length);
+    const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, data.videos.length);
 
+    const loadMoreCards = useCallback(() => {
+        setNumCardsToShow(prevNum => Math.min(prevNum + INCREMENT_CARDS, endIndex));
+    }, [endIndex]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    loadMoreCards();
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (loadMoreRef.current) {
+            observer.observe(loadMoreRef.current);
+        }
+
+        return () => {
+            if (loadMoreRef.current) {
+                observer.unobserve(loadMoreRef.current);
+            }
+        };
+    }, [loadMoreCards]);
+
+        // Generate page numbers
+        const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
+
+        console.log(`city: ${city}`);
+        console.log(`data.category: ${data.categoryRoute}`);
 
     return (
         <div className="city-page">
         
-        {/* PAGE TITLE */}
-            <h1>{cityData.name}</h1>
+        <PageBanner title={data.name} imgRoute={imgRoute}/>
 
         {/* CITIES */}
             <div className='cities-wrapper'>
-                <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}><div>{capitalizedCountry}</div></Link>
-                {cityData.cities.map((city, index) => (
-                    <Link to={`/${continent}/${country}/${city.toLowerCase().replace(/\s+/g, '')}`} className={`${city.toLowerCase().replace(/\s+/g, '')}-img background-img`} key={index}>
-                        <div>{city}</div>
+                <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
+                    <div>{data.country}</div>
+                </Link>
+                {data.cities.map((city, index) => (
+                    <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index}>
+                        <div>{city.name}</div>
                     </Link>
                 ))}
             </div>
@@ -48,32 +89,45 @@ function City() {
         {/* CATEGORIES */}
             <div className='categories-wrapper'>
                 <div className="inner-categories">
-                {cityData.categories.map((category, index) => (
-                    <Link to={`/${continent}/${country}/${city}/${category.toLowerCase().replace(/\s+/g, '')}`} key={index}>
-                        <div>{category}</div>
-                    </Link>
-                ))}
+
+                {city === data.categoryRoute ? (
+                        <>
+                        <Link to={`/${continent}/${country}`}>
+                            <div>💯 All</div>
+                        </Link>
+                        {data.categories.map((category, index) => (
+                            city === category.route ? (
+                            <Link to={`/${continent}/${country}/${category.route}`} key={index} className="active">
+                                <div>{category.name}</div>
+                            </Link>
+                            ):(
+                            <Link to={`/${continent}/${country}/${category.route}`} key={index}>
+                                <div>{category.name}</div>
+                            </Link>
+                            )
+                        ))}
+                        </>
+                    ) : (
+                        <>
+                        <Link to={`/${continent}/${country}/${city}`} className="active">
+                            <div>💯 All</div>
+                        </Link>
+                        {data.categories.map((category, index) => (
+                            <Link to={`/${continent}/${country}/${city}/${category.route}`} key={index}>
+                                <div>{category.name}</div>
+                            </Link>
+                        ))}
+                        </>
+                    )}
                 </div>
             </div>
 
-        <TotalVideos/>
-        <Breadcrumbs/>
+            {city === data.categoryRoute ? (<div><h2>{data.category}</h2></div>) : (<div><h2>💯 All</h2></div>)}          
 
-        {/* CARDS */}
-        <div className="cards-wrapper">
-            {cityData.videos.slice(startIndex, endIndex).map((video, index) => (
-                <Card data={video} key={index} cardKey={index} />
-            ))}
-        </div>
-
-        {/* PAGINATION CONTROLS */}
-        <div className="pagination" style={{marginTop:"30px", marginBottom: "150px"}}>
-            <button onClick={() => {handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0;}}
-                disabled={currentPage === 1}>Previous</button>
-            <span className='pages'>{`Page ${currentPage} of ${totalPages}`}</span>
-            <button onClick={() => {handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0;}}
-                disabled={currentPage === totalPages}>Next</button>
-        </div>
+            <TotalVideos/>
+            <Breadcrumbs/>
+            <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
+            <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
 
         {/* BOTTOM NAVIGATION BUTTONS */}
             <button className="back-to-top" onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}}>Back To Top</button>

@@ -1,0 +1,45 @@
+.pagination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+  }
+  
+  .pagination .pages{
+    font-size: 13px;
+    margin: 0px 20px;
+  }
+  
+  .page-numbers{
+    display: flex;
+    align-items: center;
+  }
+  
+  .page-number{
+    font-family: "Nunito Black";
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .page-number:hover{
+    transform: scale(1.03);
+    background: #eee;
+  }
+  
+  .page-number:active{
+    transform: scale(.99);
+  }
+  
+  .page-number.disabled{
+    background: black;
+    color: white;
+  }

@@ -88,6 +88,11 @@ button:active {transform: scale(.98);}
     pointer-events: none;
 } */
 
+a.active{
+    background: #0d6efd;
+    color: white;
+}
+
 .image-plus{
     position: absolute;
     top: 2px;

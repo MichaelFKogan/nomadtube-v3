@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import HomeBanner from "../components/HomeBanner"
-import Card from "../components/Card"
 import TotalVideos from "../components/TotalVideos"
+import Cards from "../components/Cards"
+import Pagination from "../components/Pagination"
 
 const ITEMS_PER_PAGE = 400;
 const INITIAL_CARDS_TO_SHOW = 40;
@@ -12,9 +13,7 @@ function Home() {
     const { continent, country, city, category } = useParams();
     const homeData = require(`../data/home.json`);
 
-    // const capitalizedContinent= continent.charAt(0).toUpperCase() + continent.slice(1);
-    // const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1);
-
+    // Code For Pagination and Infinite Scroll
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(homeData.videos.length / ITEMS_PER_PAGE);
     
@@ -103,47 +102,13 @@ function Home() {
                 </div>
             </div>
 
-        {/* PAGE TITLE */}
-        <h1>💯 Featured</h1>
-
-        <TotalVideos/>
-
-            {/* CARDS */}
-            <div className="cards-wrapper">
-                {homeData.videos.slice(startIndex, startIndex + numCardsToShow).map((video, index) => (
-                    <Card data={video} key={index} cardKey={index} />
-                ))}
-                {numCardsToShow < endIndex - startIndex && (
-                    <div ref={loadMoreRef} className="load-more-cards" style={{ height: '20px', backgroundColor: 'transparent' }} />
-                )}
-            </div>
-
-        {/* PAGINATION CONTROLS */}
-        <div className="pagination">
-            <div className='d-flex align-center justify-center'>
-                <button onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
-                    disabled={currentPage === 1}>Previous</button>
-                
-                {/* <div className='pages'>{`Page ${currentPage} of ${totalPages}`}</div> */}
-
-                <div className='pages page-numbers'>
-                    {pageNumbers.map(pageNumber => (
-                        <div key={pageNumber}
-                            onClick={() => {if (currentPage !== pageNumber) {handlePageChange(pageNumber);document.documentElement.scrollTop = 0;}}}
-                            className={`page-number ${currentPage === pageNumber ? 'disabled' : ''}`}>
-                            {pageNumber}
-                        </div>
-                    ))}
-                </div>
-                
-                <button onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
-                    disabled={currentPage === totalPages}>Next</button>
-            </div>
-
-        </div>
+            <h1>💯 Featured</h1>
+            <TotalVideos/>
+            <Cards data={homeData} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
+            <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
 
 
-        {/* BOTTOM NAVIGATION BUTTONS */}
+            {/* BOTTOM NAVIGATION BUTTONS */}
             <button className="back-to-top" onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}}>Back To Top</button>
 
         </div>
