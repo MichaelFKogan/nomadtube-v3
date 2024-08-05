@@ -1,0 +1,10 @@
+{
+    "name": "🇹🇭 Thailand",
+    "cities":[
+      {"name": "🛺 Bangkok","route": "bangkok"},
+      {"name": "🐘 Chiang Mai","route": "chiangmai"},
+      {"name": "🏝 Ko Phangan","route": "kophangan"},
+      {"name": "🌊 Ko Samui","route": "kosamui"},
+      {"name": "🏖 Phuket","route": "phuket"}
+    ]
+}

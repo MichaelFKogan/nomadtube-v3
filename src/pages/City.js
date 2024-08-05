@@ -13,6 +13,10 @@ const INCREMENT_CARDS = 40;
 function City() {
     const { continent, country, city, category } = useParams();
     const data = require(`../data/${continent}/${country}/${city}/${city}.json`);
+    const dataCities = require(`../data/${continent}/${country}/${country}-cities.json`);
+
+    // const dataCityCategories = require(`../data/${continent}/${country}/${city}/${city}-categories.json`);
+    const dataCountryCategories = require(`../data/${continent}/${country}/${country}-categories.json`);
 
     const capitalizedContinent= continent.charAt(0).toUpperCase() + continent.slice(1);
     const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1);
@@ -66,8 +70,8 @@ function City() {
         // Generate page numbers
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
-        console.log(`city: ${city}`);
-        console.log(`data.category: ${data.categoryRoute}`);
+        // console.log(`city: ${city}`);
+        // console.log(`data.category: ${data.categoryRoute}`);
 
     return (
         <div className="city-page">
@@ -79,7 +83,7 @@ function City() {
                 <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
                     <div>{data.country}</div>
                 </Link>
-                {data.cities.map((city, index) => (
+                {dataCities.cities.map((city, index) => (
                     <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index}>
                         <div>{city.name}</div>
                     </Link>
@@ -89,7 +93,8 @@ function City() {
         {/* CATEGORIES */}
             <div className='categories-wrapper'>
                 <div className="inner-categories">
-
+                
+                {/* This route is for categories of country/categories. So url needs to be for the country, not city */}
                 {city === data.categoryRoute ? (
                         <>
                         <Link to={`/${continent}/${country}`}>
@@ -109,6 +114,7 @@ function City() {
                         </>
                     ) : (
                         <>
+                    {/* This route is for categories of cities */}
                         <Link to={`/${continent}/${country}/${city}`} className="active">
                             <div>💯 All</div>
                         </Link>

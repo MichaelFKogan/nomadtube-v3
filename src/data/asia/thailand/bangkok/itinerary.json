@@ -2,24 +2,6 @@
     "name": "🛺 Bangkok",
     "country": "🇹🇭 Thailand",
     "category": "🗺 Itinerary",
-    "categories": [
-      {"name": "🗺 Itinerary","route": "itinerary"},
-      {"name": "📸 Vlog","route": "vlog"},
-      {"name": "👨‍💻 Digital Nomad","route": "digitalnomad"},
-      {"name": "🍜 Street Food","route": "streetfood"},
-      {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
-      {"name": "💵 Cost","route": "cost"},
-      {"name": "💻 Coworking","route": "coworking"},
-      {"name": "🥊 Muay Thai","route": "muaythai"},
-      {"name": "🍻 Nightlife","route": "nightlife"}
-    ],
-    "cities":[
-      {"name": "🛺 Bangkok","route": "bangkok"},
-      {"name": "🐘 Chiang Mai","route": "chiangmai"},
-      {"name": "🏝 Ko Phangan","route": "kophangan"},
-      {"name": "🌊 Ko Samui","route": "kosamui"},
-      {"name": "🏖 Phuket","route": "phuket"}
-    ],
     "videos":[
       {
         "title": "What Can $1,000 Get in THAILAND",

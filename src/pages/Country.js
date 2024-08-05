@@ -13,6 +13,8 @@ const INCREMENT_CARDS = 40;
 function Country() {
     const { continent, country, city, category } = useParams();
     const data = require(`../data/${continent}/${country}/${country}.json`);
+    const dataCities = require(`../data/${continent}/${country}/${country}-cities.json`);
+    const dataCategories = require(`../data/${continent}/${country}/${country}-categories.json`);
 
     const capitalizedContinent= continent.charAt(0).toUpperCase() + continent.slice(1);
     const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1);
@@ -66,14 +68,14 @@ function Country() {
     return (
         <div className="country-page">
 
-            <PageBanner title={data.name} imgRoute={country}/>
+            <PageBanner title={dataCities.name} imgRoute={country}/>
 
         {/* CITIES */}
             <div className='cities-wrapper'>
                 <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
-                    <div>{data.name}</div>
+                    <div>{dataCities.name}</div>
                 </Link>
-                {data.cities.map((city, index) => (
+                {dataCities.cities.map((city, index) => (
                     <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index}>
                         <div>{city.name}</div>
                     </Link>
@@ -86,7 +88,7 @@ function Country() {
                     <Link to={`/${continent}/${country}`} className="active">
                         <div>💯 All</div>
                     </Link>
-                {data.categories.map((category, index) => (
+                {dataCategories.categories.map((category, index) => (
                     <Link to={`/${continent}/${country}/${category.route}`} key={index}>
                         <div>{category.name}</div>
                     </Link>
