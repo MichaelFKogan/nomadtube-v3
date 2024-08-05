@@ -1,5 +1,3 @@
-import './App.css';
-import './styles/buttons.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -8,6 +6,10 @@ import Home from './pages/Home';
 import Country from './pages/Country';
 import City from './pages/City';
 import Category from './pages/Category';
+
+import './App.css';
+import './styles/buttons.css';
+import './styles/images.css';
 
 function App() {
   return (

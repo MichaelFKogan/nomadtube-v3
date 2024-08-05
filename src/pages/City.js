@@ -37,21 +37,23 @@ function City() {
 
         {/* CITIES */}
             <div className='cities-wrapper'>
-                <Link to={`/${continent}/${country}`}><button>{capitalizedCountry}</button></Link>
+                <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}><div>{capitalizedCountry}</div></Link>
                 {cityData.cities.map((city, index) => (
-                    <Link to={`/${continent}/${country}/${city.toLowerCase().replace(/\s+/g, '')}`} key={index}>
-                        <button>{city}</button>
+                    <Link to={`/${continent}/${country}/${city.toLowerCase().replace(/\s+/g, '')}`} className={`${city.toLowerCase().replace(/\s+/g, '')}-img background-img`} key={index}>
+                        <div>{city}</div>
                     </Link>
                 ))}
             </div>
 
         {/* CATEGORIES */}
             <div className='categories-wrapper'>
+                <div className="inner-categories">
                 {cityData.categories.map((category, index) => (
                     <Link to={`/${continent}/${country}/${city}/${category.toLowerCase().replace(/\s+/g, '')}`} key={index}>
-                        <button>{category}</button>
+                        <div>{category}</div>
                     </Link>
                 ))}
+                </div>
             </div>
 
         <TotalVideos/>
@@ -68,7 +70,7 @@ function City() {
         <div className="pagination" style={{marginTop:"30px", marginBottom: "150px"}}>
             <button onClick={() => {handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0;}}
                 disabled={currentPage === 1}>Previous</button>
-            <span>{`Page ${currentPage} of ${totalPages}`}</span>
+            <span className='pages'>{`Page ${currentPage} of ${totalPages}`}</span>
             <button onClick={() => {handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0;}}
                 disabled={currentPage === totalPages}>Next</button>
         </div>

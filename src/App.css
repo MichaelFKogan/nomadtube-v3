@@ -28,6 +28,59 @@
   color: #61dafb;
 }
 
+@font-face {
+	font-family: "Edo"; 
+	src: local("edo"),
+	  url("./assets/fonts/Edo/edo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Light";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/static/Nunito-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Regular";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Medium";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/static/Nunito-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Semi Bold";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/static/Nunito-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Bold";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/static/Nunito-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Extra Bold";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/static/Nunito-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nunito Black";
+  src: local("Nunito"), 
+  url("./assets/fonts/Nunito/static/Nunito-Black.ttf") format("truetype");
+}
 
 h1{
   margin: .5em 0px;
@@ -68,11 +121,11 @@ h1{
 
 .cities-wrapper{
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  column-gap: 5px;
-  row-gap: 5px;
+  margin: auto;
+  column-gap: 6px;
+  row-gap: 6px;
+  max-width: 1200px;
   margin-bottom: 20px;
 }
 
@@ -82,16 +135,19 @@ h1{
   padding: 20px 0px;
   z-index: 4;
   background: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
 
+.inner-categories{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 5px;
   row-gap: 5px;
-
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .total-videos{
@@ -105,4 +161,9 @@ h1{
   column-gap: 2px;
   row-gap: 2px;
   margin: 10px 2px 0px 2px;
+}
+
+.pagination .pages{
+  font-size: 13px;
+  margin: 0px 20px;
 }

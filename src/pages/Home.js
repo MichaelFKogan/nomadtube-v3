@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import HomeBanner from "../components/HomeBanner"
 import Card from "../components/Card"
-import Breadcrumbs from "../components/Breadcrumbs"
 import TotalVideos from "../components/TotalVideos"
 
 const ITEMS_PER_PAGE = 200;
@@ -29,61 +29,48 @@ function Home() {
 
     return (
         <div className="home">
-            <h1>{homeData.name}</h1>
+
+        <HomeBanner />
 
         {/* CITIES */}
             <div className="cities-wrapper">
-                <div className="d-flex flex-col row-gap-5">
-                    <div className="d-flex justify-center col-gap-5 row-gap-5">
-                        <Link to={`/asia/bali`}><button>🏝 Bali</button></Link>
-                        <Link to={`/asia/thailand`}><button>🇹🇭 Thailand</button></Link>
-                        <Link to={`/asia/japan`}><button>🇯🇵 Japan</button></Link>
-                        <Link to={`/asia/korea`}><button>🇰🇷 Korea</button></Link>
-                    </div>
-                    <div className="d-flex justify-center col-gap-5 row-gap-5">
-                        <Link to={`/southamerica/brazil`}><button>🇧🇷 Brazil</button></Link>
-                        <Link to={`/southamerica/colombia`}><button>🇨🇴 Colombia</button></Link>
-                        <Link to={`/southamerica/mexico`}><button>🇲🇽 Mexico</button></Link>
-                        <Link to={`/southamerica/costarica`}><button>🇨🇷 Costa Rica</button></Link>
-                    </div>
-                    <div className="d-flex justify-center col-gap-5 row-gap-5">
-                        <Link to={`/europe/portugal`}><button>🇵🇹 Portugal</button></Link>
-                        <Link to={`/europe/italy`}><button>🇮🇹 Italy</button></Link>
-                        <Link to={`/europe/france`}><button>🇫🇷 France</button></Link>
-                        <Link to={`/europe/spain`}><button>🇪🇸 Spain</button></Link>
-                    </div>
-                </div>
+                <Link to={`/asia/bali`} className="bali-img background-img"><div>🏝 Bali</div></Link>
+                <Link to={`/asia/thailand`} className="background-img thailand-img"><div>🇹🇭 Thailand</div></Link>
+                <Link to={`/asia/japan`} className="japan-img background-img"><div>🇯🇵 Japan</div></Link>
+                <Link to={`/asia/korea`} className="korea-img background-img"><div>🇰🇷 Korea</div></Link>
+                <Link to={`/southamerica/brazil`} className="brazil-img background-img"><div>🇧🇷 Brazil</div></Link>
+                <Link to={`/southamerica/colombia`} className="colombia-img background-img"><div>🇨🇴 Colombia</div></Link>
+                <Link to={`/southamerica/mexico`} className="mexico-img background-img"><div>🇲🇽 Mexico</div></Link>
+                <Link to={`/southamerica/costarica`} className="costarica-img background-img"><div>🇨🇷 Costa Rica</div></Link>
+                <Link to={`/europe/portugal`} className="portugal-img background-img"><div>🇵🇹 Portugal</div></Link>
+                <Link to={`/europe/italy`} className="italy-img background-img"><div>🇮🇹 Italy</div></Link>
+                <Link to={`/europe/france`} className="france-img background-img"><div>🇫🇷 France</div></Link>
+                <Link to={`/europe/spain`} className="spain-img background-img"><div>🇪🇸 Spain</div></Link>
             </div>
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
-                <div className="d-flex flex-col row-gap-5">
-                    <div className="d-flex justify-center col-gap-5 row-gap-5">
-                        <Link to={`/vlog`}><button>📸 Vlog</button></Link>
-                        <Link to={`/howtobecomeadigitalnomad`}><button>👨‍💻 How To Become A Digital Nomad</button></Link>
-                        <Link to={`/streetfood`}><button>🍜 Street Food</button></Link>
-                        <Link to={`/walkingtour`}><button>🚶‍♂️ Walking Tour</button></Link>
-                        <Link to={`/solotravel`}><button>🧍‍♀️ Solo Travel</button></Link>
-                        <Link to={`/vanlife`}><button>🚐 Van Life</button></Link>
-                        <Link to={`/gear`}><button>🎒 Gear</button></Link>
-                    </div>
+                <div className="inner-categories">
+                    <Link to={`/vlog`}><div>📸 Vlog</div></Link>
+                    <Link to={`/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+                    <Link to={`/streetfood`}><div>🍜 Street Food</div></Link>
+                    <Link to={`/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
+                    <Link to={`/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
+                    <Link to={`/vanlife`}><div>🚐 Van Life</div></Link>
+                    <Link to={`/gear`}><div>🎒 Gear</div></Link>
 
-                    <div className="d-flex justify-center col-gap-5 row-gap-5">
-                        <Link to={`/asia/bali/vlog`}><button>🏝 Bali Vlog</button></Link>
-                        <Link to={`/asia/thailand/bangkok/itinerary`}><button>🛺 Bangkok Itinerary</button></Link>
-
-                        <Link to={`/asia/japan/tokyo/walkingtour`}><button>🇯🇵 Tokyo Walking Tour</button></Link>
-                        <Link to={`/asia/thailand/bangkok/khaosanroad`}><button>🍻 Khao San Road</button></Link>
-                        <Link to={`/asia/thailand/kophangan/fullmoonparty`}><button>🌙 Full Moon Party</button></Link>
-                        <Link to={`/asia/vietnam/streetfood`}><button>🇻🇳 Vietnam Street Food</button></Link>
-                    </div>
+                    <Link to={`/asia/bali/vlog`} className="bali-img background-img"><div>🏝 Bali Vlog</div></Link>
+                    <Link to={`/asia/thailand/bangkok/itinerary`} className="bangkok-img background-img"><div>🛺 Bangkok Itinerary</div></Link>
+                    <Link to={`/asia/japan/tokyo/walkingtour`} className="tokyo-img background-img"><div>🇯🇵 Tokyo Walking Tour</div></Link>
+                    <Link to={`/asia/taiwan/bubbletea`} className="taiwan-img background-img"><div>🧋 Taiwan Bubble Tea</div></Link>
+                    <Link to={`/asia/thailand/bangkok/khaosanroad`} className="bangkok-img background-img"><div>🍻 Khao San Road</div></Link>
+                    <Link to={`/asia/korea/seoul/cafetour`} className="seoul-img background-img"><div>☕️ Seoul Cafe Tour</div></Link>
+                    <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img"><div>🌙 Full Moon Party</div></Link>
+                    <Link to={`/asia/vietnam/streetfood`} className="vietnam-img background-img"><div>🇻🇳 Vietnam Street Food</div></Link>
                 </div>
             </div>
 
-
-
         <TotalVideos/>
-        {/* <Breadcrumbs/> */}
 
         {/* CARDS */}
         <div className="cards-wrapper">
@@ -96,7 +83,7 @@ function Home() {
         <div className="pagination" style={{marginTop:"30px", marginBottom: "150px"}}>
             <button onClick={() => {handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0;}}
                 disabled={currentPage === 1}>Previous</button>
-            <span>{`Page ${currentPage} of ${totalPages}`}</span>
+            <span className='pages'>{`Page ${currentPage} of ${totalPages}`}</span>
             <button onClick={() => {handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0;}}
                 disabled={currentPage === totalPages}>Next</button>
         </div>

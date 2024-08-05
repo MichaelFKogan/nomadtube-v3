@@ -48,21 +48,23 @@ function Category() {
 
         {/* CITIES */}
             <div className="cities-wrapper">
-                <Link to={`/${continent}/${country}`}><button>{capitalizedCountry}</button></Link>
+                <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}><div>{capitalizedCountry}</div></Link>
                 {categoryData.cities.map((city, index) => (
-                    <Link to={`/${continent}/${country}/${city.toLowerCase().replace(/\s+/g, '')}`} key={index}>
-                        <button>{city}</button>
+                    <Link to={`/${continent}/${country}/${city.toLowerCase().replace(/\s+/g, '')}`} className={`${city.toLowerCase().replace(/\s+/g, '')}-img background-img`} key={index}>
+                        <div>{city}</div>
                     </Link>
                 ))}
             </div>
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
+                <div className="inner-categories">
                 {categoryData.categories.map((category, index) => (
                     <Link to={`/${continent}/${country}/${city}/${category.toLowerCase().replace(/\s+/g, '')}`} key={index}>
-                        <button>{category}</button>
+                        <div>{category}</div>
                     </Link>
                 ))}
+                </div>
             </div>
 
             {/* <div>
