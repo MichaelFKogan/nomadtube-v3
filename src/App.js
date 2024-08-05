@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import All from './pages/All';
 import Country from './pages/Country';
 import City from './pages/City';
 import Category from './pages/Category';
@@ -18,6 +19,7 @@ function App() {
         <Navbar/>
       <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/all" element={<All />} />
 
           {/* <Route path=":continent" element={<Continent />} /> */}
           

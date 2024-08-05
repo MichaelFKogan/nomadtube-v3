@@ -8,7 +8,7 @@ function Navbar() {
         <div className="navbar d-flex align-center space-between">
             <div className='d-flex align-center'>
                 <Link to={"/"} className="nav-menu nav-logo"><div>🏝 NomadTube</div></Link>
-                <Link to={"/"} className="nav-menu nav-home"><div>Home</div></Link>
+                <Link to={"/all"} className="nav-menu nav-home"><div>All</div></Link>
             </div>
 
             <div className="d-flex align-center">

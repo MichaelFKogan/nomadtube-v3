@@ -46,15 +46,15 @@
     z-index: 1; /* Ensure text appears above the gradient background */
 }
 
-.banner-text::before {
+/* .banner-text::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 150%; /* Adjust size as needed */
-    height: 150%; /* Adjust size as needed */
+    width: 150%;
+    height: 150%;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: -1; /* Ensure gradient background appears below the text */
-}
+    z-index: -1;
+} */
