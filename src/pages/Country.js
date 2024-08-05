@@ -53,15 +53,6 @@ function Country() {
         };
     }, [loadMoreCards]);
 
-    useEffect(() => {
-        console.log(`startIndex: ${startIndex}`);
-        console.log(`endIndex: ${endIndex}`);
-    }, [startIndex, endIndex]);
-
-    useEffect(() => {
-        console.log(`numCardsToShow: ${numCardsToShow}`);
-    }, [numCardsToShow]);
-
     return (
         <div className="country-page">
             <TotalVideos />

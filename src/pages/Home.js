@@ -57,6 +57,9 @@ function Home() {
         };
     }, [loadMoreCards]);
 
+        // Generate page numbers
+        const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
+
     return (
         <div className="home">
 
@@ -113,13 +116,26 @@ function Home() {
             </div>
 
         {/* PAGINATION CONTROLS */}
-        <div className="pagination" style={{ marginTop: "30px", marginBottom: "150px" }}>
-            <button onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
-                disabled={currentPage === 1}>Previous</button>
-            <span className='pages'>{`Page ${currentPage} of ${totalPages}`}</span>
-            <button onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
-                disabled={currentPage === totalPages}>Next</button>
+        <div className="pagination">
+            <div className='d-flex align-center justify-center'>
+                <button onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
+                    disabled={currentPage === 1}>Previous</button>
+                
+                <div className='pages'>{`Page ${currentPage} of ${totalPages}`}</div>
+                
+                <button onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
+                    disabled={currentPage === totalPages}>Next</button>
+            </div>
+
+            <div className='pages page-numbers'>
+                {pageNumbers.map(pageNumber => (
+                    <div key={pageNumber} onClick={() => handlePageChange(pageNumber)} disabled={currentPage === pageNumber}>
+                        {pageNumber}
+                    </div>
+                ))}
+            </div>
         </div>
+
 
         {/* BOTTOM NAVIGATION BUTTONS */}
             <button className="back-to-top" onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}}>Back To Top</button>
