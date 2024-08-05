@@ -130,8 +130,6 @@ h1{
 }
 
 .categories-wrapper{
-  position: sticky;
-  top: 0;
   padding: 20px 0px;
   z-index: 4;
   background: #eee;
@@ -180,5 +178,31 @@ h1{
 
 .page-numbers{
   display: flex;
-  column-gap: 10px;
+  align-items: center;
+}
+
+.page-number{
+  font-family: "Nunito Black";
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.page-number:hover{
+  transform: scale(1.03);
+  background: #eee;
+}
+
+.page-number:active{
+  transform: scale(.99);
+}
+
+.page-number.disabled{
+  background: black;
+  color: white;
 }

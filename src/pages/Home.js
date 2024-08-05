@@ -121,19 +121,22 @@ function Home() {
                 <button onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
                     disabled={currentPage === 1}>Previous</button>
                 
-                <div className='pages'>{`Page ${currentPage} of ${totalPages}`}</div>
+                {/* <div className='pages'>{`Page ${currentPage} of ${totalPages}`}</div> */}
+
+                <div className='pages page-numbers'>
+                    {pageNumbers.map(pageNumber => (
+                        <div key={pageNumber}
+                            onClick={() => {if (currentPage !== pageNumber) {handlePageChange(pageNumber);document.documentElement.scrollTop = 0;}}}
+                            className={`page-number ${currentPage === pageNumber ? 'disabled' : ''}`}>
+                            {pageNumber}
+                        </div>
+                    ))}
+                </div>
                 
                 <button onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
                     disabled={currentPage === totalPages}>Next</button>
             </div>
 
-            <div className='pages page-numbers'>
-                {pageNumbers.map(pageNumber => (
-                    <div key={pageNumber} onClick={() => handlePageChange(pageNumber)} disabled={currentPage === pageNumber}>
-                        {pageNumber}
-                    </div>
-                ))}
-            </div>
         </div>
 
 
