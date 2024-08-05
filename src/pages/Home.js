@@ -4,7 +4,9 @@ import HomeBanner from "../components/HomeBanner"
 import Card from "../components/Card"
 import TotalVideos from "../components/TotalVideos"
 
-const ITEMS_PER_PAGE = 200;
+const ITEMS_PER_PAGE = 300;
+const INITIAL_CARDS_TO_SHOW = 40;
+const INCREMENT_CARDS = 40;
 
 function Home() {
     const { continent, country, city, category } = useParams();
@@ -13,19 +15,47 @@ function Home() {
     // const capitalizedContinent= continent.charAt(0).toUpperCase() + continent.slice(1);
     // const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1);
 
-    // Add pagination
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(homeData.videos.length / ITEMS_PER_PAGE);
+    
+    const [numCardsToShow, setNumCardsToShow] = useState(INITIAL_CARDS_TO_SHOW);
+    const loadMoreRef = useRef(null);
 
     const handlePageChange = (newPage) => {
         if (newPage > 0 && newPage <= totalPages) {
             setCurrentPage(newPage);
+            setNumCardsToShow(INITIAL_CARDS_TO_SHOW); // Reset for new page
         }
     };
 
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, homeData.videos.length);
+
+    const loadMoreCards = useCallback(() => {
+        setNumCardsToShow(prevNum => Math.min(prevNum + INCREMENT_CARDS, endIndex));
+    }, [endIndex]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    loadMoreCards();
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (loadMoreRef.current) {
+            observer.observe(loadMoreRef.current);
+        }
+
+        return () => {
+            if (loadMoreRef.current) {
+                observer.unobserve(loadMoreRef.current);
+            }
+        };
+    }, [loadMoreCards]);
 
     return (
         <div className="home">
@@ -72,19 +102,22 @@ function Home() {
 
         <TotalVideos/>
 
-        {/* CARDS */}
-        <div className="cards-wrapper">
-            {homeData.videos.slice(startIndex, endIndex).map((video, index) => (
-                <Card data={video} key={index} cardKey={index} />
-            ))}
-        </div>
+            {/* CARDS */}
+            <div className="cards-wrapper">
+                {homeData.videos.slice(startIndex, startIndex + numCardsToShow).map((video, index) => (
+                    <Card data={video} key={index} cardKey={index} />
+                ))}
+                {numCardsToShow < endIndex - startIndex && (
+                    <div ref={loadMoreRef} className="load-more-cards" style={{ height: '20px', backgroundColor: 'transparent' }} />
+                )}
+            </div>
 
         {/* PAGINATION CONTROLS */}
-        <div className="pagination" style={{marginTop:"30px", marginBottom: "150px"}}>
-            <button onClick={() => {handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0;}}
+        <div className="pagination" style={{ marginTop: "30px", marginBottom: "150px" }}>
+            <button onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
                 disabled={currentPage === 1}>Previous</button>
             <span className='pages'>{`Page ${currentPage} of ${totalPages}`}</span>
-            <button onClick={() => {handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0;}}
+            <button onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
                 disabled={currentPage === totalPages}>Next</button>
         </div>
 

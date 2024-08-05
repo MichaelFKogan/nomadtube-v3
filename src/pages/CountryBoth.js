@@ -137,19 +137,19 @@ function Country() {
                 )}
             <div className="cards-wrapper">
 
-            {numCardsToShow < 400 ? (
-                <>
-                {countryData.videos.slice(0, numCardsToShow).map((video, index) => (
-                    <Card data={video} key={index} cardKey={index} />
-                ))}
-                </>
-             ) : (
-                <>
-                {countryData.videos.slice(startIndex, endIndex).map((video, index) => (
-                    <Card data={video} key={index} cardKey={index} />
-                ))}
-                </>
-            )}
+                {numCardsToShow < 400 ? (
+                    <>
+                    {countryData.videos.slice(0, numCardsToShow).map((video, index) => (
+                        <Card data={video} key={index} cardKey={index} />
+                    ))}
+                    </>
+                ) : (
+                    <>
+                    {countryData.videos.slice(startIndex, endIndex).map((video, index) => (
+                        <Card data={video} key={index} cardKey={index} />
+                    ))}
+                    </>
+                )}
 
                 {numCardsToShow < 400 && numCardsToShow < countryData.videos.length && (
                     <div ref={loadMoreRef} style={{ height: '20px', backgroundColor: 'transparent' }} />
