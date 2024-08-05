@@ -14,8 +14,8 @@ button:active {transform: scale(.98);}
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(25% - 5px);
-    height: 75px;
+    width: 16%;
+    height: 70px;
     font-family: "Nunito Black";
     font-size: 17px;
     font-weight: bold;

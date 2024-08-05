@@ -122,11 +122,12 @@ h1{
 
 .cities-wrapper{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: auto;
   column-gap: 6px;
   row-gap: 6px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-bottom: 20px;
 }
 
@@ -150,7 +151,7 @@ h1{
 }
 
 .total-videos{
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 10px;
 }
 
@@ -159,7 +160,7 @@ h1{
   flex-wrap: wrap;
   column-gap: 2px;
   row-gap: 2px;
-  margin: 10px 2px 0px 2px;
+  margin: 10px 0px 0px 2px
 }
 
 .pagination{

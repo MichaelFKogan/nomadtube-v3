@@ -29,7 +29,7 @@ function App() {
 
           <Route path=":continent/:country/:city/:category" element={<Category />} />
 
-          <Route path="*" element={<div><h1>404 Not Found</h1></div>} />
+          <Route path="*" element={<div style={{height: "75h", display: "flex", justifyContent: "center", alignItems: "center"}}><h1>404 Not Found</h1></div>} />
         </Routes>
       </Router>
     </div>
