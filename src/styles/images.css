@@ -29,11 +29,11 @@
 .korea-img {background-image: url('../assets/img/banners/korea-banner.jpeg') !important;}
 .brazil-img {background-image: url('../assets/img/banners/brazil-banner.jpeg') !important;}
 .colombia-img {background-image: url('../assets/img/banners/colombia-banner.jpeg') !important;}
-.mexico-img {background-image: url('../assets/img/banners/mexico-banner.jpeg') !important;}
+.mexico-img {background-image: url('../assets/img/banners/mexico-banner.jpeg') !important; background-position-y: 73% !important;}
 .costarica-img {background-image: url('../assets/img/banners/costarica-banner.jpeg') !important;}
 .portugal-img {background-image: url('../assets/img/banners/portugal-banner.jpeg') !important;}
-.italy-img {background-image: url('../assets/img/banners/italy-banner.jpeg') !important;}
-.france-img {background-image: url('../assets/img/banners/france-banner.jpeg') !important;}
+.italy-img {background-image: url('../assets/img/banners/italy-banner.jpeg') !important; background-position-y: 67% !important;}
+.france-img {background-image: url('../assets/img/banners/france-banner.jpeg') !important; background-position-y: 67% !important;}
 .spain-img {background-image: url('../assets/img/banners/spain-banner.jpeg') !important;}
 
 .bangkok-img {background-image: url('../assets/img/banners/bangkok-banner.jpeg') !important; background-position-y: 0% !important;}

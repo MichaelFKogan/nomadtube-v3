@@ -141,6 +141,12 @@ a.active{
 @media(max-width: 768px){
     .mobile-normal .image-plus{top:2px}
     .mobile-normal .second-button{display: none;}
+
+    .mobile-full .image-plus,
+    .mobile-full .image-minus,
+    .mobile-full .new-window{
+        display: none;
+    }
 }
 
 .close-card{font-size: 10px;}
