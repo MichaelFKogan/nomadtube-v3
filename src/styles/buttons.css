@@ -97,23 +97,53 @@ a.active{
     color: white;
 }
 
-.image-plus{
+.card-button{
     position: absolute;
-    top: 2px;
-    right: 2px;
     z-index:3;
-    cursor: pointer;
-
     font-weight: bold;
     background: rgba(0, 0, 0, .8);
     color: white;
-
-    border-radius: 3px;
     height: 25px;
     width: 24px;
     border: 0px;
+    border-radius: 3px;
     box-shadow: 0 0 5px #666;
+    cursor: pointer;
+    
+    right: 2px;
 }
+
+.close-card{top: 2px}
+.image-plus{top: 29px;}
+.image-minus{top: 56px;}
+.new-window{top: 83px;}
+
+.normal .image-plus{top:2px}
+.window-open .new-window{display: none;}
+
+.window-open .image-plus{top: 29px;}
+.window-open .image-plus,
+.window-open .image-minus,
+.window-open .close-card{display: block !important}
+
+/* CARDS 4x4 and 5x5 GRID */
+@media(min-width: 1025px){
+    .normal .second-button{display: none;}
+}
+
+/* CARDS 3x3 GRID */
+@media(min-width: 769px) and (max-width: 1024px){
+    .tablet-normal .image-plus{top:2px}
+    .tablet-normal .second-button{display: none;}
+}
+
+/* CARDS 2x2 GRID */
+@media(max-width: 768px){
+    .mobile-normal .image-plus{top:2px}
+    .mobile-normal .second-button{display: none;}
+}
+
+.close-card{font-size: 10px;}
 
 .image-plus:hover {transform: scale(1.04);}
 .image-plus:active {transform: scale(.98);}

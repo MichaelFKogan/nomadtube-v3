@@ -63,67 +63,75 @@
 /* MAKE CARD LARGER */
 
 .card.small .resize, 
-.card.medium .resize,
-.card.mobile-full .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
-.card.large .resize,
-.card.tablet-medium .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)}
+.card.medium .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
+.card.large .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)}
 
 /* SIZES */
 .card.small .resize{width: 175%;}
 .card.medium .resize{width: 275%;}
 .card.large .resize{width: 95%;}
 
-.card.tablet-small .resize{width: 175%;}
-.card.tablet-medium .resize{width: 95%;}
-
-.card.mobile-full .resize{width: 100%;}
+.card.window-open .resize{box-shadow: 0px 0px 15px black !important}
 
 
-/* CARDS 5x5 GRID */
-
+/* CARDS 5x5 LARGE DESKTOP GRID */
 @media(min-width: 1401px){
     .card.small:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
-    .card.medium:nth-child(5n+1) .resize{top: 50%;transform: translateY(-55%);left:0;}
+    .card.medium:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
 
     .card.small:nth-child(5n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(5n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+    .card.medium:nth-child(5n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
     .card.small:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+    .card.medium:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
     .card.small:nth-child(5n+4) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(5n+4) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+    .card.medium:nth-child(5n+4) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
     .card.small:nth-child(5n+5) .resize{top: 50%;transform: translateY(-50%);right:0;}
-    .card.medium:nth-child(5n+5) .resize{top: 50%;transform: translateY(-55%);right:0;}
+    .card.medium:nth-child(5n+5) .resize{top: 50%;transform: translateY(-50%);right:0;}
+
+    .card.window-open{position:fixed;top:10px;right:10px;z-index:5;}
+    .card.window-open .resize{width: 100% !important; top: 0 !important;left: 0 !important;transform: translate(0%, 0%) !important;position:relative !important;}
+    
+    .card.window-open.window-sm{width:25%}
+    .card.window-open.window-m{width:40%}
+    .card.window-open.window-l{width:60%}
+    .card.window-open.window-xl{width:95%}
 }
 
 
-/* CARDS 4x4 GRID */
+/* CARDS 4x4 DESKTOP GRID */
 @media(min-width: 1025px) and (max-width: 1400px){
     .card.small:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
-    .card.medium:nth-child(4n+1) .resize{top: 50%;transform: translateY(-55%);left:0;}
+    .card.medium:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
 
     .card.small:nth-child(4n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(4n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+    .card.medium:nth-child(4n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
     .card.small:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+    .card.medium:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
     .card.small:nth-child(4n+4) .resize{top: 50%;transform: translateY(-50%);right:0;}
-    .card.medium:nth-child(4n+4) .resize{top: 50%;transform: translateY(-55%);right:0;}
+    .card.medium:nth-child(4n+4) .resize{top: 50%;transform: translateY(-50%);right:0;}
 }
 
-/* CARDS 3x3 GRID */
+/* CARDS 3x3 TABLET GRID */
 @media(min-width: 769px) and (max-width: 1024px){
+    .card.tablet-small .resize{width: 175%;}
+    .card.tablet-medium .resize{width: 95%;}
+    .card.tablet-medium .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)}
+
     .card.tablet-small:nth-child(3n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
     .card.tablet-small:nth-child(3n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
     .card.tablet-small:nth-child(3n+3) .resize{top: 50%;transform: translateY(-50%);right:0;}
 }
 
-/* CARDS 2x2 GRID */
+/* CARDS 2x2 MOBILE GRID */
 @media(max-width: 768px){
-    .card.mobile-full .resize{position: absolute;top: -60px;width: calc(200% + 2px); right: 0;}
+    .card.mobile-full .resize{width: 100%;}
+    .card.mobile-full .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
+    .card.mobile-full .resize{top: -60px;width: calc(200% + 2px); right: 0;}
 
     .card:nth-child(5n + 5){width: 100% !important;}
     .card:nth-child(5n + 5) .image-plus{display: none;}
