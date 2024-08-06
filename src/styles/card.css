@@ -1,3 +1,9 @@
+.card{
+    position: relative;
+}
+
+/* CARD SIZES FOR DESKTOP, TABLET and MOBILE */
+
 @media (min-width:1401px){
     .card {
         width: calc(20% - 2px);
@@ -28,7 +34,7 @@
     }
 }
 
-
+/* IFRAME */
 
 .auto-resizable-iframe {
     margin: 0px auto;
@@ -53,3 +59,187 @@
     padding-bottom: 57% !important;
     z-index: 2;
 }
+
+/* MAKE CARD LARGER */
+
+.card.small .resize, 
+.card.medium .resize,
+.card.mobile-full .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
+.card.large .resize,
+.card.tablet-medium .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)}
+
+/* SIZES */
+.card.small .resize{width: 175%;}
+.card.medium .resize{width: 275%;}
+.card.large .resize{width: 95%;}
+
+.card.tablet-small .resize{width: 175%;}
+.card.tablet-medium .resize{width: 95%;}
+
+.card.mobile-full .resize{width: 100%;}
+
+
+/* CARDS 5x5 GRID */
+
+@media(min-width: 1401px){
+    .card.small:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
+    .card.medium:nth-child(5n+1) .resize{top: 50%;transform: translateY(-55%);left:0;}
+
+    .card.small:nth-child(5n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.medium:nth-child(5n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+
+    .card.small:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.medium:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+
+    .card.small:nth-child(5n+4) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.medium:nth-child(5n+4) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+
+    .card.small:nth-child(5n+5) .resize{top: 50%;transform: translateY(-50%);right:0;}
+    .card.medium:nth-child(5n+5) .resize{top: 50%;transform: translateY(-55%);right:0;}
+}
+
+
+/* CARDS 4x4 GRID */
+@media(min-width: 1025px) and (max-width: 1400px){
+    .card.small:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
+    .card.medium:nth-child(4n+1) .resize{top: 50%;transform: translateY(-55%);left:0;}
+
+    .card.small:nth-child(4n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.medium:nth-child(4n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+
+    .card.small:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.medium:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -55%);}
+
+    .card.small:nth-child(4n+4) .resize{top: 50%;transform: translateY(-50%);right:0;}
+    .card.medium:nth-child(4n+4) .resize{top: 50%;transform: translateY(-55%);right:0;}
+}
+
+/* CARDS 3x3 GRID */
+@media(min-width: 769px) and (max-width: 1024px){
+    .card.tablet-small:nth-child(3n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
+    .card.tablet-small:nth-child(3n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.tablet-small:nth-child(3n+3) .resize{top: 50%;transform: translateY(-50%);right:0;}
+}
+
+/* CARDS 2x2 GRID */
+@media(max-width: 768px){
+    .card.mobile-full .resize{position: absolute;top: -60px;width: calc(200% + 2px); right: 0;}
+
+    .card:nth-child(5n + 5){width: 100% !important;}
+    .card:nth-child(5n + 5) .image-plus{display: none;}
+
+    .card.mobile-full:nth-child(1) .resize, .card.mobile-full:nth-child(3) .resize,
+    .card.mobile-full:nth-child(6) .resize, .card.mobile-full:nth-child(8) .resize,
+    .card.mobile-full:nth-child(11) .resize, .card.mobile-full:nth-child(13) .resize,
+    .card.mobile-full:nth-child(16) .resize, .card.mobile-full:nth-child(18) .resize,
+    .card.mobile-full:nth-child(21) .resize, .card.mobile-full:nth-child(23) .resize,
+    .card.mobile-full:nth-child(26) .resize, .card.mobile-full:nth-child(28) .resize,
+    .card.mobile-full:nth-child(31) .resize, .card.mobile-full:nth-child(33) .resize,
+    .card.mobile-full:nth-child(36) .resize, .card.mobile-full:nth-child(38) .resize,
+    .card.mobile-full:nth-child(41) .resize, .card.mobile-full:nth-child(43) .resize,
+    .card.mobile-full:nth-child(46) .resize, .card.mobile-full:nth-child(48) .resize,
+    .card.mobile-full:nth-child(51) .resize, .card.mobile-full:nth-child(53) .resize,
+    .card.mobile-full:nth-child(56) .resize, .card.mobile-full:nth-child(58) .resize,
+    .card.mobile-full:nth-child(61) .resize, .card.mobile-full:nth-child(63) .resize,
+    .card.mobile-full:nth-child(66) .resize, .card.mobile-full:nth-child(68) .resize,
+    .card.mobile-full:nth-child(71) .resize, .card.mobile-full:nth-child(73) .resize,
+    .card.mobile-full:nth-child(76) .resize, .card.mobile-full:nth-child(78) .resize,
+    .card.mobile-full:nth-child(81) .resize, .card.mobile-full:nth-child(83) .resize,
+    .card.mobile-full:nth-child(86) .resize, .card.mobile-full:nth-child(88) .resize,
+    .card.mobile-full:nth-child(91) .resize, .card.mobile-full:nth-child(93) .resize,
+    .card.mobile-full:nth-child(96) .resize, .card.mobile-full:nth-child(98) .resize,
+
+    .card.mobile-full:nth-child(101) .resize, .card.mobile-full:nth-child(103) .resize,
+    .card.mobile-full:nth-child(106) .resize, .card.mobile-full:nth-child(108) .resize,
+    .card.mobile-full:nth-child(111) .resize, .card.mobile-full:nth-child(113) .resize,
+    .card.mobile-full:nth-child(116) .resize, .card.mobile-full:nth-child(118) .resize,
+    .card.mobile-full:nth-child(121) .resize, .card.mobile-full:nth-child(123) .resize,
+    .card.mobile-full:nth-child(126) .resize, .card.mobile-full:nth-child(128) .resize,
+    .card.mobile-full:nth-child(131) .resize, .card.mobile-full:nth-child(133) .resize,
+    .card.mobile-full:nth-child(136) .resize, .card.mobile-full:nth-child(138) .resize,
+    .card.mobile-full:nth-child(141) .resize, .card.mobile-full:nth-child(143) .resize,
+    .card.mobile-full:nth-child(146) .resize, .card.mobile-full:nth-child(148) .resize,
+    .card.mobile-full:nth-child(151) .resize, .card.mobile-full:nth-child(153) .resize,
+    .card.mobile-full:nth-child(156) .resize, .card.mobile-full:nth-child(158) .resize,
+    .card.mobile-full:nth-child(161) .resize, .card.mobile-full:nth-child(163) .resize,
+    .card.mobile-full:nth-child(166) .resize, .card.mobile-full:nth-child(168) .resize,
+    .card.mobile-full:nth-child(171) .resize, .card.mobile-full:nth-child(173) .resize,
+    .card.mobile-full:nth-child(176) .resize, .card.mobile-full:nth-child(178) .resize,
+    .card.mobile-full:nth-child(181) .resize, .card.mobile-full:nth-child(183) .resize,
+    .card.mobile-full:nth-child(186) .resize, .card.mobile-full:nth-child(188) .resize,
+    .card.mobile-full:nth-child(191) .resize, .card.mobile-full:nth-child(193) .resize,
+    .card.mobile-full:nth-child(196) .resize, .card.mobile-full:nth-child(198) .resize,
+
+    .card.mobile-full:nth-child(201) .resize, .card.mobile-full:nth-child(203) .resize,
+    .card.mobile-full:nth-child(206) .resize, .card.mobile-full:nth-child(208) .resize,
+    .card.mobile-full:nth-child(211) .resize, .card.mobile-full:nth-child(213) .resize,
+    .card.mobile-full:nth-child(216) .resize, .card.mobile-full:nth-child(218) .resize,
+    .card.mobile-full:nth-child(221) .resize, .card.mobile-full:nth-child(223) .resize,
+    .card.mobile-full:nth-child(226) .resize, .card.mobile-full:nth-child(228) .resize,
+    .card.mobile-full:nth-child(231) .resize, .card.mobile-full:nth-child(233) .resize,
+    .card.mobile-full:nth-child(236) .resize, .card.mobile-full:nth-child(238) .resize,
+    .card.mobile-full:nth-child(241) .resize, .card.mobile-full:nth-child(243) .resize,
+    .card.mobile-full:nth-child(246) .resize, .card.mobile-full:nth-child(248) .resize,
+    .card.mobile-full:nth-child(251) .resize, .card.mobile-full:nth-child(253) .resize,
+    .card.mobile-full:nth-child(256) .resize, .card.mobile-full:nth-child(258) .resize,
+    .card.mobile-full:nth-child(261) .resize, .card.mobile-full:nth-child(263) .resize,
+    .card.mobile-full:nth-child(266) .resize, .card.mobile-full:nth-child(268) .resize,
+    .card.mobile-full:nth-child(271) .resize, .card.mobile-full:nth-child(273) .resize,
+    .card.mobile-full:nth-child(276) .resize, .card.mobile-full:nth-child(278) .resize,
+    .card.mobile-full:nth-child(281) .resize, .card.mobile-full:nth-child(283) .resize,
+    .card.mobile-full:nth-child(286) .resize, .card.mobile-full:nth-child(288) .resize,
+    .card.mobile-full:nth-child(291) .resize, .card.mobile-full:nth-child(293) .resize,
+    .card.mobile-full:nth-child(296) .resize, .card.mobile-full:nth-child(298) .resize,
+
+    .card.mobile-full:nth-child(301) .resize, .card.mobile-full:nth-child(303) .resize,
+    .card.mobile-full:nth-child(306) .resize, .card.mobile-full:nth-child(308) .resize,
+    .card.mobile-full:nth-child(311) .resize, .card.mobile-full:nth-child(313) .resize,
+    .card.mobile-full:nth-child(316) .resize, .card.mobile-full:nth-child(318) .resize,
+    .card.mobile-full:nth-child(321) .resize, .card.mobile-full:nth-child(323) .resize,
+    .card.mobile-full:nth-child(326) .resize, .card.mobile-full:nth-child(328) .resize,
+    .card.mobile-full:nth-child(331) .resize, .card.mobile-full:nth-child(333) .resize,
+    .card.mobile-full:nth-child(336) .resize, .card.mobile-full:nth-child(338) .resize,
+    .card.mobile-full:nth-child(341) .resize, .card.mobile-full:nth-child(343) .resize,
+    .card.mobile-full:nth-child(346) .resize, .card.mobile-full:nth-child(348) .resize,
+    .card.mobile-full:nth-child(351) .resize, .card.mobile-full:nth-child(353) .resize,
+    .card.mobile-full:nth-child(356) .resize, .card.mobile-full:nth-child(358) .resize,
+    .card.mobile-full:nth-child(361) .resize, .card.mobile-full:nth-child(363) .resize,
+    .card.mobile-full:nth-child(366) .resize, .card.mobile-full:nth-child(368) .resize,
+    .card.mobile-full:nth-child(371) .resize, .card.mobile-full:nth-child(373) .resize,
+    .card.mobile-full:nth-child(376) .resize, .card.mobile-full:nth-child(378) .resize,
+    .card.mobile-full:nth-child(381) .resize, .card.mobile-full:nth-child(383) .resize,
+    .card.mobile-full:nth-child(386) .resize, .card.mobile-full:nth-child(388) .resize,
+    .card.mobile-full:nth-child(391) .resize, .card.mobile-full:nth-child(393) .resize,
+    .card.mobile-full:nth-child(396) .resize, .card.mobile-full:nth-child(398) .resize,
+
+    .card.mobile-full:nth-child(401) .resize, .card.mobile-full:nth-child(403) .resize,
+    .card.mobile-full:nth-child(406) .resize, .card.mobile-full:nth-child(408) .resize,
+    .card.mobile-full:nth-child(411) .resize, .card.mobile-full:nth-child(413) .resize,
+    .card.mobile-full:nth-child(416) .resize, .card.mobile-full:nth-child(418) .resize,
+    .card.mobile-full:nth-child(421) .resize, .card.mobile-full:nth-child(423) .resize,
+    .card.mobile-full:nth-child(426) .resize, .card.mobile-full:nth-child(428) .resize,
+    .card.mobile-full:nth-child(431) .resize, .card.mobile-full:nth-child(433) .resize,
+    .card.mobile-full:nth-child(436) .resize, .card.mobile-full:nth-child(438) .resize,
+    .card.mobile-full:nth-child(441) .resize, .card.mobile-full:nth-child(443) .resize,
+    .card.mobile-full:nth-child(446) .resize, .card.mobile-full:nth-child(448) .resize,
+    .card.mobile-full:nth-child(451) .resize, .card.mobile-full:nth-child(453) .resize,
+    .card.mobile-full:nth-child(456) .resize, .card.mobile-full:nth-child(458) .resize,
+    .card.mobile-full:nth-child(461) .resize, .card.mobile-full:nth-child(463) .resize,
+    .card.mobile-full:nth-child(466) .resize, .card.mobile-full:nth-child(468) .resize,
+    .card.mobile-full:nth-child(471) .resize, .card.mobile-full:nth-child(473) .resize,
+    .card.mobile-full:nth-child(476) .resize, .card.mobile-full:nth-child(478) .resize,
+    .card.mobile-full:nth-child(481) .resize, .card.mobile-full:nth-child(483) .resize,
+    .card.mobile-full:nth-child(486) .resize, .card.mobile-full:nth-child(488) .resize,
+    .card.mobile-full:nth-child(491) .resize, .card.mobile-full:nth-child(493) .resize,
+    .card.mobile-full:nth-child(496) .resize, .card.mobile-full:nth-child(498) .resize
+    {
+        left:0;
+    } 
+
+}
+
+
+
+
+
+/* MAKE CARD SMALLER */

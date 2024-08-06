@@ -1,12 +1,40 @@
 import "../styles/card.css"
+import { useState } from "react";
 
 function Card({ data, key, cardKey }) {
 
+    const [cardSize, setCurrentCardSize] = useState('normal');
+    const [tabletSize, setTabletSize] = useState('tablet-normal');
+    const [mobileSize, setMobileSize] = useState('mobile-normal');
+
+    const increaseCardSize = () => {
+        // Toggle between the classes 'small', 'medium', and 'large'
+        setCurrentCardSize((prevClass) => {
+            if (prevClass === 'normal') return 'small';
+            if (prevClass === 'small') return 'medium';
+            if (prevClass === 'medium') return 'large';
+            return 'large';
+        });
+
+        // Toggle between the classes 'small', and 'medium'
+        setTabletSize((prevClass) => {
+            if (prevClass === 'tablet-normal') return 'tablet-small';
+            if (prevClass === 'tablet-small') return 'tablet-medium';
+            return 'tablet-medium';
+        });
+
+        // Toggle between the classes 'normal', and 'full'
+        setMobileSize((prevClass) => {
+            if (prevClass === 'mobile-normal') return 'mobile-full';
+            return 'tablet-full';
+        });
+    }
+
     return (
-        <div className={`card ${cardKey}`} key={key}>
+        <div className={`card ${cardSize} ${tabletSize} ${mobileSize} ${cardKey}`} key={key}>
 
             <div className='auto-resizable-iframe resize'>
-                <button className="image-plus">+</button>
+                <button className="image-plus" onClick={increaseCardSize}>+</button>
                 <div className='iframe-div'>
 
                     <div className='loading-text' 

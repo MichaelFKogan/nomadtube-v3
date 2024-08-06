@@ -83,6 +83,7 @@ function Home() {
         {/* CATEGORIES */}
             <div className="categories-wrapper">
                 <div className="inner-categories">
+                    <Link to={`/home`}><div>💯 All</div></Link>
                     <Link to={`/vlog`}><div>📸 Vlog</div></Link>
                     <Link to={`/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
                     <Link to={`/streetfood`}><div>🍜 Street Food</div></Link>
@@ -102,7 +103,7 @@ function Home() {
                 </div>
             </div>
 
-            <h1>💯 Featured</h1>
+            <h1>💯 All</h1>
             <TotalVideos/>
             <Cards data={homeData} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
