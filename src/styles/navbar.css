@@ -5,7 +5,8 @@
 }
 
 .nav-menu{
-    font-size: 14px;
+    font-family: "Nunito Black";
+    font-size: 15px;
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -20,6 +21,5 @@
 }
 
 .nav-menu:hover{
-    color: #61dafb;
-    /* color: blue; */
+    color: #FF516B;
 }

@@ -133,6 +133,7 @@ h2{
   row-gap: 2px;
   /* max-width: 1400px; */
   margin-bottom: 20px;
+  width: calc(100% - 35px)
 }
 
 .categories-wrapper{

@@ -1,0 +1,38 @@
+{
+    "name": "⛩ Asia",
+    "cities":[
+      {"name": "🇹🇭 Thailand","route": "thailand", "img": "thailand"},
+      {"name": "🛺 Bangkok","route": "thailand/bangkok", "img": "bangkok"},
+      {"name": "🐘 Chiang Mai","route": "thailand/chiangmai", "img": "chiangmai"},
+      {"name": "🏝 Ko Phangan","route": "thailand/kophangan", "img": "kophangan"},
+      {"name": "🌊 Ko Samui","route": "thailand/kosamui", "img": "kosamui"},
+      {"name": "🏖 Phuket","route": "thailand/phuket", "img": "phuket"},
+
+      {"name": "🏝 Bali","route": "bali", "img": "bali"},
+      {"name": "🏄‍♀️ Canggu","route": "bali/canggu", "img": "canggu"},
+      {"name": "🐒 Ubud","route": "bali/ubud", "img": "ubud"},
+
+      {"name": "🇻🇳 Vietnam","route": "vietnam", "img": "vietnam"},
+      {"name": "🍲 Hanoi","route": "vietnam/hanoi", "img": "hanoi"},
+      {"name": "🛵 Ho Chi Minh City","route": "vietnam/hochiminhcity", "img": "hochiminhcity"},
+
+      {"name": "🇯🇵 Japan","route": "japan", "img": "japan"},
+      {"name": "🗼 Tokyo","route": "japan/tokyo", "img": "tokyo"},
+      {"name": "🏯 Osaka","route": "japan/osaka", "img": "osaka"},
+      {"name": "🎋 Kyoto","route": "japan/kyoto", "img": "kyoto"},
+
+      {"name": "🇰🇷 Korea","route": "korea", "img": "korea"},
+      {"name": "🇰🇷 Seoul","route": "korea/seoul", "img": "seoul"},
+
+      {"name": "🇹🇼 Taiwan","route": "taiwan", "img": "taiwan"},
+      {"name": "🥢 Taipei","route": "taiwan/taipei", "img": "taipei"},
+
+      {"name": "🇨🇳 China","route": "china", "img": "china"},
+      {"name": "🥡 Beijing","route": "china/beijing", "img": "beijing"},
+      {"name": "🧧 Shanghai","route": "china/shanghai", "img": "shanghai"},
+
+      {"name": "🇭🇰 Hong Kong","route": "hongkong", "img": "hongkong"},
+      {"name": "🇸🇬 Singapore","route": "singapore", "img": "singapore"}
+
+    ]
+}

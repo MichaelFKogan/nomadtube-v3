@@ -2,8 +2,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {transform: scale(1.03);}
-button:active {transform: scale(.98);}
+.card-button:hover {transform: scale(1.06);}
+.card-button:active {transform: scale(.98);}
 
 .cities-wrapper a:hover {transform: scale(1.01);}
 .categories-wrapper a:hover {transform: scale(1.02);}
@@ -28,8 +28,8 @@ button:active {transform: scale(.98);}
 
     text-shadow: 1px 1px 0 #000, 1px 1px 5px #000;
     text-transform: uppercase;
-    border-radius: 2px;
-    box-shadow: 0px 0px 2px #ccc;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.3)
 }
 
 .cities-wrapper a div {
@@ -62,7 +62,7 @@ button:active {transform: scale(.98);}
     border-radius: 20px;
     padding: 7px 12px 8px 12px;
     border: 1px solid #ccc;
-    box-shadow: 0px 0px 2px #ccc;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.2)
 }
 
 .categories-wrapper .background-img{
@@ -153,6 +153,33 @@ a.active{
 
 .image-plus:hover {transform: scale(1.04);}
 .image-plus:active {transform: scale(.98);}
+
+
+/* Tooltip text */
+.card-button[data-tooltip]::after {
+    font-family: "Nunito Light";
+    font-size: 9px;
+    content: attr(data-tooltip); /* Get the tooltip text from the data-tooltip attribute */
+    position: absolute;
+    bottom: 125%; /* Position the tooltip above the button */
+    right: 0;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    opacity: 0; /* Hide the tooltip */
+    visibility: hidden; /* Make it invisible */
+    transition: opacity 0.2s, visibility 0.2s; /* Smooth transition */
+    pointer-events: none; /* Prevent tooltip from interfering with mouse events */
+    z-index: 1; /* Ensure it appears above other elements */
+  }
+  
+  /* Show the tooltip when hovering over the button */
+  .card-button[data-tooltip]:hover::after {
+    opacity: 1; /* Show the tooltip */
+    visibility: visible; /* Make it visible */
+  }
 
 .pagination button, .back-to-top{
     width: 100px;

@@ -98,10 +98,10 @@ function Card({ data, key, cardKey }) {
         <div className={`card ${cardSize} ${tabletSize} ${mobileSize} ${windowOpen} ${windowSize} ${cardKey}`} key={key}>
 
             <div className='auto-resizable-iframe resize'>
-                <button className="card-button close-card second-button" onClick={closeCard}>x</button>
-                <button className="card-button image-plus first-button" onClick={increaseCardSize}>+</button>
-                <button className="card-button image-minus second-button" onClick={decreaseCardSize}>-</button>
-                <button className="card-button new-window second-button" onClick={openNewWindow}>^</button>
+                <button className="card-button close-card second-button" data-tooltip="Close" onClick={closeCard}>x</button>
+                <button className="card-button image-plus first-button" data-tooltip="Increase Image" onClick={increaseCardSize}>+</button>
+                <button className="card-button image-minus second-button" data-tooltip="Decrease Image" onClick={decreaseCardSize}>-</button>
+                <button className="card-button new-window second-button" data-tooltip="Open in window" onClick={openNewWindow}>^</button>
 
                 <div className='iframe-div'>
 

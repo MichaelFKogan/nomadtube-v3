@@ -24,9 +24,39 @@
 } */
 
 .bali-img {background-image: url('../assets/img/banners/bali-banner.jpeg') !important;}
+.canggu-img {background-image: url('../assets/img/banners/canggu-banner.jpeg') !important;}
+.ubud-img {background-image: url('../assets/img/banners/ubud-banner.jpeg') !important;}
+
 .thailand-img {background-image: url('../assets/img/banners/thailand-banner.jpeg') !important;}
+.bangkok-img {background-image: url('../assets/img/banners/bangkok-banner.jpeg') !important; background-position-y: 0% !important;}
+.chiangmai-img {background-image: url('../assets/img/banners/chiangmai-banner.jpeg') !important;}
+.phuket-img {background-image: url('../assets/img/banners/phuket-banner.jpeg') !important; background-position-y: 63% !important;}
+.kosamui-img {background-image: url('../assets/img/banners/kosamui-banner.jpeg') !important; background-position-y: 67% !important;}
+.kophangan-img {background-image: url('../assets/img/banners/kophangan-banner.jpeg') !important;}
+
 .japan-img {background-image: url('../assets/img/banners/japan-banner.jpeg') !important;background-position-y: 90% !important;}
+.tokyo-img {background-image: url('../assets/img/banners/tokyo-banner.jpeg') !important; background-position-y: 67% !important;}
+.osaka-img {background-image: url('../assets/img/banners/osaka-banner.jpeg') !important; background-position-y: 78% !important;}
+.kyoto-img {background-image: url('../assets/img/banners/kyoto-banner.jpeg') !important; background-position-y: 45% !important;}
+
+.vietnam-img {background-image: url('../assets/img/banners/vietnam-banner.jpeg') !important;}
+.hanoi-img {background-image: url('../assets/img/banners/hanoi-banner.jpeg') !important;}
+.hochiminhcity-img {background-image: url('../assets/img/banners/hochiminhcity-banner.jpeg') !important;}
+
 .korea-img {background-image: url('../assets/img/banners/korea-banner.jpeg') !important;}
+.seoul-img {background-image: url('../assets/img/banners/seoul-banner.jpeg') !important; background-position-y: 67% !important;}
+
+.taiwan-img {background-image: url('../assets/img/banners/taiwan-banner.jpeg') !important; background-position-y: 100% !important;}
+.taipei-img {background-image: url('../assets/img/banners/taipei-banner.jpeg') !important; background-position-y: 79% !important;}
+
+.china-img {background-image: url('../assets/img/banners/china-banner.jpeg') !important;}
+.beijing-img {background-image: url('../assets/img/banners/beijing-banner.jpeg') !important;}
+.shanghai-img {background-image: url('../assets/img/banners/shanghai-banner.jpeg') !important;}
+
+.hongkong-img {background-image: url('../assets/img/banners/hongkong-banner.jpeg') !important;}
+.singapore-img {background-image: url('../assets/img/banners/singapore-banner.jpeg') !important;}
+
+
 .brazil-img {background-image: url('../assets/img/banners/brazil-banner.jpeg') !important;}
 .colombia-img {background-image: url('../assets/img/banners/colombia-banner.jpeg') !important;}
 .mexico-img {background-image: url('../assets/img/banners/mexico-banner.jpeg') !important; background-position-y: 73% !important;}
@@ -36,15 +66,6 @@
 .france-img {background-image: url('../assets/img/banners/france-banner.jpeg') !important; background-position-y: 67% !important;}
 .spain-img {background-image: url('../assets/img/banners/spain-banner.jpeg') !important;}
 
-.bangkok-img {background-image: url('../assets/img/banners/bangkok-banner.jpeg') !important; background-position-y: 0% !important;}
-.tokyo-img {background-image: url('../assets/img/banners/tokyo-banner.jpeg') !important; background-position-y: 67% !important;}
-.vietnam-img {background-image: url('../assets/img/banners/vietnam-banner.jpeg') !important;}
-.kophangan-img {background-image: url('../assets/img/banners/kophangan-banner.jpeg') !important;}
-.taiwan-img {background-image: url('../assets/img/banners/taiwan-banner.jpeg') !important; background-position-y: 79% !important;}
-.seoul-img {background-image: url('../assets/img/banners/seoul-banner.jpeg') !important; background-position-y: 67% !important;}
 
-.chiangmai-img {background-image: url('../assets/img/banners/chiangmai-banner.jpeg') !important;}
-.phuket-img {background-image: url('../assets/img/banners/phuket-banner.jpeg') !important; background-position-y: 63% !important;}
-.kosamui-img {background-image: url('../assets/img/banners/kosamui-banner.jpeg') !important; background-position-y: 67% !important;}
 
-    
+

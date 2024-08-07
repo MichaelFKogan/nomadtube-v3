@@ -14,9 +14,9 @@ function City() {
     const { continent, country, city, category } = useParams();
     const data = require(`../data/${continent}/${country}/${city}/${city}.json`);
     const dataCities = require(`../data/${continent}/${country}/${country}-cities.json`);
+    const dataCityCategories = require(`../data/${continent}/${country}/${city}/${city}-categories.json`);
 
-    // const dataCityCategories = require(`../data/${continent}/${country}/${city}/${city}-categories.json`);
-    const dataCountryCategories = require(`../data/${continent}/${country}/${country}-categories.json`);
+    // const dataCountryCategories = require(`../data/${continent}/${country}/${country}-categories.json`);
 
     const capitalizedContinent= continent.charAt(0).toUpperCase() + continent.slice(1);
     const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1);
@@ -75,13 +75,17 @@ function City() {
 
     return (
         <div className="city-page">
-        
-        <PageBanner title={data.name} imgRoute={imgRoute}/>
+
+        {dataCities.cities.map((item, index) => (
+            city === item.route ? 
+                <PageBanner key={index} title={item.name} imgRoute={imgRoute}/> 
+                : null
+        ))}
 
         {/* CITIES */}
             <div className='cities-wrapper'>
                 <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
-                    <div>{data.country}</div>
+                    <div>{dataCities.name}</div>
                 </Link>
                 {dataCities.cities.map((city, index) => (
                     <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index}>
@@ -95,7 +99,7 @@ function City() {
                 <div className="inner-categories">
                 
                 {/* This route is for categories of country/categories. So url needs to be for the country, not city */}
-                {city === data.categoryRoute ? (
+                {/* {city === data.categoryRoute ? (
                         <>
                         <Link to={`/${continent}/${country}`}>
                             <div>💯 All</div>
@@ -113,18 +117,19 @@ function City() {
                         ))}
                         </>
                     ) : (
-                        <>
+                        <> */}
+
+
                     {/* This route is for categories of cities */}
                         <Link to={`/${continent}/${country}/${city}`} className="active">
                             <div>💯 All</div>
                         </Link>
-                        {data.categories.map((category, index) => (
+                        {dataCityCategories.categories.map((category, index) => (
                             <Link to={`/${continent}/${country}/${city}/${category.route}`} key={index}>
                                 <div>{category.name}</div>
                             </Link>
                         ))}
-                        </>
-                    )}
+
                 </div>
             </div>
 

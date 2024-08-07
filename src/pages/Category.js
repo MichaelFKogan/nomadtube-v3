@@ -70,12 +70,17 @@ function Category() {
     return (
         <div className="category-page">
 
-            <PageBanner title={data.name} imgRoute={city}/>
+            {dataCities.cities.map((item, index) => (
+                city === item.route ? 
+                    <PageBanner key={index} title={item.name} imgRoute={city}/> 
+                    : null
+            ))}
+
 
         {/* CITIES */}
             <div className="cities-wrapper">
                 <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
-                    <div>{data.country}</div>
+                    <div>{dataCities.name}</div>
                 </Link>
                 {dataCities.cities.map((city, index) => (
                     <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index}>
