@@ -1,22 +1,12 @@
 {
-    "name": "Chiang Mai",
-    "categories": [
-      "Itinerary",
-      "Vlog",      
-      "Digital Nomad",
-      "Street Food",
-      "Walking Tour",
-      "Cost",
-      "Khao San Road",
-      "Coworking",
-      "Muay Thai",
-      "Nightlife"
-    ],
-    "cities":[
-      "Bangkok",
-      "Chiang Mai",
-      "Ko Phangan",
-      "Ko Samui",
-      "Phuket"
-    ]
-  }
+  "categories": [
+    {"name": "🗺 Itinerary","route": "itinerary"},
+    {"name": "📸 Vlog","route": "vlog"},
+    {"name": "👨‍💻 Digital Nomad","route": "digitalnomad"},
+    {"name": "🍜 Street Food","route": "streetfood"},
+    {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
+    {"name": "💵 Cost","route": "cost"},
+    {"name": "💻 Coworking","route": "coworking"},
+    {"name": "🍻 Nightlife","route": "nightlife"}
+  ]
+}

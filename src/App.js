@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+import Asia from "./components/Asia"
+
 import Home from './pages/Home';
+import HomeCategory from './pages/HomeCategory';
 import All from './pages/All';
 import Country from './pages/Country';
 import CountryCategory from './pages/CountryCategory';
@@ -15,12 +18,23 @@ import './styles/buttons.css';
 import './styles/images.css';
 
 function App() {
+
+  const [showAsia, setShowAsia] = useState(false);
+
+  const toggleAsia = () => {
+      setShowAsia(!showAsia);
+  };
+
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <Navbar toggleAsia={toggleAsia}/>
+
+        {/* <Asia showAsia={showAsia} toggleAsia={toggleAsia} /> */}
+
       <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/category/:homeCategory" element={<HomeCategory />} />
           <Route path="/all" element={<All />} />
 
           <Route path=":continent" element={<Continent />} />

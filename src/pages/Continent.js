@@ -10,14 +10,10 @@ function Continent() {
     return (
         <div className="continent-page">
 
-        {/* <PageBanner title={data.name} imgRoute={country}/> */}
-        <h1 class="continent-title">{data.name}</h1>
+            <h1 class="continent-title">{data.name}</h1>
 
-        {/* CITIES */}
+            {/* CITIES */}
             <div className='cities-wrapper'>
-                {/* <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
-                    <div>{data.name}</div>
-                </Link> */}
                 {data.cities.map((city, index) => (
                     <Link to={`/${continent}/${city.route}`} className={`${city.img}-img background-img`} key={index}>
                         <div>{city.name}</div>

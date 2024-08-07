@@ -1,8 +1,7 @@
 {
-    "name": "🇯🇵 Japan",
+    "name": "🏝 Bali",
     "cities":[
-        {"name": "🗼 Tokyo","route": "tokyo"},
-        {"name": "🏯 Osaka","route": "osaka"},
-        {"name": "🎋 Kyoto","route": "kyoto"}
+        {"name": "🏄‍♀️ Canggu","route": "canggu"},
+        {"name": "🐒 Ubud","route": "ubud"}
     ]
 }

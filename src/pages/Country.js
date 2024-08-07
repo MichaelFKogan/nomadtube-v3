@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import PageBanner from '../components/PageBanner';
+import Cities from "../components/Cities"
 import Breadcrumbs from "../components/Breadcrumbs"
 import TotalVideos from "../components/TotalVideos";
 import Cards from "../components/Cards"
@@ -71,16 +72,7 @@ function Country() {
             <PageBanner title={dataCities.name} imgRoute={country}/>
 
         {/* CITIES */}
-            <div className='cities-wrapper'>
-                <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
-                    <div>{dataCities.name}</div>
-                </Link>
-                {dataCities.cities.map((city, index) => (
-                    <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index}>
-                        <div>{city.name}</div>
-                    </Link>
-                ))}
-            </div>
+            <Cities dataCities={dataCities} />
 
         {/* CATEGORIES */}
             <div className='categories-wrapper'>

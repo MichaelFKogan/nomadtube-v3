@@ -1,5 +1,4 @@
 {
-  "name": "🗼 Tokyo",
   "categories": [
     {"name": "🗺 Itinerary","route": "itinerary"},
     {"name": "📸 Vlog","route": "vlog"},
@@ -8,7 +7,6 @@
     {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
     {"name": "💵 Cost","route": "cost"},
     {"name": "💻 Coworking","route": "coworking"},
-    {"name": "🥊 Muay Thai","route": "muaythai"},
     {"name": "🍻 Nightlife","route": "nightlife"}
   ]
 }

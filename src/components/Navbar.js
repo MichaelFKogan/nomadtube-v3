@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
 
-function Navbar() {
+function Navbar({toggleAsia}) {
 
     return (
         <div className="navbar d-flex align-center space-between">
@@ -12,6 +12,8 @@ function Navbar() {
 
             <div className="d-flex align-center">
                 <Link to={"/asia"} className="nav-menu"><div>Asia</div></Link>
+                {/* <div className="nav-menu" onClick={toggleAsia}><div>Asia</div></div> */}
+
                 <Link to={"/southamerica"} className="nav-menu"><div>South America</div></Link>
                 <Link to={"/europe"} className="nav-menu"><div>Europe</div></Link>
                 {/* <Link to={"/northamerica"} className="nav-menu"><div>North America</div></Link> */}

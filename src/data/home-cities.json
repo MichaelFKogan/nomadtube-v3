@@ -1,0 +1,18 @@
+{
+    "cities":[
+      {"name": "🏝 Bali","route": "asia/bali", "imgRoute": "bali"},
+      {"name": "🇹🇭 Thailand","route": "asia/thailand", "imgRoute": "thailand"},
+      {"name": "🇯🇵 Japan","route": "asia/japan", "imgRoute": "japan"},
+      {"name": "🇰🇷 Korea","route": "asia/korea", "imgRoute": "korea"},
+
+      {"name": "🇧🇷 Brazil","route": "southamerica/brazil", "imgRoute": "brazil"},
+      {"name": "🇨🇴 Colombia","route": "southamerica/colombia", "imgRoute": "colombia"},
+      {"name": "🇲🇽 Mexico","route": "southamerica/mexico", "imgRoute": "mexico"},
+      {"name": "🇨🇷 Costa Rica","route": "southamerica/costarica", "imgRoute": "costarica"},
+
+      {"name": "🇵🇹 Portugal","route": "europe/portugal", "imgRoute": "portugal"},
+      {"name": "🇮🇹 Italy","route": "europe/italy", "imgRoute": "italy"},
+      {"name": "🇫🇷 France","route": "europe/france", "imgRoute": "france"},
+      {"name": "🇪🇸 Spain","route": "europe/spain", "imgRoute": "spain"}
+    ]
+}

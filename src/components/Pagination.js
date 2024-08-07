@@ -5,7 +5,7 @@ function Pagination({handlePageChange, currentPage, pageNumbers, totalPages}) {
     return (
         <div className="pagination">
             <div className='d-flex align-center justify-center'>
-                <button onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
+                <button className="previous" onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
                     disabled={currentPage === 1}>Previous</button>
 
                 {/* <div className='pages'>{`Page ${currentPage} of ${totalPages}`}</div> */}
@@ -20,7 +20,7 @@ function Pagination({handlePageChange, currentPage, pageNumbers, totalPages}) {
                     ))}
                 </div>
 
-                <button onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
+                <button className="next" onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
                     disabled={currentPage === totalPages}>Next</button>
             </div>
         </div>

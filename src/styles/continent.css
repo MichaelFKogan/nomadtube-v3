@@ -1,5 +1,26 @@
+/* Start position off-screen */
+/* .continent-page{
+    background: white;
+    Width: 98%;
+    border-radius: 3px;
+    position: absolute;
+    right: -100%; 
+    top: 20px;
+    z-index: 6;
+    height: 100vh;
+    transition: right .5s ease-in-out;
+} */
+
 .continent-title{
     font-family: "Edo";
     font-weight: 100;
     font-size: 60px;
+}
+
+.slide-in {
+    right: 0; /* Final position on-screen */
+}
+
+.slide-out {
+    right: -100%; /* Off-screen position */
 }

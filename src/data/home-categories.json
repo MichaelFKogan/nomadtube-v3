@@ -1,0 +1,19 @@
+{
+    "categories": [
+      {"name": "📸 Vlog","route": "vlog"},
+      {"name": "👨‍💻 How To Become A Digital Nomad","route": "howtobecomeadigitalnomad"},
+      {"name": "🍜 Street Food","route": "streetfood"},
+      {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
+      {"name": "🧍‍♀️ Solo Travel","route": "solotravel"},
+      {"name": "🚐 Van Life","route": "vanlife"},
+      {"name": "🎒 Gear","route": "gear"},
+
+      {"name": "🏝 Bali Vlog","route": "balivlog", "imgRoute": "bali"},
+      {"name": "🇯🇵 Tokyo Walking Tour","route": "tokyowalkingtour", "imgRoute": "tokyo"},
+      {"name": "🧋 Taiwan Bubble Tea","route": "taiwanbubbletea", "imgRoute": "taiwan"},
+      {"name": "🍻 Khao San Road","route": "khaosanroad", "imgRoute": "bangkok"},
+      {"name": "☕️ Seoul Cafe Tour","route": "seoulcafetour", "imgRoute": "seoul"},
+      {"name": "🌙 Full Moon Party","route": "fullmoonparty", "imgRoute": "kophangan"},
+      {"name": "🇻🇳 Vietnam Street Food","route": "vietnamstreetfood", "imgRoute": "vietnam"}
+    ]
+}
