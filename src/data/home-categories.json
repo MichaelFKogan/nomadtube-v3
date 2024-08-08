@@ -14,6 +14,6 @@
       {"name": "🍻 Khao San Road","route": "khaosanroad", "imgRoute": "bangkok"},
       {"name": "☕️ Seoul Cafe Tour","route": "seoulcafetour", "imgRoute": "seoul"},
       {"name": "🌙 Full Moon Party","route": "fullmoonparty", "imgRoute": "kophangan"},
-      {"name": "🇻🇳 Vietnam Street Food","route": "vietnamstreetfood", "imgRoute": "vietnam"}
+      {"name": "🇻🇳 Hanoi Street Food","route": "hanoistreetfood", "imgRoute": "vietnam"}
     ]
 }

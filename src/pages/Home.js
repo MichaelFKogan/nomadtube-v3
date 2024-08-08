@@ -12,6 +12,7 @@ const INCREMENT_CARDS = 40;
 function Home() {
     const { continent, country, city, category } = useParams();
     const data = require(`../data/home.json`);
+    const dataCategories = require(`../data/home-categories.json`);
 
     // Code For Pagination and Infinite Scroll
     const [currentPage, setCurrentPage] = useState(1);
@@ -107,13 +108,13 @@ function Home() {
                     <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
 
-                    <Link to={`/asia/bali/vlog`} className="bali-img background-img"><div>🏝 Bali Vlog</div></Link>
-                    <Link to={`/asia/japan/tokyo/walkingtour`} className="tokyo-img background-img"><div>🇯🇵 Tokyo Walking Tour</div></Link>
-                    <Link to={`/asia/taiwan/bubbletea`} className="taiwan-img background-img"><div>🧋 Taiwan Bubble Tea</div></Link>
-                    <Link to={`/asia/thailand/bangkok/khaosanroad`} className="bangkok-img background-img"><div>🍻 Khao San Road</div></Link>
-                    <Link to={`/asia/korea/seoul/cafetour`} className="seoul-img background-img"><div>☕️ Seoul Cafe Tour</div></Link>
-                    <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img"><div>🌙 Full Moon Party</div></Link>
-                    <Link to={`/asia/vietnam/streetfood`} className="vietnam-img background-img"><div>🇻🇳 Vietnam Street Food</div></Link>
+                    <Link to={`/category/balivlog`} className="bali-img background-img"><div>🏝 Bali Vlog</div></Link>
+                    <Link to={`/category/japan/tokyowalkingtour`} className="tokyo-img background-img"><div>🇯🇵 Tokyo Walking Tour</div></Link>
+                    <Link to={`/category/taiwanbubbletea`} className="taiwan-img background-img"><div>🧋 Taiwan Bubble Tea</div></Link>
+                    <Link to={`/category/khaosanroad`} className="bangkok-img background-img"><div>🍻 Khao San Road</div></Link>
+                    <Link to={`/category/seoulcafetour`} className="seoul-img background-img"><div>☕️ Seoul Cafe Tour</div></Link>
+                    <Link to={`/category/fullmoonparty`} className="kophangan-img background-img"><div>🌙 Full Moon Party</div></Link>
+                    <Link to={`/category/hanoistreetfood`} className="vietnam-img background-img"><div>🇻🇳 Hanoi Street Food</div></Link>
                 </div>
             </div>
 
