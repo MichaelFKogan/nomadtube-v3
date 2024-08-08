@@ -27,6 +27,7 @@ function Search() {
         setQuotaError(false);
         await fetchVideos(); // Fetch the initial set of results
         setLoading(false); // Set loading to false after fetching
+        saveVideosToFile(); // Save videos to file after fetching
     }
 
     // Function to fetch videos from the API
@@ -84,30 +85,38 @@ function Search() {
                 .then(() => console.log('Data sent to server'))
                 .catch(error => console.error(error.response));  // <-- Handle errors here
             } catch (error) {
-                if (error.response && error.response.data && error.response.data.error && error.response.data.error.errors) {
-                    const errors = error.response.data.error.errors;
-                    if (errors.some(err => err.reason === 'quotaExceeded')) {
-                        setQuotaError(true); // Set quota error state if quota is exceeded
-                    }
+                if (error.response && error.response.data.error.errors.some(err => err.reason === 'quotaExceeded')) {
+                    setQuotaError(true); // Set quota error state if quota is exceeded
                 }
                 console.error(error);
             }
         }
 
-    // Helper function to parse ISO 8601 duration
-    const parseDuration = (duration) => {
-        // Example: "PT1M30S" (1 minute 30 seconds)
-        const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
-        if (!match) {
-            console.error(`Duration string '${duration}' is not in the expected format.`);
-            return 0; // Return a default value or handle the error as needed
+        const saveVideosToFile = async () => {
+            if (!videos || videos.length === 0) return;
+        
+            try {
+                await axios.post('http://localhost:5000/saveVideos', { videos, searchTerm });
+                console.log('File save request sent to the server');
+            } catch (err) {
+                console.error('Error saving file on server:', err);
+            }
         }
-        const hours = parseInt(match[1] || '0', 10) || 0;
-        const minutes = parseInt(match[2] || '0', 10) || 0;
-        const seconds = parseInt(match[3] || '0', 10) || 0;
 
-        return hours * 3600 + minutes * 60 + seconds;
-    }
+        // Helper function to parse ISO 8601 duration
+        const parseDuration = (duration) => {
+            // Example: "PT1M30S" (1 minute 30 seconds)
+            const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
+            if (!match) {
+                console.error(`Duration string '${duration}' is not in the expected format.`);
+                return 0; // Return a default value or handle the error as needed
+            }
+            const hours = parseInt(match[1] || '0', 10) || 0;
+            const minutes = parseInt(match[2] || '0', 10) || 0;
+            const seconds = parseInt(match[3] || '0', 10) || 0;
+
+            return hours * 3600 + minutes * 60 + seconds;
+        }
 
     return (
         <>

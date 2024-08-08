@@ -117,7 +117,7 @@ function Category() {
             </div>
 
         {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (category === item.route ? <div><h2>{item.name}</h2></div> : null))}
+            {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
 
         <TotalVideos data={data}/>
         <Breadcrumbs/>

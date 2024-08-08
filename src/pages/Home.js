@@ -109,16 +109,19 @@ function Home() {
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
 
                     <Link to={`/category/balivlog`} className="bali-img background-img"><div>🏝 Bali Vlog</div></Link>
-                    <Link to={`/category/japan/tokyowalkingtour`} className="tokyo-img background-img"><div>🇯🇵 Tokyo Walking Tour</div></Link>
+                    <Link to={`/category/japanwalkingtour`} className="japan-img background-img"><div>🇯🇵 Japan Walking Tour</div></Link>
                     <Link to={`/category/taiwanbubbletea`} className="taiwan-img background-img"><div>🧋 Taiwan Bubble Tea</div></Link>
                     <Link to={`/category/khaosanroad`} className="bangkok-img background-img"><div>🍻 Khao San Road</div></Link>
                     <Link to={`/category/seoulcafetour`} className="seoul-img background-img"><div>☕️ Seoul Cafe Tour</div></Link>
                     <Link to={`/category/fullmoonparty`} className="kophangan-img background-img"><div>🌙 Full Moon Party</div></Link>
-                    <Link to={`/category/hanoistreetfood`} className="vietnam-img background-img"><div>🇻🇳 Hanoi Street Food</div></Link>
+                    <Link to={`/category/vietnamstreetfood`} className="vietnam-img background-img"><div>🇻🇳 Vietnam Street Food</div></Link>
                 </div>
             </div>
 
-            <h1>💯 All</h1>
+        {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>💯 All</h2></div>
+            {/* <div>Page: {currentPage}</div> */}
+            
             <TotalVideos  data={data}/>
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             

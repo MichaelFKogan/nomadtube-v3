@@ -98,10 +98,18 @@ function Card({ data, key, cardKey }) {
         <div className={`card ${cardSize} ${tabletSize} ${mobileSize} ${windowOpen} ${windowSize} ${cardKey}`} key={key}>
 
             <div className='auto-resizable-iframe resize'>
-                <button className="card-button close-card second-button" data-tooltip="Close" onClick={closeCard}><div class="close-card-outline"><div className="close-card-x">x</div></div></button>
-                <button className="card-button image-plus first-button" data-tooltip="Expand Image" onClick={increaseCardSize}>+</button>
-                <button className="card-button image-minus second-button" data-tooltip="Reduce Image" onClick={decreaseCardSize}>-</button>
-                <button className="card-button new-window second-button" data-tooltip="Open in window" onClick={openNewWindow}><div>→</div></button>
+                <button className="card-button close-card second-button" data-tooltip="Close" onClick={closeCard}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-x"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                </button>
+                <button className="card-button image-plus first-button" data-tooltip="Expand Image" onClick={increaseCardSize}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                </button>
+                <button className="card-button image-minus second-button" data-tooltip="Reduce Image" onClick={decreaseCardSize}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-minus"><path d="M5 12h14"/></svg>
+                </button>
+                <button className="card-button new-window second-button" data-tooltip="Open in window" onClick={openNewWindow}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-move-up-right"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+                </button>
 
                 <div className='iframe-div'>
 

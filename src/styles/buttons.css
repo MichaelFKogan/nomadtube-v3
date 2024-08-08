@@ -154,15 +154,7 @@ a.active{
     justify-content: center;
     align-items: center;
     font-family: "Nunito Regular";
-}
-
-.image-plus{
-    font-size: 16px;
-}
-
-.image-minus{
-    font-size: 21px;
-    line-height: 21px;
+    padding: 0px;
 }
 
 .close-card{
@@ -171,28 +163,6 @@ a.active{
     justify-content: center;
     align-items: center;
     padding: 0px;
-}
-
-.close-card-outline{
-    font-size: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 14px;
-    height: 15px;
-    border: 1px solid white;
-    border-radius: 50px;
-}
-
-.close-card-x {
-    line-height: 17px;
-    font-family: 'Nunito Extra Bold';
-}
-
-.new-window div{
-    transform: rotate(-45deg);
-    font-size: 16px;
-    font-family: "Edo";
 }
 
 .image-plus:hover {transform: scale(1.04);}
@@ -223,13 +193,13 @@ a.active{
     transition: opacity 0.2s, visibility 0.2s; /* Smooth transition */
     pointer-events: none; /* Prevent tooltip from interfering with mouse events */
     z-index: 1; /* Ensure it appears above other elements */
-  }
-  
-  /* Show the tooltip when hovering over the button */
-  .card-button[data-tooltip]:hover::after {
-    opacity: 1; /* Show the tooltip */
-    visibility: visible; /* Make it visible */
-  }
+}
+
+/* Show the tooltip when hovering over the button */
+.card-button[data-tooltip]:hover::after {
+opacity: 1; /* Show the tooltip */
+visibility: visible; /* Make it visible */
+}
 
 .pagination button, .back-to-top{
     width: 100px;

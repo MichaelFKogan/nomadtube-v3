@@ -21,6 +21,7 @@ function Navbar({toggleAsia}) {
             </div>
 
             <div className="d-flex align-center">
+            <Link to={"/search"} className="nav-menu nav-home"><div>Search</div></Link>
             <Link to={"/all"} className="nav-menu nav-home"><div>All</div></Link>
                 <div className="nav-menu nav-sound">🔈</div>
             </div>

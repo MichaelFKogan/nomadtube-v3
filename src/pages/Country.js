@@ -103,7 +103,8 @@ function Country() {
                 </div>
             </div>
 
-            <div><h2>💯 All</h2></div>    
+        {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>💯 All</h2></div>    
 
             <TotalVideos data={data}/>
             <Breadcrumbs/>

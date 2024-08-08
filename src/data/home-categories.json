@@ -9,11 +9,11 @@
       {"name": "🎒 Gear","route": "gear"},
 
       {"name": "🏝 Bali Vlog","route": "balivlog", "imgRoute": "bali"},
-      {"name": "🇯🇵 Tokyo Walking Tour","route": "tokyowalkingtour", "imgRoute": "tokyo"},
+      {"name": "🇯🇵 Japan Walking Tour","route": "japanwalkingtour", "imgRoute": "japan"},
       {"name": "🧋 Taiwan Bubble Tea","route": "taiwanbubbletea", "imgRoute": "taiwan"},
       {"name": "🍻 Khao San Road","route": "khaosanroad", "imgRoute": "bangkok"},
       {"name": "☕️ Seoul Cafe Tour","route": "seoulcafetour", "imgRoute": "seoul"},
       {"name": "🌙 Full Moon Party","route": "fullmoonparty", "imgRoute": "kophangan"},
-      {"name": "🇻🇳 Hanoi Street Food","route": "hanoistreetfood", "imgRoute": "vietnam"}
+      {"name": "🇻🇳 Vietnam Street Food","route": "vietnamstreetfood", "imgRoute": "vietnam"}
     ]
 }
