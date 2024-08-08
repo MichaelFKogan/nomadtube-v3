@@ -76,3 +76,22 @@
     border-radius: 50%;
     z-index: -1;
 } */
+
+@media(max-width: 768px){
+
+    .home-banner, .page-banner, .cities-wrapper{
+        margin-bottom: 2px;
+    }
+
+    .banner-title{
+        font-size: 3em;
+    }
+
+    .banner-subtitle{
+        font-size: 1.5em;
+    }
+
+    .banner-description{
+        font-size: 1em;
+    }
+}

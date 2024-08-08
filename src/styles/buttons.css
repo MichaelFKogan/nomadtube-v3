@@ -149,16 +149,27 @@ a.active{
     }
 
     .card-button{
-        right:0px;
-        width: 65px;
-        height: 65px;
+        top: 0px !important;
+        right: 0px;
+        width: 20%;
+        height: 40%;
         border-radius: 0px;
-        background: rgba(0, 0, 0, .3);
+        background: rgba(0, 0, 0, .6);
     }
 
-    .card-button .image-plus{
+    .card-button.image-plus{
         bottom: 0px !important;
         top: unset !important;
+    }
+
+    .card-button.close-card{
+        width: 10%;
+        height: 20%;
+    }
+
+    .cities-wrapper a{
+        width: calc(33.33% - 2px);
+        font-size: 14px;
     }
 
 }
