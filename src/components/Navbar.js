@@ -5,7 +5,7 @@ import "../styles/navbar.css"
 function Navbar({toggleAsia}) {
 
     return (
-        <div className="navbar d-flex align-center space-between desktop">
+        <div className="navbar d-flex align-center space-between">
             <div className='d-flex align-center'>
                 <Link to={"/"} className="nav-menu nav-logo"><div>🏝 NomadTube</div></Link>
             </div>

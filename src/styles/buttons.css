@@ -59,7 +59,7 @@ button {
     text-decoration: none;
     background: white;
     color: black;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 7px 12px 8px 12px;
     border: 1px solid #ccc;
     box-shadow: 0px 0px 3px rgba(0,0,0,.2)
@@ -175,7 +175,7 @@ a.active{
 @media(max-width: 500px){
     .cities-wrapper a{
         width: calc(100% - 2px);
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .cities-wrapper a:nth-child(1),
