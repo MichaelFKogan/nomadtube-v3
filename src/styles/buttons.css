@@ -153,24 +153,18 @@ a.active{
         right: 0px;
         width: 25%;
         height: 40%;
-        border-radius: 0px;
+        border-radius: 6px;
         background: rgba(0, 0, 0, .5);
     }
 
     .card-button.image-plus{
         bottom: 0px !important;
         top: unset !important;
-        border-top-left-radius: 6px;
-        border-bottom-right-radius: 6px;
-        border-bottom-left-radius: 6px;
     }
 
     .card-button.close-card{
         width: 15%;
-        height: 20%;
-        border-bottom-left-radius: 6px;
-        border-top-left-radius: 6px;
-        border-bottom-right-radius: 6px;
+        height: 25%;
     }
 
     .cities-wrapper a{
