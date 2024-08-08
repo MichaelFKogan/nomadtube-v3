@@ -28,11 +28,34 @@
       {"name": "🥢 Taipei","route": "taiwan/taipei", "img": "taipei"},
 
       {"name": "🇨🇳 China","route": "china", "img": "china"},
-      {"name": "🥡 Beijing","route": "china/beijing", "img": "beijing"},
+      {"name": "🥟 Beijing","route": "china/beijing", "img": "beijing"},
       {"name": "🧧 Shanghai","route": "china/shanghai", "img": "shanghai"},
 
       {"name": "🇭🇰 Hong Kong","route": "hongkong", "img": "hongkong"},
-      {"name": "🇸🇬 Singapore","route": "singapore", "img": "singapore"}
+      {"name": "🇸🇬 Singapore","route": "singapore", "img": "singapore"},
+
+      {"name": "🇮🇩 Indonesia","route": "indonesia", "img": "indonesia"},
+      {"name": "🇮🇩 Jakarta","route": "indonesia/jakarta", "img": "jakarta"},
+
+      {"name": "🇲🇾 Malaysia","route": "malaysia", "img": "malaysia"},
+      {"name": "🇲🇾 Kuala Lumpur","route": "malaysia/kualalumpur", "img": "kualalumpur"},
+      {"name": "🦧 Borneo","route": "malaysia/borneo", "img": "borneo"},
+
+      {"name": "🇵🇭 The Philippines","route": "thephilippines", "img": "philippines"},
+      {"name": "🇱🇦 Laos","route": "laos", "img": "laos"},
+      {"name": "🇰🇭 Cambodia","route": "cambodia", "img": "cambodia"},
+
+      {"name": "🇲🇲 Myanmar","route": "myanmar", "img": "myanmar"},
+      {"name": "ရန်ကုန်Yangon","route": "yangon", "img": "yangon"},
+      {"name": "🛕 Bagan","route": "bagan", "img": "bagan"},
+
+      {"name": "🇳🇵 Nepal","route": "nepal", "img": "nepal"},
+      {"name": "🇧🇹 Bhutan","route": "bhutan", "img": "bhutan"},
+      {"name": "🇲🇳 Mongolia","route": "mongolia", "img": "mongolia"},
+
+      {"name": "🇧🇩 Bangladesh","route": "bangladesh", "img": "bangladesh"},
+      {"name": "🇱🇰 Sri Lanka","route": "srilanka", "img": "srilanka"},
+      {"name": "🇮🇳India","route": "india", "img": "india"}
 
     ]
 }

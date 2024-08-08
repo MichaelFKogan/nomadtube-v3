@@ -1,0 +1,16 @@
+{
+  "name": "🕋 The Middle East",
+  "cities":[
+    {"name": "🇦🇪 UAE","route": "uae", "img": "uae"},
+    {"name": "🇦🇪 Dubai","route": "uae/dubai", "img": "dubai"},
+
+    {"name": "🇹🇷 Turkey","route": "turkey", "img": "turkey"},
+    {"name": "🇹🇷 Istanbul","route": "turkey/istanbul", "img": "istanbul"},
+
+    {"name": "🇪🇬 Egypt","route": "egypt", "img": "egypt"},
+    
+    {"name": "🇮🇱 Israel","route": "israel", "img": "israel"},
+    {"name": "🇮🇱 Tel Aviv","route": "israel/telaviv", "img": "telaviv"}
+
+  ]
+}
