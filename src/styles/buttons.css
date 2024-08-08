@@ -149,16 +149,16 @@ a.active{
     }
 
     .card-button{
-        top: 0px !important;
         right:0px;
-        width: 10%;
-        height: 100%;
+        width: 65px;
+        height: 65px;
         border-radius: 0px;
-        background: rgba(0, 0, 0, .5);
+        background: rgba(0, 0, 0, .3);
     }
 
-    .card-button:hover {
-        transform:scale(0px);
+    .card-button .image-plus{
+        bottom: 0px !important;
+        top: unset !important;
     }
 
 }
