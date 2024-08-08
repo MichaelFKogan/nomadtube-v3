@@ -6,13 +6,18 @@ function Cities({dataCities}) {
 
     const { continent, country, city, category } = useParams();
 
+    console.log(dataCities.name);
+    console.log(country)
+
     return (
         <>
             <div className='cities-wrapper'>
-                <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} 
-                    onClick={() => { document.documentElement.scrollTop = 0; }}>
-                    <div>{dataCities.name}</div>
-                </Link>
+                {city &&
+                    <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} 
+                        onClick={() => { document.documentElement.scrollTop = 0; }}>
+                        <div>{dataCities.name}</div>
+                    </Link>
+                }
                 {dataCities.cities.map((city, index) => (
                     <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index} 
                     onClick={() => { document.documentElement.scrollTop = 0; }}>

@@ -99,10 +99,17 @@
 @media(max-width: 768px){
 
     .home-banner, .page-banner {
-        height: 300px;
         margin-bottom: 2px;
         box-shadow: 0px 0px 0px black;
         border-radius: 0px;
+    }
+
+    .home-banner{
+        height: 300px;
+    }
+
+    .page-banner{
+        height: 175px;
     }
 
     .banner-title{

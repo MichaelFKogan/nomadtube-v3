@@ -119,6 +119,10 @@ h2{
   column-gap: 5px;
 }
 
+.col-gap-10{
+  column-gap: 10px;
+}
+
 .row-gap-5{
   row-gap: 5px;
 }
