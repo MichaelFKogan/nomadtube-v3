@@ -41,7 +41,7 @@
 
 .vietnam-img {background-image: url('../assets/img/banners/vietnam-banner.jpeg') !important;}
 .hanoi-img {background-image: url('../assets/img/banners/hanoi-banner.jpeg') !important;}
-.hochiminhcity-img {background-image: url('../assets/img/banners/hochiminhcity-banner.jpeg') !important;}
+.hochiminhcity-img {background-image: url('../assets/img/banners/hochiminhcity-banner.jpeg') !important; background-position-y: 19% !important;}
 
 .korea-img {background-image: url('../assets/img/banners/korea-banner.jpeg') !important;}
 .seoul-img {background-image: url('../assets/img/banners/seoul-banner.jpeg') !important; background-position-y: 67% !important;}

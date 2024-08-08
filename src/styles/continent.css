@@ -24,3 +24,10 @@
 .slide-out {
     right: -100%; /* Off-screen position */
 }
+
+@media(max-width: 768px){
+    .continent-title{
+        font-size: 50px;
+        margin: 20px 0px;
+    }
+}

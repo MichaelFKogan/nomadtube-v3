@@ -139,8 +139,8 @@ h2{
   padding: 20px 0px;
   z-index: 4;
   background: #eee;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  /* border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; */
 }
 
 .inner-categories{
@@ -189,5 +189,9 @@ h2{
 @media(max-width: 768px){
   .desktop{
     display: none !important;
+  }
+
+  .cities-wrapper{
+    margin-bottom: 2px;
   }
 }

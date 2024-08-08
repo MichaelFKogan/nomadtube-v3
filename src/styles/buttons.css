@@ -176,6 +176,7 @@ a.active{
     .cities-wrapper a{
         width: calc(100% - 2px);
         font-size: 15px;
+        height: 80px;
     }
 
     .cities-wrapper a:nth-child(1),
@@ -185,7 +186,34 @@ a.active{
     .cities-wrapper a:nth-child(7),
     .cities-wrapper a:nth-child(8),
     .cities-wrapper a:nth-child(10),
-    .cities-wrapper a:nth-child(11){
+    .cities-wrapper a:nth-child(11),
+    .cities-wrapper a:nth-child(13),
+    .cities-wrapper a:nth-child(14),
+    .cities-wrapper a:nth-child(16),
+    .cities-wrapper a:nth-child(17),
+    .cities-wrapper a:nth-child(19),
+    .cities-wrapper a:nth-child(20),
+    .cities-wrapper a:nth-child(22),
+    .cities-wrapper a:nth-child(23),
+    .cities-wrapper a:nth-child(25),
+    .cities-wrapper a:nth-child(26),
+    .cities-wrapper a:nth-child(28),
+    .cities-wrapper a:nth-child(29),
+    .cities-wrapper a:nth-child(31),
+    .cities-wrapper a:nth-child(32),
+    .cities-wrapper a:nth-child(34),
+    .cities-wrapper a:nth-child(35),
+    .cities-wrapper a:nth-child(37),
+    .cities-wrapper a:nth-child(38),
+    .cities-wrapper a:nth-child(40),
+    .cities-wrapper a:nth-child(41),
+    .cities-wrapper a:nth-child(43),
+    .cities-wrapper a:nth-child(44),
+    .cities-wrapper a:nth-child(46),
+    .cities-wrapper a:nth-child(47),
+    .cities-wrapper a:nth-child(49),
+    .cities-wrapper a:nth-child(50)
+    {
         width: calc(50% - 2px);
     }
 
