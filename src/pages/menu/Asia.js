@@ -1,11 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
-import "../styles/continent.css"
+import "../../styles/continent.css"
 
 
 function Asia({showAsia, toggleAsia}) {
 
     const { continent } = useParams();
-    const data = require(`../data/asia/asia.json`);
+    const data = require(`../../data/asia/asia.json`);
 
     return (
         <div className={`continent-page Asia ${showAsia ? 'slide-in' : 'slide-out'}`}>

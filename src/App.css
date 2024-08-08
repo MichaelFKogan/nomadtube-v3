@@ -132,8 +132,8 @@ h2{
   column-gap: 2px;
   row-gap: 2px;
   /* max-width: 1400px; */
-  margin-bottom: 20px;
-  width: calc(100% - 35px)
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .categories-wrapper{
@@ -165,5 +165,6 @@ h2{
   flex-wrap: wrap;
   column-gap: 2px;
   row-gap: 2px;
-  margin: 10px 0px 0px 2px
+  margin: 10px 0px 0px 2px;
+  margin-bottom: 200px;
 }

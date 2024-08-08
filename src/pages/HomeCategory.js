@@ -62,6 +62,21 @@ function HomeCategory() {
         };
     }, [loadMoreCards]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            if (scrollTop + windowHeight >= documentHeight - 100) { // 100px before the bottom
+                loadMoreCards();
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [loadMoreCards]);
+
         // Generate page numbers
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
@@ -102,10 +117,12 @@ function HomeCategory() {
         {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div><h2>{item.name}</h2></div> : null))}
 
-        <TotalVideos/>
+        <TotalVideos data={data}/>
         {/* <Breadcrumbs/> */}
         <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
-        <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
+        {data.videos.length > 399 && (
+            <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
+        )}
 
         {/* BOTTOM NAVIGATION BUTTONS */}
             <button className="back-to-top" onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}}>Back To Top</button>

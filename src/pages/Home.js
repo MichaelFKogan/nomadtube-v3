@@ -11,11 +11,11 @@ const INCREMENT_CARDS = 40;
 
 function Home() {
     const { continent, country, city, category } = useParams();
-    const homeData = require(`../data/home.json`);
+    const data = require(`../data/home.json`);
 
     // Code For Pagination and Infinite Scroll
     const [currentPage, setCurrentPage] = useState(1);
-    const totalPages = Math.ceil(homeData.videos.length / ITEMS_PER_PAGE);
+    const totalPages = Math.ceil(data.videos.length / ITEMS_PER_PAGE);
     
     const [numCardsToShow, setNumCardsToShow] = useState(INITIAL_CARDS_TO_SHOW);
     const loadMoreRef = useRef(null);
@@ -29,7 +29,7 @@ function Home() {
 
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-    const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, homeData.videos.length);
+    const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, data.videos.length);
 
     const loadMoreCards = useCallback(() => {
         setNumCardsToShow(prevNum => Math.min(prevNum + INCREMENT_CARDS, endIndex));
@@ -54,6 +54,21 @@ function Home() {
                 observer.unobserve(loadMoreRef.current);
             }
         };
+    }, [loadMoreCards]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            if (scrollTop + windowHeight >= documentHeight - 100) { // 100px before the bottom
+                loadMoreCards();
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, [loadMoreCards]);
 
         // Generate page numbers
@@ -103,9 +118,12 @@ function Home() {
             </div>
 
             <h1>💯 All</h1>
-            <TotalVideos/>
-            <Cards data={homeData} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
-            <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
+            <TotalVideos  data={data}/>
+            <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
+            
+            {data.videos.length > 399 && (
+                <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
+            )}
 
 
             {/* BOTTOM NAVIGATION BUTTONS */}

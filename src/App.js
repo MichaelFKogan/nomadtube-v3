@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
-import Asia from "./components/Asia"
+import Asia from "./pages/menu/Asia"
 
 import Home from './pages/Home';
 import HomeCategory from './pages/HomeCategory';
@@ -12,6 +12,9 @@ import CountryCategory from './pages/CountryCategory';
 import City from './pages/City';
 import Category from './pages/Category';
 import Continent from './pages/Continent';
+
+import Search from './pages/Search';
+import SearchManual from './pages/SearchManual';
 
 import './App.css';
 import './styles/buttons.css';
@@ -44,6 +47,9 @@ function App() {
 
           <Route path=":continent/:country/:city" element={<City />} />
           <Route path=":continent/:country/:city/:category" element={<Category />} />
+
+          <Route path="/search" element={<Search />} />
+          <Route path="/searchmanual" element={<SearchManual />} />
 
           <Route path="*" element={<div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "75vh"}}><h1>404 Not Found</h1></div>} />
         </Routes>
