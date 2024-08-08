@@ -98,6 +98,10 @@ function Search() {
     const parseDuration = (duration) => {
         // Example: "PT1M30S" (1 minute 30 seconds)
         const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
+        if (!match) {
+            console.error(`Duration string '${duration}' is not in the expected format.`);
+            return 0; // Return a default value or handle the error as needed
+        }
         const hours = parseInt(match[1] || '0', 10) || 0;
         const minutes = parseInt(match[2] || '0', 10) || 0;
         const seconds = parseInt(match[3] || '0', 10) || 0;

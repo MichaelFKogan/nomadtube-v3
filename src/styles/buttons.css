@@ -101,7 +101,7 @@ a.active{
     position: absolute;
     z-index:3;
     font-weight: bold;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, .9);
     color: white;
     height: 25px;
     width: 24px;
@@ -121,10 +121,10 @@ a.active{
 .normal .image-plus{top:2px}
 .window-open .new-window{display: none;}
 
-.window-open .image-plus{top: 29px;}
+.window-open .image-plus{top: 29px !important;}
 .window-open .image-plus,
 .window-open .image-minus,
-.window-open .close-card{display: block !important}
+.window-open .close-card{display: flex !important}
 
 /* CARDS 4x4 and 5x5 GRID */
 @media(min-width: 1025px){
@@ -149,16 +149,66 @@ a.active{
     }
 }
 
-.close-card{font-size: 10px;}
+.card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Regular";
+}
+
+.image-plus{
+    font-size: 16px;
+}
+
+.image-minus{
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.close-card{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.close-card-outline{
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.close-card-x {
+    line-height: 17px;
+    font-family: 'Nunito Extra Bold';
+}
+
+.new-window div{
+    transform: rotate(-45deg);
+    font-size: 16px;
+    font-family: "Edo";
+}
 
 .image-plus:hover {transform: scale(1.04);}
 .image-plus:active {transform: scale(.98);}
 
 
 /* Tooltip text */
+
+.card-button[data-tooltip] {
+    font-size: 15px;
+    line-height: 16px;
+}
+
 .card-button[data-tooltip]::after {
-    font-family: "Nunito Light";
-    font-size: 9px;
+    font-family: "Nunito Regular";
+    font-size: 10px;
     content: attr(data-tooltip); /* Get the tooltip text from the data-tooltip attribute */
     position: absolute;
     bottom: 125%; /* Position the tooltip above the button */
