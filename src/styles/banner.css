@@ -4,10 +4,29 @@
     }
 }
 
-@media (min-width: 1125px) and (max-width: 1440px){
+@media (min-width: 1025px) and (max-width: 1440px){
     .home-banner, .page-banner {
         height: 325px;
     }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .home-banner, .page-banner {
+        height: 325px;
+    }
+
+    .banner-title{
+        font-size: 3em;
+    }
+
+    .banner-subtitle{
+        font-size: 1.5em;
+    }
+
+    .banner-description{
+        font-size: 1em;
+    }
+
 }
 
 .home-banner, .page-banner {
@@ -79,6 +98,10 @@
 
 @media(max-width: 768px){
 
+    .home-banner, .page-banner {
+        height: 325px;
+    }
+
     .home-banner, .page-banner, .cities-wrapper{
         margin-bottom: 2px;
     }
@@ -89,6 +112,25 @@
 
     .banner-subtitle{
         font-size: 1.5em;
+    }
+
+    .banner-description{
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 500px){
+
+    .home-banner .banner-content{
+        padding:20px 10px;
+    }
+    
+    .banner-title{
+        font-size: 2.5em;
+    }
+
+    .banner-subtitle{
+        font-size: 1.2em;
     }
 
     .banner-description{

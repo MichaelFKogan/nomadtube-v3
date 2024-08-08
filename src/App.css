@@ -95,18 +95,6 @@ h2{
   font-weight: bold;
 }
 
-@media(min-width: 769px){
-  .mobile{
-    display: none !important;
-  }
-}
-
-@media(max-width: 768px){
-  .desktop{
-    display: none !important;
-  }
-}
-
 .d-flex{
   display: flex;
 }
@@ -143,7 +131,7 @@ h2{
   column-gap: 2px;
   row-gap: 2px;
   /* max-width: 1400px; */
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -190,4 +178,20 @@ h2{
   row-gap: 2px;
   margin: 10px 0px 0px 2px;
   margin-bottom: 200px;
+}
+
+@media(min-width: 769px){
+  .mobile{
+    display: none !important;
+  }
+}
+
+@media(max-width: 768px){
+  .desktop{
+    display: none !important;
+  }
+
+  .cities-wrapper{
+    margin-bottom: 2px;
+  }
 }
