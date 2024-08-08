@@ -69,6 +69,10 @@ function Search() {
                 })
             );
 
+            // Filter out null values
+            const filteredVideos = newVideos.filter(video => video !== null);
+
+
             setVideos(prevVideos => [...prevVideos, ...newVideos.filter(video => video !== null)]);
             videosCount.current += newVideos.length; // Update video count
             setPageToken(data.nextPageToken);
@@ -81,7 +85,7 @@ function Search() {
             }
 
             // send data to server
-            await axios.post('http://localhost:5000/write', { videos: newVideos, searchTerm })
+            await axios.post('http://localhost:5000/saveVideos', { videos: newVideos, searchTerm })
                 .then(() => console.log('Data sent to server'))
                 .catch(error => console.error(error.response));  // <-- Handle errors here
             } catch (error) {
@@ -95,13 +99,17 @@ function Search() {
         const saveVideosToFile = async () => {
             if (!videos || videos.length === 0) return;
         
+            // Filter out null values
+            const filteredVideos = videos.filter(video => video !== null);
+        
             try {
-                await axios.post('http://localhost:5000/saveVideos', { videos, searchTerm });
+                await axios.post('http://localhost:5000/saveVideos', { videos: filteredVideos, searchTerm });
                 console.log('File save request sent to the server');
             } catch (err) {
                 console.error('Error saving file on server:', err);
             }
         }
+        
 
         // Helper function to parse ISO 8601 duration
         const parseDuration = (duration) => {

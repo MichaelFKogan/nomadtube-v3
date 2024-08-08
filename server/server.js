@@ -17,19 +17,50 @@ app.post('/saveVideos', (req, res) => {
     const sanitizedTerm = searchTerm.replace(/\s+/g, ''); // Remove whitespaces
     const filePath = path.join(__dirname, '../src/data/new', `${sanitizedTerm}.json`);
 
-    const jsonData = JSON.stringify({ videos });
+    // Ensure the 'data' directory exists
+    if (!fs.existsSync(path.dirname(filePath))) {
+        return res.status(500).send('Data directory does not exist');
+    }
 
-    fs.writeFile(filePath, jsonData, (err) => {
-        if (err) {
-            console.error('Error saving file:', err);
-            return res.status(500).json({ message: 'Error saving file' });
-        } else {
-            console.log('File saved successfully:', filePath);
-            return res.status(200).json({ message: 'File saved successfully' });
+    // Read the existing data from the file
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        let existingData = { videos: [] };
+
+        if (!err && data) {
+            try {
+                existingData = JSON.parse(data);
+            } catch (parseError) {
+                console.error('Error parsing JSON data:', parseError);
+                return res.status(500).send('Error parsing JSON data');
+            }
         }
+
+        // Combine existing videos with the new ones
+        const combinedVideos = [...existingData.videos, ...videos];
+
+        // Ensure that combinedVideos is an array of objects with a videoId
+        const validVideos = (combinedVideos || []).filter(v => v && typeof v === 'object' && v.videoId);
+
+        // Remove duplicates based on videoId
+        const uniqueVideos = Array.from(new Set(validVideos.map(v => v.videoId)))
+            .map(id => validVideos.find(v => v.videoId === id));
+
+        console.log('Combined Videos:', combinedVideos);
+        console.log('Unique Videos:', uniqueVideos);
+
+
+        // Write the updated data back to the file
+        fs.writeFile(filePath, JSON.stringify({ videos: uniqueVideos }), (err) => {
+            if (err) {
+                console.error('Error saving file:', err);
+                return res.status(500).send('Error saving file');
+            }
+
+            res.send('Videos saved successfully');
+        });
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(5000, () => {
+    console.log('Server running on port 5000');
 });
