@@ -147,7 +147,7 @@
 @media(max-width: 768px){
     .card.mobile-full .resize{width: 100%;}
     .card.mobile-full .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
-    .card.mobile-full .resize{top: -60px;width: calc(200% + 4px); right: 0;}
+    .card.mobile-full .resize{top: -60px;width: calc(200% - 1px); right: 0; border:2px solid white;}
 
     .card:nth-child(5n + 5){width: 100% !important;}
     .card:nth-child(5n + 5) .image-plus{display: none;}

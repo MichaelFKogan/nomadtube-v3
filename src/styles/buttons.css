@@ -139,7 +139,7 @@ a.active{
 
 /* CARDS 2x2 GRID */
 @media(max-width: 768px){
-    .mobile-normal .image-plus{top:2px}
+    /* .mobile-normal .image-plus{top:2px} */
     .mobile-normal .second-button{display: none;}
 
     .mobile-full .image-plus,
@@ -147,6 +147,17 @@ a.active{
     .mobile-full .new-window{
         display: none;
     }
+
+    .card-button{
+        top: 0px !important;
+        right:0px;
+        width: 55px;
+        height: 55px;
+        border-radius: 0px;
+        border-bottom-left-radius: 6px;
+        background: rgba(0, 0, 0, .6);
+    }
+
 }
 
 .card-button{
