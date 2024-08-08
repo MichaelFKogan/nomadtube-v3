@@ -175,7 +175,7 @@ a.active{
 @media(max-width: 500px){
     .cities-wrapper a{
         width: calc(100% - 2px);
-        font-size: 15px;
+        font-size: 17px;
         height: 80px;
     }
 

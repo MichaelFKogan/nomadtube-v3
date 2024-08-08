@@ -99,7 +99,7 @@
 @media(max-width: 768px){
 
     .home-banner, .page-banner {
-        height: 200px;
+        height: 300px;
         margin-bottom: 2px;
         box-shadow: 0px 0px 0px black;
         border-radius: 0px;
@@ -125,14 +125,14 @@
     }
 
     .banner-title{
-        font-size: 2.25em;
+        font-size: 2.5em;
     }
 
     .banner-subtitle{
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .banner-description{
-        font-size: .8em;
+        font-size: .9em;
     }
 }

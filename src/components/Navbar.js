@@ -7,7 +7,7 @@ function Navbar({toggleAsia}) {
     return (
         <div className="navbar d-flex align-center space-between">
             <div className='d-flex align-center'>
-                <Link to={"/"} className="nav-menu nav-logo"><div>🏝 NomadTube</div></Link>
+                <Link to={"/"} className="nav-menu nav-logo desktop"><div>🏝 NomadTube</div></Link>
             </div>
 
             <div className="d-flex align-center">
@@ -21,9 +21,9 @@ function Navbar({toggleAsia}) {
             </div>
 
             <div className="d-flex align-center">
-            <Link to={"/search"} className="nav-menu nav-home"><div>Search</div></Link>
-            <Link to={"/all"} className="nav-menu nav-home"><div>All</div></Link>
-                <div className="nav-menu nav-sound">🔈</div>
+            <Link to={"/search"} className="nav-menu nav-home desktop"><div>Search</div></Link>
+            <Link to={"/all"} className="nav-menu nav-home desktop"><div>All</div></Link>
+                <div className="nav-menu nav-sound desktop">🔈</div>
             </div>
 
         </div>
