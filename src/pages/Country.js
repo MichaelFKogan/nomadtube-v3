@@ -34,6 +34,10 @@ function Country() {
         }
     };
 
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
+
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, data.videos.length);
@@ -98,7 +102,7 @@ function Country() {
                         <div>💯 All</div>
                     </Link>
                 {dataCategories.categories.map((category, index) => (
-                    <Link to={`/${continent}/${country}/category/${category.route}`} key={index}>
+                    <Link to={`/${continent}/${country}/category/${category.route}`} key={index} onClick={() => { scrollToTop(); }}>
                         <div>{category.name}</div>
                     </Link>
                 ))}
