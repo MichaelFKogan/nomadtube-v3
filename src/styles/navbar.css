@@ -29,9 +29,32 @@
     color: #FF516B;
 }
 
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media(max-width: 768px){
     .navbar{
         border-radius: 0px;
         margin-bottom: 2px;
+    }
+
+    .mobile-menu{
+        position: absolute;
+        background: black;
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        column-gap: 5px;
+        z-index: 3;
+    }
+
+    .hamburger:hover{
+        color: #eee;
     }
 }
