@@ -52,9 +52,9 @@ function AsiaMobileMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, 
                 <Link to={"/asia/bali/ubud"} className="nav-menu" onClick={closeAllMenus}><div>🐒 Ubud</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/japan"} className="nav-menu" onClick={closeAllMenus}><div>🇯🇵 Japan</div></Link>
-                <Link to={"/asia/tokyo"} className="nav-menu" onClick={closeAllMenus}><div>🗼 Tokyo</div></Link>
-                <Link to={"/asia/osaka"} className="nav-menu" onClick={closeAllMenus}><div>🏯 Osaka</div></Link>
-                <Link to={"/asia/kyoto"} className="nav-menu" onClick={closeAllMenus}><div>🎋 Kyoto</div></Link>
+                <Link to={"/asia//japan/tokyo"} className="nav-menu" onClick={closeAllMenus}><div>🗼 Tokyo</div></Link>
+                <Link to={"/asia/japan/osaka"} className="nav-menu" onClick={closeAllMenus}><div>🏯 Osaka</div></Link>
+                <Link to={"/asia//japan/kyoto"} className="nav-menu" onClick={closeAllMenus}><div>🎋 Kyoto</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇰🇷 Korea</div></Link>
                 <Link to={"/asia/korea/seoul"} className="nav-menu" onClick={closeAllMenus}><div>서울 Seoul</div></Link>

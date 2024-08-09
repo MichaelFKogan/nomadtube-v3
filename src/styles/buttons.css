@@ -201,6 +201,15 @@ a.active{
         white-space: nowrap;
     }
 
+    .bali .cities-wrapper a{
+        width: calc(50% - 2px);
+    }
+
+    .bali .inner-cities{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
     .home .cities-wrapper a{
         width: calc(50% - 2px);
         padding:0px;
