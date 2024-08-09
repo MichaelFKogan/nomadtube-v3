@@ -88,13 +88,15 @@ function Home() {
                 <Link to={`/asia/thailand`} className="background-img thailand-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇯🇵 Japan</div></Link>
                 <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇰🇷 Korea</div></Link>
+                <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇻🇳 Vietnam</div></Link>
+
                 <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇧🇷 Brazil</div></Link>
                 <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇨🇴 Colombia</div></Link>
                 <Link to={`/southamerica/mexico`} className="mexico-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇲🇽 Mexico</div></Link>
                 <Link to={`/southamerica/costarica`} className="costarica-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇨🇷 Costa Rica</div></Link>
                 <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇵🇹 Portugal</div></Link>
                 <Link to={`/europe/italy`} className="italy-img background-img onClick={() => { document.documentElement.scrollTop = 0; }}"><div>🇮🇹 Italy</div></Link>
-                <Link to={`/europe/france`} className="france-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇫🇷 France</div></Link>
+                {/* <Link to={`/europe/france`} className="france-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇫🇷 France</div></Link> */}
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇪🇸 Spain</div></Link>
             </div>
 
@@ -120,6 +122,8 @@ function Home() {
                     <Link to={`/category/vietnamstreetfood`} className="vietnam-img background-img"><div>🇻🇳 Vietnam Street Food</div></Link>
                 </div>
             </div>
+
+            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2>
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>

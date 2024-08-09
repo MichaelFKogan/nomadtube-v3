@@ -91,7 +91,7 @@ function CountryCategory() {
             <Cities dataCities={dataCities} />
 
         {/* CATEGORIES */}
-            <div className="categories-wrapper">
+        <div className="categories-wrapper">
                 <div className="inner-categories">
                     <Link to={`/${continent}/${country}`}>
                         <div>💯 All</div>

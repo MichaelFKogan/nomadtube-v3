@@ -90,7 +90,23 @@ function City() {
         // console.log(`data.category: ${data.categoryRoute}`);
 
     return (
-        <div className={`city-page ${city}`}>
+        <div className={`city-page ${city}`}>      
+
+            {/* <div className='cities-wrapper'>
+            <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} style={{width: "100%"}} 
+                onClick={() => { document.documentElement.scrollTop = 0; }}>
+                <div>{dataCities.name}</div>
+            </Link>
+            </div> */}
+
+        {dataCities.cities.map((item, index) => (
+            city === item.route ? 
+                <PageBanner key={index} title={item.name} imgRoute={imgRoute}/> 
+                : null
+        ))}
+
+        {/* CITIES */}
+            <Cities dataCities={dataCities} />
 
         {/* CATEGORIES */}
         <div className='categories-wrapper'>
@@ -105,23 +121,7 @@ function City() {
                             </Link>
                         ))}
                 </div>
-            </div>            
-
-            <div className='cities-wrapper'>
-            <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} style={{width: "100%"}} 
-                onClick={() => { document.documentElement.scrollTop = 0; }}>
-                <div>{dataCities.name}</div>
-            </Link>
-            </div>
-
-        {dataCities.cities.map((item, index) => (
-            city === item.route ? 
-                <PageBanner key={index} title={item.name} imgRoute={imgRoute}/> 
-                : null
-        ))}
-
-        {/* CITIES */}
-            <Cities dataCities={dataCities} />
+            </div>      
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>          

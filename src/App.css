@@ -177,6 +177,20 @@ h2{font-family: "Nunito Black";}
 
   .cities-wrapper{
     margin-bottom: 2px;
+    overflow-y: scroll;
+    padding: 15px 0px 15px 0px;
+  }
+
+  .inner-cities{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+    row-gap: 5px;
+    max-width: 100%;
+    margin-left: 10px;
+    width: 100%;
   }
 
   .home .cities-wrapper{
@@ -185,6 +199,10 @@ h2{font-family: "Nunito Black";}
 
   .total-videos{
     margin-bottom: 10px;
+  }
+
+  .categories-wrapper{
+    padding: 0px 0px 15px 0px;
   }
 
   .inner-categories{
