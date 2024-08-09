@@ -15,11 +15,13 @@ function Cities({dataCities}) {
                         <div>{dataCities.name}</div>
                     </Link>
                 }
-                {dataCities.cities.map((city, index) => (
-                    <Link to={`/${continent}/${country}/${city.route}`} className={`${city.route}-img background-img`} key={index} 
+                {dataCities.cities.map((item, index) => (
+                    city === item.route ? (null) : (
+                    <Link to={`/${continent}/${country}/${item.route}`} className={`${item.route}-img background-img`} key={index} 
                     onClick={() => { document.documentElement.scrollTop = 0; }}>
-                        <div>{city.name}</div>
+                        <div>{item.name}</div>
                     </Link>
+                    )
                 ))}
             </div>
         </>

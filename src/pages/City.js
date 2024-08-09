@@ -92,41 +92,9 @@ function City() {
     return (
         <div className={`city-page ${city}`}>
 
-        {dataCities.cities.map((item, index) => (
-            city === item.route ? 
-                <PageBanner key={index} title={item.name} imgRoute={imgRoute}/> 
-                : null
-        ))}
-
-        {/* CITIES */}
-            <Cities dataCities={dataCities} />
-
         {/* CATEGORIES */}
-            <div className='categories-wrapper'>
+        <div className='categories-wrapper'>
                 <div className="inner-categories">
-                
-                {/* This route is for categories of country/categories. So url needs to be for the country, not city */}
-                {/* {city === data.categoryRoute ? (
-                        <>
-                        <Link to={`/${continent}/${country}`}>
-                            <div>💯 All</div>
-                        </Link>
-                        {data.categories.map((category, index) => (
-                            city === category.route ? (
-                            <Link to={`/${continent}/${country}/${category.route}`} key={index} className="active">
-                                <div>{category.name}</div>
-                            </Link>
-                            ):(
-                            <Link to={`/${continent}/${country}/${category.route}`} key={index}>
-                                <div>{category.name}</div>
-                            </Link>
-                            )
-                        ))}
-                        </>
-                    ) : (
-                        <> */}
-
-
                     {/* This route is for categories of cities */}
                         <Link to={`/${continent}/${country}/${city}`} className="active">
                             <div>💯 All</div>
@@ -136,9 +104,24 @@ function City() {
                                 <div>{category.name}</div>
                             </Link>
                         ))}
-
                 </div>
+            </div>            
+
+            <div className='cities-wrapper'>
+            <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} style={{width: "100%"}} 
+                onClick={() => { document.documentElement.scrollTop = 0; }}>
+                <div>{dataCities.name}</div>
+            </Link>
             </div>
+
+        {dataCities.cities.map((item, index) => (
+            city === item.route ? 
+                <PageBanner key={index} title={item.name} imgRoute={imgRoute}/> 
+                : null
+        ))}
+
+        {/* CITIES */}
+            <Cities dataCities={dataCities} />
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>          

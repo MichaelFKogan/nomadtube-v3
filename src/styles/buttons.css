@@ -185,7 +185,7 @@ a.active{
 
     .city-page .cities-wrapper, 
     .category-page .cities-wrapper{
-        display: none;
+        /* display: none; */
     }
 
     .cities-wrapper a{

@@ -84,11 +84,6 @@ function Country() {
     return (
         <div className={`country-page ${country}`}>
 
-            <PageBanner title={dataCities.name} imgRoute={country}/>
-
-        {/* CITIES */}
-            <Cities dataCities={dataCities} />
-
         {/* CATEGORIES */}
             <div className='categories-wrapper'>
                 <div className="inner-categories">
@@ -102,6 +97,11 @@ function Country() {
                 ))}
                 </div>
             </div>
+
+            <PageBanner title={dataCities.name} imgRoute={country}/>
+
+        {/* CITIES */}
+            <Cities dataCities={dataCities} />
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>    
