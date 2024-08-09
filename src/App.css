@@ -125,7 +125,7 @@ h2{font-family: "Nunito Black";}
   margin-bottom: 3px;
   background: black;
   color: white;
-  padding: 35px;
+  padding: 20px;
   margin-top: 0px;
 }
 
@@ -212,7 +212,7 @@ h2{font-family: "Nunito Black";}
   }
 
   .home-category-page .category-title{
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 20px 0px 20px 0px;
   }
 
@@ -242,6 +242,7 @@ h2{font-family: "Nunito Black";}
 
   .home .cities-wrapper{
     padding-bottom: 0px;
+    margin-bottom: 20px;
   }
 
   .total-videos{
@@ -297,7 +298,7 @@ hr{
   font-size: 20px;
   background: white;
   width: 100%;
-  padding: 10px 0px 0px 0px;
+  padding: 5px 0px 0px 0px;
 }
 
 .page-back svg{

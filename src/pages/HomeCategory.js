@@ -126,6 +126,13 @@ function HomeCategory() {
         </div>
 
         <TotalVideos data={data}/>
+
+        {/* BREACTCRUMBS */}
+        {/* <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
+        <Link to={`/${continent}/${country}/${city}/${category}`}><div className={lastSegment === 'category' ? 'bold' : ''}>{`${capitalizedCategory}`}</div></Link>
+        <div>{`>`}</div> */}
+
+
         {/* <Breadcrumbs/> */}
         <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
         {data.videos.length > 399 && (
