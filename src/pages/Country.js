@@ -118,6 +118,9 @@ function Country() {
                 <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
             )}
 
+            {/* BOTTOM NAVIGATION BUTTONS */}
+                <button className="back-to-top" onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'})}}>Back To Top</button>
+
         </div>
     );
 }
