@@ -177,6 +177,7 @@ a.active{
 
     .categories-wrapper a{
         text-wrap: nowrap;
+        white-space: nowrap;
     }
 }
 
