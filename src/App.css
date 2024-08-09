@@ -125,7 +125,7 @@ h2{font-family: "Nunito Black";}
   margin-bottom: 3px;
   background: black;
   color: white;
-  padding: 20px;
+  padding: 25px;
   margin-top: 0px;
 }
 
@@ -208,8 +208,7 @@ h2{font-family: "Nunito Black";}
 
   .cities-wrapper{
     margin-bottom: 2px;
-    /* overflow-y: scroll; */
-    padding: 0px 0px 10px 0px;
+    padding: 0px;
   }
 
   .inner-cities{
@@ -224,6 +223,7 @@ h2{font-family: "Nunito Black";}
     width: 100%;
 
     padding-left: 2px;
+    /* padding-right: 2px; */
   }
 
   .home .cities-wrapper{

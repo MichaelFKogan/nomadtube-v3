@@ -189,7 +189,7 @@ a.active{
     }
 
     .cities-wrapper a{
-        width: calc(50% - 4px);
+        width: calc(50% - 2px);
         font-size: 17px;
         height: 60px;
 
@@ -200,7 +200,7 @@ a.active{
         justify-content: center;
 
         /* border-radius: 4px; */
-        box-shadow: 0px 2px 5px #ccc;
+        /* box-shadow: 0px 2px 5px #ccc; */
         white-space: nowrap;
     }
 
@@ -227,7 +227,7 @@ a.active{
     .country-page .cities-wrapper a:nth-child(12),
     .country-page .cities-wrapper a:nth-child(15)
     {
-        width: calc(100% - 6px);
+        width: calc(100% - 2px);
     }
 
     .city-page .cities-wrapper a:nth-child(3),
@@ -236,7 +236,7 @@ a.active{
     .city-page .cities-wrapper a:nth-child(12),
     .city-page .cities-wrapper a:nth-child(15)
     {
-        width: calc(100% - 6px);
+        width: calc(100% - 2px);
     }
 
     .category-page .cities-wrapper a:nth-child(3),
@@ -245,7 +245,7 @@ a.active{
     .category-page .cities-wrapper a:nth-child(12),
     .category-page .cities-wrapper a:nth-child(15)
     {
-        width: calc(100% - 6px);
+        width: calc(100% - 2px);
     }
 
     .country-category-page .cities-wrapper a:nth-child(3),
@@ -254,11 +254,11 @@ a.active{
     .country-category-page .cities-wrapper a:nth-child(12),
     .country-category-page .cities-wrapper a:nth-child(15)
     {
-        width: calc(100% - 6px);
+        width: calc(100% - 2px);
     }
 
     .continent-page .cities-wrapper a{
-        width: calc(100% - 6px);
+        width: calc(100% - 2px);
     }
 
 }
