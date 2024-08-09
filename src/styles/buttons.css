@@ -182,6 +182,11 @@ a.active{
 }
 
 @media(max-width: 500px){
+
+    .cities-wrapper{
+        display: none;
+    }
+
     .cities-wrapper a{
         width: calc(50% - 2px);
         font-size: 17px;
