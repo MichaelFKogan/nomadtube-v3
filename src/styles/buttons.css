@@ -183,7 +183,8 @@ a.active{
 
 @media(max-width: 500px){
 
-    .cities-wrapper{
+    .city-page .cities-wrapper, 
+    .category-page .cities-wrapper{
         display: none;
     }
 
