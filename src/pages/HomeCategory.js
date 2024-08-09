@@ -17,8 +17,6 @@ function HomeCategory() {
     const dataCities = require(`../data/home-cities.json`);
     const dataCategories = require(`../data/home-categories.json`);
 
-
-
     // Code For Pagination and Infinite Scroll
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(data.videos.length / ITEMS_PER_PAGE);
@@ -127,10 +125,13 @@ function HomeCategory() {
 
         <TotalVideos data={data}/>
 
-        {/* BREACTCRUMBS */}
-        {/* <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
-        <Link to={`/${continent}/${country}/${city}/${category}`}><div className={lastSegment === 'category' ? 'bold' : ''}>{`${capitalizedCategory}`}</div></Link>
-        <div>{`>`}</div> */}
+        {/* BREADCRUMBS */}
+        <div className="breadcrumbs d-flex col-gap-5 align-center">
+            <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
+            <Link to={`/${homeCategory}`}><div className={'bold'}>
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}
+            </div></Link>
+        </div>
 
 
         {/* <Breadcrumbs/> */}

@@ -50,7 +50,7 @@ function App() {
 
           <Route path="/search" element={<><Navbar toggleAsia={toggleAsia}/><Search /></>} />
 
-          <Route path="*" element={<div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "75vh"}}><h1>404 Not Found</h1></div>} />
+          <Route path="*" element={<><Navbar toggleAsia={toggleAsia}/><div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "75vh"} }><h1>404 Not Found</h1></div></>} />
         </Routes>
       </Router>
     </div>
