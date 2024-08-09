@@ -189,14 +189,13 @@ a.active{
     }
 
     .cities-wrapper a{
-        width: calc(50% - 2px);
+        width: auto;
         font-size: 17px;
         height: 45px;
         padding: 0px 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100px;
         border-radius: 4px;
         box-shadow: 0px 2px 5px #ccc;
         white-space: nowrap;

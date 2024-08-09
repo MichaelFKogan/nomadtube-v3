@@ -73,7 +73,13 @@ function Search() {
             const filteredVideos = newVideos.filter(video => video !== null);
 
 
-            setVideos(prevVideos => [...prevVideos, ...newVideos.filter(video => video !== null)]);
+            setVideos(prevVideos => {
+                const allVideos = [...prevVideos, ...newVideos.filter(video => video !== null)];
+                const uniqueVideos = Array.from(new Set(allVideos.map(v => v.videoId)))
+                    .map(id => allVideos.find(v => v.videoId === id));
+                return uniqueVideos;
+            });
+            
             videosCount.current += newVideos.length; // Update video count
             setPageToken(data.nextPageToken);
 
@@ -84,8 +90,10 @@ function Search() {
                 }, 1000); // Adjust delay as needed
             }
 
+            const uniqueVideos = Array.from(new Set(filteredVideos.map(v => v.videoId)))
+            .map(id => filteredVideos.find(v => v.videoId === id));
             // send data to server
-            await axios.post('http://localhost:5000/saveVideos', { videos: newVideos, searchTerm })
+            await axios.post('http://localhost:5000/saveVideos', { videos: uniqueVideos, searchTerm })
                 .then(() => console.log('Data sent to server'))
                 .catch(error => console.error(error.response));  // <-- Handle errors here
             } catch (error) {

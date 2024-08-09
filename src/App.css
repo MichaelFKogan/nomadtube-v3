@@ -178,7 +178,7 @@ h2{font-family: "Nunito Black";}
   .cities-wrapper{
     margin-bottom: 2px;
     overflow-y: scroll;
-    padding: 15px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;
   }
 
   .inner-cities{
