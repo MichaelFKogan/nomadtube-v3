@@ -208,6 +208,16 @@ h2{font-family: "Nunito Black";}
   .category-title h2{
     font-family: "Edo";
     font-weight: 100;
+    font-size: 30px;
+  }
+
+  .home-category-page .category-title{
+    margin-bottom: 10px;
+    padding: 15px 0px 15px 0px;
+  }
+
+  .home-category-page .total-videos{
+    margin-top: 0px;
   }
 
   .cities-wrapper{
@@ -275,4 +285,15 @@ h2{font-family: "Nunito Black";}
 
 hr{
   border-top: 1px solid #eee;
+}
+
+.page-back{
+  text-align: left;
+  padding: 5px 0px;
+  font-family: "Nunito Black";
+}
+
+.page-back a{
+  text-decoration: none;
+  color: black;
 }

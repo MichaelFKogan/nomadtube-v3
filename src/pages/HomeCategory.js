@@ -83,15 +83,15 @@ function HomeCategory() {
     return (
         <div className="home home-category-page">
 
-        <HomeBanner />
+        {/* <HomeBanner /> */}
 
-        <h2 class="black-bar-title">Countries</h2>
+        {/* <h2 class="black-bar-title">Countries</h2> */}
 
         {/* CITIES */}
-            <HomeCities dataCities={dataCities} />
+            {/* <HomeCities dataCities={dataCities} /> */}
 
         {/* CATEGORIES */}
-            <div className="categories-wrapper">
+            {/* <div className="categories-wrapper">
             <h2 class="black-bar-title" style={{marginBottom: "15px"}}>Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/`}>
@@ -115,7 +115,12 @@ function HomeCategory() {
                     )
                 ))}
                 </div>
-            </div>
+            </div> */}
+
+        <div className="page-back d-flex align-center">
+            <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+            <Link to={"/"} className=""><div>Back</div></Link>
+        </div>
 
         {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}

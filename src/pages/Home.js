@@ -28,6 +28,10 @@ function Home() {
         }
     };
 
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
+
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, data.videos.length);
@@ -84,42 +88,42 @@ function Home() {
 
         {/* CITIES */}
             <div className="cities-wrapper">
-                <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🏝 Bali</div></Link>
-                <Link to={`/asia/thailand`} className="background-img thailand-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇹🇭 Thailand</div></Link>
-                <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇯🇵 Japan</div></Link>
-                <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇰🇷 Korea</div></Link>
-                <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇻🇳 Vietnam</div></Link>
+                <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
+                <Link to={`/asia/thailand`} className="background-img thailand-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
+                <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
+                <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { scrollToTop(); }}><div>🇰🇷 Korea</div></Link>
+                <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam</div></Link>
 
-                <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇧🇷 Brazil</div></Link>
-                <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇨🇴 Colombia</div></Link>
-                <Link to={`/southamerica/mexico`} className="mexico-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇲🇽 Mexico</div></Link>
-                <Link to={`/southamerica/costarica`} className="costarica-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇨🇷 Costa Rica</div></Link>
-                <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇵🇹 Portugal</div></Link>
-                <Link to={`/europe/italy`} className="italy-img background-img onClick={() => { document.documentElement.scrollTop = 0; }}"><div>🇮🇹 Italy</div></Link>
-                {/* <Link to={`/europe/france`} className="france-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇫🇷 France</div></Link> */}
-                <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🇪🇸 Spain</div></Link>
+                <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { scrollToTop(); }}><div>🇧🇷 Brazil</div></Link>
+                <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇴 Colombia</div></Link>
+                <Link to={`/southamerica/mexico`} className="mexico-img background-img" onClick={() => { scrollToTop(); }}><div>🇲🇽 Mexico</div></Link>
+                <Link to={`/southamerica/costarica`} className="costarica-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇷 Costa Rica</div></Link>
+                <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
+                <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
+                {/* <Link to={`/europe/france`} className="france-img background-img" onClick={() => { scrollToTop(); }}><div>🇫🇷 France</div></Link> */}
+                <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
             </div>
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
             <h2 class="black-bar-title" style={{marginBottom: "15px"}}>Categories</h2>
                 <div className="inner-categories">
-                    <Link to={`/home`} className="active"><div>💯 All</div></Link>
-                    <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
-                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
-                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
-                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
-                    <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
-                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
-                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
+                    <Link to={`/home`} className="active" onClick={() => { scrollToTop(); }}><div>💯 All</div></Link>
+                    <Link to={`/category/vlog`} onClick={() => { scrollToTop(); }}><div>📸 Vlog</div></Link>
+                    <Link to={`/category/howtobecomeadigitalnomad`} onClick={() => { scrollToTop(); }}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+                    <Link to={`/category/streetfood`} onClick={() => { scrollToTop(); }}><div>🍜 Street Food</div></Link>
+                    <Link to={`/category/walkingtour`} onClick={() => { scrollToTop(); }}><div>🚶‍♂️ Walking Tour</div></Link>
+                    <Link to={`/category/solotravel`} onClick={() => { scrollToTop(); }}><div>🧍‍♀️ Solo Travel</div></Link>
+                    <Link to={`/category/vanlife`} onClick={() => { scrollToTop(); }}><div>🚐 Van Life</div></Link>
+                    <Link to={`/category/gear`} onClick={() => { scrollToTop(); }}><div>🎒 Gear</div></Link>
 
-                    <Link to={`/category/balivlog`} className="bali-img background-img"><div>🏝 Bali Vlog</div></Link>
-                    <Link to={`/category/japanwalkingtour`} className="japan-img background-img"><div>🇯🇵 Japan Walking Tour</div></Link>
-                    <Link to={`/category/taiwanbubbletea`} className="taiwan-img background-img"><div>🧋 Taiwan Bubble Tea</div></Link>
-                    <Link to={`/category/khaosanroad`} className="bangkok-img background-img"><div>🍻 Khao San Road</div></Link>
-                    <Link to={`/category/seoulcafetour`} className="seoul-img background-img"><div>☕️ Seoul Cafe Tour</div></Link>
-                    <Link to={`/category/fullmoonparty`} className="kophangan-img background-img"><div>🌙 Full Moon Party</div></Link>
-                    <Link to={`/category/vietnamstreetfood`} className="vietnam-img background-img"><div>🇻🇳 Vietnam Street Food</div></Link>
+                    <Link to={`/category/balivlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
+                    <Link to={`/category/japanwalkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
+                    <Link to={`/category/taiwanbubbletea`} className="taiwan-img background-img" onClick={() => { scrollToTop(); }}><div>🧋 Taiwan Bubble Tea</div></Link>
+                    <Link to={`/category/khaosanroad`} className="bangkok-img background-img" onClick={() => { scrollToTop(); }}><div>🍻 Khao San Road</div></Link>
+                    <Link to={`/category/seoulcafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); }}><div>☕️ Seoul Cafe Tour</div></Link>
+                    <Link to={`/category/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); }}><div>🌙 Full Moon Party</div></Link>
+                    <Link to={`/category/vietnamstreetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
                 </div>
             </div>
 
