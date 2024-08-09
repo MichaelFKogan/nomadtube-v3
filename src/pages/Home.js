@@ -80,7 +80,7 @@ function Home() {
 
         <HomeBanner />
 
-        <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em",marginBottom: "0px"}}>Countries</h2>
+        <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "30px",marginBottom: "0px"}}>Countries</h2>
 
         {/* CITIES */}
             <div className="cities-wrapper">
@@ -102,7 +102,7 @@ function Home() {
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
-            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "2em",marginBottom: "15px"}}>Categories</h2>
+            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "30px",marginBottom: "15px"}}>Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/home`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
@@ -124,7 +124,7 @@ function Home() {
             </div>
 
 
-            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2>
+            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "30px",marginBottom: "0px"}}>Videos</h2>
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>
