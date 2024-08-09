@@ -302,6 +302,8 @@ hr{
   width: 100%;
   margin: auto;
   font-size: 20px;
+
+  margin-top: 20px;
 }
 
 .page-back svg{
