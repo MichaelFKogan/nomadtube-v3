@@ -84,14 +84,14 @@ function CountryCategory() {
     return (
         <div className="country-category-page">
 
-        <PageBanner title={dataCities.name} imgRoute={country}/>
+        {/* <PageBanner title={dataCities.name} imgRoute={country}/> */}
 
 
         {/* CITIES */}
-            <Cities dataCities={dataCities} />
+            {/* <Cities dataCities={dataCities} /> */}
 
         {/* CATEGORIES */}
-        <div className="categories-wrapper">
+        {/* <div className="categories-wrapper">
                 <div className="inner-categories">
                     <Link to={`/${continent}/${country}`}>
                         <div>💯 All</div>
@@ -108,7 +108,12 @@ function CountryCategory() {
                     )
                 ))}
                 </div>
-            </div>
+            </div> */}
+
+        <div className="page-back d-flex align-center">
+            <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+            <Link to={`/${continent}/${country}`} className=""><div>Back</div></Link>
+        </div>
 
         {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}

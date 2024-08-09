@@ -12,3 +12,9 @@
     color: blue;
     text-decoration: underline;
   }
+
+  @media(max-width: 768px){
+    .breadcrumbs{
+      margin-left: 2px;
+    }
+  }
