@@ -230,6 +230,15 @@ a.active{
         width: calc(100% - 2px);
     }
 
+    .country-category-page .cities-wrapper a:nth-child(3),
+    .country-category-page .cities-wrapper a:nth-child(6),
+    .country-category-page .cities-wrapper a:nth-child(9),
+    .country-category-page .cities-wrapper a:nth-child(12),
+    .country-category-page .cities-wrapper a:nth-child(15)
+    {
+        width: calc(100% - 2px);
+    }
+
     .continent-page .cities-wrapper a{
         width: calc(100% - 2px);
     }

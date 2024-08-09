@@ -80,6 +80,8 @@ function Home() {
 
         <HomeBanner />
 
+        <h2 style={{fontFamily: "Edo", fontWeight: "100"}}>Countries</h2>
+
         {/* CITIES */}
             <div className="cities-wrapper">
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { document.documentElement.scrollTop = 0; }}><div>🏝 Bali</div></Link>
@@ -98,6 +100,7 @@ function Home() {
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
+            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px"}}>Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/home`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>

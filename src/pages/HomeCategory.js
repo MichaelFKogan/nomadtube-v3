@@ -81,15 +81,18 @@ function HomeCategory() {
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
     return (
-        <div className="home category-page">
+        <div className="home home-category-page">
 
         <HomeBanner />
+
+        <h2 style={{fontFamily: "Edo", fontWeight: "100"}}>Countries</h2>
 
         {/* CITIES */}
             <HomeCities dataCities={dataCities} />
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
+            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px"}}>Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>

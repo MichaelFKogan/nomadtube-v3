@@ -195,7 +195,8 @@ h2{font-family: "Nunito Black";}
     width: 100%;
   }
 
-  .home .inner-categories, .home.category-page .inner-categories {
+  .home .inner-categories, 
+  .home.category-page .inner-categories {
     display: flex;
     justify-content: center;
     align-items: center;
