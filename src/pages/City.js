@@ -90,7 +90,7 @@ function City() {
         // console.log(`data.category: ${data.categoryRoute}`);
 
     return (
-        <div className="city-page">
+        <div className={`city-page ${city}`}>
 
         {dataCities.cities.map((item, index) => (
             city === item.route ? 

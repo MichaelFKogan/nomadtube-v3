@@ -170,6 +170,14 @@ a.active{
         font-size: 16px;
         box-shadow: 0px 0px 0px rgba(0,0,0,0);
     }
+
+    .categories-wrapper{
+        overflow-y: scroll;
+    }
+
+    .categories-wrapper a{
+        text-wrap: nowrap;
+    }
 }
 
 @media(max-width: 500px){

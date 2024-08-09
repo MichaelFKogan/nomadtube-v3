@@ -35,7 +35,7 @@
       {"name": "🇸🇬 Singapore","route": "singapore", "img": "singapore"},
 
       {"name": "🇮🇩 Indonesia","route": "indonesia", "img": "indonesia"},
-      {"name": "🇮🇩 Jakarta","route": "indonesia/jakarta", "img": "jakarta"},
+      {"name": "🏙️ Jakarta","route": "indonesia/jakarta", "img": "jakarta"},
 
       {"name": "🇲🇾 Malaysia","route": "malaysia", "img": "malaysia"},
       {"name": "🇲🇾 Kuala Lumpur","route": "malaysia/kualalumpur", "img": "kualalumpur"},

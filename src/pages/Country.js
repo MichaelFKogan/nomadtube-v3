@@ -82,7 +82,7 @@ function Country() {
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
     return (
-        <div className="country-page">
+        <div className={`country-page ${country}`}>
 
             <PageBanner title={dataCities.name} imgRoute={country}/>
 

@@ -50,26 +50,26 @@ function AsiaMobileMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, 
                 <Link to={"/asia/bali"} className="nav-menu" onClick={closeAllMenus}><div>🏝 Bali</div></Link>
                 <Link to={"/asia/bali/canggu"} className="nav-menu" onClick={closeAllMenus}><div>🏄‍♀️ Canggu</div></Link>
                 <Link to={"/asia/bali/ubud"} className="nav-menu" onClick={closeAllMenus}><div>🐒 Ubud</div></Link>
-                <hr className="w-90" style={{marginRight: "auto", marginLeft: "0px"}}/>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/japan"} className="nav-menu" onClick={closeAllMenus}><div>🇯🇵 Japan</div></Link>
                 <Link to={"/asia/tokyo"} className="nav-menu" onClick={closeAllMenus}><div>🗼 Tokyo</div></Link>
                 <Link to={"/asia/osaka"} className="nav-menu" onClick={closeAllMenus}><div>🏯 Osaka</div></Link>
                 <Link to={"/asia/kyoto"} className="nav-menu" onClick={closeAllMenus}><div>🎋 Kyoto</div></Link>
-                <hr className="w-90" style={{marginRight: "auto", marginLeft: "0px"}}/>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇰🇷 Korea</div></Link>
                 <Link to={"/asia/korea/seoul"} className="nav-menu" onClick={closeAllMenus}><div>서울 Seoul</div></Link>
-                <hr className="w-90" style={{marginRight: "auto", marginLeft: "0px"}}/>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/china"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇳 China</div></Link>
                 <Link to={"/asia/china/beijing"} className="nav-menu" onClick={closeAllMenus}><div>🥟 Beijing</div></Link>
                 <Link to={"/asia/china/shanghai"} className="nav-menu" onClick={closeAllMenus}><div>🧧 Shanghai</div></Link>
-                <hr className="w-90" style={{marginRight: "auto", marginLeft: "0px"}}/>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/indonesia"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇩 Indonesia</div></Link>
-                <Link to={"/asia/indonesia/jakarta"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇩 Jakarta</div></Link>
-                <hr className="w-90" style={{marginRight: "auto", marginLeft: "0px"}}/>
+                <Link to={"/asia/indonesia/jakarta"} className="nav-menu" onClick={closeAllMenus}><div>🏙️ Jakarta</div></Link>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/myanmar"} className="nav-menu" onClick={closeAllMenus}><div>🇲🇲 Myanmar</div></Link>
                 <Link to={"/asia/myanmar/yangon"} className="nav-menu" onClick={closeAllMenus}><div>ရန်ကုန် Yangon</div></Link>
                 <Link to={"/asia/myanmar/bagan"} className="nav-menu" onClick={closeAllMenus}><div>🛕 Bagan</div></Link>
-                <hr className="w-90" style={{marginRight: "auto", marginLeft: "0px"}}/>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/bangladesh"} className="nav-menu" onClick={closeAllMenus}><div>🇧🇩 Bangladesh</div></Link>
                 <Link to={"/asia/srilanka"} className="nav-menu" onClick={closeAllMenus}><div>🇱🇰 Sri Lanka</div></Link>
                 <Link to={"/asia/india"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇳 India</div></Link>

@@ -81,7 +81,7 @@ function HomeCategory() {
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
     return (
-        <div className="category-page">
+        <div className="home category-page">
 
         <HomeBanner />
 

@@ -54,6 +54,10 @@
         z-index: 3;
     }
 
+    .nav-menu:hover{
+        color: white;
+    }
+
     .hamburger:hover{
         color: #eee;
     }

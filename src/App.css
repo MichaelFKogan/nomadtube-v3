@@ -101,6 +101,7 @@ h2{font-family: "Nunito Black";}
 .w-55{width: 55%;}
 .w-80{width: 80%;}
 .w-90{width: 90%;}
+.w-95{width: 95%;}
 
 .col-gap-5{column-gap: 5px;}
 .col-gap-10{column-gap: 10px;}
@@ -181,4 +182,28 @@ h2{font-family: "Nunito Black";}
   .total-videos{
     margin-bottom: 10px;
   }
+
+  .inner-categories{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 5px;
+    row-gap: 5px;
+    max-width: 100%;
+    margin: auto 5px;
+    width: 100%;
+  }
+
+  .home .inner-categories, .home.category-page .inner-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
+    max-width: 1300px;
+    margin: auto;
+}
+
 }
