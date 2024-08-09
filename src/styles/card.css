@@ -30,7 +30,7 @@
 
 @media(max-width: 768px){
     .card {
-        width: calc(50% - 3px);
+        width: calc(50% - 4px);
     }
     .card.mobile-full{
         position: sticky;
