@@ -294,16 +294,10 @@ hr{
 .page-back{
   text-align: left;
   font-family: "Nunito Black";
-  /* position: absolute;
-  top: 0px; */
-
-  height: 20px;
+  font-size: 20px;
   background: white;
   width: 100%;
-  margin: auto;
-  font-size: 20px;
-
-  margin-top: 20px;
+  padding: 10px 0px 0px 0px;
 }
 
 .page-back svg{

@@ -35,7 +35,7 @@ function Country() {
     };
 
     const scrollToTop = () => {
-        window.scrollTo({top: 0, behavior: 'smooth'})
+        document.documentElement.scrollTop = 0;
     }
 
     // Calculate the start and end index of the items to display
