@@ -31,25 +31,24 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar toggleAsia={toggleAsia}/>
+        {/* <Navbar toggleAsia={toggleAsia}/> */}
 
         {/* <Asia showAsia={showAsia} toggleAsia={toggleAsia} /> */}
 
       <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={ <><Navbar toggleAsia={toggleAsia}/><Home /></>} />
           <Route path="/category/:homeCategory" element={<HomeCategory />} />
-          <Route path="/all" element={<All />} />
+          <Route path="/all" element={<><Navbar toggleAsia={toggleAsia}/><All /></>} />
 
-          <Route path=":continent" element={<Continent />} />
-          <Route path=":continent/:country" element={<Country />} />
+          <Route path=":continent" element={<><Navbar toggleAsia={toggleAsia}/><Continent /></>} />
+          <Route path=":continent/:country" element={<><Navbar toggleAsia={toggleAsia}/><Country /></>} />
 
           <Route path=":continent/:country/category/:category" element={<CountryCategory />} />
 
-          <Route path=":continent/:country/:city" element={<City />} />
+          <Route path=":continent/:country/:city" element={<><Navbar toggleAsia={toggleAsia}/><City /></>} />
           <Route path=":continent/:country/:city/:category" element={<Category />} />
 
-          <Route path="/search" element={<Search />} />
-          <Route path="/searchmanual" element={<SearchManual />} />
+          <Route path="/search" element={<><Navbar toggleAsia={toggleAsia}/><Search /></>} />
 
           <Route path="*" element={<div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "75vh"}}><h1>404 Not Found</h1></div>} />
         </Routes>
