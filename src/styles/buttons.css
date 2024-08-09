@@ -164,6 +164,10 @@ a.active{
         opacity: 0;
     }
 
+    .home .cities-wrapper a{
+        width: calc(50% - 3px);
+    }
+
     .cities-wrapper a{
         font-family: "Nunito Extra Bold";
         width: calc(50% - 2px);
@@ -205,7 +209,7 @@ a.active{
     }
 
     .home .cities-wrapper a{
-        width: calc(50% - 4px);
+        width: calc(50% - 3px);
         padding:0px;
         height: 70px;
         border-radius: 0px;
@@ -218,7 +222,7 @@ a.active{
     .home .cities-wrapper a:nth-child(12),
     .home .cities-wrapper a:nth-child(15)
     {
-        width: calc(100% - 6px);
+        width: calc(100% - 4px);
     }
 
     .country-page .cities-wrapper a:nth-child(3),

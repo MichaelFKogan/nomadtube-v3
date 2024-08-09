@@ -108,7 +108,7 @@
     }
 
     .home-banner{
-        height: 200px;
+        height: 250px;
     }
 
     .page-banner{
@@ -128,10 +128,20 @@
     }
 }
 
+@media(max-width: 662px){
+    .mobile-line-break{
+        display: block;
+    }
+}
+
 @media(max-width: 500px){
 
     .home-banner .banner-content{
         padding:20px 10px;
+    }
+
+    .home-banner{
+        height: 200px;
     }
 
     .banner-title{
