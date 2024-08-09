@@ -197,6 +197,24 @@ a.active{
         width: calc(100% - 2px);
     }
 
+    .city-page .cities-wrapper a:nth-child(3),
+    .city-page .cities-wrapper a:nth-child(6),
+    .city-page .cities-wrapper a:nth-child(9),
+    .city-page .cities-wrapper a:nth-child(12),
+    .city-page .cities-wrapper a:nth-child(15)
+    {
+        width: calc(100% - 2px);
+    }
+
+    .category-page .cities-wrapper a:nth-child(3),
+    .category-page .cities-wrapper a:nth-child(6),
+    .category-page .cities-wrapper a:nth-child(9),
+    .category-page .cities-wrapper a:nth-child(12),
+    .category-page .cities-wrapper a:nth-child(15)
+    {
+        width: calc(100% - 2px);
+    }
+
     .continent-page .cities-wrapper a{
         width: calc(100% - 2px);
     }
