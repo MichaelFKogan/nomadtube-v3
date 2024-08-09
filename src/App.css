@@ -125,7 +125,7 @@ h2{font-family: "Nunito Black";}
   margin-bottom: 3px;
   background: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
   margin-top: 0px;
 }
 
@@ -235,7 +235,7 @@ h2{font-family: "Nunito Black";}
   }
 
   .categories-wrapper{
-    padding: 0px 0px 15px 0px;
+    padding: 15px 0px 25px 0px;
     background-color: #eee;
   }
 
