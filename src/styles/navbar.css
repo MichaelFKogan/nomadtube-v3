@@ -47,7 +47,7 @@
 
         display: flex;
         align-items: center;
-        width: 100%;
+        width: calc(100% - 40px);
         padding: 20px;
         text-align: left;
         column-gap: 5px;
@@ -58,13 +58,21 @@
         color: #eee;
     }
 
+    .mobile-menu .inner-menu{
+        width: 100%;
+        display: flex;
+        overflow-y: scroll;
+        row-gap: 15px;
+    }
+
     .mobile-menu.asia-menu{
         line-height: 18px;
-        height: 800px;
+        height: 500px;
         flex-direction: column;
         align-items: baseline;
         row-gap: 22px;
         flex-wrap: wrap;
         z-index: 10;
+        overflow-y: scroll;
     }
 }

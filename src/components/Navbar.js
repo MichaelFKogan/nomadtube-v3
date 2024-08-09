@@ -64,7 +64,7 @@ function Navbar({toggleAsia}) {
             <Link to={"/middleeast"} className="nav-menu" onClick={closeMobileMenu}><div>🕋 Middle East</div></Link>
         </div>
 
-        <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closeCountryMenus={closeCountryMenus} back={back} />
+        <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closeCountryMenus={closeCountryMenus} back={back} closeAllMenus={closeAllMenus} />
 
     </>
     );
