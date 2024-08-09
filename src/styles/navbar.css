@@ -60,5 +60,11 @@
 
     .mobile-menu.asia-menu{
         line-height: 18px;
+        height: 800px;
+        flex-direction: column;
+        align-items: baseline;
+        row-gap: 22px;
+        flex-wrap: wrap;
+        z-index: 10;
     }
 }

@@ -1,18 +1,25 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
+import AsiaMobileMenu from './menu/AsiaMobileMenu';
 
 function Navbar({toggleAsia}) {
 
-    const [openMobileMenu, setOpenMobileMenu] = useState(false);
-    const [openAsiaMenu, setOpenAsiaMenu] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
 
-    const toggleMobileMenu  = () => {setOpenMobileMenu(!openMobileMenu);}
-    const toggleAsiaMenu  = () => {setOpenAsiaMenu(!openAsiaMenu);closeMobileMenu();}
-    const closeMobileMenu  = () => {setOpenMobileMenu(false);};
-    const closeCountryMenus  = () => {setOpenAsiaMenu(false);};
-    const closeAllMenus  = () => { setOpenMobileMenu(false);setOpenAsiaMenu(false);};
-    const back = () => { setOpenMobileMenu(true);}
+    const [countryMenu, setCountryMenu] = useState(false);
+    const [asiaMenu, setAsiaMenu] = useState(false);
+
+    const toggleMobileMenu  = () => {countryMenu ? setMobileMenu(false) : setMobileMenu(!mobileMenu); setCountryMenu(false);}
+
+    const toggleAsiaMenu  = () => {setAsiaMenu(!asiaMenu);closeMobileMenu();}
+    const closeMobileMenu  = () => {setMobileMenu(false);setCountryMenu(true); };
+
+    const closeCountryMenus  = () => {setAsiaMenu(false);};
+
+    const closeAllMenus  = () => {setMobileMenu(false);setAsiaMenu(false);setCountryMenu(false);};
+
+    const back = () => { setMobileMenu(true);}
 
     return (
     <>
@@ -50,26 +57,15 @@ function Navbar({toggleAsia}) {
                 <Link to={"/"} className="nav-menu nav-logo "><div>🏝 NomadTube</div></Link>
         </div>
         
-        <div className={`mobile-menu ${openMobileMenu ? 'd-block' : 'd-none'}`}>
+        <div className={`mobile-menu ${mobileMenu ? 'd-block' : 'd-none'}`}>
             <div className="nav-menu" onClick={() => {closeMobileMenu(); toggleAsiaMenu();}}><div>⛩ Asia</div></div>
             <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu}><div>💃🏻 South America</div></Link>
             <Link to={"/europe"} className="nav-menu" onClick={closeMobileMenu}><div>🇪🇺 Europe</div></Link>
             <Link to={"/middleeast"} className="nav-menu" onClick={closeMobileMenu}><div>🕋 Middle East</div></Link>
         </div>
 
-        <div className={`mobile-menu ${openAsiaMenu ? 'd-block' : 'd-none'}`}>
-            <div className="nav-menu d-flex align-center" onClick={() => {closeCountryMenus(); back();}} style={{marginLeft: "0px"}}>
-            <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
-                Back
-            </div>
-            <Link to={"/asia/thailand"} className="nav-menu" onClick={closeAllMenus}><div>🇹🇭 Thailand</div></Link>
-            <Link to={"/asia/thailand/bangkok"} className="nav-menu" onClick={closeAllMenus}><div>🛺 Bangkok</div></Link>
-            <Link to={"/asia/thailand/chiangmai"} className="nav-menu" onClick={closeAllMenus}><div>🐘 Chiang Mai</div></Link>
-            <Link to={"/asia/thailand/kophangan"} className="nav-menu" onClick={closeAllMenus}><div>🏝 Ko Phangan</div></Link>
-            <Link to={"/asia/thailand/kosamui"} className="nav-menu" onClick={closeAllMenus}><div>🛺 Bangkok</div></Link>
-            <Link to={"/asia/thailand/phuket"} className="nav-menu" onClick={closeAllMenus}><div>🐘 Chiang Mai</div></Link>
+        <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closeCountryMenus={closeCountryMenus} back={back} />
 
-        </div>
     </>
     );
 };

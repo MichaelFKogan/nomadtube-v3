@@ -22,7 +22,7 @@
       {"name": "🎋 Kyoto","route": "japan/kyoto", "img": "kyoto"},
 
       {"name": "🇰🇷 Korea","route": "korea", "img": "korea"},
-      {"name": "🇰🇷 Seoul","route": "korea/seoul", "img": "seoul"},
+      {"name": "서울 Seoul","route": "korea/seoul", "img": "seoul"},
 
       {"name": "🇹🇼 Taiwan","route": "taiwan", "img": "taiwan"},
       {"name": "🥢 Taipei","route": "taiwan/taipei", "img": "taipei"},
@@ -46,7 +46,7 @@
       {"name": "🇰🇭 Cambodia","route": "cambodia", "img": "cambodia"},
 
       {"name": "🇲🇲 Myanmar","route": "myanmar", "img": "myanmar"},
-      {"name": "ရန်ကုန်Yangon","route": "yangon", "img": "yangon"},
+      {"name": "ရန်ကုန် Yangon","route": "yangon", "img": "yangon"},
       {"name": "🛕 Bagan","route": "bagan", "img": "bagan"},
 
       {"name": "🇳🇵 Nepal","route": "nepal", "img": "nepal"},
@@ -55,7 +55,7 @@
 
       {"name": "🇧🇩 Bangladesh","route": "bangladesh", "img": "bangladesh"},
       {"name": "🇱🇰 Sri Lanka","route": "srilanka", "img": "srilanka"},
-      {"name": "🇮🇳India","route": "india", "img": "india"}
+      {"name": "🇮🇳 India","route": "india", "img": "india"}
 
     ]
 }
