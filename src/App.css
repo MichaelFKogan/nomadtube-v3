@@ -175,6 +175,13 @@ h2{font-family: "Nunito Black";}
     display: none !important;
   }
 
+  .category-title{
+    margin: 5px 0px;
+    padding: 5px 0px 5px 0px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
   .cities-wrapper{
     margin-bottom: 2px;
     overflow-y: scroll;
@@ -229,4 +236,8 @@ h2{font-family: "Nunito Black";}
     margin: auto;
 }
 
+}
+
+hr{
+  border-top: 1px solid #eee;
 }

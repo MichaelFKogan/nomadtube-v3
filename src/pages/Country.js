@@ -105,7 +105,6 @@ function Country() {
                 </div>
             </div>
 
-        <hr/>
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2> */}
 
         {/* CATEGORY TITLE */}
