@@ -1,8 +1,8 @@
 {
     "categories": [
-      {"name": "👾 Akihabara","route": "tokyo/akihabara", "directlink": "true"},
-      {"name": "🍱 Dotonburi","route": "osaka/dotonburi", "directlink": "true"},
-      {"name": "🎮 Tokyo Arcades","route": "tokyo/arcades", "directlink": "true"},
+      {"name": "👾 Akihabara","route": "akihabara"},
+      {"name": "🍱 Dotonburi","route": "dotonburi"},
+      {"name": "🎮 Tokyo Arcades","route": "arcades"},
 
       {"name": "🗺 Itinerary","route": "itinerary"},
       {"name": "📸 Vlog","route": "vlog"},
