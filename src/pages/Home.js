@@ -80,7 +80,7 @@ function Home() {
 
         <HomeBanner />
 
-        <h2 style={{fontFamily: "Edo", fontWeight: "100"}}>Countries</h2>
+        <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em"}}>Countries</h2>
 
         {/* CITIES */}
             <div className="cities-wrapper">
@@ -100,7 +100,7 @@ function Home() {
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
-            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px"}}>Categories</h2>
+            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "2em"}}>Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/home`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
