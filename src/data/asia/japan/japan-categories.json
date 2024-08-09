@@ -1,9 +1,10 @@
 {
     "categories": [
+      {"name": "👾 Akihabara","route": "tokyo/akihabara", "directlink": "true"},
+      {"name": "🍱 Dotonburi","route": "osaka/dotonburi", "directlink": "true"},
+      {"name": "🎮 Tokyo Arcades","route": "tokyo/arcades", "directlink": "true"},
+
       {"name": "🗺 Itinerary","route": "itinerary"},
-      {"name": "Akhihabara","route": "akhihabara"},
-      {"name": "Dotonburi","route": "dotonburi"},
-      {"name": "Arcades","route": "arcades"},
       {"name": "📸 Vlog","route": "vlog"},
       {"name": "👨‍💻 Digital Nomad","route": "digitalnomad"},
       {"name": "🍜 Street Food","route": "streetfood"},

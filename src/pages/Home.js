@@ -80,7 +80,7 @@ function Home() {
 
         <HomeBanner />
 
-        <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "30px",marginBottom: "0px"}}>Countries</h2>
+        <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "30px",marginBottom: "15px"}}>Countries</h2>
 
         {/* CITIES */}
             <div className="cities-wrapper">
