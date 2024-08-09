@@ -85,14 +85,14 @@ function HomeCategory() {
 
         <HomeBanner />
 
-        <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em"}}>Countries</h2>
+        <h2 class="black-bar-title">Countries</h2>
 
         {/* CITIES */}
             <HomeCities dataCities={dataCities} />
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
-            <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "2em"}}>Categories</h2>
+            <h2 class="black-bar-title" style={{marginBottom: "15px"}}>Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>

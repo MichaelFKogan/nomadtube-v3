@@ -125,7 +125,7 @@ h2{font-family: "Nunito Black";}
   margin-bottom: 3px;
   background: black;
   color: white;
-  padding: 25px;
+  padding: 35px;
   margin-top: 0px;
 }
 
@@ -201,9 +201,13 @@ h2{font-family: "Nunito Black";}
   .category-title{
     margin: 5px 0px;
     margin-top: 0px;
-    padding: 7px 0px 5px 0px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    padding: 27px 0px 25px 0px;
+    background: black;
+    color: white;
+  }
+  .category-title h2{
+    font-family: "Edo";
+    font-weight: 100;
   }
 
   .cities-wrapper{
@@ -234,8 +238,12 @@ h2{font-family: "Nunito Black";}
     margin-top: 10px;
   }
 
+  .home .categories-wrapper{
+    padding-top: 0px;
+  }
+
   .categories-wrapper{
-    padding: 15px 0px 25px 0px;
+    padding: 15px 0px;
     background-color: #eee;
   }
 

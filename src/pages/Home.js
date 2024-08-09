@@ -124,7 +124,7 @@ function Home() {
             </div>
 
 
-            <h2 class="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2>
+            {/* <h2 class="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2> */}
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>
