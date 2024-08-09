@@ -82,6 +82,17 @@
   url("./assets/fonts/Nunito/static/Nunito-Black.ttf") format("truetype");
 }
 
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body{
+  box-sizing: border-box;
+}
+
 h1{font-family: "Nunito Black";margin: .5em 0px;}
 h2{font-family: "Nunito Black";}
 
@@ -158,9 +169,10 @@ h2{font-family: "Nunito Black";}
 .cards-wrapper{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 2px;
   row-gap: 2px;
-  margin: 10px 0px 0px 2px;
+  margin: 10px 0px 0px 0px;
   margin-bottom: 200px;
 }
 
