@@ -213,7 +213,7 @@ h2{font-family: "Nunito Black";}
 
   .home-category-page .category-title{
     margin-bottom: 10px;
-    padding: 35px 0px 35px 0px;
+    padding: 20px 0px 20px 0px;
   }
 
   .home-category-page .total-videos{
@@ -301,6 +301,7 @@ hr{
   background: white;
   width: 100%;
   margin: auto;
+  font-size: 20px;
 }
 
 .page-back svg{
