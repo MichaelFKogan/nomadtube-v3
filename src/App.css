@@ -321,11 +321,11 @@ h2{font-family: "Nunito Black";}
   }
 
   .total-videos {
-    position: absolute;
+    /* position: absolute;
     top: 30px;
     right: 0px;
     color: white;
-    z-index: 5;
+    z-index: 5; */
 }
 
   .home .categories-wrapper{

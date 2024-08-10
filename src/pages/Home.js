@@ -134,7 +134,7 @@ function Home() {
             <div className="category-title"><h2>📹 Videos</h2></div>
             {/* <div>Page: {currentPage}</div> */}
             
-            <div className="d-flex space-between align-center mx-2 my-5">
+            <div className="breadcrumbs-and-videos d-flex space-between align-center mx-2 my-5">
                 <div className="breadcrumbs d-flex col-gap-5">
                     <Link to={"/"}><div>Home</div></Link>
                 </div>
