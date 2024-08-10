@@ -43,10 +43,10 @@ function App() {
           <Route path=":continent" element={<><Navbar toggleAsia={toggleAsia}/><Continent /></>} />
           <Route path=":continent/:country" element={<><Navbar toggleAsia={toggleAsia}/><Country /></>} />
 
-          <Route path=":continent/:country/category/:category" element={<CountryCategory />} />
+          <Route path=":continent/:country/category/:category" element={<><Navbar toggleAsia={toggleAsia} className="desktop"/><CountryCategory /></>} />
 
           <Route path=":continent/:country/:city" element={<><Navbar toggleAsia={toggleAsia}/><City /></>} />
-          <Route path=":continent/:country/:city/:category" element={<Category />} />
+          <Route path=":continent/:country/:city/:category" element={<><Navbar toggleAsia={toggleAsia} className="desktop"/><Category /></>} />
 
           <Route path="/search" element={<><Navbar toggleAsia={toggleAsia}/><Search /></>} />
 

@@ -5,7 +5,8 @@
 |   ├── index.html
 |   ├── manifest.json
 |   └──  robots.txt
-|
+├── server
+|   └── server.js
 ├── src
 |   ├── components
 |   │   └──  CountryPage.js
@@ -30,7 +31,7 @@
 |   ├── index.js
 |   ├── logo.svg
 |   ├── reportWebVitals.js
-|   └──  setupTests.js
+|   └── setupTests.js
 |    
 ├── .gitignore
 ├── file-structure.txt
