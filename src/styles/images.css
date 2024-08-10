@@ -23,6 +23,11 @@
     z-index: 1;
 } */
 
+.asia-img {background-image: url('../assets/img/banners/asia-banner.jpeg') !important;}
+.southamerica-img {background-image: url('../assets/img/banners/southamerica-banner.jpeg') !important;}
+.europe-img {background-image: url('../assets/img/banners/europe-banner.jpeg') !important; background-position-y: 60% !important;}
+.middleeast-img {background-image: url('../assets/img/banners/middleeast-banner.jpeg') !important;}
+
 .bali-img {background-image: url('../assets/img/banners/bali-banner.jpeg') !important;}
 .canggu-img {background-image: url('../assets/img/banners/canggu-banner.jpeg') !important;}
 .ubud-img {background-image: url('../assets/img/banners/ubud-banner.jpeg') !important;}

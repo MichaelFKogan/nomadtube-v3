@@ -83,13 +83,23 @@ function Home() {
         <div className="home">
 
         <HomeBanner />
+        
+        {/* <h2 className="black-bar-title">🌎 Continents</h2> */}
+
+        {/* CITIES */}
+            <div className="cities-wrapper">
+                <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
+                <Link to={`/europe`} className="southamerica-img background-img" onClick={() => { scrollToTop(); }}><div>💃🏻 South America</div></Link>
+                <Link to={`/southamerica`} className="europe-img background-img" onClick={() => { scrollToTop(); }} style={{width: "calc(50% - 3px)"}}><div>🇪🇺 Europe</div></Link>
+                <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link>
+            </div>
 
         <h2 className="black-bar-title">🌎 Countries</h2>
 
         {/* CITIES */}
             <div className="cities-wrapper">
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
-                <Link to={`/asia/thailand`} className="background-img thailand-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
+                <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
                 <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { scrollToTop(); }}><div>🇰🇷 Korea</div></Link>
                 <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam</div></Link>
