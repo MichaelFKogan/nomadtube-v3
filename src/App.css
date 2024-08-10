@@ -275,8 +275,11 @@ h2{font-family: "Nunito Black";}
     padding: 20px 0px 20px 0px;
   }
 
-  .home-category-page .total-videos{
+  .home-category-page .total-videos, 
+  .country-category-page .total-videos,
+  .category-page .total-videos{
     margin-top: 0px;
+    margin-bottom: 10px;
   }
 
   .cities-wrapper{

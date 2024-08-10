@@ -84,7 +84,7 @@ function Home() {
 
         <HomeBanner />
 
-        <h2 class="black-bar-title">Countries</h2>
+        <h2 class="black-bar-title">🌎 Countries</h2>
 
         {/* CITIES */}
             <div className="cities-wrapper">
@@ -106,9 +106,9 @@ function Home() {
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
-            <h2 class="black-bar-title" style={{marginBottom: "15px"}}>Categories</h2>
+            <h2 class="black-bar-title" style={{marginBottom: "15px"}}>📁 Categories</h2>
                 <div className="inner-categories">
-                    <Link to={`/home`} className="active" onClick={() => { scrollToTop(); }}><div>💯 All</div></Link>
+                    <Link to={`/`} className="active" onClick={() => { scrollToTop(); }}><div>💯 All</div></Link>
                     <Link to={`/category/vlog`} onClick={() => { scrollToTop(); }}><div>📸 Vlog</div></Link>
                     <Link to={`/category/howtobecomeadigitalnomad`} onClick={() => { scrollToTop(); }}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
                     <Link to={`/category/streetfood`} onClick={() => { scrollToTop(); }}><div>🍜 Street Food</div></Link>
@@ -131,7 +131,7 @@ function Home() {
             {/* <h2 class="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2> */}
 
         {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>💯 All</h2></div>
+            <div className="category-title"><h2>📹 Videos</h2></div>
             {/* <div>Page: {currentPage}</div> */}
             
             <TotalVideos  data={data}/>

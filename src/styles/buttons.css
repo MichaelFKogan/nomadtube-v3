@@ -336,7 +336,7 @@ visibility: visible; /* Make it visible */
 
 .back-to-top {
     position: fixed;
-    bottom: 35px;
+    bottom: 25px;
     right: 15px;
     z-index: 4;
     cursor: pointer;
