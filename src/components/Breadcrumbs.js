@@ -13,7 +13,7 @@ function Breadcrumbs() {
     const lastSegment = category ? 'category' : city ? 'city' : country ? 'country' : 'continent';
 
     return (
-        <div>
+        <>
             {/* BREADCRUMBS */}
             <div className="breadcrumbs d-flex col-gap-5">
                 <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
@@ -37,7 +37,7 @@ function Breadcrumbs() {
                     </>
                 )}
             </div>
-        </div>
+        </>
     );
 };
 

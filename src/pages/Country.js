@@ -95,6 +95,11 @@ function Country() {
             <Cities dataCities={dataCities} />
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "2em",marginBottom: "5px"}}>Categories</h2> */}
+
+        {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2> */}
+
+        {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>💯 All</h2></div>
         {/* CATEGORIES */}
             <div className='categories-wrapper'>
                 <div className="inner-categories">
@@ -107,15 +112,10 @@ function Country() {
                     </Link>
                 ))}
                 </div>
-            </div>
+            </div>    
 
-        {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2> */}
-
-        {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>💯 All</h2></div>    
-
-            <TotalVideos data={data}/>
-            <Breadcrumbs/>
+            {/* <TotalVideos data={data}/>
+            <Breadcrumbs/> */}
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             
             {data.videos.length > 399 && (

@@ -261,8 +261,7 @@ h2{font-family: "Nunito Black";}
   }
 
   .category-title{
-    margin: 5px 0px;
-    margin-top: 0px;
+    margin: 0px;
     padding: 20px 0px 20px 0px;
     background: black;
     color: white;
@@ -326,8 +325,8 @@ h2{font-family: "Nunito Black";}
   }
 
   .categories-wrapper{
-    padding: 15px 0px;
-    background-color: #eee;
+    padding: 10px 0px;
+    background-color: white;
   }
 
   .inner-categories{
@@ -353,6 +352,10 @@ h2{font-family: "Nunito Black";}
     max-width: 1300px;
     margin: auto;
 }
+
+  .cards-wrapper{
+    margin: 0px;
+  }
 
 }
 
