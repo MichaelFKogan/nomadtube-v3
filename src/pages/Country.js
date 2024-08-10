@@ -102,7 +102,7 @@ function Country() {
                         <div>💯 All</div>
                     </Link>
                 {dataCategories.categories.map((category, index) => (
-                    <Link to={`/${continent}/${country}/category/${category.route}`} key={index} onClick={() => { scrollToTop(); }}>
+                    <Link to={`/${continent}/${country}/category/${category.route}`} key={index}>
                         <div>{category.name}</div>
                     </Link>
                 ))}

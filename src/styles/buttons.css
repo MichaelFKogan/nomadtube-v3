@@ -185,6 +185,10 @@ a.active{
         overflow-y: scroll;
     }
 
+    .home .categories-wrapper{
+        overflow-y: visible;
+    }
+
     .categories-wrapper a{
         text-wrap: nowrap;
         white-space: nowrap;

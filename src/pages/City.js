@@ -122,7 +122,7 @@ function City() {
                             <div>💯 All</div>
                         </Link>
                         {dataCityCategories.categories.map((category, index) => (
-                            <Link to={`/${continent}/${country}/${city}/${category.route}`} key={index} onClick={() => { scrollToTop(); }}>
+                            <Link to={`/${continent}/${country}/${city}/${category.route}`} key={index}>
                                 <div>{category.name}</div>
                             </Link>
                         ))}

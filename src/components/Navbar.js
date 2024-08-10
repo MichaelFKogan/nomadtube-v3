@@ -30,12 +30,12 @@ function Navbar({toggleAsia, className}) {
             </div>
 
             <div className="d-flex align-center col-gap-5">
-                <Link to={"/asia"} className="nav-menu"><div>⛩ Asia</div></Link>
+                <Link to={"/asia"} className="nav-menu"><div>Asia</div></Link>
                     {/* <div className="nav-menu" onClick={toggleAsia}><div>Asia</div></div> */}
-                <Link to={"/southamerica"} className="nav-menu"><div>💃🏻 South America</div></Link>
-                <Link to={"/europe"} className="nav-menu"><div>🇪🇺 Europe</div></Link>
+                <Link to={"/southamerica"} className="nav-menu"><div>South America</div></Link>
+                <Link to={"/europe"} className="nav-menu"><div>Europe</div></Link>
                     {/* <Link to={"/northamerica"} className="nav-menu"><div>North America</div></Link> */}
-                <Link to={"/middleeast"} className="nav-menu"><div>🕋 Middle East</div></Link>
+                <Link to={"/middleeast"} className="nav-menu"><div>Middle East</div></Link>
             </div>
 
             <div className="d-flex align-center">

@@ -3,7 +3,7 @@
   .App {
     max-width: 1800px;
     margin: auto;
-    border: 10px solid black;
+    border: 2px solid #eee
   }
 }
 
@@ -126,6 +126,8 @@ h2{font-family: "Nunito Black";}
 .col-gap-5{column-gap: 5px;}
 .col-gap-10{column-gap: 10px;}
 .row-gap-5{row-gap: 5px;}
+
+.mt-10{margin-top: 10px;}
 
 .cities-wrapper{
   display: flex;
@@ -283,6 +285,13 @@ h2{font-family: "Nunito Black";}
     margin-bottom: 10px;
   }
 
+  .home-category-page .total-videos,
+  .home-category-page .breadcrumbs{
+    margin-bottom: 0px;
+  }
+
+  .home-category-page .total-videos{margin-right: 3px;}
+
   .cities-wrapper{
     margin-bottom: 2px;
     padding: 0px;
@@ -361,7 +370,7 @@ hr{
   font-size: 20px;
   background: white;
   width: 100%;
-  padding: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
 }
 
 .page-back svg{
