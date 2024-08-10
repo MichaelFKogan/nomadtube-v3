@@ -94,7 +94,7 @@ function City() {
         // console.log(`data.category: ${data.categoryRoute}`);
 
     return (
-        <div className={`city-page ${city}`}>      
+        <div className={`city-page ${country} ${city}`}>      
 
             {/* <div className='cities-wrapper'>
             <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} style={{width: "100%"}} 

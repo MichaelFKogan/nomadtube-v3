@@ -84,7 +84,7 @@ function Category() {
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
     return (
-        <div className="category-page">
+        <div className={`category-page ${country} ${city}`}>
 
             {dataCities.cities.map((item, index) => (
                 city === item.route ? 
