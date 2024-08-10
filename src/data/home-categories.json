@@ -2,6 +2,7 @@
     "categories": [
       {"name": "📸 Vlog","route": "vlog"},
       {"name": "👨‍💻 How To Become A Digital Nomad","route": "howtobecomeadigitalnomad"},
+      
       {"name": "🍜 Street Food","route": "streetfood"},
       {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
       {"name": "🧍‍♀️ Solo Travel","route": "solotravel"},

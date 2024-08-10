@@ -117,7 +117,7 @@ function City() {
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2> */}
 
-            <div className="d-flex space-between align-center mx-2 mt-5 mb-10">
+        <div className="breadcrumbs-and-videos d-flex space-between align-center mx-2 mt-5 mb-10">
                 <Breadcrumbs/>
                 <TotalVideos data={data}/>
             </div>

@@ -130,10 +130,10 @@ function HomeCategory() {
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
 
         {/* BREADCRUMBS */}
-        <div className="d-flex space-between align-center mt-10">
+        <div className="breadcrumbs-and-videos d-flex space-between align-center mx-3 mt-10 mb-10">
         <div className="breadcrumbs d-flex col-gap-5 align-center">
             <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
-            <Link to={`/${homeCategory}`}><div className={'bold'}>{dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}</div></Link>
+            <Link to={`/category/${homeCategory}`}><div className={'bold'}>{dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}</div></Link>
         </div>
         <TotalVideos data={data}/>
         </div>

@@ -90,7 +90,7 @@ function CountryCategory() {
         {/* CITIES */}
             <Cities dataCities={dataCities} />
 
-            <div className="d-flex space-between align-center mx-2 mt-5 mb-10">
+            <div className="breadcrumbs-and-videos d-flex space-between align-center mx-2 mt-5 mb-10">
                 <Breadcrumbs/>
                 <TotalVideos data={data}/>
             </div>

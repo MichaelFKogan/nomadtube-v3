@@ -100,7 +100,7 @@ function Category() {
             <Link to={`/${continent}/${country}/${city}`} className=""><div>Back</div></Link>
         </div> */}
 
-            <div className="d-flex space-between align-center mx-2 mt-5 mb-10">
+            <div className="breadcrumbs-and-videos d-flex space-between align-center mx-2 mt-5 mb-10">
                 <Breadcrumbs/>
                 <TotalVideos data={data}/>
             </div>

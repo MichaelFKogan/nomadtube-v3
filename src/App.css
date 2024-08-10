@@ -133,6 +133,8 @@ h2{font-family: "Nunito Black";}
 .mb-10{margin-bottom: 10px;}
 
 .mx-2{margin-left: 2px; margin-right: 2px}
+.mx-3{margin-left: 3px; margin-right: 3px}
+
 .my-5{margin-top: 5px; margin-bottom: 5px;}
 .my-10{margin-top: 10px; margin-bottom: 10px;}
 
@@ -312,6 +314,10 @@ h2{font-family: "Nunito Black";}
   .home .cities-wrapper{
     padding-bottom: 0px;
     margin-bottom: 20px;
+  }
+
+  .breadcrumbs-and-videos{
+    position: relative;
   }
 
   .total-videos {
