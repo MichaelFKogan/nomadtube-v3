@@ -84,7 +84,7 @@ function Home() {
 
         <HomeBanner />
 
-        <h2 class="black-bar-title">🌎 Countries</h2>
+        <h2 className="black-bar-title">🌎 Countries</h2>
 
         {/* CITIES */}
             <div className="cities-wrapper">
@@ -105,8 +105,8 @@ function Home() {
             </div>
 
         {/* CATEGORIES */}
-            <div className="categories-wrapper">
-            <h2 class="black-bar-title" style={{marginBottom: "15px"}}>📁 Categories</h2>
+            <div id="home-categories" className="categories-wrapper">
+            <h2 className="black-bar-title" style={{marginBottom: "15px"}}>📁 Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/`} className="active" onClick={() => { scrollToTop(); }}><div>💯 All</div></Link>
                     <Link to={`/category/vlog`} onClick={() => { scrollToTop(); }}><div>📸 Vlog</div></Link>
@@ -128,7 +128,7 @@ function Home() {
             </div>
 
 
-            {/* <h2 class="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2> */}
+            {/* <h2 className="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2> */}
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>📹 Videos</h2></div>

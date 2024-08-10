@@ -10,7 +10,7 @@ function Continent() {
     return (
         <div className="continent-page">
 
-            <h1 class="continent-title">{data.name}</h1>
+            <h1 className="continent-title">{data.name}</h1>
 
             {/* CITIES */}
             <div className='cities-wrapper'>

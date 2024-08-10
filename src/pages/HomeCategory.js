@@ -31,6 +31,12 @@ function HomeCategory() {
         }
     };
 
+    const scrollToCategories = () => {
+        document.documentElement.scrollTop = 850;
+        // const categoriesSection = document.getElementById("home-categories");
+        // categoriesSection.scrollIntoView({ behavior: "smooth" });
+    };
+
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, data.videos.length);
@@ -90,7 +96,7 @@ function HomeCategory() {
 
         {/* CATEGORIES */}
             <div className="categories-wrapper desktop">
-            <h2 class="black-bar-title" style={{marginBottom: "15px"}}>Categories</h2>
+            <h2 className="black-bar-title" style={{marginBottom: "15px"}}>Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>
@@ -117,7 +123,7 @@ function HomeCategory() {
 
         <div className="page-back d-flex align-center mobile">
             <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
-            <Link to={"/"} className=""><div>Back</div></Link>
+            <Link to={"/"} className="" onClick={() => { scrollToCategories(); }}><div>Back</div></Link>
         </div>
 
         {/* CATEGORY TITLE */}
