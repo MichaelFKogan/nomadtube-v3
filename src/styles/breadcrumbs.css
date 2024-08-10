@@ -13,6 +13,12 @@
     text-decoration: underline;
   }
 
+  @media(max-width: 7689px){
+    .breadcrumbs{
+      margin-top: 0px;
+    }
+  }
+
   @media(max-width: 768px){
     .breadcrumbs{
       margin-left: 2px;

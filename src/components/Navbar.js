@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
 import AsiaMobileMenu from './menu/AsiaMobileMenu';
 
-function Navbar({toggleAsia}) {
+function Navbar({toggleAsia, className}) {
 
     const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -47,7 +47,7 @@ function Navbar({toggleAsia}) {
         </div>
 
         {/* MOBILE MENU */}
-        <div className="navbar d-flex align-center space-between mobile">
+        <div className={`navbar d-flex align-center space-between mobile ${className}`}>
 
 
                 <div className="nav-menu hamburger" onClick={() => {toggleMobileMenu();closeCountryMenus();}}>

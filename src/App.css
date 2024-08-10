@@ -1,3 +1,12 @@
+
+@media(min-width: 1401px){
+  .App {
+    max-width: 1600px;
+    margin: auto;
+    border: 21px solid black;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -118,17 +127,6 @@ h2{font-family: "Nunito Black";}
 .col-gap-10{column-gap: 10px;}
 .row-gap-5{row-gap: 5px;}
 
-.black-bar-title{
-  font-family: "Edo";
-  font-weight: 100;
-  font-size: 30px;
-  margin-bottom: 3px;
-  background: black;
-  color: white;
-  padding: 20px;
-  margin-top: 0px;
-}
-
 .cities-wrapper{
   display: flex;
   justify-content: center;
@@ -191,11 +189,72 @@ h2{font-family: "Nunito Black";}
   .mobile{
     display: none !important;
   }
+
+  .black-bar-title{
+    font-family: "Edo";
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 3px;
+    background: #eee;
+    color: black;
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .cards-wrapper{
+    padding:0px 1px;
+  }
+
+  .category-title {
+    margin-bottom: 10px;
+    padding: 20px 0px 20px 0px;
+    background: white;
+    color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
+
+.category-title h2 {
+  font-family: "Edo";
+  font-weight: 100;
+  font-size: 30px;
+}
+
+  .cities-wrapper{
+    padding: 0px 1px;
+  }
+
+  .inner-cities{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    column-gap: 2px;
+    row-gap: 2px;
+    /* max-width: 1400px; */
+    margin-bottom: 10px;
+    width: 100%;
+  }
 }
 
 @media(max-width: 768px){
   .desktop{
     display: none !important;
+  }
+
+  .black-bar-title{
+    font-family: "Edo";
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 3px;
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 0px;
   }
 
   .category-title{
