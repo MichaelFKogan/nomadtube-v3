@@ -314,9 +314,13 @@ h2{font-family: "Nunito Black";}
     margin-bottom: 20px;
   }
 
-  .total-videos{
-    margin-top: 0px;
-  }
+  .total-videos {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    color: white;
+    z-index: 5;
+}
 
   .home .categories-wrapper{
     padding-top: 0px;

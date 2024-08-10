@@ -181,7 +181,32 @@ a.active{
         box-shadow: 0px 0px 0px rgba(0,0,0,0);
         width: auto;
         padding: 0px 20px;
-        min-width: 150px;
+        /* min-width: 150px; */
+    }
+
+    .bali .cities-wrapper a, 
+    .canggu .cities-wrapper a,
+    .ubud .cities-wrapper a{
+        width: calc(50% - 2px);
+    }
+
+    .korea .cities-wrapper a, .seoul .cities-wrapper a{
+        width: calc(100% - 2px);
+    }
+
+    .japan .inner-cities,
+    .tokyo .inner-cities,
+    .osaka .inner-cities,
+    .kyoto .inner-cities{
+        overflow-y: visible;
+        padding-right: 2px;
+    }
+
+    .japan .cities-wrapper a,
+    .tokyo .cities-wrapper a,
+    .osaka .cities-wrapper a,
+    .kyoto .cities-wrapper a{
+        width: calc(33.33% - 1px) !important
     }
 
     .categories-wrapper{
