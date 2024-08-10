@@ -194,7 +194,8 @@ a.active{
         width: calc(50% - 2px);
     }
 
-    .korea .cities-wrapper a, .seoul .cities-wrapper a{
+    .korea .cities-wrapper a, 
+    .seoul .cities-wrapper a{
         width: calc(100% - 2px);
     }
 
@@ -204,14 +205,14 @@ a.active{
     .kyoto .inner-cities{
         overflow-y: visible;
         padding-right: 2px;
-    }
+    } */
 
     .japan .cities-wrapper a,
     .tokyo .cities-wrapper a,
     .osaka .cities-wrapper a,
     .kyoto .cities-wrapper a{
-        width: calc(33.33% - 1px) !important
-    } */
+        min-width: 150px;
+    }
 
     .categories-wrapper{
         overflow-y: scroll;

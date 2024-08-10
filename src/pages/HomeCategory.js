@@ -89,14 +89,14 @@ function HomeCategory() {
 
         <HomeBanner />
 
-        <h2 className="black-bar-title">Countries</h2>
+        <h2 className="black-bar-title">🌎 Countries</h2>
 
         {/* CITIES */}
             <HomeCities dataCities={dataCities}/>
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
-            <h2 className="black-bar-title">Categories</h2>
+            <h2 className="black-bar-title">📁 Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>

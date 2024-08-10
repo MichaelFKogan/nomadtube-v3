@@ -7,6 +7,10 @@ function Continent() {
     const { continent } = useParams();
     const data = require(`../data/${continent}/${continent}.json`);
 
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
+
     return (
         <div className="continent-page">
 
@@ -15,7 +19,7 @@ function Continent() {
             {/* CITIES */}
             <div className='cities-wrapper'>
                 {data.cities.map((city, index) => (
-                    <Link to={`/${continent}/${city.route}`} className={`${city.img}-img background-img`} key={index}>
+                    <Link to={`/${continent}/${city.route}`} className={`${city.img}-img background-img`} key={index} onClick = {() => {scrollToTop();}} >
                         <div>{city.name}</div>
                     </Link>
                 ))}

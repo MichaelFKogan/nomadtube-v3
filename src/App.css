@@ -271,7 +271,7 @@ h2{font-family: "Nunito Black";}
 
   .category-title{
     margin: 0px;
-    padding: 15px 0px;
+    padding: 15px 10px;
     background: black;
     color: white;
   }
@@ -283,7 +283,7 @@ h2{font-family: "Nunito Black";}
 
   .home-category-page .category-title{
     /* margin-bottom: 10px; */
-    padding: 20px 0px 20px 0px;
+    padding: 20px 10px;
   }
 
   .home-category-page .total-videos{margin-right: 3px;}
@@ -355,7 +355,7 @@ h2{font-family: "Nunito Black";}
     .home.category-page .inner-categories{
       border-left: 4px solid black;
       border-right: 4px solid black;
-      padding: 5px 0px;
+      padding: 10px 0px;
   }
 
   .home .inner-categories, 
