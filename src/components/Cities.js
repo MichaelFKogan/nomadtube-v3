@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-
 function Cities({dataCities, className}) {
 
     const { continent, country, city, category } = useParams();
