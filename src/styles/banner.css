@@ -96,6 +96,16 @@
     z-index: -1;
 } */
 
+@media (min-width: 769px) and (max-width: 900px){
+    .banner-title{
+        font-size: 50px;
+    }
+
+    .banner-subtitle{
+        font-size: 28px;
+    }
+}
+
 @media(max-width: 768px){
 
     .home-banner{width: 100%;}
