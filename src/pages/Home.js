@@ -115,6 +115,7 @@ function Home() {
                     <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
                     <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
                     <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
+                    <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
 
                     <Link to={`/category/balivlog`} className="bali-img background-img"><div>🏝 Bali Vlog</div></Link>
