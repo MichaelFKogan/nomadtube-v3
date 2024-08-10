@@ -135,8 +135,11 @@ function City() {
                 </div>
             </div>              
 
-            {/* <TotalVideos data={data}/>
-            <Breadcrumbs/> */}
+            <div className="d-flex space-between align-center mx-2 mb-5">
+                <Breadcrumbs/>
+                <TotalVideos data={data}/>
+            </div>
+            
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             
             {data.videos.length > 399 && (

@@ -134,7 +134,13 @@ function Home() {
             <div className="category-title"><h2>📹 Videos</h2></div>
             {/* <div>Page: {currentPage}</div> */}
             
-            <TotalVideos  data={data}/>
+            <div className="d-flex space-between align-center mx-2 my-5">
+                <div className="breadcrumbs d-flex col-gap-5">
+                    <Link to={"/"}><div>Home</div></Link>
+                </div>
+                <TotalVideos data={data}/>
+            </div>
+
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             
             {data.videos.length > 399 && (

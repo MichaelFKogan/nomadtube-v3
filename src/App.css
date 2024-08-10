@@ -131,6 +131,7 @@ h2{font-family: "Nunito Black";}
 .mb-5{margin-bottom: 5px;}
 
 .mx-2{margin-left: 2px; margin-right: 2px}
+.my-5{margin-top: 5px; margin-bottom: 5px;}
 
 .cities-wrapper{
   display: flex;
@@ -331,7 +332,7 @@ h2{font-family: "Nunito Black";}
   }
 
   .categories-wrapper{
-    padding: 10px 0px;
+    padding: 5px 0px;
     background-color: white;
   }
 
