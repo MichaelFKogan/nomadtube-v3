@@ -127,11 +127,14 @@ h2{font-family: "Nunito Black";}
 .col-gap-10{column-gap: 10px;}
 .row-gap-5{row-gap: 5px;}
 
+.mt-5{margin-top: 5px;}
 .mt-10{margin-top: 10px;}
 .mb-5{margin-bottom: 5px;}
+.mb-10{margin-bottom: 10px;}
 
 .mx-2{margin-left: 2px; margin-right: 2px}
 .my-5{margin-top: 5px; margin-bottom: 5px;}
+.my-10{margin-top: 10px; margin-bottom: 10px;}
 
 .cities-wrapper{
   display: flex;
@@ -266,7 +269,7 @@ h2{font-family: "Nunito Black";}
 
   .category-title{
     margin: 0px;
-    padding: 10px 0px;
+    padding: 15px 0px;
     background: black;
     color: white;
   }
@@ -279,18 +282,6 @@ h2{font-family: "Nunito Black";}
   .home-category-page .category-title{
     /* margin-bottom: 10px; */
     padding: 20px 0px 20px 0px;
-  }
-
-  .home-category-page .total-videos, 
-  .country-category-page .total-videos,
-  .category-page .total-videos{
-    margin-top: 0px;
-    margin-bottom: 10px;
-  }
-
-  .home-category-page .total-videos,
-  .home-category-page .breadcrumbs{
-    margin-bottom: 0px;
   }
 
   .home-category-page .total-videos{margin-right: 3px;}
@@ -313,7 +304,7 @@ h2{font-family: "Nunito Black";}
     width: 100%;
 
     padding-left: 2px;
-    /* padding-bottom: 10px; */
+    padding-bottom: 5px;
 
     overflow-y: scroll;
   }

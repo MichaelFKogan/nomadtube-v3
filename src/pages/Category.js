@@ -100,6 +100,11 @@ function Category() {
             <Link to={`/${continent}/${country}/${city}`} className=""><div>Back</div></Link>
         </div> */}
 
+            <div className="d-flex space-between align-center mx-2 mt-5 mb-10">
+                <Breadcrumbs/>
+                <TotalVideos data={data}/>
+            </div>
+
         {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
 
@@ -121,11 +126,6 @@ function Category() {
                     )
                 ))}
                 </div>
-            </div>
-
-            <div className="d-flex space-between align-center mx-2 mb-5">
-                <Breadcrumbs/>
-                <TotalVideos data={data}/>
             </div>
 
         <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>

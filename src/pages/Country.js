@@ -98,6 +98,11 @@ function Country() {
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2> */}
 
+            <div className="d-flex space-between align-center mx-2 mt-5 mb-10">
+                <Breadcrumbs/>
+                <TotalVideos data={data}/>
+            </div>
+
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>
         {/* CATEGORIES */}
@@ -113,11 +118,6 @@ function Country() {
                 ))}
                 </div>
             </div>    
-
-            <div className="d-flex space-between align-center mx-2 mb-5">
-                <Breadcrumbs/>
-                <TotalVideos data={data}/>
-            </div>
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             

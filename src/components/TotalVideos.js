@@ -4,7 +4,7 @@ function TotalVideos({data}) {
 
     return (
         <div className="total-videos">
-            Total Videos: {data.videos.length}
+            Videos: {data.videos.length}
         </div>
     );
 }

@@ -90,6 +90,11 @@ function CountryCategory() {
         {/* CITIES */}
             <Cities dataCities={dataCities} />
 
+            <div className="d-flex space-between align-center mx-2 mt-5 mb-10">
+                <Breadcrumbs/>
+                <TotalVideos data={data}/>
+            </div>
+
         {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
 
@@ -117,11 +122,6 @@ function CountryCategory() {
             <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
             <Link to={`/${continent}/${country}`} className=""><div>Back</div></Link>
         </div> */}
-
-        <div className="d-flex space-between align-center mx-2 mb-5">
-            <Breadcrumbs/>
-            <TotalVideos data={data}/>
-        </div>
 
         <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
         
