@@ -138,6 +138,11 @@ h2{font-family: "Nunito Black";}
 .my-5{margin-top: 5px; margin-bottom: 5px;}
 .my-10{margin-top: 10px; margin-bottom: 10px;}
 
+.home .continents-wrapper,
+.home-category-page .continents-wrapper{
+  margin-bottom: 2px;
+}
+
 .cities-wrapper{
   display: flex;
   justify-content: center;
@@ -151,7 +156,7 @@ h2{font-family: "Nunito Black";}
 }
 
 .categories-wrapper{
-  padding: 20px 0px;
+  padding: 10px 0px 20px 0px;
   z-index: 4;
   /* background: #eee; */
   /* border-top: 1px solid #ccc;
@@ -167,6 +172,11 @@ h2{font-family: "Nunito Black";}
   row-gap: 5px;
   max-width: 1300px;
   margin: auto;
+}
+
+.home .inner-categories,
+.home-category-page .inner-categories{
+  margin-top: 10px;
 }
 
 .category-title h2{
@@ -192,7 +202,7 @@ h2{font-family: "Nunito Black";}
   justify-content: center;
   column-gap: 2px;
   row-gap: 2px;
-  margin: 10px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   margin-bottom: 200px;
 }
 
@@ -208,7 +218,7 @@ h2{font-family: "Nunito Black";}
     margin-bottom: 3px;
     background: black;
     color: white;
-    padding: 20px;
+    padding: 30px;
     margin-top: 0px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -219,7 +229,6 @@ h2{font-family: "Nunito Black";}
   }
 
   .category-title {
-    margin-bottom: 10px;
     padding: 20px 0px 20px 0px;
     background: black;
     color: white;

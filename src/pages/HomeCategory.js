@@ -31,6 +31,10 @@ function HomeCategory() {
         }
     };
 
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
+
     const scrollToCategories = () => {
         document.documentElement.scrollTop = 850;
         // const categoriesSection = document.getElementById("home-categories");
@@ -88,6 +92,14 @@ function HomeCategory() {
         <div className="home home-category-page">
 
         <HomeBanner />
+
+        {/* CONTINENTS */}
+            <div className="cities-wrapper continents-wrapper">
+                <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
+                <Link to={`/southamerica`} className="southamerica-img background-img" onClick={() => { scrollToTop(); }}><div>💃🏻 South America</div></Link>
+                <Link to={`/europe`} className="europe-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇺 Europe</div></Link>
+                <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link>
+            </div>
 
         <h2 className="black-bar-title">🌎 Countries</h2>
 

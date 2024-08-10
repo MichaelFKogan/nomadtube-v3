@@ -10,6 +10,7 @@ function Search() {
     const [loading, setLoading] = useState(false);
     const videosCount = useRef(0); // Use a ref to keep track of the number of videos
     const [quotaError, setQuotaError] = useState(false); // State for quota limit error
+    const [searchFinished, setSearchFinished] = useState(false);
 
 
     // handle the change event for the input field
@@ -28,6 +29,7 @@ function Search() {
         await fetchVideos(); // Fetch the initial set of results
         setLoading(false); // Set loading to false after fetching
         saveVideosToFile(); // Save videos to file after fetching
+        setSearchFinished(false);
     }
 
     // Function to fetch videos from the API
@@ -88,6 +90,16 @@ function Search() {
                 setTimeout(() => {
                     fetchVideos(data.nextPageToken); // Fetch next page after a delay
                 }, 1000); // Adjust delay as needed
+            }
+
+            // If there are no more results, set searchFinished to true
+            if (!data.nextPageToken) {
+                setSearchFinished(true);
+            }
+
+            // If there are no more results, set searchFinished to true
+            if (!data.nextPageToken || videosCount.current >= 400) {
+                setSearchFinished(true); // Set searchFinished to true when no more results
             }
 
             const uniqueVideos = Array.from(new Set(filteredVideos.map(v => v.videoId)))
@@ -152,6 +164,8 @@ function Search() {
                     index === videos.length - 1 && <h3 key={index} style={{ textAlign: "center" }}>{index}</h3>
                 ))}
 
+                {loading && <h2 style={{ textAlign: 'center' }}>Loading...</h2>}
+                {searchFinished && <h2 style={{ color: 'red', textAlign: 'center' }}>No more results. Search finished.</h2>}
                 {quotaError && <h2 style={{ color: 'red', textAlign: 'center' }}>Quota limit exceeded. Please try again later.</h2>}
 
                 <hr style={{ marginTop: "40px", marginBottom: "40px" }} />

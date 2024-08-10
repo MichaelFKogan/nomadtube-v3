@@ -7,7 +7,22 @@ function Cities({dataCities, className}) {
 
     return (
         <>
-            <div className={`cities-wrapper ${className}`}>
+            <div className={`cities-wrapper ${className} desktop`}>
+                <div className="inner-cities">
+
+                    <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
+                        <div>{dataCities.name}</div>
+                    </Link>
+
+                    {dataCities.cities.map((item, index) => (
+                        <Link to={`/${continent}/${country}/${item.route}`} className={`${item.route}-img background-img`} key={index}>
+                            <div>{item.name}</div>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+
+            <div className={`cities-wrapper ${className} mobile`}>
                 <div className="inner-cities">
                     {city &&
                         <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
