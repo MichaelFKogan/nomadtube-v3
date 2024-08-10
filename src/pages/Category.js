@@ -92,7 +92,6 @@ function Category() {
                     : null
             ))}
 
-
         {/* CITIES */}
             <Cities dataCities={dataCities} className="desktop" />
 
