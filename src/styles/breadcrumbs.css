@@ -13,8 +13,29 @@
     text-decoration: underline;
   }
 
+  .breadcrumbs-and-videos{
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media(min-width: 769px){
+    .breadcrumbs{
+      margin: 0px 10px;
+    }
+
+    .breadcrumbs-and-videos{
+      margin: 5px 5px 10px 5px;
+    }
+  
+  }
+
   @media(max-width: 768px){
     .breadcrumbs{
       margin: 0px;
     }
+    .breadcrumbs-and-videos{
+      margin: 5px 2px 10px 2px;
+    }
+
   }
