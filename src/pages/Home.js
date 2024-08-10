@@ -106,24 +106,24 @@ function Home() {
 
         {/* CATEGORIES */}
             <div id="home-categories" className="categories-wrapper">
-            <h2 className="black-bar-title" style={{marginBottom: "15px"}}>📁 Categories</h2>
+            <h2 className="black-bar-title">📁 Categories</h2>
                 <div className="inner-categories">
-                    <Link to={`/`} className="active" onClick={() => { scrollToTop(); }}><div>💯 All</div></Link>
-                    <Link to={`/category/vlog`} onClick={() => { scrollToTop(); }}><div>📸 Vlog</div></Link>
-                    <Link to={`/category/howtobecomeadigitalnomad`} onClick={() => { scrollToTop(); }}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
-                    <Link to={`/category/streetfood`} onClick={() => { scrollToTop(); }}><div>🍜 Street Food</div></Link>
-                    <Link to={`/category/walkingtour`} onClick={() => { scrollToTop(); }}><div>🚶‍♂️ Walking Tour</div></Link>
-                    <Link to={`/category/solotravel`} onClick={() => { scrollToTop(); }}><div>🧍‍♀️ Solo Travel</div></Link>
-                    <Link to={`/category/vanlife`} onClick={() => { scrollToTop(); }}><div>🚐 Van Life</div></Link>
-                    <Link to={`/category/gear`} onClick={() => { scrollToTop(); }}><div>🎒 Gear</div></Link>
+                    <Link to={`/`} className="active"><div>💯 All</div></Link>
+                    <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
+                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
+                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
+                    <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
+                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
+                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
 
-                    <Link to={`/category/balivlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
-                    <Link to={`/category/japanwalkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
-                    <Link to={`/category/taiwanbubbletea`} className="taiwan-img background-img" onClick={() => { scrollToTop(); }}><div>🧋 Taiwan Bubble Tea</div></Link>
-                    <Link to={`/category/khaosanroad`} className="bangkok-img background-img" onClick={() => { scrollToTop(); }}><div>🍻 Khao San Road</div></Link>
-                    <Link to={`/category/seoulcafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); }}><div>☕️ Seoul Cafe Tour</div></Link>
-                    <Link to={`/category/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); }}><div>🌙 Full Moon Party</div></Link>
-                    <Link to={`/category/vietnamstreetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
+                    <Link to={`/category/balivlog`} className="bali-img background-img"><div>🏝 Bali Vlog</div></Link>
+                    <Link to={`/category/japanwalkingtour`} className="japan-img background-img"><div>🇯🇵 Japan Walking Tour</div></Link>
+                    <Link to={`/category/taiwanbubbletea`} className="taiwan-img background-img"><div>🧋 Taiwan Bubble Tea</div></Link>
+                    <Link to={`/category/khaosanroad`} className="bangkok-img background-img"><div>🍻 Khao San Road</div></Link>
+                    <Link to={`/category/seoulcafetour`} className="seoul-img background-img"><div>☕️ Seoul Cafe Tour</div></Link>
+                    <Link to={`/category/fullmoonparty`} className="kophangan-img background-img"><div>🌙 Full Moon Party</div></Link>
+                    <Link to={`/category/vietnamstreetfood`} className="vietnam-img background-img"><div>🇻🇳 Vietnam Street Food</div></Link>
                 </div>
             </div>
 

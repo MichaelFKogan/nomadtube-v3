@@ -87,16 +87,16 @@ function HomeCategory() {
     return (
         <div className="home home-category-page">
 
-        <HomeBanner className={"desktop"} />
+        <HomeBanner />
 
-        <h2 className="black-bar-title desktop">Countries</h2>
+        <h2 className="black-bar-title">Countries</h2>
 
         {/* CITIES */}
-            <HomeCities dataCities={dataCities} className={"desktop"} />
+            <HomeCities dataCities={dataCities}/>
 
         {/* CATEGORIES */}
-            <div className="categories-wrapper desktop">
-            <h2 className="black-bar-title" style={{marginBottom: "15px"}}>Categories</h2>
+            <div className="categories-wrapper">
+            <h2 className="black-bar-title">Categories</h2>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>
@@ -121,7 +121,7 @@ function HomeCategory() {
                 </div>
             </div>
 
-        <div className="page-back d-flex align-center mobile">
+        <div className="page-back d-none align-center mobile">
             <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
             <Link to={"/"} className="" onClick={() => { scrollToCategories(); }}><div>Back</div></Link>
         </div>

@@ -198,7 +198,7 @@ a.active{
         width: calc(100% - 2px);
     }
 
-    .japan .inner-cities,
+    /* .japan .inner-cities,
     .tokyo .inner-cities,
     .osaka .inner-cities,
     .kyoto .inner-cities{
@@ -211,7 +211,7 @@ a.active{
     .osaka .cities-wrapper a,
     .kyoto .cities-wrapper a{
         width: calc(33.33% - 1px) !important
-    }
+    } */
 
     .categories-wrapper{
         overflow-y: scroll;
