@@ -4,6 +4,7 @@
       {"name": "🇹🇭 Thailand","route": "asia/thailand", "imgRoute": "thailand"},
       {"name": "🇯🇵 Japan","route": "asia/japan", "imgRoute": "japan"},
       {"name": "🇰🇷 Korea","route": "asia/korea", "imgRoute": "korea"},
+      {"name": "🇻🇳 Vietnam","route": "asia/vietnam", "imgRoute": "vietnam"},
 
       {"name": "🇧🇷 Brazil","route": "southamerica/brazil", "imgRoute": "brazil"},
       {"name": "🇨🇴 Colombia","route": "southamerica/colombia", "imgRoute": "colombia"},
