@@ -98,6 +98,9 @@ function Country() {
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2> */}
 
+            {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>💯 All</h2></div>
+
             <div className="page-back d-flex align-center mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                 <Link to={`/`} className=""><div>Home</div></Link>
@@ -108,8 +111,7 @@ function Country() {
                 <TotalVideos data={data}/>
             </div>
 
-        {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>💯 All</h2></div>
+
         {/* CATEGORIES */}
             <div className='categories-wrapper'>
                 <div className="inner-categories">
