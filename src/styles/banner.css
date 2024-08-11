@@ -124,7 +124,7 @@
     }
 
     .page-banner{
-        height: 150px;
+        height: 250px;
     }
 
     .banner-title{
@@ -146,6 +146,12 @@
     }
 }
 
+
+
+
+
+
+
 @media(max-width: 500px){
 
     .home-banner .banner-content{
@@ -154,6 +160,10 @@
 
     .home-banner{
         height: 200px;
+    }
+
+    .page-banner{
+        height: 150px;
     }
 
     .banner-title{
