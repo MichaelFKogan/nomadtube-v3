@@ -49,14 +49,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Navbar toggleAsia={toggleAsia}/> */}
+        <Navbar toggleAsia={toggleAsia}/>
 
         {/* <Asia showAsia={showAsia} toggleAsia={toggleAsia} /> */}
 
       <Routes>
           <Route path="/" element={ 
             <>
-              <Navbar toggleAsia={toggleAsia}/>
+              {/* <Navbar toggleAsia={toggleAsia}/> */}
                 <Home 
                   continentsDropdown={continentsDropdown} handleContinentsDropdown={handleContinentsDropdown}
                   countriesDropdown={countriesDropdown} handleCountriesDropdown={handleCountriesDropdown}
@@ -91,7 +91,7 @@ function App() {
 
           <Route path="/search" element={<Search />} />
 
-          <Route path="*" element={<><Navbar toggleAsia={toggleAsia}/><div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "75vh"} }><h1>404 Not Found</h1></div></>} />
+          <Route path="*" element={<div style={{display: "flex", justifyContent: "center", alignItems: "center", height: "75vh"} }><h1>404 Not Found</h1></div>} />
         </Routes>
       </Router>
     </div>

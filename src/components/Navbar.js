@@ -67,14 +67,14 @@ function Navbar({ toggleAsia, className }) {
 
             </div>
 
-            <div className={`navbar d-flex align-center space-between mobile ${className}`} style={{height: "50px"}}>
+            {/* <div className={`navbar d-flex align-center space-between mobile ${className}`} style={{height: "50px"}}>
 
                     <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px"}}><div>Asia</div></div>
                     <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu} style={{ textWrap: "nowrap" }}><div>South America</div></Link>
                     <Link to={"/europe"} className="nav-menu" onClick={closeMobileMenu}><div>Europe</div></Link>
                     <Link to={"/middleeast"} className="nav-menu" onClick={closeMobileMenu} style={{ textWrap: "nowrap" }}><div>Middle East</div></Link>
 
-            </div>
+            </div> */}
 
             <div className={`mobile-menu ${mobileMenu ? 'd-block' : 'd-none'}`}>
                 <Link to={"/"} className="nav-menu" onClick={closeAllMenus}><div>🏠 Home</div></Link>

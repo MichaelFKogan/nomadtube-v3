@@ -86,12 +86,6 @@ function Category() {
     return (
         <div className={`category-page ${country} ${city}`}>
 
-        {/* PAGE BACK */}
-            <div className="page-back d-flex align-center mobile">
-                <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
-                <Link to={`/${continent}/${country}`} className=""><div>{capitalizedCountry}</div></Link>
-            </div>
-
             {dataCities.cities.map((item, index) => (
                 city === item.route ? 
                     <PageBanner key={index} title={item.name} imgRoute={city} /> 
@@ -105,6 +99,12 @@ function Category() {
             <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
             <Link to={`/${continent}/${country}/${city}`} className=""><div>Back</div></Link>
         </div> */}
+
+                {/* PAGE BACK */}
+            <div className="page-back d-flex align-center mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                <Link to={`/${continent}/${country}`} className=""><div>{capitalizedCountry}</div></Link>
+            </div>
 
             <div className="breadcrumbs-and-videos">
                 <Breadcrumbs/>
