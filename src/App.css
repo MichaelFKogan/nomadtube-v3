@@ -306,6 +306,9 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     font-family: "Edo";
     font-weight: 100;
     font-size: 28px;
+
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .home-category-page .category-title{
@@ -361,6 +364,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .home .categories-wrapper{
     padding-top: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
   }
 
   .categories-wrapper{
