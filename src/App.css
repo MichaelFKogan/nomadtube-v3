@@ -152,7 +152,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 }
 
 .categories-wrapper{
-  padding: 10px 0px 20px 0px;
+  padding: 5px 0px 20px 0px;
   z-index: 4;
   /* background: #eee; */
   /* border-top: 1px solid #ccc;
@@ -208,16 +208,19 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   }
 
   .black-bar-title{
+    justify-content: center;
+    margin-bottom: 2px;
+    background: black;
+    color: white;
+    padding: 15px;
+    margin-top: 0px;
+  }
+
+  .black-bar-title h2{
     font-family: "Edo";
     font-weight: 100;
     font-size: 30px;
-    margin-bottom: 3px;
-    background: black;
-    color: white;
-    padding: 30px;
-    margin-top: 0px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    margin: 0px;
   }
 
   .cards-wrapper{
@@ -229,6 +232,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     background: #eee;
     color: black;
     z-index: 4;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 .category-title h2 {
@@ -294,7 +299,10 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding: 5px;
     background: #eee;
     color: black;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
+
   .home .category-title h2, .category-title h2{
     font-family: "Edo";
     font-weight: 100;
@@ -390,6 +398,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     row-gap: 5px;
     max-width: 1300px;
     margin: auto;
+    padding-left: 5px;
 }
 
   .cards-wrapper{
