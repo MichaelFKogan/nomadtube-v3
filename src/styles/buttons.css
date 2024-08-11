@@ -217,7 +217,7 @@ a.active{
 
     .korea .cities-wrapper a, 
     .seoul .cities-wrapper a{
-        width: calc(100% - 2px);
+        width: 100%;
     }
 
     /* .japan .inner-cities,
