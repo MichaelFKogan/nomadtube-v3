@@ -23,26 +23,25 @@ import './styles/images.css';
 function App() {
 
   const [showAsia, setShowAsia] = useState(false);
-
-  const toggleAsia = () => {
-      setShowAsia(!showAsia);
-  };
+  const toggleAsia = () => {setShowAsia(!showAsia);};
 
   const [continentsDropdown, setContinentsDropdown] = useState(false);
   const [countriesDropdown, setCountriesDropdown] = useState(false);
   const [categoriesDropdown, setCategoriesDropdown] = useState(false);
 
-  const handleContinentsDropdown = () => {
-      setContinentsDropdown(!continentsDropdown);
-  }
+  const [continentsDropdownMenu, setContinentsDropdownMenu] = useState(false);
+  const [asiaDropdownMenu, setAsiaDropdownMenu] = useState(false);
 
-  const handleCountriesDropdown = () => {
-      setCountriesDropdown(!countriesDropdown);
-  }
 
-  const handleCategoriesDropdown = () => {
-      setCategoriesDropdown(!categoriesDropdown);
-  }
+
+  const handleContinentsDropdown = () => {setContinentsDropdown(!continentsDropdown);}
+  const handleCountriesDropdown = () => {setCountriesDropdown(!countriesDropdown);}
+  const handleCategoriesDropdown = () => {setCategoriesDropdown(!categoriesDropdown);}
+
+  const handleContinentsDropdownMenu = () => {setContinentsDropdownMenu(!continentsDropdownMenu);}
+  const toggleAsiaDropdownMenu = () => {setAsiaDropdownMenu(!asiaDropdownMenu);}
+
+  const closeAllDropdownMenus  = () => {setAsiaDropdownMenu(false);};
 
   return (
     <div className="App">
@@ -58,7 +57,12 @@ function App() {
                 <Home 
                   continentsDropdown={continentsDropdown} handleContinentsDropdown={handleContinentsDropdown}
                   countriesDropdown={countriesDropdown} handleCountriesDropdown={handleCountriesDropdown}
-                  categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
+                  categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown}
+
+                  asiaDropdownMenu={asiaDropdownMenu} handleContinentsDropdownMenu={handleContinentsDropdownMenu} 
+                  continentsDropdownMenu={asiaDropdownMenu} toggleAsiaDropdownMenu={toggleAsiaDropdownMenu}
+                  closeAllDropdownMenus={closeAllDropdownMenus}
+                />
             </>} 
           />
 

@@ -107,10 +107,6 @@ h2{font-family: "Nunito Black";}
 
 .bold{font-weight: bold;}
 
-.d-none{display:none;}
-.d-block{display: block;}
-
-.d-flex{display: flex;}
 .flex-col{flex-direction: column;}
 .justify-center{justify-content: center;}
 .space-between{justify-content: space-between;}
@@ -275,14 +271,14 @@ h2{font-family: "Nunito Black";}
     margin-bottom: 2px;
     background: black;
 
-    padding: 15px 20px;
+    padding: 10px 20px;
     cursor: pointer;
   }
 
   .black-bar-title h2{
     font-family: "Edo";
     font-weight: 100;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     margin: 0px;
   }
@@ -292,19 +288,24 @@ h2{font-family: "Nunito Black";}
   }
 
   .home .category-title h2{
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .home .mobile-menu{
+    flex-direction: column;
+    align-items: baseline;
+    /* position: relative; */
   }
 
   .category-title{
     margin: 0px;
-    padding: 15px 10px;
+    padding: 10px 10px;
     background: black;
     color: white;
   }
   .category-title h2{
     font-family: "Edo";
     font-weight: 100;
-    font-size: 30px;
   }
 
   .home-category-page .category-title{
@@ -342,8 +343,8 @@ h2{font-family: "Nunito Black";}
     margin: 2px 0px;
   }
 
-  .home .d-flex{display: flex;}
-  .home .d-none{display: none;}
+  /* .home .d-flex{display: flex;}
+  .home .d-none{display: none;} */
 
   .breadcrumbs-and-videos{
     position: relative;
@@ -430,3 +431,10 @@ hr{
   text-decoration: none;
   color: black;
 }
+
+
+
+
+.d-none{display:none;}
+.d-block{display: block;}
+.d-flex{display: flex;}

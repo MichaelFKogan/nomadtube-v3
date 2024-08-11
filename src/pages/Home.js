@@ -4,12 +4,23 @@ import HomeBanner from "../components/HomeBanner"
 import TotalVideos from "../components/TotalVideos"
 import Cards from "../components/Cards"
 import Pagination from "../components/Pagination"
+import AsiaDropdownMenu from '../components/hpdropdownmenu/AsiaDropdownMenu';
+import "../styles/home.css"
 
 const ITEMS_PER_PAGE = 400;
 const INITIAL_CARDS_TO_SHOW = 40;
 const INCREMENT_CARDS = 40;
 
-function Home({continentsDropdown, handleContinentsDropdown, countriesDropdown, handleCountriesDropdown, categoriesDropdown, handleCategoriesDropdown}) {
+function Home({
+    continentsDropdown, handleContinentsDropdown, 
+    countriesDropdown, handleCountriesDropdown, 
+    categoriesDropdown, handleCategoriesDropdown,
+
+    continentsDropdownMenu, handleContinentsDropdownMenu,
+    asiaDropdownMenu, toggleAsiaDropdownMenu,
+    closeAllDropdownMenus
+}) {
+
     const { continent, country, city, category } = useParams();
     const data = require(`../data/home.json`);
     const dataCategories = require(`../data/home-categories.json`);
@@ -31,6 +42,15 @@ function Home({continentsDropdown, handleContinentsDropdown, countriesDropdown, 
     const scrollToTop = () => {
         document.documentElement.scrollTop = 0;
     }
+
+    const [countryMenu, setCountryMenu] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const [asiaMenu, setAsiaMenu] = useState(false);
+    const toggleAsiaMenu  = () => {setAsiaMenu(!asiaMenu);closeMobileMenu();}
+    const closeMobileMenu  = () => {setMobileMenu(false);setCountryMenu(true); };
+    const closeAllMenus  = () => {setMobileMenu(false);setAsiaMenu(false);setCountryMenu(false);};
+    const closeCountryMenus  = () => {setAsiaMenu(false);};
+    const back = () => { setMobileMenu(true);}
 
 
     // Calculate the start and end index of the items to display
@@ -87,26 +107,39 @@ function Home({continentsDropdown, handleContinentsDropdown, countriesDropdown, 
         
         <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
             <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-            <h2 className="">🌎 Continents</h2>
+            <h2 className="">🗺 Countries</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
         </div>
 
         {/* CONTINENTS w/images */}
-            <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}>
-                <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
+            {/* <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}> */}
+
+                {/* <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
                 <Link to={`/southamerica`} className="southamerica-img background-img" onClick={() => { scrollToTop(); }}><div>💃🏻 South America</div></Link>
                 <Link to={`/europe`} className="europe-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇺 Europe</div></Link>
-                <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link>
+                <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link> */}
+
+            <div className={`${continentsDropdown ? 'd-flex' : 'd-none'}`}>
+                <div className={`hp-dropdown-menu hp-countries-menu ${continentsDropdownMenu ? 'd-none' : 'd-flex'}`}>
+                    <div className="nav-menu" onClick={() => {closeMobileMenu(); toggleAsiaDropdownMenu();}} style={{marginLeft: "0px"}}><div>⛩ Asia</div></div>
+                    <div className="nav-menu" onClick={() => {closeMobileMenu(); toggleAsiaMenu();}} style={{marginLeft: "0px"}}><div>💃🏻 South America</div></div>
+                    <div className="nav-menu" onClick={() => {closeMobileMenu(); toggleAsiaMenu();}} style={{marginLeft: "0px"}}><div>🇪🇺 Europe</div></div>
+                    <div className="nav-menu" onClick={() => {closeMobileMenu(); toggleAsiaMenu();}} style={{marginLeft: "0px"}}><div>🕋 Middle East</div></div>
+                    
+                </div>
+
+                <AsiaDropdownMenu asiaDropdownMenu={asiaDropdownMenu} closeAllDropdownMenus={closeAllDropdownMenus} />
+
             </div>
 
-            <div className='d-flex space-between black-bar-title' onClick={handleCountriesDropdown}>
+            {/* <div className='d-flex space-between black-bar-title' onClick={handleCountriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">🗺 Countries</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-            </div>
+            </div> */}
 
         {/* COUNTRIES */}
-            <div className={`cities-wrapper ${countriesDropdown ? 'd-flex' : 'd-none'}`}>
+            {/* <div className={`cities-wrapper ${countriesDropdown ? 'd-flex' : 'd-none'}`}>
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
@@ -119,9 +152,8 @@ function Home({continentsDropdown, handleContinentsDropdown, countriesDropdown, 
                 <Link to={`/southamerica/costarica`} className="costarica-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇷 Costa Rica</div></Link>
                 <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
-                {/* <Link to={`/europe/france`} className="france-img background-img" onClick={() => { scrollToTop(); }}><div>🇫🇷 France</div></Link> */}
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
-            </div>
+            </div> */}
 
             <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>

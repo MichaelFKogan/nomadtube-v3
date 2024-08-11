@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
-import AsiaMobileMenu from './menu/AsiaMobileMenu';
+import AsiaMobileMenu from './navmenu/AsiaMobileMenu';
 
 function Navbar({toggleAsia, className}) {
 
