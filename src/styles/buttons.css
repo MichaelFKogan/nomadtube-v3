@@ -172,8 +172,21 @@ a.active{
         opacity: 0;
     }
 
-    .home .cities-wrapper a{
-        width: calc(50% - 3px);
+    .home .cities-wrapper,
+    .home-category-page .cities-wrapper{
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+
+    .home .cities-wrapper a,
+    .home-category-page .cities-wrapper a{
+        /* width: calc(50% - 3px); */
+        min-width: 200px;
+        width: auto;
+        padding: 0px 50px;
+        height: 70px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px black;
     }
 
     .cities-wrapper a{
@@ -258,13 +271,13 @@ a.active{
         white-space: nowrap;
     }
 
-    .home .cities-wrapper a{
+    /* .home .cities-wrapper a{
         width: calc(50% - 3px);
         padding:0px;
         height: 70px;
         border-radius: 0px;
         box-shadow: 0px 0px 0px black;
-    }
+    } */
 
     .home .cities-wrapper a:nth-child(3),
     .home .cities-wrapper a:nth-child(6),

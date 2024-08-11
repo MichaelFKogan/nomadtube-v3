@@ -97,11 +97,17 @@ function City() {
         <div className={`city-page ${country} ${city}`}>      
 
             {/* <div className='cities-wrapper'>
+            
             <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} style={{width: "100%"}} 
                 onClick={() => { document.documentElement.scrollTop = 0; }}>
                 <div>{dataCities.name}</div>
             </Link>
             </div> */}
+
+        <div className="page-back d-flex align-center mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+            <Link to={`/${continent}/${country}`} className=""><div>{capitalizedCountry}</div></Link>
+        </div>
 
         {dataCities.cities.map((item, index) => (
             city === item.route ? 
@@ -110,8 +116,9 @@ function City() {
         ))}
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em", marginTop: "10px", marginBottom: "5px"}}>Cities</h2> */}
+        
         {/* CITIES */}
-            <Cities dataCities={dataCities} />
+            {/* <Cities dataCities={dataCities} /> */}
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "2em",marginBottom: "5px"}}>Categories</h2> */}  
 
