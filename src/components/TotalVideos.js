@@ -1,9 +1,9 @@
 import React from 'react';
 
-function TotalVideos({data}) {
+function TotalVideos({data, className}) {
 
     return (
-        <div className="total-videos">
+        <div className={`total-videos ${className}`}>
             Videos: {data.videos.length}
         </div>
     );
