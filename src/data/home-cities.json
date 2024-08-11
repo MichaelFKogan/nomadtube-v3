@@ -13,7 +13,7 @@
 
       {"name": "🇵🇹 Portugal","route": "europe/portugal", "imgRoute": "portugal"},
       {"name": "🇮🇹 Italy","route": "europe/italy", "imgRoute": "italy"},
-      {"name": "🇫🇷 France","route": "europe/france", "imgRoute": "france"},
+
       {"name": "🇪🇸 Spain","route": "europe/spain", "imgRoute": "spain"}
     ]
 }
