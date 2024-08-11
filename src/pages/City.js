@@ -110,6 +110,9 @@ function City() {
                 : null
         ))}
 
+        {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>💯 All</h2></div>
+
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em", marginTop: "10px", marginBottom: "5px"}}>Cities</h2> */}
         
         {/* CITIES */}
@@ -128,9 +131,6 @@ function City() {
                 <Breadcrumbs/>
                 <TotalVideos data={data}/>
             </div>
-
-        {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>💯 All</h2></div>
 
         {/* CATEGORIES */}
             <div className='categories-wrapper'>

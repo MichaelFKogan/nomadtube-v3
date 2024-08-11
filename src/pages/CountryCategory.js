@@ -84,10 +84,10 @@ function CountryCategory() {
     return (
         <div className={`country-category-page ${country}`}>
 
-        {/* <PageBanner title={dataCities.name} imgRoute={country}/> */}
+        <PageBanner title={dataCities.name} imgRoute={country}/>
 
         {/* CITIES */}
-            {/* <Cities dataCities={dataCities} /> */}
+            <Cities dataCities={dataCities} />
 
         {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}            

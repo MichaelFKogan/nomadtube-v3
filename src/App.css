@@ -313,7 +313,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .home-category-page .total-videos{margin-right: 3px;}
 
   .cities-wrapper{
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     padding: 0px;
   }
 
@@ -329,8 +329,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     max-width: 100%;
     width: 100%;
 
-    padding-left: 2px;
-    padding-bottom: 5px;
+    padding: 2px 2px 2px 2px;
 
     overflow-y: scroll;
   }
