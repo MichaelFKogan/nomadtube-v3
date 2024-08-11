@@ -225,14 +225,10 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   }
 
   .category-title {
-    padding: 30px 0px;
-    background: black;
-    color: white;
-    position: sticky;
-    top: 0px;
+    padding: 20px 0px;
+    background: #eee;
+    color: black;
     z-index: 4;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
 }
 
 .category-title h2 {

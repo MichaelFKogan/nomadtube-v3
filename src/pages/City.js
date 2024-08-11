@@ -110,13 +110,13 @@ function City() {
                 : null
         ))}
 
+        {/* CITIES */}
+            <Cities dataCities={dataCities} className={"desktop"} />
+
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em", marginTop: "10px", marginBottom: "5px"}}>Cities</h2> */}
-        
-        {/* CITIES */}
-            {/* <Cities dataCities={dataCities} /> */}
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "2em",marginBottom: "5px"}}>Categories</h2> */}  
 

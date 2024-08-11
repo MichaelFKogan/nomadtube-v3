@@ -7,7 +7,7 @@ function Cities({dataCities, className}) {
 
     return (
         <>
-            <div className={`cities-wrapper ${className} desktop`}>
+            <div className={`cities-wrapper desktop`}>
                 <div className="inner-cities">
 
                     <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
@@ -22,7 +22,7 @@ function Cities({dataCities, className}) {
                 </div>
             </div>
 
-            <div className={`cities-wrapper ${className} mobile`}>
+            <div className={`cities-wrapper mobile`}>
                 <div className="inner-cities">
                     {city &&
                         <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
