@@ -267,7 +267,7 @@ a.active{
     .cities-wrapper a{
         /* width: calc(50% - 2px); */
         font-size: 15px;
-        height: 60px;
+        height: 50px;
 
         /* padding: 0px 20px; */
 
@@ -275,9 +275,15 @@ a.active{
         align-items: center;
         justify-content: center;
 
-        border-radius: 2px;
-        /* box-shadow: 0px 2px 5px #ccc; */
+        border-radius: 6px;
+        box-shadow: 0px 2px 5px #ccc;
         white-space: nowrap;
+    }
+
+    .home .cities-wrapper a{
+        height: 70px;
+        border-radius: 2px;
+        box-shadow: 0px 0px 0px #ccc;
     }
 
     /* .home .cities-wrapper a{

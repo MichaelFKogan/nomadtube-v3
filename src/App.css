@@ -366,11 +366,15 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding-top: 0px;
     padding-right: 0px;
     margin-right: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
 
   .categories-wrapper{
     padding: 0px 0px;
     background-color: #eee;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
 
   .inner-categories{
