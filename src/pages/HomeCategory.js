@@ -165,7 +165,7 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                     </Link>
                 {dataCategories.categories.map((item, index) => (
                     item.imgRoute ? (
-                        <Link to={`/category/${item.route}`}  className={`${item.imgRoute}-img background-img`} key={index}>
+                        <Link to={`/${item.route}`}  className={`${item.imgRoute}-img background-img`} key={index}>
                             <div>{item.name}</div>
                         </Link>
                     ) : (

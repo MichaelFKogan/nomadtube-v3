@@ -10,12 +10,12 @@
       {"name": "👩‍🏫 English Teaching","route": "englishteaching"},
       {"name": "🎒 Gear","route": "gear"},
 
-      {"name": "🏝 Bali Vlog","route": "balivlog", "imgRoute": "bali"},
-      {"name": "🇯🇵 Japan Walking Tour","route": "japanwalkingtour", "imgRoute": "japan"},
-      {"name": "🧋 Taiwan Bubble Tea","route": "taiwanbubbletea", "imgRoute": "taiwan"},
-      {"name": "🍻 Khao San Road","route": "khaosanroad", "imgRoute": "bangkok"},
-      {"name": "☕️ Seoul Cafe Tour","route": "seoulcafetour", "imgRoute": "seoul"},
-      {"name": "🌙 Full Moon Party","route": "fullmoonparty", "imgRoute": "kophangan"},
-      {"name": "🇻🇳 Vietnam Street Food","route": "vietnamstreetfood", "imgRoute": "vietnam"}
+      {"name": "🏝 Bali Vlog","route": "asia/bali/vlog", "imgRoute": "bali"},
+      {"name": "🇯🇵 Japan Walking Tour","route": "asia/japan/walkingtour", "imgRoute": "japan"},
+      {"name": "🧋 Taiwan Bubble Tea","route": "asia/taiwan/bubbletea", "imgRoute": "taiwan"},
+      {"name": "🍻 Khao San Road","route": "asia/thailand/bangkok/khaosanroad", "imgRoute": "bangkok"},
+      {"name": "☕️ Seoul Cafe Tour","route": "asia/korea/seoul/cafetour", "imgRoute": "seoul"},
+      {"name": "🌙 Full Moon Party","route": "asia/thailand/kophangan/fullmoonparty", "imgRoute": "kophangan"},
+      {"name": "🇻🇳 Vietnam Street Food","route": "asia/vietnam/streetfood", "imgRoute": "vietnam"}
     ]
 }

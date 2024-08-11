@@ -182,15 +182,15 @@ function Home({
             {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
             <div id="home-categories" className={`categories-wrapper`}>
                 <div className="inner-categories">
-                    <Link to={`/`} className="active" onClick={() => { scrollToTop(); }}><div>💯 All</div></Link>
-                    <Link to={`/category/vlog`} onClick={() => { scrollToTop(); }}><div>📸 Vlog</div></Link>
-                    <Link to={`/category/howtobecomeadigitalnomad`} onClick={() => { scrollToTop(); }}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
-                    <Link to={`/category/streetfood`} onClick={() => { scrollToTop(); }}><div>🍜 Street Food</div></Link>
-                    <Link to={`/category/walkingtour`} onClick={() => { scrollToTop(); }}><div>🚶‍♂️ Walking Tour</div></Link>
-                    <Link to={`/category/solotravel`} onClick={() => { scrollToTop(); }}><div>🧍‍♀️ Solo Travel</div></Link>
-                    <Link to={`/category/vanlife`} onClick={() => { scrollToTop(); }}><div>🚐 Van Life</div></Link>
-                    <Link to={`/category/englishteaching`} onClick={() => { scrollToTop(); }}><div>👩‍🏫 English Teaching</div></Link>
-                    <Link to={`/category/gear`} onClick={() => { scrollToTop(); }}><div>🎒 Gear</div></Link>
+                    <Link to={`/`} className="active"><div>💯 All</div></Link>
+                    <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
+                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
+                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
+                    <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
+                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
+                    <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
+                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
 
                     <Link to={`/asia/bali/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
                     <Link to={`/asia/japan/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
