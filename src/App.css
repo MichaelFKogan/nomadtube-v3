@@ -275,14 +275,14 @@ h2{font-family: "Nunito Black";}
     margin-bottom: 2px;
     background: black;
 
-    padding: 20px 20px;
+    padding: 15px 20px;
     cursor: pointer;
   }
 
   .black-bar-title h2{
     font-family: "Edo";
     font-weight: 100;
-    font-size: 30px;
+    font-size: 24px;
     color: white;
     margin: 0px;
   }
@@ -291,6 +291,9 @@ h2{font-family: "Nunito Black";}
     color: white;
   }
 
+  .home .category-title h2{
+    font-size: 24px;
+  }
 
   .category-title{
     margin: 0px;
