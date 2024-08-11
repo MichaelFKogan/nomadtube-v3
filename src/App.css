@@ -351,7 +351,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .total-videos {
     text-wrap: nowrap;
-    padding-top: 5px;
+    padding-top:3px;
+    padding-right: 7px;
 }
 
 .home .total-videos {
