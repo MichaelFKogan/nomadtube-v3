@@ -103,7 +103,7 @@ html, body{
 }
 
 h1{font-family: "Nunito Black";margin: .5em 0px;}
-h2{font-family: "Nunito Black";}
+h2{font-family: "Nunito Black"; font-size: 26px}
 
 .bold{font-weight: bold;}
 
@@ -287,25 +287,22 @@ h2{font-family: "Nunito Black";}
     color: white;
   }
 
-  .home .category-title h2{
-    font-size: 26px;
-  }
-
   .home .mobile-menu{
     flex-direction: column;
     align-items: baseline;
     /* position: relative; */
   }
 
-  .category-title{
+  .home .category-title, .category-title{
     margin: 0px;
     padding: 10px 10px;
     background: black;
     color: white;
   }
-  .category-title h2{
+  .home .category-title h2, .category-title h2{
     font-family: "Edo";
     font-weight: 100;
+    font-size: 26px;
   }
 
   .home-category-page .category-title{
@@ -402,8 +399,6 @@ h2{font-family: "Nunito Black";}
 
   .cards-wrapper{
     margin: 0px;
-    height: 600px;
-    overflow-y: scroll;
   }
 
 }

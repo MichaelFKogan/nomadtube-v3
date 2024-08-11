@@ -112,7 +112,8 @@
     .page-banner {width: 100%;}
 
     .home-banner, .page-banner {
-        margin: 2px 0px 2px 0px;
+        margin: 0px;
+        margin-bottom: 5px;
         box-shadow: 0px 0px 0px black;
         border-radius: 0px;
     }
