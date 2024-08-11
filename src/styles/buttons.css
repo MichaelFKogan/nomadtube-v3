@@ -176,6 +176,7 @@ a.active{
     .home-category-page .cities-wrapper{
         flex-wrap: nowrap;
         overflow-y: scroll;
+        justify-content: start;
     }
 
     .home .cities-wrapper a,
@@ -187,6 +188,7 @@ a.active{
         height: 70px;
         border-radius: 0px;
         box-shadow: 0px 0px 0px black;
+        border-radius: 6px;
     }
 
     .cities-wrapper a{
