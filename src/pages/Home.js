@@ -171,6 +171,13 @@ function Home({
             <div className="category-title"><h2>📹 Videos</h2></div>
                 {/* <div>Page: {currentPage}</div> */}            
 
+            <div className="breadcrumbs-and-videos">
+                <div className="breadcrumbs d-flex col-gap-5">
+                    <Link to={"/"}><div>Home</div></Link>
+                </div>
+                <TotalVideos data={data}/>
+            </div>
+
         {/* CATEGORIES */}
             {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
             <div id="home-categories" className={`categories-wrapper`}>
@@ -197,13 +204,7 @@ function Home({
 
 
             {/* <h2 className="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2> */}
-            
-            <div className="breadcrumbs-and-videos">
-                <div className="breadcrumbs d-flex col-gap-5">
-                    <Link to={"/"}><div>Home</div></Link>
-                </div>
-                <TotalVideos data={data}/>
-            </div>
+        
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             

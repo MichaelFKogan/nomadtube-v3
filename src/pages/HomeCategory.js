@@ -145,8 +145,20 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div> */}
 
+        {/* CATEGORY TITLE */}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
+
+            {/* BREADCRUMBS */}
+            <div className="breadcrumbs-and-videos">
+            <div className="breadcrumbs d-flex col-gap-5 align-center">
+                <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
+                <Link to={`/category/${homeCategory}`}><div className={'bold'}>{dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}</div></Link>
+            </div>
+            <TotalVideos data={data}/>
+            </div>
+
         {/* CATEGORIES */}
-            <div className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}>
+            <div className={`categories-wrapper`}>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>
@@ -171,46 +183,10 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 </div>
             </div>
 
-        {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
-
             {/* <div className="page-back d-flex align-center mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                 <Link to={"/"} className="" onClick={() => { scrollToCategories(); }}><div>Back</div></Link>
             </div> */}
-
-        {/* CATEGORIES */}
-            {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
-            <div id="home-categories" className={`categories-wrapper`}>
-                <div className="inner-categories">
-                    <Link to={`/`} className="active" onClick={() => { scrollToTop(); }}><div>💯 All</div></Link>
-                    <Link to={`/category/vlog`} onClick={() => { scrollToTop(); }}><div>📸 Vlog</div></Link>
-                    <Link to={`/category/howtobecomeadigitalnomad`} onClick={() => { scrollToTop(); }}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
-                    <Link to={`/category/streetfood`} onClick={() => { scrollToTop(); }}><div>🍜 Street Food</div></Link>
-                    <Link to={`/category/walkingtour`} onClick={() => { scrollToTop(); }}><div>🚶‍♂️ Walking Tour</div></Link>
-                    <Link to={`/category/solotravel`} onClick={() => { scrollToTop(); }}><div>🧍‍♀️ Solo Travel</div></Link>
-                    <Link to={`/category/vanlife`} onClick={() => { scrollToTop(); }}><div>🚐 Van Life</div></Link>
-                    <Link to={`/category/englishteaching`} onClick={() => { scrollToTop(); }}><div>👩‍🏫 English Teaching</div></Link>
-                    <Link to={`/category/gear`} onClick={() => { scrollToTop(); }}><div>🎒 Gear</div></Link>
-
-                    <Link to={`/asia/bali/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
-                    <Link to={`/asia/japan/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
-                    <Link to={`/asia/taiwan/bubbletea`} className="taiwan-img background-img" onClick={() => { scrollToTop(); }}><div>🧋 Taiwan Bubble Tea</div></Link>
-                    <Link to={`/asia/thailand/bangkok/khaosanroad`} className="bangkok-img background-img" onClick={() => { scrollToTop(); }}><div>🍻 Khao San Road</div></Link>
-                    <Link to={`/asia/japan/seoul/cafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); }}><div>☕️ Seoul Cafe Tour</div></Link>
-                    <Link to={`/asia/thailand/kophanganfullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); }}><div>🌙 Full Moon Party</div></Link>
-                    <Link to={`/asia/vietnam/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
-                </div>
-            </div>
-
-        {/* BREADCRUMBS */}
-        <div className="breadcrumbs-and-videos">
-        <div className="breadcrumbs d-flex col-gap-5 align-center">
-            <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
-            <Link to={`/category/${homeCategory}`}><div className={'bold'}>{dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}</div></Link>
-        </div>
-        <TotalVideos data={data}/>
-        </div>
 
 
         {/* <Breadcrumbs/> */}
