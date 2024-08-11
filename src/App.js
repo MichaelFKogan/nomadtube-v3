@@ -49,14 +49,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar toggleAsia={toggleAsia}/>
+        {/* <Navbar toggleAsia={toggleAsia}/> */}
 
         {/* <Asia showAsia={showAsia} toggleAsia={toggleAsia} /> */}
 
       <Routes>
           <Route path="/" element={ 
             <>
-              {/* <Navbar toggleAsia={toggleAsia}/> */}
+              <Navbar toggleAsia={toggleAsia}/>
                 <Home 
                   continentsDropdown={continentsDropdown} handleContinentsDropdown={handleContinentsDropdown}
                   countriesDropdown={countriesDropdown} handleCountriesDropdown={handleCountriesDropdown}
@@ -70,7 +70,7 @@ function App() {
           />
 
           <Route path="/category/:homeCategory" element={
-            <>
+            <><Navbar toggleAsia={toggleAsia} className={"desktop"}/>
               <HomeCategory
                   continentsDropdown={continentsDropdown} handleContinentsDropdown={handleContinentsDropdown}
                   countriesDropdown={countriesDropdown} handleCountriesDropdown={handleCountriesDropdown}
@@ -82,7 +82,7 @@ function App() {
           <Route path="/all" element={<All />} />
 
           <Route path=":continent" element={<Continent />} />
-          <Route path=":continent/:country" element={<Country />} />
+          <Route path=":continent/:country" element={<><Navbar toggleAsia={toggleAsia}/><Country /></>} />
 
           <Route path=":continent/:country/category/:category" element={<CountryCategory />} />
 
