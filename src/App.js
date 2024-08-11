@@ -71,7 +71,7 @@ function App() {
 
           <Route path="/category/:homeCategory" element={
             <>
-              <Navbar toggleAsia={toggleAsia} />
+              <Navbar toggleAsia={toggleAsia} className={"desktop"} />
               <HomeCategory
                   continentsDropdown={continentsDropdown} handleContinentsDropdown={handleContinentsDropdown}
                   countriesDropdown={countriesDropdown} handleCountriesDropdown={handleCountriesDropdown}

@@ -148,13 +148,13 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 </div>
             </div>
 
-        <div className="page-back d-flex align-center mobile">
-            <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
-            <Link to={"/"} className="" onClick={() => { scrollToCategories(); }}><div>Back</div></Link>
-        </div>
-
         {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
+
+            <div className="page-back d-flex align-center mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                <Link to={"/"} className="" onClick={() => { scrollToCategories(); }}><div>Back</div></Link>
+            </div>
 
         {/* BREADCRUMBS */}
         <div className="breadcrumbs-and-videos">
