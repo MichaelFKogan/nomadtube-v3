@@ -28,6 +28,22 @@ function App() {
       setShowAsia(!showAsia);
   };
 
+  const [continentsDropdown, setContinentsDropdown] = useState(false);
+  const [countriesDropdown, setCountriesDropdown] = useState(false);
+  const [categoriesDropdown, setCategoriesDropdown] = useState(false);
+
+  const handleContinentsDropdown = () => {
+      setContinentsDropdown(!continentsDropdown);
+  }
+
+  const handleCountriesDropdown = () => {
+      setCountriesDropdown(!countriesDropdown);
+  }
+
+  const handleCategoriesDropdown = () => {
+      setCategoriesDropdown(!categoriesDropdown);
+  }
+
   return (
     <div className="App">
       <Router>
@@ -36,8 +52,27 @@ function App() {
         {/* <Asia showAsia={showAsia} toggleAsia={toggleAsia} /> */}
 
       <Routes>
-          <Route path="/" element={ <><Navbar toggleAsia={toggleAsia}/><Home /></>} />
-          <Route path="/category/:homeCategory" element={<><Navbar toggleAsia={toggleAsia} /><HomeCategory /></>} />
+          <Route path="/" element={ 
+            <>
+              <Navbar toggleAsia={toggleAsia}/>
+                <Home 
+                  continentsDropdown={continentsDropdown} handleContinentsDropdown={handleContinentsDropdown}
+                  countriesDropdown={countriesDropdown} handleCountriesDropdown={handleCountriesDropdown}
+                  categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
+            </>} 
+          />
+
+          <Route path="/category/:homeCategory" element={
+            <>
+              <Navbar toggleAsia={toggleAsia} />
+              <HomeCategory
+                  continentsDropdown={continentsDropdown} handleContinentsDropdown={handleContinentsDropdown}
+                  countriesDropdown={countriesDropdown} handleCountriesDropdown={handleCountriesDropdown}
+                  categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
+            </>} 
+            />
+          
+          
           <Route path="/all" element={<><Navbar toggleAsia={toggleAsia}/><All /></>} />
 
           <Route path=":continent" element={<><Navbar toggleAsia={toggleAsia}/><Continent /></>} />

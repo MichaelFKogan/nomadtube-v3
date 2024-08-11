@@ -11,7 +11,7 @@ const ITEMS_PER_PAGE = 400;
 const INITIAL_CARDS_TO_SHOW = 40;
 const INCREMENT_CARDS = 40;
 
-function HomeCategory() {
+function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDropdown, handleCountriesDropdown, categoriesDropdown, handleCategoriesDropdown}) {
     const { continent, homeCategory, country, city, category } = useParams();
     const data = require(`../data/category/${homeCategory}.json`);
     const dataCities = require(`../data/home-cities.json`);
@@ -93,24 +93,37 @@ function HomeCategory() {
 
         <HomeBanner />
 
-        <h2 className="black-bar-title">🌍 Continents</h2>
+        <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
+            <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+            <h2 className="">🌎 Continents</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+        </div>
 
         {/* CONTINENTS */}
-            <div className="cities-wrapper continents-wrapper">
+            <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}>
                 <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
                 <Link to={`/southamerica`} className="southamerica-img background-img" onClick={() => { scrollToTop(); }}><div>💃🏻 South America</div></Link>
                 <Link to={`/europe`} className="europe-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇺 Europe</div></Link>
                 <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link>
             </div>
 
-        <h2 className="black-bar-title">🗺 Countries</h2>
+            <div className='d-flex space-between black-bar-title' onClick={handleCountriesDropdown}>
+                <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                <h2 className="">🗺 Countries</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
 
         {/* CITIES */}
-            <HomeCities dataCities={dataCities}/>
+            <HomeCities dataCities={dataCities} countriesDropdown={countriesDropdown}/>
+
+            <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
+                <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                <h2 className="">📁 Categories</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
 
         {/* CATEGORIES */}
-            <div className="categories-wrapper">
-            <h2 className="black-bar-title">📁 Categories</h2>
+            <div className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>

@@ -9,7 +9,7 @@ const ITEMS_PER_PAGE = 400;
 const INITIAL_CARDS_TO_SHOW = 40;
 const INCREMENT_CARDS = 40;
 
-function Home() {
+function Home({continentsDropdown, handleContinentsDropdown, countriesDropdown, handleCountriesDropdown, categoriesDropdown, handleCategoriesDropdown}) {
     const { continent, country, city, category } = useParams();
     const data = require(`../data/home.json`);
     const dataCategories = require(`../data/home-categories.json`);
@@ -30,22 +30,6 @@ function Home() {
 
     const scrollToTop = () => {
         document.documentElement.scrollTop = 0;
-    }
-
-    const [continentsDropdown, setContinentsDropdown] = useState(false);
-    const [countriesDropdown, setCountriesDropdown] = useState(false);
-    const [categoriesDropdown, setCategoriesDropdown] = useState(false);
-
-    const handleContinentsDropdown = () => {
-        setContinentsDropdown(!continentsDropdown);
-    }
-
-    const handleCountriesDropdown = () => {
-        setCountriesDropdown(!countriesDropdown);
-    }
-
-    const handleCategoriesDropdown = () => {
-        setCategoriesDropdown(!categoriesDropdown);
     }
 
 
@@ -104,7 +88,7 @@ function Home() {
         <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
             <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             <h2 className="">🌎 Continents</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
         </div>
 
         {/* CONTINENTS w/images */}
@@ -118,7 +102,7 @@ function Home() {
             <div className='d-flex space-between black-bar-title' onClick={handleCountriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">🗺 Countries</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div>
 
         {/* COUNTRIES */}
@@ -142,7 +126,7 @@ function Home() {
             <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">📁 Categories</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div>
 
         {/* CATEGORIES */}
