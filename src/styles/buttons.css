@@ -386,7 +386,7 @@ visibility: visible; /* Make it visible */
 
 .pagination button, .back-to-top{
     width: 100px;
-    height: 50px;
+    height: 45px;
     font-family: "Nunito Black";
     background: black;
     color: white;
