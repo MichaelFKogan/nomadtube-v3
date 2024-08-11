@@ -268,15 +268,31 @@ h2{font-family: "Nunito Black";}
   }
 
   .black-bar-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 3px;
+    background: black;
+
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    padding: 20px 20px;
+  }
+
+  .black-bar-title h2{
     font-family: "Edo";
     font-weight: 100;
     font-size: 30px;
-    margin-bottom: 0px;
-    background: black;
     color: white;
-    padding: 20px;
-    margin-top: 0px;
+    margin: 0px;
   }
+
+  .black-bar-title svg{
+    color: white;
+  }
+
 
   .category-title{
     margin: 0px;
@@ -362,8 +378,8 @@ h2{font-family: "Nunito Black";}
 
   .home .inner-categories,
     .home.category-page .inner-categories{
-      border-left: 4px solid black;
-      border-right: 4px solid black;
+      /* border-left: 4px solid black;
+      border-right: 4px solid black; */
       padding: 10px 0px;
   }
 

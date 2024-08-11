@@ -93,6 +93,8 @@ function HomeCategory() {
 
         <HomeBanner />
 
+        <h2 className="black-bar-title">🌍 Continents</h2>
+
         {/* CONTINENTS */}
             <div className="cities-wrapper continents-wrapper">
                 <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
@@ -101,7 +103,7 @@ function HomeCategory() {
                 <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link>
             </div>
 
-        <h2 className="black-bar-title">🌎 Countries</h2>
+        <h2 className="black-bar-title">🗺 Countries</h2>
 
         {/* CITIES */}
             <HomeCities dataCities={dataCities}/>
