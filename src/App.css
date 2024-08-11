@@ -302,7 +302,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .home .category-title h2, .category-title h2{
     font-family: "Edo";
     font-weight: 100;
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .home-category-page .category-title{
@@ -416,7 +416,7 @@ hr{
   font-size: 17px;
   background: white;
   width: 100%;
-  padding: 5px 0px 5px 0px;
+  padding-top: 5px;
 }
 
 .page-back svg{
