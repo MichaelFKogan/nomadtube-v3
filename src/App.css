@@ -288,7 +288,7 @@ h2{font-family: "Nunito Black";}
   }
 
   .home .category-title h2{
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .home .mobile-menu{
@@ -402,6 +402,8 @@ h2{font-family: "Nunito Black";}
 
   .cards-wrapper{
     margin: 0px;
+    height: 600px;
+    overflow-y: scroll;
   }
 
 }
