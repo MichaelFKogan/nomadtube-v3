@@ -4,7 +4,9 @@ function TotalVideos({data, className}) {
 
     return (
         <div className={`total-videos ${className}`}>
-            Videos: {data.videos.length}
+            <div className='d-flex nowrap'>
+            <div>Videos:</div> <div>{data.videos.length}</div>
+            </div>
         </div>
     );
 }
