@@ -84,10 +84,13 @@ function CountryCategory() {
     return (
         <div className={`country-category-page ${country}`}>
 
-        <PageBanner title={dataCities.name} imgRoute={country}/>
+        {/* <PageBanner title={dataCities.name} imgRoute={country}/> */}
 
         {/* CITIES */}
-            <Cities dataCities={dataCities} />
+            {/* <Cities dataCities={dataCities} /> */}
+
+        {/* CATEGORY TITLE */}
+            {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}            
 
             <div className="page-back d-flex align-center mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
@@ -98,9 +101,6 @@ function CountryCategory() {
                 <Breadcrumbs/>
                 <TotalVideos data={data}/>
             </div>
-
-        {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><h2>{item.name}</h2></div> : null))}
 
         {/* CATEGORIES */}
             <div className="categories-wrapper">
