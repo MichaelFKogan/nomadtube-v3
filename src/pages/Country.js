@@ -101,7 +101,7 @@ function Country() {
             {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>
 
-            <div className="d-flex space-between align-center" style={{paddingRight: "2px"}}>
+            <div className="d-flex space-between align-center" style={{paddingRight: "5px"}}>
                 <div className="page-back d-flex align-center mobile">
                     <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                     <Link to={`/`} className=""><div>Home</div></Link>
