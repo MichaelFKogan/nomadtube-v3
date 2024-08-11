@@ -32,6 +32,23 @@ function Home() {
         document.documentElement.scrollTop = 0;
     }
 
+    const [continentsDropdown, setContinentsDropdown] = useState(false);
+    const [countriesDropdown, setCountriesDropdown] = useState(false);
+    const [categoriesDropdown, setCategoriesDropdown] = useState(false);
+
+    const handleContinentsDropdown = () => {
+        setContinentsDropdown(!continentsDropdown);
+    }
+
+    const handleCountriesDropdown = () => {
+        setCountriesDropdown(!countriesDropdown);
+    }
+
+    const handleCategoriesDropdown = () => {
+        setCategoriesDropdown(!categoriesDropdown);
+    }
+
+
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, data.videos.length);
@@ -84,28 +101,28 @@ function Home() {
 
         <HomeBanner />
         
-        <div className='d-flex space-between black-bar-title'>
+        <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
             <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             <h2 className="">🌎 Continents</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
         </div>
 
         {/* CONTINENTS w/images */}
-            <div className="cities-wrapper continents-wrapper">
+            <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}>
                 <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
                 <Link to={`/southamerica`} className="southamerica-img background-img" onClick={() => { scrollToTop(); }}><div>💃🏻 South America</div></Link>
                 <Link to={`/europe`} className="europe-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇺 Europe</div></Link>
                 <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link>
             </div>
 
-            <div className='d-flex space-between black-bar-title'>
+            <div className='d-flex space-between black-bar-title' onClick={handleCountriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">🗺 Countries</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div>
 
         {/* COUNTRIES */}
-            <div className="cities-wrapper">
+            <div className={`cities-wrapper ${countriesDropdown ? 'd-flex' : 'd-none'}`}>
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
@@ -122,14 +139,14 @@ function Home() {
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
             </div>
 
-            <div className='d-flex space-between black-bar-title'>
+            <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">📁 Categories</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div>
 
         {/* CATEGORIES */}
-            <div id="home-categories" className="categories-wrapper">
+            <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}>
                 <div className="inner-categories">
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>

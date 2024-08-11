@@ -272,13 +272,11 @@ h2{font-family: "Nunito Black";}
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     background: black;
 
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-
     padding: 20px 20px;
+    cursor: pointer;
   }
 
   .black-bar-title h2{
@@ -340,6 +338,9 @@ h2{font-family: "Nunito Black";}
     padding-bottom: 0px;
     margin: 2px 0px;
   }
+
+  .home .d-flex{display: flex;}
+  .home .d-none{display: none;}
 
   .breadcrumbs-and-videos{
     position: relative;
