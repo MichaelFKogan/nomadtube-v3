@@ -1,0 +1,7 @@
+{
+    "name": "🇻🇳 Vietnam",
+    "cities":[
+        {"name": "Hanoi","route": "hanoi"},
+        {"name": "Ho Chi Minh City","route": "hochiminhcity"}
+    ]
+}
