@@ -161,11 +161,15 @@ function Home({
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div> */}
 
-            <div className='black-bar-title'>
+            {/* <div className='black-bar-title'> */}
                 {/* <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg> */}
-                <h2 className="">📁 Categories</h2>
+                {/* <h2 className="">📁 Categories</h2> */}
                 {/* <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg> */}
-            </div>
+            {/* </div> */}
+
+        {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>📹 Videos</h2></div>
+                {/* <div>Page: {currentPage}</div> */}            
 
         {/* CATEGORIES */}
             {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
@@ -193,10 +197,6 @@ function Home({
 
 
             {/* <h2 className="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2> */}
-
-        {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>📹 Videos</h2></div>
-            {/* <div>Page: {currentPage}</div> */}
             
             <div className="breadcrumbs-and-videos">
                 <div className="breadcrumbs d-flex col-gap-5">

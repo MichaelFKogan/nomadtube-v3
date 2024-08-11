@@ -240,7 +240,8 @@ a.active{
     }
 
     .home .categories-wrapper{
-        overflow-y: visible;
+        overflow-y: scroll;
+        position: relative;
     }
 
     .categories-wrapper a{
