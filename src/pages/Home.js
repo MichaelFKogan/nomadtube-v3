@@ -105,11 +105,11 @@ function Home({
 
         <HomeBanner />
         
-        <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
+        {/* <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
             <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             <h2 className="">🗺 Countries</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-        </div>
+        </div> */}
 
         {/* CONTINENTS w/images */}
             {/* <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}> */}
@@ -119,7 +119,7 @@ function Home({
                 <Link to={`/europe`} className="europe-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇺 Europe</div></Link>
                 <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link> */}
 
-            <div className={`${continentsDropdown ? 'd-flex' : 'd-none'}`}>
+            {/* <div className={`${continentsDropdown ? 'd-flex' : 'd-none'}`}>
                 <div className={`hp-dropdown-menu hp-countries-menu ${continentsDropdownMenu ? 'd-none' : 'd-flex'}`}>
                     <div className="nav-menu" onClick={() => {closeMobileMenu(); toggleAsiaDropdownMenu();}} style={{marginLeft: "0px"}}><div>⛩ Asia</div></div>
                     <div className="nav-menu" onClick={() => {closeMobileMenu(); toggleAsiaMenu();}} style={{marginLeft: "0px"}}><div>💃🏻 South America</div></div>
@@ -130,7 +130,7 @@ function Home({
 
                 <AsiaDropdownMenu asiaDropdownMenu={asiaDropdownMenu} closeAllDropdownMenus={closeAllDropdownMenus} />
 
-            </div>
+            </div> */}
 
             {/* <div className='d-flex space-between black-bar-title' onClick={handleCountriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
@@ -155,14 +155,21 @@ function Home({
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
             </div> */}
 
-            <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
+            {/* <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">📁 Categories</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+            </div> */}
+
+            <div className='black-bar-title'>
+                {/* <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg> */}
+                <h2 className="">📁 Categories</h2>
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg> */}
             </div>
 
         {/* CATEGORIES */}
-            <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}>
+            {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
+            <div id="home-categories" className={`categories-wrapper`}>
                 <div className="inner-categories">
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>

@@ -36,7 +36,7 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
     }
 
     const scrollToCategories = () => {
-        document.documentElement.scrollTop = 850;
+        document.documentElement.scrollTop = 0;
         // const categoriesSection = document.getElementById("home-categories");
         // categoriesSection.scrollIntoView({ behavior: "smooth" });
     };
@@ -91,16 +91,16 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
     return (
         <div className="home home-category-page">
 
-        <HomeBanner />
+        {/* <HomeBanner /> */}
 
-        <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
+        {/* <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
             <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             <h2 className="">🌎 Continents</h2>
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-        </div>
+        </div> */}
 
         {/* CONTINENTS */}
-            <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}>
+            {/* <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}>
                 <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
                 <Link to={`/southamerica`} className="southamerica-img background-img" onClick={() => { scrollToTop(); }}><div>💃🏻 South America</div></Link>
                 <Link to={`/europe`} className="europe-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇺 Europe</div></Link>
@@ -111,16 +111,16 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">🗺 Countries</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-            </div>
+            </div> */}
 
         {/* CITIES */}
-            <HomeCities dataCities={dataCities} countriesDropdown={countriesDropdown}/>
+            {/* <HomeCities dataCities={dataCities} countriesDropdown={countriesDropdown}/>
 
             <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
                 <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
                 <h2 className="">📁 Categories</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-            </div>
+            </div> */}
 
         {/* CATEGORIES */}
             <div className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}>
@@ -148,7 +148,7 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 </div>
             </div>
 
-        <div className="page-back d-none align-center mobile">
+        <div className="page-back d-flex align-center mobile">
             <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
             <Link to={"/"} className="" onClick={() => { scrollToCategories(); }}><div>Back</div></Link>
         </div>

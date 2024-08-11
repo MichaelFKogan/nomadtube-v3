@@ -41,7 +41,10 @@ function App() {
   const handleContinentsDropdownMenu = () => {setContinentsDropdownMenu(!continentsDropdownMenu);}
   const toggleAsiaDropdownMenu = () => {setAsiaDropdownMenu(!asiaDropdownMenu);}
 
-  const closeAllDropdownMenus  = () => {setAsiaDropdownMenu(false);};
+  const closeAllDropdownMenus  = () => {
+    setContinentsDropdownMenu(false);
+    setAsiaDropdownMenu(false);
+    document.documentElement.scrollTop = 0;};
 
   return (
     <div className="App">

@@ -266,7 +266,7 @@ h2{font-family: "Nunito Black";}
   .black-bar-title{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     margin-bottom: 2px;
     background: black;
@@ -278,7 +278,7 @@ h2{font-family: "Nunito Black";}
   .black-bar-title h2{
     font-family: "Edo";
     font-weight: 100;
-    font-size: 18px;
+    font-size: 22px;
     color: white;
     margin: 0px;
   }
@@ -288,7 +288,7 @@ h2{font-family: "Nunito Black";}
   }
 
   .home .category-title h2{
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .home .mobile-menu{
