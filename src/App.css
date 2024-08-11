@@ -295,7 +295,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .home .category-title, .category-title{
     margin: 0px;
-    padding: 10px 10px;
+    padding: 10px 10px 0px 10px;
     background: black;
     color: white;
   }
