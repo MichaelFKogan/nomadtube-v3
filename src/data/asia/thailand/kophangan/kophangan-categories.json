@@ -7,6 +7,7 @@
     {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
     {"name": "💵 Cost","route": "cost"},
     {"name": "💻 Coworking","route": "coworking"},
+    {"name": "🌙 Full Moon Party","route": "fullmoonparty"},
     {"name": "🍻 Nightlife","route": "nightlife"}
   ]
 }

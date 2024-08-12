@@ -241,6 +241,12 @@ a.active{
         width: 100%;
     }
 
+    .vietnam .cities-wrapper a,
+    .hanoi .cities-wrapper a,
+    .hochiminhcity .cities-wrapper a{
+        width: calc(50% - 1px);
+    }
+
     .categories-wrapper{
         overflow-y: scroll;
     }
@@ -279,7 +285,7 @@ a.active{
         align-items: center;
         justify-content: center;
 
-        border-radius: 6px;
+        border-radius: 2px;
         box-shadow: 0px 2px 5px #ccc;
         white-space: nowrap;
     }
