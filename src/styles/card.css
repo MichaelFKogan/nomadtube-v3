@@ -11,7 +11,7 @@
     }
 }
 
-@media(max-width: 1400px) and (min-width: 1025px){
+@media(max-width: 1440px) and (min-width: 1025px){
     .card {
         width: calc(25% - 2px);
     }
@@ -81,7 +81,7 @@
 
 
 /* CARDS 5x5 LARGE DESKTOP GRID */
-@media(min-width: 1401px){
+@media(min-width: 1441px){
     .card.small:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
     .card.medium:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
 
@@ -107,7 +107,7 @@
 
 
 /* CARDS 4x4 DESKTOP GRID */
-@media(min-width: 1025px) and (max-width: 1400px){
+@media(min-width: 1025px) and (max-width: 1440px){
     .card.small:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
     .card.medium:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
 
