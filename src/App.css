@@ -212,10 +212,12 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .black-bar-title{
     justify-content: center;
     margin-bottom: 10px;
-    background: black;
-    color: white;
+    background: #f1f1f1;
+    color: black;
     padding: 15px;
     margin-top: 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
   }
 
   .black-bar-title h2{
@@ -271,7 +273,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     align-items: center;
     justify-content: center;
 
-    background: black;
+    background: #f1f1f1;
 
     padding: 12px 20px;
     cursor: pointer;
@@ -281,12 +283,12 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     font-family: "Edo";
     font-weight: 100;
     font-size: 24px;
-    color: white;
+    color: black;
     margin: 0px;
   }
 
   .black-bar-title svg{
-    color: white;
+    color: black;
   }
 
   .home .mobile-menu{
