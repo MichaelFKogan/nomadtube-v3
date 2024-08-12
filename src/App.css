@@ -125,8 +125,10 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
 .mt-5{margin-top: 5px;}
 .mt-10{margin-top: 10px;}
+.mt-15{margin-top: 15px;}
 .mb-5{margin-bottom: 5px;}
 .mb-10{margin-bottom: 10px;}
+.mb-15{margin-bottom: 15px;}
 
 .mx-2{margin-left: 2px; margin-right: 2px}
 .mx-3{margin-left: 3px; margin-right: 3px}

@@ -67,7 +67,7 @@
     font-size: 15px;
 }
 
-.quick-links-countries {
+/* .quick-links-countries {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
@@ -75,5 +75,5 @@
 }
 
 .quick-links-countries.d-flex {
-    max-height: 500px; /* Adjust this value according to your content's height */
-}
+    max-height: 500px;
+} */

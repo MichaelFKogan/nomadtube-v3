@@ -252,7 +252,7 @@ a.active{
         width: 100%;
     }
 
-    .vietnam .cities-wrapper a,
+    .vietnam .cities-wrapper a{width: 100%}
     .hanoi .cities-wrapper a{width:40%}
     .hochiminhcity .cities-wrapper a{width: 60%}
 
