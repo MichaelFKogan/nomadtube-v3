@@ -134,7 +134,7 @@ function Home({
 
 
         {/* QUICK LINKS - DESKTOP */}
-            <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
+            <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🌎 Countries</h2></div>
 
         {/* COUNTRIES */}
             <div className={`cities-wrapper desktop`}>
@@ -160,6 +160,7 @@ function Home({
                 <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
+                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "19px"}}>See All...</div>
             </div>
 
             {/* QUICK LINKS - MOBILE */}
@@ -174,6 +175,9 @@ function Home({
                 }
             </div> */}
 
+
+        {/* QUICK LINKS - DESKTOP */}
+            <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
 
             <div className='d-flex space-between black-bar-title mobile'>
                 <h2 className="">🔗 Quick Links</h2>

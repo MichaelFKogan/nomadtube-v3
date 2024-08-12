@@ -1,7 +1,7 @@
 //src/api/youtube.js
 import axios from 'axios';
 
-const KEY = process.env.REACT_APP_YOUTUBE_API_KEY_TWELVE;
+const KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
 
 if (!KEY) {
     throw new Error('REACT_APP_YOUTUBE_API_KEY is not defined');
