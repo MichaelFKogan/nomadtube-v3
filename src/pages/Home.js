@@ -179,6 +179,7 @@ function Home({
         {/* QUICK LINKS - DESKTOP */}
             <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
 
+        {/* QUICK LINKS - MOBILE */}
             <div className='d-flex space-between black-bar-title mobile'>
                 <h2 className="">🔗 Quick Links</h2>
             </div>
@@ -216,7 +217,7 @@ function Home({
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
                 
-                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px"}}>See All...</div>
+                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px"}}>See All Countries...</div>
             </div>
 
 
@@ -246,18 +247,9 @@ function Home({
 
         {/* CATEGORIES */}
             {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
-            <div id="home-categories" className={`categories-wrapper`}>
+            {/* <div id="home-categories" className={`categories-wrapper`}>
                 <div className="inner-categories">
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
-
-                    {/* <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
-                    <Link to={`/asia/japan/category/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
-                    <Link to={`/asia/taiwan/category/bubbletea`} className="taiwan-img background-img" onClick={() => { scrollToTop(); }}><div>🧋 Taiwan Bubble Tea</div></Link>
-                    <Link to={`/asia/thailand/bangkok/khaosanroad`} className="bangkok-img background-img" onClick={() => { scrollToTop(); }}><div>🍻 Khao San Road</div></Link>
-                    <Link to={`/asia/korea/seoul/cafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); }}><div>☕️ Seoul Cafe Tour</div></Link>
-                    <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); }}><div>🌙 Full Moon Party</div></Link>
-                    <Link to={`/asia/vietnam/category/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam Street Food</div></Link> */}
-
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
                     <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
                     <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
@@ -267,6 +259,10 @@ function Home({
                     <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
                 </div>
+            </div> */}
+
+            <div className='d-flex space-between black-bar-title mobile' style={{background: "black"}}>
+                <h2 className="" style={{color: "white"}}>📁 Categories</h2>
             </div>
 
 

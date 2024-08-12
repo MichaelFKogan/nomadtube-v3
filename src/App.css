@@ -273,9 +273,9 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     align-items: center;
     justify-content: center;
 
-    background: #f1f1f1;
+    background: white;
 
-    padding: 12px 20px;
+    padding: 12px 20px 5px 20px;
     cursor: pointer;
   }
 
@@ -300,7 +300,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .home .category-title, .category-title{
     margin: 0px;
     padding: 5px;
-    background: #eee;
+    background: #f1f1f1;
     color: black;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -371,19 +371,26 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding-top: 0px;
     padding-right: 0px;
     margin-right: 0px;
-    border-top: 1px solid #ccc;
+    border-top: 0px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
 
   .categories-wrapper{
     padding: 0px 0px;
-    background: #eee;
+    background: #f1f1f1;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
 
   .hp-quick-links, .hp-quick-links .inner-categories{
     background: white;
+    flex-wrap: wrap !important;
+  }
+
+  .categories-wrapper.hp-quick-links a{
+    font-size: 20px;
+    width: calc(100% - 2px);
+    height: 60px;
   }
 
   .inner-categories{
@@ -397,14 +404,14 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     margin: auto 5px;
     width: 100%;
     padding: 5px 0px;
-    background: #eee;
+    background: #f1f1f1;
   }
 
   .home .inner-categories,
     .home.category-page .inner-categories{
       /* border-left: 4px solid black;
       border-right: 4px solid black; */
-      padding: 10px 0px;
+      padding: 0px 0px;
   }
 
   .home .inner-categories, 
