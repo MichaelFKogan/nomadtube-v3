@@ -146,7 +146,7 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
             </div>
 
         {/* COUNTRIES */}
-            <div className={`cities-wrapper mobile quick-links-countries ${countriesDropdown ? 'd-flex' : 'd-none'}`}>
+            <div className={`cities-wrapper mobile quick-links-countries ${countriesDropdown ? 'd-flex' : ''}`}>
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>

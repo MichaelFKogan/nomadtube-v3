@@ -71,6 +71,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
+    margin: 0px !important;
 }
 
 .quick-links-countries.d-flex {
