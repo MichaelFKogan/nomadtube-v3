@@ -67,13 +67,13 @@
     font-size: 15px;
 }
 
-/* .quick-links-countries {
+.quick-links-countries, .hp-quick-links {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
     margin: 0px !important;
 }
 
-.quick-links-countries.d-flex {
-    max-height: 500px;
-} */
+.quick-links-countries.d-flex, .hp-quick-links.d-flex {
+    max-height: 1000px;
+}

@@ -291,7 +291,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     background: white;
 
     padding: 12px 20px 5px 20px;
-    /* cursor: pointer; */
+    cursor: pointer;
   }
 
   .black-bar-title h2{
