@@ -175,7 +175,7 @@ function Home({
             </div>
 
         {/* COUNTRIES */}
-            <div className={`cities-wrapper mobile ${countriesDropdown ? 'd-flex' : 'd-none'}`} style={{height:"300px", overflowY: "scroll", borderBottom: "4px solid black"}}>
+            <div className={`cities-wrapper mobile ${countriesDropdown ? 'd-flex' : 'd-none'}`} style={{height:"185px", overflowY: "scroll", borderBottom: "4px solid black"}}>
 
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
