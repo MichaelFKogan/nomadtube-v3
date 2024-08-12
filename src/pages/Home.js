@@ -160,7 +160,7 @@ function Home({
                 <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
-                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "19px"}}>See All...</div>
+                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "19px"}}>See All Countries...</div>
             </div>
 
             {/* QUICK LINKS - MOBILE */}
@@ -217,7 +217,7 @@ function Home({
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
                 
-                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px", color: "#FF516B"}}>See All Countries...</div>
+                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px"}}>See All Countries...</div>
             </div>
 
 

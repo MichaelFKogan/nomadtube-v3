@@ -17,7 +17,7 @@ button {
     align-items: center;
 
     font-family: "Nunito Black";
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
 
     color: white;
@@ -43,13 +43,17 @@ button {
         border-radius: 4px;
     }
 
+    .hp-quick-links{
+        padding-top: 0px;
+    }
 
     .categories-wrapper.hp-quick-links .inner-categories{
-        padding: 0px 5px
+        padding: 0px 5px;
+        margin-top:  0px;
     }
 
     .categories-wrapper.hp-quick-links a{
-        font-size: 17px;
+        font-size: 19px;
         border-radius: 5px;
         height: 55px;
     }

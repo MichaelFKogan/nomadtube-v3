@@ -212,8 +212,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .black-bar-title{
     justify-content: center;
     margin-bottom: 10px;
-    background: #f1f1f1;
-    color: black;
+    background: black;
+    color: white;
     padding: 15px;
     margin-top: 0px;
     border-top: 1px solid #ccc;
@@ -233,11 +233,19 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .category-title {
     padding: 20px 0px;
-    background: #eee;
-    color: black;
+    background: black;
+    color: white;
     z-index: 4;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    /* border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; */
+}
+
+.categories-wrapper{
+  background: #eee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0px 15px 0px;
+  margin-bottom: 25px;
 }
 
 .category-title h2 {
@@ -260,6 +268,13 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     /* max-width: 1400px; */
     margin-bottom: 0px;
     width: 100%;
+  }
+
+  .hp-quick-links{
+    background-color: white;
+    padding-bottom: 0px;
+    border-bottom: 0px solid #ccc;
+    margin-bottom: 25px;
   }
 }
 
