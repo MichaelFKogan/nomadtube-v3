@@ -302,8 +302,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding: 10px 5px;
     background: black;
     color: white;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    /* border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; */
   }
 
   .home .category-title h2, .category-title h2{
@@ -344,9 +344,13 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     overflow-y: scroll;
   }
 
+  .bali .inner-cities{
+    overflow-y: hidden;
+  }
+
   .home .cities-wrapper{
     padding-bottom: 0px;
-    margin: 2px 0px;
+    margin: 0px 0px;
   }
 
   /* .home .d-flex{display: flex;}

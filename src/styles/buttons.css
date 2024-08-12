@@ -81,7 +81,7 @@ button {
     border-radius: 25px;
     padding: 7px 12px 8px 12px;
     border: 1px solid #ccc;
-    box-shadow: 0px 0px 3px rgba(0,0,0,.2)
+    box-shadow: 0 0 5px #ccc;
 }
 
 .categories-wrapper.hp-quick-links a{
@@ -265,6 +265,15 @@ a.active{
         position: relative;
     }
 
+    .home .categories-wrapper.hp-quick-links{
+        overflow-y: hidden;
+
+    }
+
+    .quick-links-countries{
+        padding: 0px 10px;
+    }
+
     .categories-wrapper a{
         text-wrap: nowrap;
         white-space: nowrap;
@@ -298,7 +307,7 @@ a.active{
         align-items: center;
         justify-content: center;
 
-        border-radius: 2px;
+        border-radius: 4px;
         box-shadow: 0px 2px 5px #ccc;
         white-space: nowrap;
     }
