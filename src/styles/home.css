@@ -70,7 +70,7 @@
 .quick-links-countries {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.25s ease;
+    transition: max-height 0.5s ease;
 }
 
 .quick-links-countries.d-flex {
