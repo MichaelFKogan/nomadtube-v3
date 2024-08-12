@@ -66,3 +66,13 @@
     font-family: "Nunito Black";
     font-size: 15px;
 }
+
+.quick-links-countries {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+}
+
+.quick-links-countries.d-flex {
+    max-height: 500px; /* Adjust this value according to your content's height */
+}
