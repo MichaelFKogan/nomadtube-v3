@@ -253,10 +253,8 @@ a.active{
     }
 
     .vietnam .cities-wrapper a,
-    .hanoi .cities-wrapper a,
-    .hochiminhcity .cities-wrapper a{
-        width: calc(50% - 1px);
-    }
+    .hanoi .cities-wrapper a{width:40%}
+    .hochiminhcity .cities-wrapper a{width: 60%}
 
     .categories-wrapper{
         overflow-y: scroll;
