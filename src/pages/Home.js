@@ -138,6 +138,15 @@ function Home({
 
         {/* COUNTRIES */}
             <div className={`cities-wrapper desktop`}>
+
+                {/* <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
+                <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
+                <Link to={`/asia/japan`} className="taiwan-img background-img" onClick={() => { scrollToTop(); }}><div>🧋 Taiwan Bubble Tea</div></Link>
+                <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🍻 Khao San Road</div></Link>
+                <Link to={`/asia/korea`} className="seoul-img background-img" onClick={() => { scrollToTop(); }}><div>☕️ Seoul Cafe Tour</div></Link>
+                <Link to={`/asia/korea`} className="kophangan-img background-img" onClick={() => { scrollToTop(); }}><div>🌙 Full Moon Party</div></Link>
+                <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam Street Food</div></Link> */}
+
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
@@ -167,6 +176,7 @@ function Home({
 
         {/* COUNTRIES */}
             <div className={`cities-wrapper mobile ${countriesDropdown ? 'd-flex' : 'd-none'}`}>
+
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
@@ -210,14 +220,6 @@ function Home({
             <div id="home-categories" className={`categories-wrapper`}>
                 <div className="inner-categories">
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
-                    <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
-                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
-                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
-                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
-                    <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
-                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
-                    <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
-                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
 
                     <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
                     <Link to={`/asia/japan/category/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
@@ -226,6 +228,15 @@ function Home({
                     <Link to={`/asia/korea/seoul/cafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); }}><div>☕️ Seoul Cafe Tour</div></Link>
                     <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); }}><div>🌙 Full Moon Party</div></Link>
                     <Link to={`/asia/vietnam/category/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
+
+                    <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
+                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
+                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
+                    <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
+                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
+                    <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
+                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
                 </div>
             </div>
 
