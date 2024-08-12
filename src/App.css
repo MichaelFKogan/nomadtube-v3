@@ -371,7 +371,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding-top: 0px;
     padding-right: 0px;
     margin-right: 0px;
-    border-top: 0px solid #ccc;
+    border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
 
@@ -385,6 +385,11 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .hp-quick-links, .hp-quick-links .inner-categories{
     background: white;
     flex-wrap: wrap !important;
+  }
+
+  .categories-wrapper.hp-quick-links{
+    border-top: 0px solid #ccc;
+    border-bottom: 0px solid #ccc;
   }
 
   .categories-wrapper.hp-quick-links a{
@@ -415,7 +420,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   }
 
   .home .inner-categories, 
-  .home.category-page .inner-categories {
+  .home-category-page .inner-categories {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -424,9 +429,13 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     row-gap: 5px;
     max-width: 1300px;
     margin: auto;
-    /* padding-left: 5px; */
-    padding: 0px 10px;
+    padding: 10px 5px;
 }
+
+  .home .hp-quick-links .inner-categories,
+  .home-category-page .hp-quick-links .inner-categories{
+    padding: 0px 55px;
+  }
 
   .cards-wrapper{
     margin: 0px;

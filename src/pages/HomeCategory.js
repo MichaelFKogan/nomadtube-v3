@@ -171,7 +171,7 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
 
-                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px"}}>See All...</div>
+                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px", color: "#FF516B"}}>See All Countries...</div>
             </div>
 
 

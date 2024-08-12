@@ -217,7 +217,7 @@ function Home({
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
                 
-                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px"}}>See All Countries...</div>
+                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px", color: "#FF516B"}}>See All Countries...</div>
             </div>
 
 
@@ -247,7 +247,7 @@ function Home({
 
         {/* CATEGORIES */}
             {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
-            {/* <div id="home-categories" className={`categories-wrapper`}>
+            <div id="home-categories" className={`categories-wrapper`}>
                 <div className="inner-categories">
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
@@ -259,11 +259,11 @@ function Home({
                     <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
                 </div>
-            </div> */}
-
-            <div className='d-flex space-between black-bar-title mobile' style={{background: "black"}}>
-                <h2 className="" style={{color: "white"}}>📁 Categories</h2>
             </div>
+
+            {/* <div className='d-flex space-between black-bar-title mobile' style={{background: "black"}}>
+                <h2 className="" style={{color: "white"}}>📁 Categories</h2>
+            </div> */}
 
 
             {/* <h2 className="black-bar-title" style={{marginBottom: "0px"}}>Videos</h2> */}
