@@ -135,18 +135,12 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
 
             {/* QUICK LINKS - MOBILE */}
 
-            <div className='d-flex space-between black-bar-title mobile' onClick={handleCountriesDropdown}>
-                <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                <h2 className="">🔗 Quick Links</h2>
-                ${countriesDropdown ? 
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
-                :
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                }
+            <div className='d-flex space-between black-bar-title mobile'>
+                <h2 className="">🌏 Countries</h2>
             </div>
 
         {/* COUNTRIES */}
-            <div className={`cities-wrapper mobile quick-links-countries ${countriesDropdown ? 'd-flex' : ''}`}>
+            <div className={`cities-wrapper mobile quick-links-countries d-flex`}>
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
@@ -160,6 +154,12 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                 <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
+
+                <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px"}}>See All...</div>
+            </div>
+
+            <div className='d-flex space-between black-bar-title mobile'>
+                <h2 className="">🔗 Quick Links</h2>
             </div>
 
             <div id="home-categories" className={`categories-wrapper hp-quick-links`}>

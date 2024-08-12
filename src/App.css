@@ -273,14 +273,14 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
     background: black;
 
-    padding: 10px 20px;
+    padding: 12px 20px;
     cursor: pointer;
   }
 
   .black-bar-title h2{
     font-family: "Edo";
     font-weight: 100;
-    font-size: 22px;
+    font-size: 24px;
     color: white;
     margin: 0px;
   }
