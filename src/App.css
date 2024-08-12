@@ -1,7 +1,7 @@
 
 @media(min-width: 1401px){
   .App {
-    max-width: 1800px;
+    /* max-width: 1800px; */
     margin: auto;
     border: 2px solid #eee
   }
