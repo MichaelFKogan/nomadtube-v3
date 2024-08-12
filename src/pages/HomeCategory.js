@@ -113,8 +113,9 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div> */}
 
+
         {/* QUICK LINKS - DESKTOP */}
-        <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
+        <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🌎 Countries</h2></div>
 
 {/* COUNTRIES */}
     <div className={`cities-wrapper desktop`}>
@@ -131,10 +132,13 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
         <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
         <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
         <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
+        <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "19px"}}>See All...</div>
     </div>
 
-            {/* QUICK LINKS - MOBILE */}
+        {/* QUICK LINKS - DESKTOP */}
+        <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
 
+            {/* QUICK LINKS - MOBILE */}
             <div className='d-flex space-between black-bar-title mobile'>
                 <h2 className="">🔗 Quick Links</h2>
             </div>
