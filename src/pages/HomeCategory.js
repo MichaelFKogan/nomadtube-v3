@@ -139,11 +139,21 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
         <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
 
             {/* QUICK LINKS - MOBILE */}
-            <div className='d-flex space-between black-bar-title mobile'>
+            {/* <div className='d-flex space-between black-bar-title mobile'>
                 <h2 className="">🔗 Quick Links</h2>
             </div>
+             */}
 
-            <div id="home-categories" className={`categories-wrapper hp-quick-links`}>
+            <div className='d-flex space-between black-bar-title mobile' onClick={handleCategoriesDropdown}>
+                <h2 className="">🔗 Quick Links</h2>
+                {categoriesDropdown ? 
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+                :
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                }
+            </div>
+
+            <div id="home-categories" className={`categories-wrapper hp-quick-links ${categoriesDropdown ? 'd-flex' : ''}`}>
                 <div className="inner-categories">
                     <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
                     <Link to={`/asia/japan/category/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
@@ -155,12 +165,21 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 </div>
             </div>
 
-            <div className='d-flex space-between black-bar-title mobile'>
+            <div className='d-flex space-between black-bar-title mobile' onClick={handleCountriesDropdown}>
                 <h2 className="">🌏 Countries</h2>
+                {countriesDropdown ? 
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+                :
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                }
             </div>
 
+            {/* <div className='d-flex space-between black-bar-title mobile'>
+                <h2 className="">🌏 Countries</h2>
+            </div> */}
+
         {/* COUNTRIES */}
-            <div className={`cities-wrapper mobile quick-links-countries d-flex`}>
+            <div className={`cities-wrapper mobile quick-links-countries ${countriesDropdown ? 'd-flex' : '' }`}>
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
