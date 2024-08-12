@@ -3,6 +3,7 @@
       {"name": "👾 Akihabara","route": "akihabara"},
       {"name": "🍱 Dotonburi","route": "dotonburi"},
       {"name": "🎮 Tokyo Arcades","route": "tokyoarcades"},
+      {"name": "🎋 Arashiyama","route": "arashiyama"},
 
       {"name": "🗺 Itinerary","route": "itinerary"},
       {"name": "📸 Vlog","route": "vlog"},

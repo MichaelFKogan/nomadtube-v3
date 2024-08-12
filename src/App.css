@@ -166,7 +166,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   flex-wrap: wrap;
   column-gap: 5px;
   row-gap: 5px;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: auto;
 }
 

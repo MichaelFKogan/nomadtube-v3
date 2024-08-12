@@ -2,6 +2,8 @@
     "categories": [
       {"name": "🍻 Khao San Road","route": "khaosanroad", "imgRoute": "bangkok"},
       {"name": "🏝 Beaches","route": "beaches"},
+      {"name": "💦🔫 Songkhran","route": "songkhran"},
+      {"name": "🐘 Elephant Sanctuary","route": "elephantsanctuary"},
       {"name": "🥊 Muay Thai","route": "muaythai"},
       {"name": "🗺 Itinerary","route": "itinerary"},
       {"name": "📸 Vlog","route": "vlog"},
