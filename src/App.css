@@ -182,8 +182,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 }
 
 .category-title{
-  /* position: sticky;
-  top: 0px; */
+  position: sticky;
+  top: 0px;
   padding: 15px 0px;
   background-color: white;
   z-index: 4;
