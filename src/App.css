@@ -356,11 +356,11 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     text-wrap: nowrap;
     padding-top:3px;
     padding-right: 7px;
-}
+  }
 
-.home .total-videos {
-  padding-top: 0px;
-}
+  .home .total-videos {
+    padding-top: 0px;
+  }
 
   .home .categories-wrapper{
     padding-top: 0px;
@@ -372,9 +372,13 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .categories-wrapper{
     padding: 0px 0px;
-    background-color: #eee;
+    background: #eee;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+  }
+
+  .hp-quick-links, .hp-quick-links .inner-categories{
+    background: white;
   }
 
   .inner-categories{
