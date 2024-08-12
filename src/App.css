@@ -321,6 +321,10 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     border-bottom: 1px solid #ccc; */
   }
 
+  .home .category-title{
+    margin-top: 10px;
+  }
+
   .home .category-title h2, .category-title h2{
     font-family: "Edo";
     font-weight: 100;
