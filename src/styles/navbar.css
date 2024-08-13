@@ -47,7 +47,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 20px 0px 20px 20px;
+        padding: 0px 0px 20px 20px;
         text-align: left;
         column-gap: 5px;
         z-index: 15;
@@ -86,13 +86,18 @@
         position: relative !important;
         padding-right: 20px;
         background: rgba(0,0,0,0);
+        overflow: hidden;
+        margin-bottom: 300px;
     }
 
     .mobile-menu #home-categories .inner-categories{
         background: rgba(0,0,0,0);
+        padding-top: 0px;
     }
 
     .mobile-menu #home-categories .inner-categories h2{
         color: white;
+        margin-top: 0px !important;
+        font-size: 20px;
     }
 }
