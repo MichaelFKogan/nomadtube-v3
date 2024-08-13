@@ -70,7 +70,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
                         </div>
                     </Link> */}
 
-                    <h2 className="text-center" style={{color: "white", fontSize: "20px", marginLeft: "15px"}}>🌎 Countries</h2>
+                    <h2 className="text-center" style={{color: "white", fontSize: "20px", marginLeft: "10px"}}>🌎 Countries</h2>
 
                     <div className="countries-menu" onClick={() => { toggleAsiaMenu(); }}><div>⛩ Asia</div></div>
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleSouthAmericaMenu(); }}><div>💃🏻 South America</div></div>
