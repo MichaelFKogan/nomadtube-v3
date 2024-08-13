@@ -149,8 +149,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   justify-content: center;
   flex-wrap: wrap;
   margin: auto;
-  column-gap: 2px;
-  row-gap: 2px;
+  column-gap: 4px;
+  row-gap: 4px;
   /* max-width: 1400px; */
   margin-bottom: 10px;
   width: 100%;
