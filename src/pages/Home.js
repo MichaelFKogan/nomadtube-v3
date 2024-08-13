@@ -194,11 +194,11 @@ function Home({
                 </div>
             </div>
 
+        {/* COUNTRIES */}
+        <QuickLinkCountries />
+
         {/* QUICK LINKS - MOBILE */}
         <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
-            
-        {/* COUNTRIES */}
-            <QuickLinkCountries />
 
         {/* CATEGORY TITLE */}
             <div className="category-title"><h2>📹 Videos</h2></div>

@@ -408,6 +408,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     background: #f1f1f1;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
   }
 
   .hp-quick-links, .hp-quick-links .inner-categories{
