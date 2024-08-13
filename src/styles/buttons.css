@@ -162,8 +162,8 @@ a.active{
     font-weight: bold;
     background: rgba(0, 0, 0, .6);
     color: white;
-    height: 30px;
-    width: 29px;
+    height: 35px;
+    width: 34px;
     border: 0px;
     border-radius: 3px;
     box-shadow: 0 0 5px #666;
@@ -185,8 +185,8 @@ a.active{
 
     .window-open .image-plus{
         right: 2px !important;
-        height: 30px !important;
-        width: 29px !important;
+        height: 35px !important;
+        width: 34px !important;
         border-radius: 3px;
         background: rgba(0, 0, 0, .9);
     }
@@ -199,14 +199,14 @@ a.active{
 .new-window{top: 83px;} */
 
 .close-card{top: 2px}
-.image-plus{top: 36px;}
-.image-minus{top: 70px;}
-.new-window{top: 103px;}
+.image-plus{top: 41px;}
+.image-minus{top: 80px;}
+.new-window{top: 118px;}
 
 .normal .image-plus{top:2px}
 .window-open .new-window{display: none;}
 
-.window-open .image-plus{top: 36px !important;}
+.window-open .image-plus{top: 41px !important;}
 .window-open .image-plus,
 .window-open .image-minus,
 .window-open .close-card{display: flex !important}
