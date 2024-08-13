@@ -112,8 +112,8 @@ button {
     font-family: "Nunito Extra Bold";
     font-size: 14px;
     text-decoration: none;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     border-radius: 25px;
     padding: 7px 12px 8px 12px;
     border: 1px solid #ccc;

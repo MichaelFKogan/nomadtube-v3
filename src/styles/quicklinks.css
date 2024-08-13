@@ -1,0 +1,31 @@
+.quicklinks-countries{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,.95);
+    z-index: 10;
+}
+
+.quicklinks-countries .inner{
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    padding: 0px 10px;
+
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.countries-menu{
+    font-family: "Nunito Black";
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0px 7px;
+    padding: 10px 10px;
+    cursor: pointer;
+}

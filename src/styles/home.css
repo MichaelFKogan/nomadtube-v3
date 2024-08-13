@@ -130,11 +130,11 @@
     margin: 0px !important;
 }
 
-.quick-links-btn-mobile:hover, .quick-links-countries-btn-mobil:hover{
+.quick-links-btn-mobile:hover, .quick-links-countries-btn-mobile:hover{
     transform: scale(1.02);
 }
 
-.quick-links-btn-mobile:active, .quick-links-countries-btn-mobil:active{
+.quick-links-btn-mobile:active, .quick-links-countries-btn-mobile:active{
     transform: scale(.98);
 }
 
