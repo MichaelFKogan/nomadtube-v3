@@ -175,6 +175,11 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   margin: auto;
 }
 
+.categories-row .inner-categories{
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
 .home .inner-categories,
 .home-category-page .inner-categories{
   margin-top: 10px;
@@ -266,8 +271,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     justify-content: center;
     flex-wrap: wrap;
     margin: auto;
-    column-gap: 2px;
-    row-gap: 2px;
+    column-gap: 10px;
+    row-gap: 10px;
     /* max-width: 1400px; */
     margin-bottom: 0px;
     width: 100%;
@@ -383,6 +388,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .breadcrumbs-and-videos{
     position: relative;
+    line-height: 20px;
   }
 
   .total-videos {

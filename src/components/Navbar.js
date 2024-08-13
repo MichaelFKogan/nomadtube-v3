@@ -21,6 +21,15 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
     const back = () => { setMobileMenu(true); }
 
+    const closeCountryMenus = () => {
+        setAsiaMenu(false);
+        // setSouthAmericaMenu(false);
+        // setNorthAmericaMenu(false);
+        // setEuropeMenu(false);
+        // setMiddleEastMenu(false);
+        // setOceaniaMenu(false);
+    }
+
     return (
         <>
             {/* DESKTOP MENU */}
@@ -30,7 +39,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                 </div>
 
                 <div className="d-flex align-center col-gap-5">
-                    <Link to={"/asia"} className="nav-menu"><div>Asia</div></Link>
+                    <div className="nav-menu"  onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }}><div>Asia</div></div>
                     {/* <div className="nav-menu" onClick={toggleAsia}><div>Asia</div></div> */}
                     <Link to={"/southamerica"} className="nav-menu"><div>South America</div></Link>
                     <Link to={"/europe"} className="nav-menu"><div>Europe</div></Link>
@@ -81,6 +90,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                 <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px", paddingTop:"5px", paddingBottom: "27px" }}><div>🔗 Quick Links</div></div>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginBottom: "25px"}}/>
 
+                <h2 className="" style={{color: "white", fontSize: "20px", textAlign: "left", marginBottom: "20px"}}>🌎 Countries</h2>
                 <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px" }}><div>⛩ Asia</div></div>
                 <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu}><div>💃🏻 South America</div></Link>
                 <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu}><div>🗽 North America</div></Link>
@@ -93,7 +103,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
        
             <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`}>
                 <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
-                    <h2 className="text-center" style={{marginTop:"20px"}}>🌎 Countries</h2>
+                    <h2 className="text-center" style={{marginTop:"20px"}}>⏩ Shortcuts</h2>
                     <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                     <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                     <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
@@ -113,7 +123,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
             </div>
 
-            <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeAllMenus={closeAllMenus} />
+            <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} />
 
         </>
     );

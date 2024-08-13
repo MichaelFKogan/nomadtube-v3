@@ -136,7 +136,7 @@ function City() {
             </div>
 
         {/* CATEGORIES */}
-            <div className='categories-wrapper'>
+            <div className='categories-wrapper categories-row'>
                 <div className="inner-categories">
                     {/* This route is for categories of cities */}
                         <Link to={`/${continent}/${country}/${city}`} className="active">

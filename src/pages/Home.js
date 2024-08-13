@@ -196,6 +196,12 @@ function Home({
                 </div>
             </div>
 
+
+
+
+
+            
+
         {/* COUNTRIES */}
         <div className='d-flex space-between black-bar-title mobile quick-links-countries-btn-mobile' onClick={openCountryMenu}>
             <h2 className="">🌏 Countries</h2>

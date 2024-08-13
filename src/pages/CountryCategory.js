@@ -106,7 +106,7 @@ function CountryCategory() {
             </div>
 
         {/* CATEGORIES */}
-            <div className="categories-wrapper">
+            <div className="categories-wrapper categories-row">
                 <div className="inner-categories">
                     <Link to={`/${continent}/${country}`}>
                         <div>💯 All</div>
