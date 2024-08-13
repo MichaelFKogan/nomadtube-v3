@@ -108,18 +108,33 @@
 }
 
 .quick-links-btn-mobile, .quick-links-countries-btn-mobile{
-    width: 225px;
+    width: 48%;
     background: #eee;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0px 0px 5px black;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 10px 15px !important;
     background: rgba(0, 0, 0, .95) !important;
     color: white;
+    display: inline-block !important;
 }
 
+.quick-links-btn-mobile{margin-right: 1%;}
+
 .quick-links-btn-mobile h2, .quick-links-countries-btn-mobile h2{
+    font-family: "Nunito Black" !important;
+    font-weight: 100 !important;
+    font-size: 20px !important;
     color: white !important;
+    margin: 0px !important;
+}
+
+.quick-links-btn-mobile:hover, .quick-links-countries-btn-mobil:hover{
+    transform: scale(1.02);
+}
+
+.quick-links-btn-mobile:active, .quick-links-countries-btn-mobil:active{
+    transform: scale(.98);
 }
