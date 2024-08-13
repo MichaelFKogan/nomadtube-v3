@@ -79,10 +79,14 @@ function Navbar({ toggleAsia, className }) {
             <div className={`mobile-menu ${mobileMenu ? 'd-block' : 'd-none'}`}>
                 <Link to={"/"} className="nav-menu" onClick={closeAllMenus}><div>🏠 Home</div></Link>
                 <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px", paddingTop:"5px", paddingBottom: "27px" }}><div>🔗 Quick Links</div></div>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginBottom: "25px"}}/>
+
                 <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px" }}><div>⛩ Asia</div></div>
                 <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu}><div>💃🏻 South America</div></Link>
+                <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu}><div>🗽 North America</div></Link>
                 <Link to={"/europe"} className="nav-menu" onClick={closeMobileMenu}><div>🇪🇺 Europe</div></Link>
                 <Link to={"/middleeast"} className="nav-menu" onClick={closeMobileMenu}><div>🕋 Middle East</div></Link>
+                <Link to={"/europe"} className="nav-menu" onClick={closeMobileMenu}><div>🌊 Oceania</div></Link>
             </div>
 
             <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closeCountryMenus={closeCountryMenus} back={back} closeAllMenus={closeAllMenus} />
