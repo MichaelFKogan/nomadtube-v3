@@ -360,7 +360,8 @@ a.active{
 
     .home .categories-wrapper.hp-quick-links{
         overflow-y: hidden;
-
+        /* width: 300px;
+        right: 0; */
     }
 
     .quick-links-countries{
