@@ -65,7 +65,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                     {/* <Link to={"/"} className="nav-menu"><div>🏠</div></Link> */}
                 </div>
 
-                <Link to={"/"} className="nav-menu nav-logo "><div>🏝 NomadTube</div></Link>
+                <Link to={"/"} className="nav-menu nav-logo " onClick={() => { closeAllMenus(); }}><div>🏝 NomadTube</div></Link>
 
                 <div className='d-flex align-center' style={{ opacity: "0", visibility: "0" }}>
                     <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closes(); }}  style={{ opacity: "0", visibility: "0" }}>
@@ -117,7 +117,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                     <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                     <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                     <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
-                    <div style={{height:"400px"}}></div>
+
                 </div>
             </div>
 
