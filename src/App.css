@@ -465,9 +465,9 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .home .hp-quick-links .inner-categories,
   .home-category-page .hp-quick-links .inner-categories{
     padding: 0px 10px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: auto;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .cards-wrapper{

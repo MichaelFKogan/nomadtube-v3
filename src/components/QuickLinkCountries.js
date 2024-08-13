@@ -75,6 +75,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleMiddleEastMenu(); }}><div>🕋 Middle East</div></div>
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleOceaniaMenu(); }}><div>🌊 Oceania</div></div>
 
+                    <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginTop: "25px", marginBottom: "5px"}}/>
 
                 <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`}>
                 <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
