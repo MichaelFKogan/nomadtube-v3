@@ -15,12 +15,13 @@
     width: 95%;
 }
 
-.off-screen{
-    right: -100%;
+.off-screen.right{
+    width: 95%;
+    right: 0;
 }
 
-.off-screen.right{
-    right: 0;
+.off-screen{
+    right: -100%;
 }
 
 .hp-quick-links{
@@ -55,6 +56,8 @@
     margin: 0px 7px;
     padding: 10px 10px;
     cursor: pointer;
+    width: 100%;
+    text-align: left;
 }
 
 /* .quick-links-countries, .hp-quick-links {
