@@ -348,7 +348,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .cities-wrapper{
     margin-bottom: 0px;
-    padding: 5px 0px 5px 5px
+    padding: 5px 5px 5px 5px
   }
 
   .inner-cities{
@@ -357,15 +357,16 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     align-items: center;
     /* flex-wrap: wrap; */
     flex-wrap: nowrap;
+    flex-direction: column;
     
     column-gap: 5px;
-    row-gap: 2px;
+    row-gap: 10px;
     max-width: 100%;
     width: 100%;
 
     padding: 2px 2px 2px 2px;
 
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
   .bali .inner-cities{

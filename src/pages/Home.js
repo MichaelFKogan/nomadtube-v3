@@ -55,6 +55,8 @@ function Home({
     const closeCountryMenus  = () => {setAsiaMenu(false);};
     const back = () => { setMobileMenu(true);}
 
+    const openCountryMenu = () => {setCountryMenu(true);}
+
 
     // Calculate the start and end index of the items to display
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -195,9 +197,16 @@ function Home({
             </div>
 
         {/* COUNTRIES */}
-        <QuickLinkCountries />
+        <div className='d-flex space-between black-bar-title mobile quick-links-countries-btn-mobile' onClick={openCountryMenu}>
+            <h2 className="">🌏 Countries</h2>
+        </div>
+        <QuickLinkCountries openCountryMenu={openCountryMenu} countryMenu={countryMenu} setCountryMenu={setCountryMenu} />
 
         {/* QUICK LINKS - MOBILE */}
+        <div className='d-flex space-between black-bar-title mobile quick-links-btn-mobile' onClick={handleCategoriesDropdown}>
+            <h2 className="">🔗 Quick Links</h2>
+        </div>
+
         <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
 
         {/* CATEGORY TITLE */}

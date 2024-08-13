@@ -8,18 +8,14 @@ import EuropeMobileMenu from './navmenu/EuropeMobileMenu';
 import MiddleEastMobileMenu from './navmenu/MiddleEastMobileMenu';
 import OceaniaMobileMenu from './navmenu/OceaniaMobileMenu';
 
-function QuickLinkCountries({ className }) {
+function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, className }) {
 
-    const [countryMenu, setCountryMenu] = useState(false);
     const [asiaMenu, setAsiaMenu] = useState(false);
     const [southAmericaMenu, setSouthAmericaMenu] = useState(false);
     const [northAmericaMenu, setNorthAmericaMenu] = useState(false);
     const [europeMenu, setEuropeMenu] = useState(false);
     const [middleEastMenu, setMiddleEastMenu] = useState(false);
     const [oceaniaMenu, setOceaniaMenu] = useState(false);
-
-
-    const openCountryMenu = () => {setCountryMenu(true);}
 
     const closeAllMenus = () => {
         setCountryMenu(false);
@@ -59,11 +55,6 @@ function QuickLinkCountries({ className }) {
 
     return (
         <>
-
-        <div className='d-flex space-between black-bar-title mobile quick-links-countries-btn-mobile' onClick={openCountryMenu}>
-            <h2 className="">🌏 Countries</h2>
-        </div>
-
             <div className={`quicklinks-countries ${countryMenu ? 'd-flex' : 'd-none' }`}>
                 <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeAllMenus} style={{color: "white"}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-x mobile"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
