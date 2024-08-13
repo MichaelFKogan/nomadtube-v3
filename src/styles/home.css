@@ -90,7 +90,6 @@
 .hp-quick-links.d-flex .inner-categories{
     /* background: rgba(0, 0, 0, .95); */
     background:white;
-    margin-top: 60px;
 }
 
 .categories-wrapper.hp-quick-links a{
@@ -144,4 +143,5 @@
     font-weight: 100;
     font-size: 26px;
     margin-bottom: 5px;
+    margin-top: 20px;
 }

@@ -73,8 +73,8 @@ function AsiaMobileMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, 
                 <Link to={"/asia/bangladesh"} className="nav-menu" onClick={closeAllMenus}><div>🇧🇩 Bangladesh</div></Link>
                 <Link to={"/asia/srilanka"} className="nav-menu" onClick={closeAllMenus}><div>🇱🇰 Sri Lanka</div></Link>
                 <Link to={"/asia/india"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇳 India</div></Link>
+                <div style={{height: "300px"}}></div>
             </div>
-
             </div>
         </div>
     </>
