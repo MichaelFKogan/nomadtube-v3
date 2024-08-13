@@ -68,26 +68,28 @@
 }
 
 .quick-links-countries, .hp-quick-links {
-    /* max-height: 0;
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.75s ease-in-out;
-    margin: 0px !important; */
+    margin: 0px !important;
 }
 
 .quick-links-countries.d-flex, .hp-quick-links.d-flex {
-    /* max-height: 1000px; */
+    max-height: 1000px;
 }
 
 .hp-quick-links.d-flex{
     position: fixed !important;
-    background: rgba(0, 0, 0, .95);
+    background: white;
     height: 100vh;
     top: 0px;
     z-index: 10;
 }
 
 .hp-quick-links.d-flex .inner-categories{
-    background: rgba(0, 0, 0, .95);
+    /* background: rgba(0, 0, 0, .95); */
+    background:white;
+    margin-top: 60px;
 }
 
 .categories-wrapper.hp-quick-links a{
@@ -100,5 +102,6 @@
     color: white;
     right: 10px;
     top: 10px !important;
+    width: 40px;
     height: 40px;
 }
