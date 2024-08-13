@@ -323,7 +323,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     color: white;
     /* border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc; */
-    margin-top: 2px;
+    /* margin-top: 2px; */
   }
 
   .home .category-title{
@@ -348,7 +348,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .cities-wrapper{
     margin-bottom: 0px;
-    padding: 0px;
+    padding: 10px 0px;
   }
 
   .inner-cities{
@@ -358,7 +358,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     /* flex-wrap: wrap; */
     flex-wrap: nowrap;
     
-    column-gap: 2px;
+    column-gap: 5px;
     row-gap: 2px;
     max-width: 100%;
     width: 100%;
@@ -436,7 +436,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     max-width: 100%;
     margin: auto 5px;
     width: 100%;
-    padding: 5px 0px;
+    padding: 10px 0px;
     background: #f1f1f1;
   }
 

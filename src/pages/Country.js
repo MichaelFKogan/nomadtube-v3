@@ -91,14 +91,16 @@ function Country() {
             <PageBanner title={dataCities.name} imgRoute={country}/>
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em", marginTop: "10px", marginBottom: "5px"}}>Cities</h2> */}
+        
         {/* CITIES */}
-            {/* <Cities dataCities={dataCities} /> */}
-            <div className='d-flex space-between black-bar-title mobile quick-links-btn-mobile' style={{marginBottom: "10px"}}>
+            <Cities dataCities={dataCities} />
+
+            {/* <div className='d-flex space-between black-bar-title mobile quick-links-btn-mobile' style={{marginBottom: "10px"}}>
                 <h2 className="">🗺 Cities</h2>
             </div>
             <div className='d-flex space-between black-bar-title mobile quick-links-btn-mobile' style={{marginBottom: "10px"}}>
                 <h2 className="">📁 Categories</h2>
-            </div>
+            </div> */}
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "0px", fontSize: "2em",marginBottom: "5px"}}>Categories</h2> */}
 
@@ -122,7 +124,7 @@ function Country() {
 
 
         {/* CATEGORIES */}
-            {/* <div className='categories-wrapper'>
+            <div className='categories-wrapper'>
                 <div className="inner-categories">
                     <Link to={`/${continent}/${country}`} className="active">
                         <div>💯 All</div>
@@ -133,7 +135,7 @@ function Country() {
                     </Link>
                 ))}
                 </div>
-            </div>     */}
+            </div>    
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             
