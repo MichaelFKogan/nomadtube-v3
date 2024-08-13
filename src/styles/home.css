@@ -67,7 +67,7 @@
     font-size: 15px;
 }
 
-.quick-links-countries, .hp-quick-links {
+/* .quick-links-countries, .hp-quick-links {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.75s ease-in-out;
@@ -76,9 +76,10 @@
 
 .quick-links-countries.d-flex, .hp-quick-links.d-flex {
     max-height: 1000px;
-}
+} */
 
-.hp-quick-links.d-flex{
+.hp-quick-links.d-flex,
+.quick-links-countries.d-flex{
     position: fixed !important;
     background: white;
     height: 100vh;
@@ -102,6 +103,6 @@
     color: white;
     right: 10px;
     top: 10px !important;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
