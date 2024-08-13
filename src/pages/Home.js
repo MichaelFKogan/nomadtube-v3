@@ -184,7 +184,7 @@ function Home({
                 <h2 className="">🔗 Quick Links</h2>
             </div> */}
 
-            <div className='d-flex space-between black-bar-title mobile' onClick={handleCategoriesDropdown}>
+            <div className='d-flex space-between black-bar-title mobile quick-links-btn-mobile' onClick={handleCategoriesDropdown}>
                 <h2 className="">🔗 Quick Links</h2>
                 {/* {categoriesDropdown ? 
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
@@ -210,13 +210,13 @@ function Home({
                 </div>
             </div>
 
-            <div className='d-flex space-between black-bar-title mobile' onClick={handleCountriesDropdown}>
+            <div className='d-flex space-between black-bar-title mobile quick-links-countries-btn-mobile' onClick={handleCountriesDropdown}>
                 <h2 className="">🌏 Countries</h2>
-                {countriesDropdown ? 
+                {/* {countriesDropdown ? 
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
                 :
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-                }
+                } */}
             </div>
 
             {/* <div className='d-flex space-between black-bar-title mobile'>
@@ -224,7 +224,7 @@ function Home({
             </div> */}
 
         {/* COUNTRIES */}
-            <div className={`cities-wrapper mobile quick-links-countries ${countriesDropdown ? 'd-flex' : '' }`}>
+            {/* <div className={`cities-wrapper mobile quick-links-countries ${countriesDropdown ? 'd-flex' : '' }`}>
 
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
@@ -241,7 +241,7 @@ function Home({
                 <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
                 
                 <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "18px"}}>See All Countries...</div>
-            </div>
+            </div> */}
 
 
             {/* <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
