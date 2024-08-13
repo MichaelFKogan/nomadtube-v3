@@ -194,7 +194,11 @@ function Home({
             </div>
             
 
-            <div id="home-categories" className={`categories-wrapper hp-quick-links ${categoriesDropdown ? 'd-flex' : ''}`}>
+            <div id="home-categories" className={`categories-wrapper hp-quick-links ${categoriesDropdown ? 'd-flex' : 'd-none'}`}>
+                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={handleCategoriesDropdown}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-x desktop"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-x mobile"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                </button>
                 <div className="inner-categories">
                     <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
                     <Link to={`/asia/japan/category/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
