@@ -101,7 +101,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
 
        
-            <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`}>
+            <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`} style={{overflowY: "visible"}}>
                 <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
                     <h2 className="text-center" style={{marginTop:"20px"}}>⏩ Shortcuts</h2>
                     <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
@@ -117,7 +117,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                     <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                     <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                     <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
-
+                    <div style={{height:"400px"}}></div>
                 </div>
             </div>
 
