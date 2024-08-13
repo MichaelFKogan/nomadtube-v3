@@ -277,23 +277,36 @@ a.active{
 
     .cities-wrapper a{
         font-family: "Nunito Black";
-        width: calc(50% - 2px);
         font-size: 17px;
         box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
         width: auto;
         padding: 0px 20px;
-        /* min-width: 150px; */
+        width: calc(50% - 3px);
+    }
+
+    /* .thailand .cities-wrapper .bangkok-img,
+    .thailand .cities-wrapper .chiangmai-img,
+    .thailand .cities-wrapper .phuket-img{
+        width: calc(50% - 3px);
+    } */
+
+    .thailand .cities-wrapper .bangkok-img{
+        width: 100%;
+    }
+
+    .thailand .cities-wrapper .kophangan-img{
+        width: calc(50% - 3px) !important;
     }
 
     .continent-page .cities-wrapper a{
         width: calc(50% - 2px);        
     }
 
-    .bali .cities-wrapper a, 
+    /* .bali .cities-wrapper a, 
     .canggu .cities-wrapper a,
     .ubud .cities-wrapper a{
         width: 100%
-    }
+    } */
 
     .korea .cities-wrapper a, 
     .seoul .cities-wrapper a{
@@ -308,12 +321,20 @@ a.active{
         padding-right: 2px;
     } */
 
-    .japan .cities-wrapper a,
+    /* .japan .cities-wrapper a,
     .tokyo .cities-wrapper a,
     .osaka .cities-wrapper a,
     .kyoto .cities-wrapper a{
         min-width: 150px;
         width: 100%;
+    } */
+
+    .japan .cities-wrapper .tokyo-img{
+        width: 100%;
+    }
+
+    .japan .cities-wrapper .kyoto-img{
+        width: calc(50% - 3px) !important;
     }
 
     .vietnam .cities-wrapper a{width: 100%}
@@ -372,7 +393,7 @@ a.active{
     .cities-wrapper a{
         /* width: calc(50% - 2px); */
         font-size: 17px;
-        height: 50px;
+        height: 65px;
 
         /* padding: 0px 20px; */
 
@@ -383,7 +404,7 @@ a.active{
         border-radius: 4px;
         /* box-shadow: 0px 2px 5px #ccc; */
         white-space: nowrap;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .home .cities-wrapper a{

@@ -355,9 +355,9 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     display: flex;
     justify-content: start;
     align-items: center;
-    /* flex-wrap: wrap; */
-    flex-wrap: nowrap;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: column; */
     
     column-gap: 5px;
     row-gap: 10px;
