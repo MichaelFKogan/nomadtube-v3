@@ -184,9 +184,9 @@ a.active{
     }
 
     .window-open .image-plus{
-        right: 2px;
-        width: 24px;
-        height: 25px;
+        right: 2px !important;
+        height: 30px !important;
+        width: 29px !important;
         border-radius: 3px;
         background: rgba(0, 0, 0, .9);
     }
@@ -206,7 +206,7 @@ a.active{
 .normal .image-plus{top:2px}
 .window-open .new-window{display: none;}
 
-.window-open .image-plus{top: 29px !important;}
+.window-open .image-plus{top: 36px !important;}
 .window-open .image-plus,
 .window-open .image-minus,
 .window-open .close-card{display: flex !important}
