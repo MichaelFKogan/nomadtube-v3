@@ -223,7 +223,7 @@ function Home({
 
         {/* CATEGORIES */}
             {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
-            <div id="home-categories" className={`categories-wrapper`}>
+            <div id="home-categories" className={`categories-wrapper categories-row`}>
                 <div className="inner-categories">
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>

@@ -68,6 +68,9 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
                             Back
                         </div>
                     </Link> */}
+
+                    <h2 className="text-center" style={{color: "white", fontSize: "20px", marginLeft: "15px"}}>🌎 Countries</h2>
+
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }}><div>⛩ Asia</div></div>
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleSouthAmericaMenu(); }}><div>💃🏻 South America</div></div>
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleNorthAmericaMenu(); }}><div>🗽 North America</div></div>
@@ -79,7 +82,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
 
                 <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`}>
                 <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
-                    <h2 className="text-center" style={{marginTop:"20px"}}>🌎 Countries</h2>
+                    <h2 className="text-center" style={{marginTop:"20px"}}>⏩ Shortcuts</h2>
                     <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                     <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                     <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>

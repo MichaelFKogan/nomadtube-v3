@@ -462,6 +462,11 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding: 10px 5px;
 }
 
+.home .categories-row .inner-categories{
+  column-gap: 5px;
+}
+
+
   .home .hp-quick-links .inner-categories,
   .home-category-page .hp-quick-links .inner-categories{
     padding: 0px 10px;
