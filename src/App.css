@@ -278,6 +278,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding-bottom: 0px;
     border-bottom: 0px solid #ccc;
     margin-bottom: 25px;
+    border-top: 0px solid #ccc;
   }
 }
 
