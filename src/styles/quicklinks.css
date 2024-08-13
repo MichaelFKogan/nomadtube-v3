@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 300px;
 }
 
 .countries-menu{
@@ -114,4 +115,24 @@
     font-size: 26px;
     margin-bottom: 5px;
     margin-top: 0px;
+}
+
+.quicklinks-countries #home-categories{
+    position: relative !important;
+    /* padding-right: 20px; */
+    background: rgba(0,0,0,0);
+    /* margin-bottom: 300px; */
+    overflow: visible;
+}
+
+.quicklinks-countries #home-categories .inner-categories{
+    background: rgba(0,0,0,0);
+    padding-top: 0px;
+    row-gap: 10px;
+}
+
+.quicklinks-countries #home-categories .inner-categories h2{
+    color: white;
+    margin-top: 0px !important;
+    font-size: 20px;
 }

@@ -50,7 +50,9 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
         setOceaniaMenu(false);
     }
 
-
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
 
 
     return (
@@ -73,23 +75,28 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleMiddleEastMenu(); }}><div>🕋 Middle East</div></div>
                     <div className="countries-menu" onClick={() => { closeMobileMenu(); toggleOceaniaMenu(); }}><div>🌊 Oceania</div></div>
 
+
+                <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`}>
+                <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
+                    <h2 className="text-center" style={{marginTop:"20px"}}>🌎 Countries</h2>
+                    <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
+                    <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
+                    <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
+                    <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { scrollToTop(); }}><div>🇰🇷 Korea</div></Link>
+                    <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam</div></Link>
+
+                    <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { scrollToTop(); }}><div>🇧🇷 Brazil</div></Link>
+                    <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇴 Colombia</div></Link>
+                    <Link to={`/southamerica/mexico`} className="mexico-img background-img" onClick={() => { scrollToTop(); }}><div>🇲🇽 Mexico</div></Link>
+                    <Link to={`/southamerica/costarica`} className="costarica-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇷 Costa Rica</div></Link>
+                    <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
+                    <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
+                    <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
+                    <div style={{height:"400px"}}></div>
                 </div>
+            </div>
 
-                {/* <h2 className="text-center" style={{marginTop:"20px"}}>🌎 Countries</h2>
-                    <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🏝 Bali</div></Link>
-                    <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇹🇭 Thailand</div></Link>
-                    <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇯🇵 Japan</div></Link>
-                    <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇰🇷 Korea</div></Link>
-                    <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇻🇳 Vietnam</div></Link>
-
-                    <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇧🇷 Brazil</div></Link>
-                    <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇨🇴 Colombia</div></Link>
-                    <Link to={`/southamerica/mexico`} className="mexico-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇲🇽 Mexico</div></Link>
-                    <Link to={`/southamerica/costarica`} className="costarica-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇨🇷 Costa Rica</div></Link>
-                    <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇵🇹 Portugal</div></Link>
-                    <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇮🇹 Italy</div></Link>
-                    <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇪🇸 Spain</div></Link>
-                    <div style={{height:"400px"}}></div> */}
+            </div>
 
             </div>
 
