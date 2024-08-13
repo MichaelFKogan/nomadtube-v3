@@ -464,6 +464,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     padding: 0px 10px;
     overflow-y: scroll;
     height: 100vh;
+    margin-top: 50px;
   }
 
   .cards-wrapper{
