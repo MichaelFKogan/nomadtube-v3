@@ -106,6 +106,7 @@ h1{font-family: "Nunito Black";margin: .5em 0px;}
 h2{font-family: "Nunito Black"; font-size: 26px}
 
 .bold{font-weight: bold;}
+.text-center{text-align: center;}
 
 .flex-col{flex-direction: column;}
 .justify-center{justify-content: center;}
@@ -461,6 +462,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .home .hp-quick-links .inner-categories,
   .home-category-page .hp-quick-links .inner-categories{
     padding: 0px 10px;
+    overflow-y: scroll;
+    height: 100vh;
   }
 
   .cards-wrapper{
