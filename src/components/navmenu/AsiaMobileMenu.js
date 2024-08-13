@@ -7,7 +7,7 @@ function AsiaMobileMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, 
   
     return (
     <>        
-        <div className={`mobile-menu asia-menu ${asiaMenu ? 'd-flex' : 'd-none'}`}>
+        <div className={`mobile-menu asia-menu ${asiaMenu ? 'd-flex' : 'd-none'}`} style={{paddingTop: "0px"}}>
 
             <div className="inner-menu">
             <div className="w-55">

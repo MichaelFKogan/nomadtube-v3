@@ -9,19 +9,14 @@ function QuickLinkCountries({ className }) {
     const [asiaMenu, setAsiaMenu] = useState(false);
 
 
-    const openCountryMenu = () => {
-        setCountryMenu(true);
-    }
+    const openCountryMenu = () => {setCountryMenu(true);}
 
     const closeAllMenus = () => {
         setCountryMenu(false);
         setAsiaMenu(false);
     }
 
-    const closeMobileMenu = () => {
-        setCountryMenu(false);
-    }
-
+    const closeMobileMenu = () => {setCountryMenu(false);}
     const toggleAsiaMenu = () => {setAsiaMenu(!asiaMenu);}
 
     const back = () => {
