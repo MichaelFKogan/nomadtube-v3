@@ -453,8 +453,8 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     justify-content: start;
     align-items: center;
     flex-wrap: nowrap;
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 10px;
+    row-gap: 10px;
     max-width: 1300px;
     margin: auto;
     padding: 10px 5px;
