@@ -54,6 +54,7 @@
         box-shadow: 0px 0px 15px black;
 
         height: 100vh;
+        overflow-y: scroll;
     }
 
     .nav-menu:hover{
@@ -79,5 +80,19 @@
         row-gap: 22px;
         flex-wrap: wrap;
         z-index: 10;
+    }
+
+    .mobile-menu #home-categories{
+        position: relative !important;
+        padding-right: 20px;
+        background: rgba(0,0,0,0);
+    }
+
+    .mobile-menu #home-categories .inner-categories{
+        background: rgba(0,0,0,0);
+    }
+
+    .mobile-menu #home-categories .inner-categories h2{
+        color: white;
     }
 }
