@@ -90,14 +90,15 @@
     background: rgba(0, 0, 0, .95);
 }
 
-.hp-quick-links .categories-wrapper a{
+.categories-wrapper.hp-quick-links a{
     border: 0px solid #ccc;
-    box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 0px #ccc;
 }
 
 #close-quick-links{
     position: absolute;
     color: white;
     right: 10px;
-    top: 10px;
+    top: 10px !important;
+    height: 40px;
 }
