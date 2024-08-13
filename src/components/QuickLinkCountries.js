@@ -37,8 +37,8 @@ function QuickLinkCountries({ className }) {
         </div>
 
             <div className={`quicklinks-countries ${countryMenu ? 'd-flex' : 'd-none' }`}>
-                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeAllMenus}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-x mobile"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeAllMenus} style={{color: "white"}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-x mobile"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
                 </button>
                 <div className="inner">
                     {/* <Link to={"/"} className="countries-menu" onClick={closeAllMenus}>
