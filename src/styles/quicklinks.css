@@ -6,8 +6,20 @@
     z-index: 10;
 }
 
-.quicklinks-countries, .hp-quick-links.standalone{
-    width: 300px;
+.quicklinks-countries, 
+.hp-quick-links.standalone{
+    transition: right .4s ease;
+}
+
+.hp-quick-links.standalone{
+    width: 95%;
+}
+
+.off-screen{
+    right: -100%;
+}
+
+.off-screen.right{
     right: 0;
 }
 
