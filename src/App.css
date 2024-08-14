@@ -461,7 +461,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     column-gap: 5px;
     row-gap: 5px;
     max-width: 100%;
-    margin: auto 5px;
+    /* margin: auto 5px; */
     width: 100%;
     padding: 10px 0px;
     background: #f1f1f1;
