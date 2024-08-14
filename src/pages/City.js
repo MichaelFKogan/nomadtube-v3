@@ -113,8 +113,6 @@ function City() {
         {/* CITIES */}
             <Cities dataCities={dataCities} className={"desktop"} />
 
-        {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>💯 All</h2></div>
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em", marginTop: "10px", marginBottom: "5px"}}>Cities</h2> */}
 
@@ -148,7 +146,10 @@ function City() {
                             </Link>
                         ))}
                 </div>
-            </div>              
+            </div>             
+
+        {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>💯 All</h2></div> 
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             

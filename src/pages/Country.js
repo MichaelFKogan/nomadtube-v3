@@ -106,8 +106,6 @@ function Country() {
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", marginTop: "15px", fontSize: "2em",marginBottom: "0px"}}>Videos</h2> */}
 
-            {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>💯 All</h2></div>
 
             <div className="d-flex space-between align-center">
                 <div className="page-back d-flex align-center mobile">
@@ -136,6 +134,9 @@ function Country() {
                 ))}
                 </div>
             </div>    
+
+        {/* CATEGORY TITLE */}
+            <div className="category-title"><h2>💯 All</h2></div>
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             

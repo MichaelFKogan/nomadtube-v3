@@ -213,11 +213,7 @@ function Home({
             <h2 className="">🔗 Quick Links</h2>
         </div>
 
-        <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
-
-        {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>📹 Videos</h2></div>
-                {/* <div>Page: {currentPage}</div> */}            
+        <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />      
 
             <div className="breadcrumbs-and-videos">
                 <div className="breadcrumbs d-flex col-gap-5">
@@ -242,6 +238,10 @@ function Home({
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
                 </div>
             </div>
+
+        {/* CATEGORY TITLE */}
+        <div className="category-title"><h2>📹 Videos</h2></div>
+                {/* <div>Page: {currentPage}</div> */}                  
 
             {/* <div className='d-flex space-between black-bar-title mobile' style={{background: "black"}}>
                 <h2 className="" style={{color: "white"}}>📁 Categories</h2>

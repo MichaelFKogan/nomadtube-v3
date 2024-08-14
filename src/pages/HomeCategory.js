@@ -188,9 +188,6 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
             </div> */}
 
-        {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title desktop"><h2>{item.name}</h2></div> : null))}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title mobile"><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
 
             {/* BREADCRUMBS */}
             <div className="breadcrumbs-and-videos">
@@ -207,6 +204,7 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
             </div>
             <TotalVideos data={data}/>
             </div>
+
 
         {/* CATEGORIES */}
             <div className={`categories-wrapper categories-row`}>
@@ -233,6 +231,10 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                 ))}
                 </div>
             </div>
+
+        {/* CATEGORY TITLE */}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title desktop"><h2>{item.name}</h2></div> : null))}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title mobile"><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
 
             {/* <div className="page-back d-flex align-center mobile">
                 <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>

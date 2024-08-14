@@ -367,7 +367,7 @@ a.active{
     }
 
     .home .categories-wrapper{
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
         position: relative;
     }
 
