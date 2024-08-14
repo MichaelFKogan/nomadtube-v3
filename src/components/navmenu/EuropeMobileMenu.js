@@ -16,9 +16,9 @@ function EuropeMobileMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europe
                     Back
                 </div>
                 <hr className={`w-80 mobile ${dnone}`} style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/europe/portugal"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇹 Portugal</div></Link>
-                <Link to={"/europe/portugal/lisbon"} className="nav-menu" onClick={closeAllMenus}><div>🚋 Lisbon</div></Link>
-                <Link to={"/europe/portugal/madeira"} className="nav-menu" onClick={closeAllMenus}><div>🌴 Madeira</div></Link>
+                <Link to={"/europe/italy"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇹 Italy</div></Link>
+                <Link to={"/europe/italy/rome"} className="nav-menu" onClick={closeAllMenus}><div>🏛️ Rome</div></Link>
+                <Link to={"/europe/italy/venice"} className="nav-menu" onClick={closeAllMenus}><div>🚤 Venice</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/spain"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇸 Spain</div></Link>
                 <Link to={"/europe/spain/barcelona"} className="nav-menu" onClick={closeAllMenus}><div>🏰 Barcelona</div></Link>
@@ -38,9 +38,9 @@ function EuropeMobileMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europe
             </div>
 
             <div className="w-45">
-                <Link to={"/europe/italy"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇹 Italy</div></Link>
-                <Link to={"/europe/italy/rome"} className="nav-menu" onClick={closeAllMenus}><div>🏛️ Rome</div></Link>
-                <Link to={"/europe/italy/venice"} className="nav-menu" onClick={closeAllMenus}><div>🚤 Venice</div></Link>
+                <Link to={"/europe/portugal"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇹 Portugal</div></Link>
+                <Link to={"/europe/portugal/lisbon"} className="nav-menu" onClick={closeAllMenus}><div>🚋 Lisbon</div></Link>
+                <Link to={"/europe/portugal/madeira"} className="nav-menu" onClick={closeAllMenus}><div>🌴 Madeira</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/germany"} className="nav-menu" onClick={closeAllMenus}><div>🇩🇪 Germany</div></Link>
                 <Link to={"/europe/germanu/berlin"} className="nav-menu" onClick={closeAllMenus}><div>🖼️ Berlin</div></Link>

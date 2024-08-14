@@ -36,13 +36,15 @@
       margin: 0px;
     }
     .breadcrumbs-and-videos{
-      padding: 5px 8px 5px 8px;
+      padding: 5px 8px 6px 8px;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
     }
 
     .home .breadcrumbs-and-videos{
-      margin-top: 10px;
+      border-top: 0px solid #ccc;
+      border-bottom: 0px solid #ccc;
+      margin-top: 0px;
     }
 
     .breadcrumbs-and-videos{
