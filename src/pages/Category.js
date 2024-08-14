@@ -83,6 +83,15 @@ function Category() {
         // Generate page numbers
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
+        let cityName;
+
+        dataCities.cities.map((item, index) => {
+            if (city === item.route) {
+                cityName = item.name;
+            }
+            return null; // Ensure that the map function returns something
+        });
+
     return (
         <div className={`category-page ${country} ${city}`}>
 
@@ -137,7 +146,7 @@ function Category() {
             </div>
 
         {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><div className="subtitle">{dataCities.name}</div><h2>{item.name}</h2></div> : null))}    
+            {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><div className="subtitle">{cityName}</div><h2>{item.name}</h2></div> : null))}    
 
         <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
         
