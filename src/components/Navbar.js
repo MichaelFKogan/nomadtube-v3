@@ -2,29 +2,52 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
 import AsiaMobileMenu from './navmenu/AsiaMobileMenu';
+import SouthAmericaMobileMenu from './navmenu/SouthAmericaMobileMenu';
+import EuropeMobileMenu from './navmenu/EuropeMobileMenu';
+import MiddleEastMobileMenu from './navmenu/MiddleEastMobileMenu';
 
 function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
     const [mobileMenu, setMobileMenu] = useState(false);
     const [asiaMenu, setAsiaMenu] = useState(false);
+    const [southAmericaMenu, setSouthAmericaMenu] = useState(false);
+    const [europeMenu, setEuropeMenu] = useState(false);
+    const [middleEastMenu, setMiddleEastMenu] = useState(false);
 
-    const toggleMobileMenu = () => { countryMenu ? setMobileMenu(false) : setMobileMenu(!mobileMenu); }
+    const toggleMobileMenu = () => { 
+        if (asiaMenu || southAmericaMenu || europeMenu || middleEastMenu) {
+            setMobileMenu(false);
+        } else {
+            setMobileMenu(!mobileMenu);
+        }
+    }
 
     const toggleAsiaMenu = () => { setAsiaMenu(!asiaMenu); closeMobileMenu(); }
+    const toggleSouthAmericaMenu = () => { setSouthAmericaMenu(!southAmericaMenu); closeMobileMenu(); }
+    const toggleEuropeMenu = () => { setEuropeMenu(!europeMenu); closeMobileMenu(); }
+    const toggleMiddleEastMenu = () => { setMiddleEastMenu(!middleEastMenu); closeMobileMenu(); }
+
     const closeMobileMenu = () => { setMobileMenu(false); };
 
     const closes = () => { setAsiaMenu(false); };
 
-    const closeAllMenus = () => { setMobileMenu(false); setAsiaMenu(false); };
+    const closeAllMenus = () => {
+        mobileMenu ? setMobileMenu(false) : setMobileMenu(false);
+        
+        setAsiaMenu(false);
+        setSouthAmericaMenu(false);
+        setEuropeMenu(false);
+        setMiddleEastMenu(false);
+    }
 
     const back = () => { setMobileMenu(true); }
 
     const closeCountryMenus = () => {
         setAsiaMenu(false);
-        // setSouthAmericaMenu(false);
+        setSouthAmericaMenu(false);
+        setEuropeMenu(false);
+        setMiddleEastMenu(false);
         // setNorthAmericaMenu(false);
-        // setEuropeMenu(false);
-        // setMiddleEastMenu(false);
         // setOceaniaMenu(false);
     }
 
@@ -44,14 +67,20 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                 </div>
 
                 <div className="d-flex align-center col-gap-5 pos-rel">
-                    <div className="nav-menu"  onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }}><div>Asia</div></div>
-                    {/* <div className="nav-menu" onClick={toggleAsia}><div>Asia</div></div> */}
-                    <Link to={"/southamerica"} className="nav-menu"><div>South America</div></Link>
-                    <Link to={"/europe"} className="nav-menu"><div>Europe</div></Link>
+                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleAsiaMenu(); }}><div>Asia</div></div>
+                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleSouthAmericaMenu(); }}><div>South America</div></div>
+                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleEuropeMenu(); }}><div>Europe</div></div>
+                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleMiddleEastMenu(); }}><div>MiddleEast</div></div>
+
+
                     {/* <Link to={"/northamerica"} className="nav-menu"><div>North America</div></Link> */}
-                    <Link to={"/middleeast"} className="nav-menu"><div>Middle East</div></Link>
+                    {/* <Link to={"/northamerica"} className="nav-menu"><div>Oceania</div></Link> */}
+
 
                     <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
+                    <SouthAmericaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} southAmericaMenu={southAmericaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
+                    <EuropeMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleEuropeMenu={toggleEuropeMenu} europeMenu={europeMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
+                    <MiddleEastMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleMiddleEastMenu={toggleMiddleEastMenu} middleEastMenu={middleEastMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
                 </div>
 
                 {/* <div className="d-flex align-center">
@@ -72,11 +101,11 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
 
 
-            {/* MOBILE MENU */}
+            {/* MOBILE NAVBAR */}
             <div className={`navbar d-flex align-center space-between mobile ${className}`}>
 
                 <div className='d-flex align-center'>
-                    <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closes(); }}>
+                    <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closeCountryMenus(); }}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
                     </div>
                     {/* <Link to={"/"} className="nav-menu"><div>🏠</div></Link> */}
@@ -102,17 +131,22 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
             </div> */}
 
-            <div className={`mobile-menu ${mobileMenu ? 'd-block' : 'd-none'}`}>
+        {/* MOBILE INNER DROPDOWN MENU */}
+            <div className={`mobile-menu main-mobile-menu ${mobileMenu ? 'd-block' : 'd-none'}`}>
                 <Link to={"/"} className="nav-menu" onClick={closeAllMenus}><div>🏠 Home</div></Link>
                 {/* <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px", paddingTop:"5px", paddingBottom: "27px" }}><div>🔗 Quick Links</div></div> */}
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginBottom: "25px"}}/>
 
-                <h2 className="" style={{color: "white", fontSize: "20px", textAlign: "left", marginBottom: "20px"}}>🌎 Countries</h2>
+                {/* <h2 className="" style={{color: "white", fontSize: "20px", textAlign: "left", marginBottom: "20px"}}>🌎 Countries</h2> */}
                 <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px" }}><div>⛩ Asia</div></div>
-                <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu}><div>💃🏻 South America</div></Link>
-                {/* <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu}><div>🗽 North America</div></Link> */}
-                <Link to={"/europe"} className="nav-menu" onClick={closeMobileMenu}><div>🇪🇺 Europe</div></Link>
-                <Link to={"/middleeast"} className="nav-menu" onClick={closeMobileMenu}><div>🕋 Middle East</div></Link>
+                <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleSouthAmericaMenu(); }} style={{ marginLeft: "0px" }}><div>💃🏻 South America</div></div>
+                <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleEuropeMenu(); }} style={{ marginLeft: "0px" }}><div>🇪🇺 Europe</div></div>
+                <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleMiddleEastMenu(); }} style={{ marginLeft: "0px" }}><div>🕋 The Middle East</div></div>
+
+
+                {/* <Link to={"/northamerica"} className="nav-menu" onClick={closeMobileMenu}><div>🗽 North America</div></Link> */}
+
+
                 {/* <Link to={"/europe"} className="nav-menu" onClick={closeMobileMenu}><div>🌊 Oceania</div></Link> */}
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginBottom: "25px"}}/>
 
@@ -141,6 +175,9 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
             </div>
 
             <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
+            <SouthAmericaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} southAmericaMenu={southAmericaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
+            <EuropeMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleEuropeMenu={toggleEuropeMenu} europeMenu={europeMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
+            <MiddleEastMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleMiddleEastMenu={toggleMiddleEastMenu} middleEastMenu={middleEastMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
 
         </>
     );
