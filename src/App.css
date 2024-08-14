@@ -252,13 +252,13 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .category-title {
     padding: 20px 0px;
     /* background: black; */
-    background: linear-gradient(45deg, black, rgba(0,0,0,.9));
+    background: linear-gradient(180deg, black, rgba(0,0,0,.9));
     color: white;
     z-index: 4;
     /* border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc; */
     box-shadow: 0px 2px 5px black;
-    width: calc(100% - 16px);
+    width: 100%;
     margin: 25px auto 10px auto;
     border-radius: 4px;
 }
