@@ -116,7 +116,7 @@ function Card({ data, key, cardKey }) {
                 <div className='iframe-div'>
 
                     <div className='loading-text' 
-                    style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: '1rem', color: 'gray'}}>
+                    style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: '.9rem', fontWeight: "100", color: 'gray', fontFamily:"Edo"}}>
                         Loading...
                     </div>
 

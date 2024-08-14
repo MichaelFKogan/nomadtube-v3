@@ -7,7 +7,7 @@ function QuickLinks({ scrollToTop, categoriesDropdown, handleCategoriesDropdown}
 
     return (
         <>            
-            <div id="home-categories" className={`categories-wrapper hp-quick-links standalone d-flex off-screen ${categoriesDropdown ? 'right' : ''}`}>
+            <div id="home-categories" className={`categories-wrapper hp-quick-links standalone d-flex off-screen mobile ${categoriesDropdown ? 'right' : ''}`}>
 
                 <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={handleCategoriesDropdown} style={{color: "black"}}>
 
