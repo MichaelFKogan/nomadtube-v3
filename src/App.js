@@ -44,7 +44,12 @@ function App() {
   const closeAllDropdownMenus  = () => {
     setContinentsDropdownMenu(false);
     setAsiaDropdownMenu(false);
-    document.documentElement.scrollTop = 0;};
+    document.documentElement.scrollTop = 0;
+  };
+
+  const scrollToTop = () => {
+    document.documentElement.scrollTop = 0;
+  }
 
   return (
     <div className="App">
