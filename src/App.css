@@ -427,6 +427,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     margin-bottom: 0px;
+    margin-top: 10px;
   }
 
   .categories-wrapper{
