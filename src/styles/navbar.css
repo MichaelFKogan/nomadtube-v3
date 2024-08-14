@@ -135,7 +135,7 @@
         row-gap: 15px;
     }
 
-    .mobile-menu.asia-menu{
+    .mobile-menu.asia-menu, .mobile-menu.southamerica-menu{
         line-height: 20px;
         /* height: 500px; */
         flex-direction: column;
