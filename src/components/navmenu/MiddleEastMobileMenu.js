@@ -16,18 +16,18 @@ function MiddleEastMobileMenu({mobileMenu, closeMobileMenu, toggleMiddleEastMenu
                     Back
                 </div>
                 <hr className={`w-80 mobile ${dnone}`} style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/thailand"} className="nav-menu" onClick={closeAllMenus}><div>🇦🇪 UAE</div></Link>
-                <Link to={"/asia/thailand/bangkok"} className="nav-menu" onClick={closeAllMenus}><div>🇦🇪 Dubai</div></Link>
+                <Link to={"/middleeast/uae"} className="nav-menu" onClick={closeAllMenus}><div>🇦🇪 UAE</div></Link>
+                <Link to={"/middleeast/uae/dubai"} className="nav-menu" onClick={closeAllMenus}><div>🏙️ Dubai</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/vietnam"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇬 Egypt</div></Link>
+                <Link to={"/middleeast/egypt"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇬 Egypt</div></Link>
             </div>
 
             <div className="w-45">
-                <Link to={"/asia/bali"} className="nav-menu" onClick={closeAllMenus}><div>🇹🇷 Turkey</div></Link>
-                <Link to={"/asia/bali/canggu"} className="nav-menu" onClick={closeAllMenus}><div>🇹🇷 Istanbul</div></Link>
+                <Link to={"/middleeast/turkey"} className="nav-menu" onClick={closeAllMenus}><div>🇹🇷 Turkey</div></Link>
+                <Link to={"/middleeast/turkey/istanbul"} className="nav-menu" onClick={closeAllMenus}><div>🕌 Istanbul</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/japan"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇱 Israel</div></Link>
-                <Link to={"/asia/japan/tokyo"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇱 Tel Aviv</div></Link>
+                <Link to={"/middleeast/israel"} className="nav-menu" onClick={closeAllMenus}><div>🇮🇱 Israel</div></Link>
+                <Link to={"/middleeast/israel/telaviv"} className="nav-menu" onClick={closeAllMenus}><div>🏖️ Tel Aviv</div></Link>
                 <div style={{height: "500px"}}></div>
             </div>
             </div>

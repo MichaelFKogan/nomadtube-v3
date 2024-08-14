@@ -5,6 +5,7 @@
       {"name": "🍜 Street Food","route": "streetfood"},
       {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
       {"name": "🧍‍♀️ Solo Travel","route": "solotravel"},
+      {"name": "👨‍💻 Coworking","route": "coworking"},
       {"name": "🚐 Van Life","route": "vanlife"},
       {"name": "👩‍🏫 English Teaching","route": "englishteaching"},
       {"name": "🎒 Gear","route": "gear"}

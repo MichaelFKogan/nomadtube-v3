@@ -16,36 +16,36 @@ function SouthAmericaMobileMenu({mobileMenu, closeMobileMenu, toggleSouthAmerica
                     Back
                 </div>
                 <hr className={`w-80 mobile ${dnone}`} style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/vietnam"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇴 Colombia</div></Link>
-                <Link to={"/asia/vietnam/hanoi"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇴 Medellin</div></Link>
-                <Link to={"/asia/vietnam/hanoi"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇴 Bogota</div></Link>
-                <Link to={"/asia/vietnam/hanoi"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇴 Cartegena</div></Link>
+                <Link to={"/southamerica/colombia"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇴 Colombia</div></Link>
+                <Link to={"/southamerica/colombia/medellin"} className="nav-menu" onClick={closeAllMenus}><div>🍻 Medellin</div></Link>
+                <Link to={"/southamerica/colombia/bogota"} className="nav-menu" onClick={closeAllMenus}><div>🌄 Bogota</div></Link>
+                <Link to={"/southamerica/colombia/cartegena"} className="nav-menu" onClick={closeAllMenus}><div>🏖️ Cartegena</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/vietnam"} className="nav-menu" onClick={closeAllMenus}><div>🇲🇽 Mexico</div></Link>
-                <Link to={"/asia/vietnam/hanoi"} className="nav-menu" onClick={closeAllMenus}><div>🌇 Mexico City</div></Link>
-                <Link to={"/asia/vietnam/hanoi"} className="nav-menu" onClick={closeAllMenus}><div>⛱ Playa Del Carmen</div></Link>
-                <Link to={"/asia/vietnam/hanoi"} className="nav-menu" onClick={closeAllMenus}><div>🏝 Tulum</div></Link>
+                <Link to={"/southamerica/mexico"} className="nav-menu" onClick={closeAllMenus}><div>🇲🇽 Mexico</div></Link>
+                <Link to={"/southamerica/mexico/mexicocity"} className="nav-menu" onClick={closeAllMenus}><div>🌇 Mexico City</div></Link>
+                <Link to={"/southamerica/mexico/playadelcarmen"} className="nav-menu" onClick={closeAllMenus}><div>⛱ Playa Del Carmen</div></Link>
+                <Link to={"/southamerica/mexico/tulum"} className="nav-menu" onClick={closeAllMenus}><div>🏝 Tulum</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇷 Puerto Rico</div></Link>
+                <Link to={"/southamerica/puertorico"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇷 Puerto Rico</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/thailand"} className="nav-menu" onClick={closeAllMenus}><div>🇦🇷 Argentina</div></Link>
-                <Link to={"/asia/thailand/bangkok"} className="nav-menu" onClick={closeAllMenus}><div>🇦🇷 Buenos Aires</div></Link>
+                <Link to={"/southamerica/argentina"} className="nav-menu" onClick={closeAllMenus}><div>🇦🇷 Argentina</div></Link>
+                <Link to={"/southamerica/argentina/buenosaires"} className="nav-menu" onClick={closeAllMenus}><div>🎭  Buenos Aires</div></Link>
             </div>
 
             <div className="w-45">
-                <Link to={"/asia/bali"} className="nav-menu" onClick={closeAllMenus}><div>🇧🇷 Brazil</div></Link>
-                <Link to={"/asia/bali/canggu"} className="nav-menu" onClick={closeAllMenus}><div>🇧🇷 Rio De Janeiro</div></Link>
+                <Link to={"/southamerica/brazil"} className="nav-menu" onClick={closeAllMenus}><div>🇧🇷 Brazil</div></Link>
+                <Link to={"/southamerica/brazil/riodejaneiro"} className="nav-menu" onClick={closeAllMenus}><div>🎉 Rio De Janeiro</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇷 Costa Rica</div></Link>
+                <Link to={"/southamerica/costarica"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇷 Costa Rica</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇺 Cuba</div></Link>
+                <Link to={"/southamerica/cuba"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇺 Cuba</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇨 Ecuador</div></Link>
+                <Link to={"/southamerica/ecuador"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇨 Ecuador</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/japan"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇱 Chile</div></Link>
+                <Link to={"/southamerica/chile"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇱 Chile</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇪 Peru</div></Link>
-                <Link to={"/asia/korea"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇪 Lima</div></Link>
+                <Link to={"/southamerica/peru"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇪 Peru</div></Link>
+                <Link to={"/southamerica/peru/lima"} className="nav-menu" onClick={closeAllMenus}><div>🍽️ Lima</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <div style={{height: "300px"}}></div>
             </div>

@@ -35,7 +35,16 @@
       margin: 0px;
     }
     .breadcrumbs-and-videos{
-      margin: 5px 8px 5px 8px
+      padding: 5px 8px 5px 8px;
+      border-top: 1px solid #ccc;
+    }
+
+    .home .breadcrumbs-and-videos{
+      margin-top: 10px;
+    }
+
+    .breadcrumbs-and-videos{
+      margin-top: 5px;
     }
 
   }

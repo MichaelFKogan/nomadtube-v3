@@ -135,7 +135,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
             <div className={`mobile-menu main-mobile-menu ${mobileMenu ? 'd-block' : 'd-none'}`}>
                 <Link to={"/"} className="nav-menu" onClick={closeAllMenus}><div>🏠 Home</div></Link>
                 {/* <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px", paddingTop:"5px", paddingBottom: "27px" }}><div>🔗 Quick Links</div></div> */}
-                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginBottom: "25px"}}/>
+                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginTop: "20px", marginBottom: "25px"}}/>
 
                 {/* <h2 className="" style={{color: "white", fontSize: "20px", textAlign: "left", marginBottom: "20px"}}>🌎 Countries</h2> */}
                 <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px" }}><div>⛩ Asia</div></div>
