@@ -1,38 +1,48 @@
 {
   "name": "🇪🇺 Europe",
   "cities":[
-    {"name": "Portugal","route": "portugal", "img": "portugal"},
-    {"name": "Lisbon","route": "portugal/lisbon", "img": "lisbon"},
-    {"name": "Madeira","route": "portugal/madeira", "img": "madeira"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇮🇹 Italy","route": "italy", "img": "italy"},
+    {"name": "🏛️ Rome","route": "italy/rome", "img": "rome"},
+    {"name": "🚤 Venice","route": "italy/venice", "img": "venice"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇵🇹 Portugal","route": "portugal", "img": "portugal"},
+    {"name": "🚋 Lisbon","route": "portugal/lisbon", "img": "lisbon"},
+    {"name": "🌴 Madeira","route": "portugal/madeira", "img": "madeira"},
+
+    {"name": "🇪🇸 Spain","route": "spain", "img": "spain"},
+    {"name": "🏰 Barcelona","route": "spain/barcelona", "img": "barcelona"},
+    {"name": "🎨 Madrid","route": "spain/madrid", "img": "madrid"},
+
+    {"name": "🇫🇷 France","route": "france", "img": "france"},
+    {"name": "🗼 Paris","route": "france/paris", "img": "paris"},
     
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇳🇱 Amsterdam","route": "amsterdam", "img": "amsterdam"},
+    {"name": "🏰 Prague","route": "prague", "img": "prague"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇪🇪 Estonia","route": "estonia", "img": "estonia"},
+    {"name": "🇭🇷 Croatia","route": "croatia", "img": "croatia"},
+    {"name": "🏙️ Zagreb","route": "croatia/zagreb", "img": "zagreb"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇩🇪 Germany","route": "germany", "img": "germany"},
+    {"name": "🖼️ Berlin","route": "germany/berlin", "img": "berlin"},
 
-    {"name": "Italy","route": "italy", "img": "italy"}
+    {"name": "🇵🇱 Poland","route": "poland", "img": "poland"},
+    {"name": "🏢 Warsaw","route": "poland/warsaw", "img": "warsaw"},
+    {"name": "🏰 Krakow","route": "poland/krakow", "img": "krakow"},
+
+    {"name": "🇮🇸 Iceland","route": "iceland", "img": "iceland"},
+
+    {"name": "🇬🇧 London","route": "london", "img": "london"},
+
+    {"name": "🇬🇷 Greece","route": "greece", "img": "greece"},
+
+    {"name": "🇷🇺 Russia","route": "russia", "img": "russia"},
+    {"name": "🇷🇺 Moscow","route": "russia/moscow", "img": "moscow"},
+
+    {"name": "🇷🇴 Romania","route": "romania", "img": "romania"}
   ]
 }

@@ -1,38 +1,33 @@
 {
   "name": "💃🏻 South America",
   "cities":[
-    {"name": "Portugal","route": "portugal", "img": "portugal"},
-    {"name": "Lisbon","route": "portugal/lisbon", "img": "lisbon"},
-    {"name": "Madeira","route": "portugal/madeira", "img": "madeira"},
+    {"name": "🇨🇴 Colombia","route": "colombia", "img": "colombia"},
+    {"name": "🍻 Medellin","route": "colombia/medellin", "img": "medellin"},
+    {"name": "🌄 Bogota","route": "colombia/bogota", "img": "bogota"},
+    {"name": "🏖️ Cartagena","route": "colombia/cartagena", "img": "cartagena"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇧🇷 Brazil","route": "brazil", "img": "brazil"},
+    {"name": "🎉 Rio De Janeiro","route": "brazil/riodejaneiro", "img": "riodejaneiro"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇨🇷 Costa Rica","route": "costarica", "img": "costarica"},
+
+    {"name": "🇲🇽 Mexico","route": "mexico", "img": "mexico"},
+    {"name": "🌇 Mexico City","route": "mexico/mexicocity", "img": "mexicocity"},
+    {"name": "⛱ Playa Del Carmen","route": "mexico/playadelcarmen", "img": "playadelcarmen"},
+    {"name": "🏝 Tulum","route": "mexico/tulum", "img": "tulum"},
+
+    {"name": "🇵🇷 Puerto Rico","route": "puertorico", "img": "puertorico"},
     
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇦🇷 Argentina","route": "argentina", "img": "argentina"},
+    {"name": "🎭  Buenos Aires","route": "buenosaires", "img": "buenosaires"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇨🇺 Cuba","route": "cuba", "img": "cuba"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇪🇨 Ecuador","route": "ecuador", "img": "ecuador"},
+    {"name": "🇨🇱 Chile","route": "chile", "img": "chile"},
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
+    {"name": "🇵🇪 Peru","route": "peru", "img": "peru"},
+    {"name": "🍽️ Lima","route": "peru/lima", "img": "lima"}
 
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-
-    {"name": "Italy","route": "italy", "img": "italy"},
-    {"name": "Italy","route": "italy", "img": "italy"},
-
-    {"name": "Italy","route": "italy", "img": "italy"}
   ]
 }
