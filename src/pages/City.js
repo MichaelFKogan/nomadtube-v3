@@ -149,7 +149,10 @@ function City() {
             </div>
 
         {/* CATEGORY TITLE */}
-            <div className="category-title"><h2>💯 All</h2></div> 
+        {dataCities.cities.map((item, index) => (
+            city === item.route ? 
+            <div className="category-title"><div className="subtitle">{item.name}</div><h2>💯 All</h2></div> 
+            : null  ))}
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
             

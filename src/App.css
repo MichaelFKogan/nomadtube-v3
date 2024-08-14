@@ -349,6 +349,17 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     margin-bottom: 5px;
   }
 
+  .category-title .subtitle{
+    margin-top: 0px;
+    position: absolute;
+    top: 7px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-family: "Edo";
+    font-weight: 100;
+    font-size: 12px;
+  }
+
   .home .category-title{
     margin-top: 0px;
     margin-bottom: 5px;
