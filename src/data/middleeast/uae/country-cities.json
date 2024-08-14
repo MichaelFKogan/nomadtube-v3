@@ -1,0 +1,8 @@
+{
+    "name": "🇯🇵 Japan",
+    "cities":[
+        {"name": "🗼 Tokyo","route": "tokyo"},
+        {"name": "🏯 Osaka","route": "osaka"},
+        {"name": "🎋 Kyoto","route": "kyoto"}
+    ]
+}

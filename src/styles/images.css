@@ -62,6 +62,15 @@
 .singapore-img {background-image: url('../assets/img/banners/singapore-banner.jpeg') !important;}
 
 
+.bangladesh-img {background-image: url('../assets/img/banners/bangladesh-banner.jpeg') !important; background-position-y: 85% !important;}
+
+/* .china-img {background-image: url('../assets/img/banners/china-banner.jpeg') !important;}
+.beijing-img {background-image: url('../assets/img/banners/beijing-banner.jpeg') !important;}
+.shanghai-img {background-image: url('../assets/img/banners/shanghai-banner.jpeg') !important;} */
+
+
+
+
 .brazil-img {background-image: url('../assets/img/banners/brazil-banner.jpeg') !important;}
 .colombia-img {background-image: url('../assets/img/banners/colombia-banner.jpeg') !important;}
 .mexico-img {background-image: url('../assets/img/banners/mexico-banner.jpeg') !important; background-position-y: 73% !important;}
