@@ -54,10 +54,14 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                     <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
                 </div>
 
-                <div className="d-flex align-center">
+                {/* <div className="d-flex align-center">
                     <Link to={"/search"} className="nav-menu nav-home desktop"><div>Search</div></Link>
                     <Link to={"/all"} className="nav-menu nav-home desktop"><div>All</div></Link>
                     <div className="nav-menu nav-sound desktop">🔈</div>
+                </div> */}
+
+                <div className='d-flex align-center' style={{opacity: "0", visibility: "0"}}>
+                    <Link to={"/"} className="nav-menu nav-logo desktop"><div>🏝 NomadTube</div></Link>
                 </div>
 
             </div>

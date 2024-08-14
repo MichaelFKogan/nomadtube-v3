@@ -30,7 +30,7 @@
 }
 
 .home-banner, .page-banner {
-    width: calc(100% - 20px);
+    width: 100%;
     background-size: cover; /* Ensure the image covers the entire div */
     background-position-y: 40%;
     background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -38,7 +38,8 @@
     justify-content: center;
     align-items: center;
     color: white; /* Optional: Text color for content inside the banner */
-    margin: 25px auto 10px auto;
+    /* margin: 25px auto 10px auto; */
+    margin-bottom: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
     border-radius: 4px;
 }
