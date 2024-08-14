@@ -101,19 +101,6 @@ function Category() {
         </div> */}
     
 
-            <div className="d-flex space-between align-center">
-                {/* PAGE BACK */}
-            <div className="page-back d-flex align-center mobile">
-                <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
-                <Link to={`/${continent}/${country}`} className=""><div>{capitalizedCountry}</div></Link>
-            </div>
-            <TotalVideos data={data} className={"mobile"}/>
-            </div>
-
-            <div className="breadcrumbs-and-videos">
-                <Breadcrumbs/>
-                <TotalVideos data={data} className={"desktop"}/>
-            </div>
 
         {/* CATEGORIES */}
         <div className="categories-wrapper categories-row">
@@ -133,6 +120,20 @@ function Category() {
                     )
                 ))}
                 </div>
+            </div>
+
+            <div className="d-flex space-between align-center">
+                {/* PAGE BACK */}
+            <div className="page-back d-flex align-center mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                <Link to={`/${continent}/${country}`} className=""><div>{capitalizedCountry}</div></Link>
+            </div>
+            <TotalVideos data={data} className={"mobile"}/>
+            </div>
+
+            <div className="breadcrumbs-and-videos">
+                <Breadcrumbs/>
+                <TotalVideos data={data} className={"desktop"}/>
             </div>
 
         {/* CATEGORY TITLE */}

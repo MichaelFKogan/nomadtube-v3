@@ -414,6 +414,7 @@ a.active{
 
         border: 1px solid #ccc;
         box-shadow: 0 0 5px #ccc;
+        line-height: 23px;
     }
 
     .home .inner-categories, .home-category-page .inner-categories{

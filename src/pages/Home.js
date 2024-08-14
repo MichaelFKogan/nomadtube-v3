@@ -215,13 +215,6 @@ function Home({
 
         <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />      
 
-            <div className="breadcrumbs-and-videos">
-                <div className="breadcrumbs d-flex col-gap-5">
-                    <Link to={"/"}><div>Home</div></Link>
-                </div>
-                <TotalVideos data={data}/>
-            </div>
-
 
         {/* CATEGORIES */}
             {/* <div id="home-categories" className={`categories-wrapper ${categoriesDropdown ? 'd-flex' : 'd-none'}`}> */}
@@ -233,10 +226,18 @@ function Home({
                     <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
                     <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
                     <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
+                    <Link to={`/category/coworking`}><div>👨‍💻 Coworking</div></Link>
                     <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
                     <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
                 </div>
+            </div>
+
+            <div className="breadcrumbs-and-videos">
+                <div className="breadcrumbs d-flex col-gap-5">
+                    <Link to={"/"}><div>Home</div></Link>
+                </div>
+                <TotalVideos data={data}/>
             </div>
 
         {/* CATEGORY TITLE */}

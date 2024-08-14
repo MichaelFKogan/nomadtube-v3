@@ -189,23 +189,6 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
             </div> */}
 
 
-            {/* BREADCRUMBS */}
-            <div className="breadcrumbs-and-videos">
-            <div className="breadcrumbs d-flex col-gap-5 align-center">
-                <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
-                <Link to={`/category/${homeCategory}`}>
-                    <div className={'bold desktop'}>
-                        {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}
-                    </div>
-                    <div className={'bold mobile'}>
-                        {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name.length > 30 ? item.name.substring(0, 30) + "..." : item.name}</> : null))}
-                    </div>
-                </Link>
-            </div>
-            <TotalVideos data={data}/>
-            </div>
-
-
         {/* CATEGORIES */}
             <div className={`categories-wrapper categories-row`}>
                 <div className="inner-categories">
@@ -230,6 +213,22 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
                     )
                 ))}
                 </div>
+            </div>
+
+            {/* BREADCRUMBS */}
+            <div className="breadcrumbs-and-videos">
+            <div className="breadcrumbs d-flex col-gap-5 align-center">
+                <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
+                <Link to={`/category/${homeCategory}`}>
+                    <div className={'bold desktop'}>
+                        {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}
+                    </div>
+                    <div className={'bold mobile'}>
+                        {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name.length > 30 ? item.name.substring(0, 30) + "..." : item.name}</> : null))}
+                    </div>
+                </Link>
+            </div>
+            <TotalVideos data={data}/>
             </div>
 
         {/* CATEGORY TITLE */}

@@ -26,6 +26,7 @@
 
     .breadcrumbs-and-videos{
       margin: 5px 15px 5px 5px;
+      line-height: 20px;
     }
   
   }
@@ -37,6 +38,7 @@
     .breadcrumbs-and-videos{
       padding: 5px 8px 5px 8px;
       border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
     }
 
     .home .breadcrumbs-and-videos{
