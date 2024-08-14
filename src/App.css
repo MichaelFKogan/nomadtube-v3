@@ -347,17 +347,19 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     border-bottom: 1px solid #ccc; */
     /* margin-top: 2px; */
     margin-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   .category-title .subtitle{
     margin-top: 0px;
     position: absolute;
-    top: 7px;
+    top: 13px;
     transform: translate(-50%, -50%);
     left: 50%;
     font-family: "Edo";
     font-weight: 100;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .home .category-title{
