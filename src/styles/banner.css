@@ -40,7 +40,7 @@
     color: white; /* Optional: Text color for content inside the banner */
     /* margin: 25px auto 10px auto; */
     margin-bottom: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     border-radius: 4px;
 }
 
