@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/quicklinks.css"
 
-function QuickLinks({ scrollToTop, categoriesDropdown, handleCategoriesDropdown}) {
+function QuickLinks({ categoriesDropdown, handleCategoriesDropdown}) {
 
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
 
     return (
         <>            
