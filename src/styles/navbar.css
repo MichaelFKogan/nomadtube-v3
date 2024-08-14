@@ -21,9 +21,20 @@
     line-height: 20px;
 }
 
+@media(min-width:769px){
+    .nav-logo{
+        font-size: 24px;
+    }
+}
+
+@media(max-width:768px){
+    .nav-logo{
+        font-size: 21px;
+    }
+}
+
 .nav-logo{
     font-family: "Edo";
-    font-size: 21px;
     font-weight: 100;
 }
 

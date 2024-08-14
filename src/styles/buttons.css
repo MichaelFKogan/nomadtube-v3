@@ -528,6 +528,7 @@ a.active{
     transition: opacity 0.2s, visibility 0.2s; /* Smooth transition */
     pointer-events: none; /* Prevent tooltip from interfering with mouse events */
     z-index: 1; /* Ensure it appears above other elements */
+    display: none;
 }
 
 /* Show the tooltip when hovering over the button */
