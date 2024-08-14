@@ -363,7 +363,7 @@ a.active{
     }
 
     .categories-wrapper{
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
     }
 
     .home .categories-wrapper{

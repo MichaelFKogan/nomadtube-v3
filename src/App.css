@@ -453,9 +453,9 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .inner-categories{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     column-gap: 5px;
     row-gap: 5px;
     max-width: 100%;
