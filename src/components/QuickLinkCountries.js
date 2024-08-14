@@ -111,7 +111,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
                 </button>
                 <div className="inner">
-                    <AsiaMobileMenu asiaMenu={asiaMenu} toggleAsiaMenu={toggleAsiaMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus}/>
+                    <AsiaMobileMenu asiaMenu={asiaMenu} toggleAsiaMenu={toggleAsiaMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} dNone={"d-none"}/>
                     <SouthAmericaMobileMenu southAmericaMenu={southAmericaMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus}/>
                 </div>
             </div>

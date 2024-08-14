@@ -162,10 +162,11 @@ a.active{
     position: absolute;
     z-index:3;
     font-weight: bold;
-    background: rgba(0, 0, 0, .6);
+    /* background: rgba(0, 0, 0, .6); */
+    background: linear-gradient(270deg, rgba(0,0,0,.8), rgba(0,0,0,.1));
     color: white;
-    height: 35px;
-    width: 34px;
+    height: 32px;
+    width: 31px;
     border: 0px;
     border-radius: 3px;
     box-shadow: 0 0 5px #666;
@@ -174,15 +175,25 @@ a.active{
     right: 2px;
 }
 
+.card-button:hover{
+    background: linear-gradient(270deg, rgba(0,0,0,.8), rgba(0,0,0,.4))
+}
+
 @media(min-width:769px) and (max-width: 1440px){
     .card.normal .image-plus,
     .card.tablet-normal .image-plus{
         top: 0px;
         right: 0px;
-        width: 41px;
-        height: 41px;
+        width: 37px;
+        height: 38px;
         border-top-right-radius: 0px;
-        background: rgba(0,0,0,0.6) !important;
+        /* background: rgba(0,0,0,0.6) !important; */
+        background: linear-gradient(270deg, rgba(0,0,0,.8), rgba(0,0,0,.1));
+    }
+
+    .card.normal .image-plus:hover,
+    .card.tablet-normal .image-plus:hover{
+        background: linear-gradient(270deg, rgba(0,0,0,.8), rgba(0,0,0,.4));
     }
 
     .window-open .image-plus{
@@ -201,9 +212,9 @@ a.active{
 .new-window{top: 83px;} */
 
 .close-card{top: 2px}
-.image-plus{top: 41px;}
-.image-minus{top: 80px;}
-.new-window{top: 118px;}
+.image-plus{top: 38px;}
+.image-minus{top: 74px;}
+.new-window{top: 109px;}
 
 .normal .image-plus{top:2px}
 .window-open .new-window{display: none;}

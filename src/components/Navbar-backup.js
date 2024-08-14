@@ -8,14 +8,14 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
     const [mobileMenu, setMobileMenu] = useState(false);
     const [asiaMenu, setAsiaMenu] = useState(false);
 
-    const toggleMobileMenu = () => { countryMenu ? setMobileMenu(false) : setMobileMenu(!mobileMenu); }
+    const toggleMobileMenu = () => { countryMenu ? setMobileMenu(false) : setMobileMenu(!mobileMenu); set(false); }
 
     const toggleAsiaMenu = () => { setAsiaMenu(!asiaMenu); closeMobileMenu(); }
-    const closeMobileMenu = () => { setMobileMenu(false); };
+    const closeMobileMenu = () => { setMobileMenu(false); set(true); };
 
     const closes = () => { setAsiaMenu(false); };
 
-    const closeAllMenus = () => { setMobileMenu(false); setAsiaMenu(false); };
+    const closeAllMenus = () => { setMobileMenu(false); setAsiaMenu(false); set(false); };
 
     const back = () => { setMobileMenu(true); }
 
@@ -28,12 +28,9 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
         // setOceaniaMenu(false);
     }
 
+    const toggleAsiaMenuDesktop = () => { setAsiaMenuDesktop(!asiaMenuDesktop); closeDesktopMenu(); }
 
-    // const [desktopMenu, setDesktopMenu] = useState(false);
-    // const [asiaMenuDesktop, setAsiaMenuDesktop] = useState(false);
-    // const toggleAsiaMenuDesktop = () => { setAsiaMenuDesktop(!asiaMenuDesktop); closeDesktopMenu(); }
-
-    // const closeDesktopMenu = () => { setDesktopMenu(false); };
+    const closeDesktopMenu = () => { setDesktopMenu(false); set(true); };
 
     return (
         <>
@@ -44,14 +41,12 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                 </div>
 
                 <div className="d-flex align-center col-gap-5">
-                    <div className="nav-menu"  onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }}><div>Asia</div></div>
+                    <div className="nav-menu"  onClick={() => { closeMobileMenu(); toggleAsiaMenuDesktop(); }}><div>Asia</div></div>
                     {/* <div className="nav-menu" onClick={toggleAsia}><div>Asia</div></div> */}
                     <Link to={"/southamerica"} className="nav-menu"><div>South America</div></Link>
                     <Link to={"/europe"} className="nav-menu"><div>Europe</div></Link>
                     {/* <Link to={"/northamerica"} className="nav-menu"><div>North America</div></Link> */}
                     <Link to={"/middleeast"} className="nav-menu"><div>Middle East</div></Link>
-
-                    <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
                 </div>
 
                 <div className="d-flex align-center">
@@ -136,7 +131,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
             </div>
 
-            <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
+            <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} />
 
         </>
     );
