@@ -1,0 +1,7 @@
+{
+    "name": "🇨🇳 China",
+    "cities":[
+        {"name": "🥟 Beijing","route": "beijing"},
+        {"name": "🧧 Shanghai","route": "shanghai"}
+    ]
+}

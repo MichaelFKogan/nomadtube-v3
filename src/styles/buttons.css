@@ -301,7 +301,8 @@ a.active{
         width: calc(50% - 3px);
     } */
 
-    .thailand .cities-wrapper .bangkok-img{
+    .thailand .cities-wrapper .bangkok-img,
+    .taiawna .cities-wrapper .taipei-img{
         width: 100%;
     }
 
