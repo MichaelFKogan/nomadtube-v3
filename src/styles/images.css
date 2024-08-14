@@ -58,28 +58,110 @@
 .beijing-img {background-image: url('../assets/img/banners/beijing-banner.jpeg') !important;}
 .shanghai-img {background-image: url('../assets/img/banners/shanghai-banner.jpeg') !important;}
 
-.hongkong-img {background-image: url('../assets/img/banners/hongkong-banner.jpeg') !important;}
-.singapore-img {background-image: url('../assets/img/banners/singapore-banner.jpeg') !important;}
+.hongkong-img {background-image: url('../assets/img/banners/hongkong-banner.jpeg') !important; background-position-y: 60% !important;}
+.singapore-img {background-image: url('../assets/img/banners/singapore-banner.jpeg') !important; background-position-y: 49% !important;}
 
+.indonesia-img {background-image: url('../assets/img/banners/indonesia-banner.jpeg') !important;}
+.jakarta-img {background-image: url('../assets/img/banners/jakarta-banner.jpeg') !important;}
+
+.malaysia-img {background-image: url('../assets/img/banners/malaysia-banner.jpeg') !important;}
+.kualalumpur-img {background-image: url('../assets/img/banners/kualalumpur-banner.jpeg') !important;}
+.borneo-img {background-image: url('../assets/img/banners/borneo-banner.jpeg') !important;}
+
+.myanmar-img {background-image: url('../assets/img/banners/myanmar-banner.jpeg') !important; background-position-y: 100% !important;}
+.yangon-img {background-image: url('../assets/img/banners/yangon-banner.jpeg') !important; background-position-y: 100% !important;}
+.bagan-img {background-image: url('../assets/img/banners/bagan-banner.jpeg') !important; background-position-y: 25% !important;}
+
+.thephilippines-img {background-image: url('../assets/img/banners/thephilippines-banner.jpeg') !important;}
+.laos-img {background-image: url('../assets/img/banners/laos-banner.jpeg') !important;}
+.cambodia-img {background-image: url('../assets/img/banners/cambodia-banner.jpeg') !important; background-position-y: 30% !important;}
 
 .bangladesh-img {background-image: url('../assets/img/banners/bangladesh-banner.jpeg') !important; background-position-y: 85% !important;}
+.srilanka-img {background-image: url('../assets/img/banners/srilanka-banner.jpeg') !important;}
+.india-img {background-image: url('../assets/img/banners/india-banner.jpeg') !important; background-position-y: 30% !important;}
 
-/* .china-img {background-image: url('../assets/img/banners/china-banner.jpeg') !important;}
-.beijing-img {background-image: url('../assets/img/banners/beijing-banner.jpeg') !important;}
-.shanghai-img {background-image: url('../assets/img/banners/shanghai-banner.jpeg') !important;} */
+.nepal-img {background-image: url('../assets/img/banners/nepal-banner.jpeg') !important;}
+.bhutan-img {background-image: url('../assets/img/banners/bhutan-banner.jpeg') !important;}
+.mongolia-img {background-image: url('../assets/img/banners/mongolia-banner.jpeg') !important; background-position-y: 85% !important;}
 
 
 
 
 .brazil-img {background-image: url('../assets/img/banners/brazil-banner.jpeg') !important;}
+.riodejaneiro-img {background-image: url('../assets/img/banners/riodejaneiro-banner.jpeg') !important;}
+
 .colombia-img {background-image: url('../assets/img/banners/colombia-banner.jpeg') !important;}
+.medellin-img {background-image: url('../assets/img/banners/medellin-banner.jpeg') !important;}
+.bogota-img {background-image: url('../assets/img/banners/bogota-banner.jpeg') !important;}
+/* .cartegena-img {background-image: url('../assets/img/banners/cartegena-banner.jpeg') !important;} */
+
 .mexico-img {background-image: url('../assets/img/banners/mexico-banner.jpeg') !important; background-position-y: 73% !important;}
+.mexicocity-img {background-image: url('../assets/img/banners/mexicocity-banner.jpeg') !important;}
+.playadelcarmen-img {background-image: url('../assets/img/banners/playadelcarmen-banner.jpeg') !important;}
+.tulum-img {background-image: url('../assets/img/banners/tulum-banner.jpeg') !important;}
+
 .costarica-img {background-image: url('../assets/img/banners/costarica-banner.jpeg') !important;}
+.cuba-img {background-image: url('../assets/img/banners/cuba-banner.jpeg') !important;}
+.ecuador-img {background-image: url('../assets/img/banners/ecuador-banner.jpeg') !important;}
+.chile-img {background-image: url('../assets/img/banners/chile-banner.jpeg') !important;}
+.puertorico-img {background-image: url('../assets/img/banners/puertorico-banner.jpeg') !important;}
+
+.peru-img {background-image: url('../assets/img/banners/peru-banner.jpeg') !important;}
+.lima-img {background-image: url('../assets/img/banners/lima-banner.jpeg') !important;}
+
+.argentina-img {background-image: url('../assets/img/banners/argentina-banner.jpeg') !important;}
+.buenosaires-img {background-image: url('../assets/img/banners/buenosaires-banner.jpeg') !important;}
+
+
+
+
 .portugal-img {background-image: url('../assets/img/banners/portugal-banner.jpeg') !important;}
+.lisbon-img {background-image: url('../assets/img/banners/lisbon-banner.jpeg') !important;}
+.madeira-img {background-image: url('../assets/img/banners/madeira-banner.jpeg') !important;}
+
 .italy-img {background-image: url('../assets/img/banners/italy-banner.jpeg') !important; background-position-y: 67% !important;}
-.france-img {background-image: url('../assets/img/banners/france-banner.jpeg') !important; background-position-y: 67% !important;}
+.rome-img {background-image: url('../assets/img/banners/rome-banner.jpeg') !important;}
+.venice-img {background-image: url('../assets/img/banners/venice-banner.jpeg') !important;}
+
 .spain-img {background-image: url('../assets/img/banners/spain-banner.jpeg') !important;}
+.barcelona-img {background-image: url('../assets/img/banners/barcelona-banner.jpeg') !important;}
+.madrid-img {background-image: url('../assets/img/banners/madrid-banner.jpeg') !important;}
+
+.germany-img {background-image: url('../assets/img/banners/germany-banner.jpeg') !important;}
+.berlin-img {background-image: url('../assets/img/banners/berlin-banner.jpeg') !important;}
+
+.france-img {background-image: url('../assets/img/banners/france-banner.jpeg') !important; background-position-y: 67% !important;}
+.paris-img {background-image: url('../assets/img/banners/paris-banner.jpeg') !important;}
+
+.poland-img {background-image: url('../assets/img/banners/poland-banner.jpeg') !important;}
+.warsaw-img {background-image: url('../assets/img/banners/warsaw-banner.jpeg') !important;}
+.krakow-img {background-image: url('../assets/img/banners/krakow-banner.jpeg') !important;}
+
+/* .iceland-img {background-image: url('../assets/img/banners/iceland-banner.jpeg') !important;} */
+.amsterdam-img {background-image: url('../assets/img/banners/amsterdam-banner.jpeg') !important;}
+.greece-img {background-image: url('../assets/img/banners/greece-banner.jpeg') !important;}
+.prague-img {background-image: url('../assets/img/banners/prague-banner.jpeg') !important;}
+.london-img {background-image: url('../assets/img/banners/london-banner.jpeg') !important;}
+/* .estonia-img {background-image: url('../assets/img/banners/estonia-banner.jpeg') !important;} */
+
+.croatia-img {background-image: url('../assets/img/banners/croatia-banner.jpeg') !important;}
+.zagreb-img {background-image: url('../assets/img/banners/zagreb-banner.jpeg') !important;}
+
+/* .russia-img {background-image: url('../assets/img/banners/russia-banner.jpeg') !important;}
+.moscow-img {background-image: url('../assets/img/banners/moscow-banner.jpeg') !important;} */
+
+.romania-img {background-image: url('../assets/img/banners/romania-banner.jpeg') !important;}
+
+
+.uae-img {background-image: url('../assets/img/banners/uae-banner.jpeg') !important;}
+.dubai-img {background-image: url('../assets/img/banners/dubai-banner.jpeg') !important;}turkey
+.egypt-img {background-image: url('../assets/img/banners/egypt-banner.jpeg') !important;}
+.turkey-img {background-image: url('../assets/img/banners/turkey-banner.jpeg') !important;}
+.istanbul-img {background-image: url('../assets/img/banners/istanbul-banner.jpeg') !important;}
+.israel-img {background-image: url('../assets/img/banners/israel-banner.jpeg') !important;}
+.telaviv-img {background-image: url('../assets/img/banners/telaviv-banner.jpeg') !important;}
 
 
 
 
+/* .-img {background-image: url('../assets/img/banners/-banner.jpeg') !important;} */

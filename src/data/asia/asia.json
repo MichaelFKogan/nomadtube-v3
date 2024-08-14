@@ -38,10 +38,10 @@
       {"name": "🏙️ Jakarta","route": "indonesia/jakarta", "img": "jakarta"},
 
       {"name": "🇲🇾 Malaysia","route": "malaysia", "img": "malaysia"},
-      {"name": "🇲🇾 Kuala Lumpur","route": "malaysia/kualalumpur", "img": "kualalumpur"},
+      {"name": "🏙 Kuala Lumpur","route": "malaysia/kualalumpur", "img": "kualalumpur"},
       {"name": "🦧 Borneo","route": "malaysia/borneo", "img": "borneo"},
 
-      {"name": "🇵🇭 The Philippines","route": "thephilippines", "img": "philippines"},
+      {"name": "🇵🇭 The Philippines","route": "thephilippines", "img": "thephilippines"},
       {"name": "🇱🇦 Laos","route": "laos", "img": "laos"},
       {"name": "🇰🇭 Cambodia","route": "cambodia", "img": "cambodia"},
 

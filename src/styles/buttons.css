@@ -302,7 +302,8 @@ a.active{
     } */
 
     .thailand .cities-wrapper .bangkok-img,
-    .taiawna .cities-wrapper .taipei-img{
+    .taiwan .cities-wrapper .taipei-img,
+    .indonesia .cities-wrapper .jakarta-img{
         width: 100%;
     }
 
@@ -311,7 +312,7 @@ a.active{
     }
 
     .continent-page .cities-wrapper a{
-        width: calc(50% - 2px);        
+        width: calc(48% - 2px)      
     }
 
     /* .bali .cities-wrapper a, 

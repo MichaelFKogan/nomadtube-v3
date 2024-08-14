@@ -38,7 +38,7 @@ function AsiaMobileMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, 
                 <Link to={"/asia/malaysia/kualalumpur"} className="nav-menu" onClick={closeAllMenus}><div>🏙️ Kuala Lumpur</div></Link>
                 <Link to={"/asia/malaysia/borneo"} className="nav-menu" onClick={closeAllMenus}><div>🦧 Borneo</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/asia/philippines"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇭 The Philippines</div></Link>
+                <Link to={"/asia/thephilippines"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇭 The Philippines</div></Link>
                 <Link to={"/asia/laos"} className="nav-menu" onClick={closeAllMenus}><div>🇱🇦 Laos</div></Link>
                 <Link to={"/asia/cambodia"} className="nav-menu" onClick={closeAllMenus}><div>🇰🇭 Cambodia</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>

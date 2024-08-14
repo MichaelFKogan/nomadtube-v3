@@ -1,0 +1,7 @@
+{
+    "name": "🇲🇾 Malaysia",
+    "cities":[
+        {"name": "🏙 Kuala Lumpur","route": "kualalumpur"},
+        {"name": "🦧 Borneo","route": "borneo"}
+    ]
+}

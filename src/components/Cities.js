@@ -10,9 +10,11 @@ function Cities({dataCities, className}) {
             <div className={`cities-wrapper desktop`}>
                 <div className="inner-cities">
 
+                {dataCities.cities.length === 0 ? null :
                     <Link to={`/${continent}/${country}`} className={`${country}-img background-img`}>
                         <div>{dataCities.name}</div>
                     </Link>
+                }
 
                     {dataCities.cities.map((item, index) => (
                         <Link to={`/${continent}/${country}/${item.route}`} className={`${item.route}-img background-img`} key={index}>
