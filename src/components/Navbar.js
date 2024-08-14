@@ -43,7 +43,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                     <Link to={"/"} className="nav-menu nav-logo desktop"><div>🏝 NomadTube</div></Link>
                 </div>
 
-                <div className="d-flex align-center col-gap-5">
+                <div className="d-flex align-center col-gap-5 pos-rel">
                     <div className="nav-menu"  onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }}><div>Asia</div></div>
                     {/* <div className="nav-menu" onClick={toggleAsia}><div>Asia</div></div> */}
                     <Link to={"/southamerica"} className="nav-menu"><div>South America</div></Link>
