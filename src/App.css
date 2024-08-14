@@ -533,9 +533,9 @@ hr{
 
 
 
-.d-none{display:none;}
 .d-block{display: block;}
 .d-flex{display: flex;}
+.d-none{display:none;}
 .nowrap{flex-wrap: nowrap;}
 
 
