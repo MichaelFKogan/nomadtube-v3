@@ -93,7 +93,7 @@
 .colombia-img {background-image: url('../assets/img/banners/colombia-banner.jpeg') !important;}
 .medellin-img {background-image: url('../assets/img/banners/medellin-banner.jpeg') !important;}
 .bogota-img {background-image: url('../assets/img/banners/bogota-banner.jpeg') !important;}
-.cartagena-img {background-image: url('../assets/img/banners/cartagena-banner.jpeg') !important;}
+.cartagena-img {background-image: url('../assets/img/banners/cartagena-banner.jpeg') !important; background-position-y: 75% !important;}
 
 .mexico-img {background-image: url('../assets/img/banners/mexico-banner.jpeg') !important; background-position-y: 73% !important;}
 .mexicocity-img {background-image: url('../assets/img/banners/mexicocity-banner.jpeg') !important; background-position-y: 83% !important;}
