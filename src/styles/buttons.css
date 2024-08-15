@@ -330,7 +330,7 @@ a.active{
     }
 
     .bali .cities-wrapper a{
-        width: 100%;
+        width: calc(50% - 2.5px)
     }
 
     /* .japan .inner-cities,

@@ -1,0 +1,9 @@
+{
+    "name": "🇨🇴 Colombia",
+    "noemoji": "Colombia",
+    "cities":[
+        {"name": "🍻 Medellin","route": "medellin", "noemoji": "Medellin"},
+        {"name": "🌄 Bogota","route": "bogota", "noemoji": "Bogota"},
+        {"name": "🏖 Cartagena","route": "cartagena", "noemoji": "Cartagena"}
+    ]
+}
