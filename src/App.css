@@ -492,7 +492,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   }
 
   .hp-quick-links .inner-categories{
-    justify-content: start;
+    justify-content: start !important;
   }
 
   .home .inner-categories,
