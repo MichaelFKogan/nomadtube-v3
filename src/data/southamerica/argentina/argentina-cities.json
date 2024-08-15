@@ -1,0 +1,7 @@
+{
+    "name": "🇦🇷 Argentina",
+    "noemoji": "Buenos Aires",
+    "cities":[
+        {"name": "🎭 Buenos Aires","route": "buenosaires", "noemoji": "Buenos Aires"}
+    ]
+}

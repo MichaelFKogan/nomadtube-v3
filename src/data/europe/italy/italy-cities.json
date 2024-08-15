@@ -1,0 +1,8 @@
+{
+    "name": "🇮🇹 Italy",
+    "noemoji": "Italy",
+    "cities":[
+        {"name": "🏛 Rome","route": "rome", "noemoji": "Rome"},
+        {"name": "🚤 Venice","route": "venice", "noemoji": "Venice"}
+    ]
+}
