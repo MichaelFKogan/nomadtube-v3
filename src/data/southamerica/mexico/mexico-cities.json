@@ -2,8 +2,8 @@
     "name": "🇲🇽 Mexico",
     "noemoji": "Mexico",
     "cities":[
-        {"name": "Mexico City","route": "mexicocity", "noemoji": "Mexico City"},
-        {"name": "Playa Del Carmen","route": "playadelcarmen", "noemoji": "Playa Del Carmen"},
-        {"name": "Tulum","route": "tulum", "noemoji": "Tulum"}
+        {"name": "🌆 Mexico City","route": "mexicocity", "noemoji": "Mexico City"},
+        {"name": "⛱ Playa Del Carmen","route": "playadelcarmen", "noemoji": "Playa Del Carmen"},
+        {"name": "🏝 Tulum","route": "tulum", "noemoji": "Tulum"}
     ]
 }

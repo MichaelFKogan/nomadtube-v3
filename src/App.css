@@ -164,6 +164,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 .categories-wrapper{
   padding: 5px 0px 20px 0px;
   z-index: 3;
+  background: linear-gradient(45deg, #eee, transparent);
   /* background: #eee; */
   /* border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc; */
@@ -264,7 +265,6 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 }
 
 .categories-wrapper{
-  background: #eee;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 15px 0px 15px 0px;
@@ -459,7 +459,6 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .categories-wrapper{
     padding: 0px 0px;
-    background: #f1f1f1;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     margin-bottom: 5px;
