@@ -112,6 +112,7 @@
     /* margin-bottom: 10px; */
     padding: 10px 15px !important;
     background: rgba(0, 0, 0, .95) !important;
+    background: linear-gradient(180deg, black, rgba(0,0,0,.85)) !important;
     color: white;
     display: inline-block !important;
 }

@@ -341,6 +341,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     margin: 0px;
     padding: 15px 5px;
     background: black;
+    background:linear-gradient(180deg, black, rgba(0,0,0,.85));
     color: white;
     box-shadow: 0px 0px 5px black;
     margin-bottom: 5px;
@@ -387,7 +388,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
   .home-category-page .category-title{
     /* margin-bottom: 10px; */
-    padding: 10px 5px;
+    padding: 15px 5px;
   }
 
   /* .home-category-page .total-videos{margin-right: 3px;} */

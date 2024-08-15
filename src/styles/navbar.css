@@ -1,6 +1,7 @@
 .navbar{
     height: 60px;
     background:black;
+    background: linear-gradient(180deg, black, rgba(0,0,0,.9));
     padding: 0px 10px;
 
     width: 100%;

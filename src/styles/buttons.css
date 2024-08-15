@@ -114,6 +114,7 @@ button {
     font-size: 14px;
     text-decoration: none;
     background: white;
+    background: linear-gradient(45deg, #eee, white);
     color: black;
     border-radius: 25px;
     padding: 7px 12px 8px 12px;
