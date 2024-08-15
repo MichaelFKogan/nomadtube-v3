@@ -12,8 +12,8 @@ function SouthAmericaMobileMenu({mobileMenu, closeMobileMenu, toggleSouthAmerica
             <div className="inner-menu">
             <div className="w-55">
                 <div className={`nav-menu d-flex align-center mobile ${dnone}`} onClick={() => {closeCountryMenus(); back();}} style={{marginLeft: "0px"}}>
-                <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                     Back
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
                 </div>
                 <hr className={`w-80 mobile ${dnone}`} style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/southamerica/colombia"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇴 Colombia</div></Link>

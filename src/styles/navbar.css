@@ -101,7 +101,7 @@
     }
 
     .mobile-menu{
-        position: absolute;
+        position: fixed;
         background: rgba(0,0,0,.95);
 
         display: flex;
@@ -115,7 +115,7 @@
 
         height: 100vh;
         overflow-y: scroll;
-        transition: right .25s ease;
+        transition: right .4s ease;
     }
 
     .main-mobile-menu .nav-menu{
