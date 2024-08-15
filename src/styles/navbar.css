@@ -104,7 +104,7 @@
         position: fixed;
         background: rgba(0,0,0,.95);
 
-        display: flex;
+        display: block;
         align-items: flex-start;
         width: 95%;
         padding: 20px 0px 20px 20px;

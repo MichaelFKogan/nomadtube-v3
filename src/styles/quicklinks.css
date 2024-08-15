@@ -102,6 +102,11 @@
     box-shadow: 0px 0px 0px black;
 }
 
+.hp-quick-links #close-quick-links{
+    left: auto;
+    right: 10px;
+}
+
 .quick-links-btn-mobile, .quick-links-countries-btn-mobile{
     width: 48%;
     background: #eee;

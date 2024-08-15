@@ -6,7 +6,6 @@
     {"name": "🍜 Street Food","route": "streetfood"},
     {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
     {"name": "💵 Cost","route": "cost"},
-    {"name": "💻 Coworking","route": "coworking"},
-    {"name": "🍻 Nightlife","route": "nightlife"}
+    {"name": "💻 Coworking","route": "coworking"}
   ]
 }

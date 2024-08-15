@@ -305,7 +305,8 @@ a.active{
 
     .thailand .cities-wrapper .bangkok-img,
     .taiwan .cities-wrapper .taipei-img,
-    .indonesia .cities-wrapper .jakarta-img{
+    .indonesia .cities-wrapper .jakarta-img,
+    .brazil .cities-wrapper .riodejaneiro-img{
         width: 100%;
     }
 
