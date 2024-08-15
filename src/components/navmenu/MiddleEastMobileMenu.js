@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../styles/navbar.css"
 
-function MiddleEastMobileMenu({mobileMenu, closeMobileMenu, toggleMiddleEastMenu, middleEastMenu, closeCountryMenus, back, closeAllMenus, className, dnone}) {
+function MiddleEastMobileMenu({mobileMenu, closeMobileMenu, toggleMiddleEastMenu, middleEastMenu, closeCountryMenus, back, closeAllMenus, className}) {
 
   
     return (
@@ -11,11 +11,11 @@ function MiddleEastMobileMenu({mobileMenu, closeMobileMenu, toggleMiddleEastMenu
 
             <div className="inner-menu">
             <div className="w-55">
-                <div className={`nav-menu d-flex align-center mobile ${dnone}`} onClick={() => {closeCountryMenus(); back();}} style={{marginLeft: "0px"}}>
+                <div className={`nav-menu d-flex align-center mobile`} onClick={() => {closeCountryMenus(); back();}} style={{marginLeft: "0px"}}>
                     Back
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
                 </div>
-                <hr className={`w-80 mobile ${dnone}`} style={{marginRight: "auto", marginLeft: "0px"}}/>
+                <hr className={`w-80 mobile`} style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/middleeast/uae"} className="nav-menu" onClick={closeAllMenus}><div>🇦🇪 UAE</div></Link>
                 <Link to={"/middleeast/uae/dubai"} className="nav-menu" onClick={closeAllMenus}><div>🏙️ Dubai</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>

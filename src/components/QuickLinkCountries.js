@@ -58,8 +58,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
     return (
         <>
             <div className={`quicklinks-countries d-flex off-screen ${countryMenu ? 'right' : '' }`}>
-                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeAllMenus} style={{color: "white"}}>
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-x mobile"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg> */}
+                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeAllMenus} style={{color: "white"}}>                    
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
                 </button>
                 <div className="inner">
@@ -106,35 +105,35 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
             </div>
 
             <div className={`quicklinks-countries d-flex off-screen ${asiaMenu ? 'right' : '' }`}>
-                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
+                {/* <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
-                </button>
+                </button> */}
                 <div className="inner">
-                    <AsiaMobileMenu asiaMenu={asiaMenu} toggleAsiaMenu={toggleAsiaMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} dnone={"d-none"}/>
+                    <AsiaMobileMenu asiaMenu={asiaMenu} toggleAsiaMenu={toggleAsiaMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus}/>
                 </div>
             </div>
             <div className={`quicklinks-countries d-flex off-screen ${southAmericaMenu ? 'right' : '' }`}>
-                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
+                {/* <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
-                </button>
+                </button> */}
                 <div className="inner">
-                    <SouthAmericaMobileMenu southAmericaMenu={southAmericaMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} dnone={"d-none"}/>
+                    <SouthAmericaMobileMenu southAmericaMenu={southAmericaMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus}/>
                 </div>
             </div>
             <div className={`quicklinks-countries d-flex off-screen ${europeMenu ? 'right' : '' }`}>
-                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
+                {/* <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
-                </button>
+                </button> */}
                 <div className="inner">
-                    <EuropeMobileMenu europeMenu={europeMenu} toggleSouthAmericaMenu={toggleEuropeMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} dnone={"d-none"}/>
+                    <EuropeMobileMenu europeMenu={europeMenu} toggleSouthAmericaMenu={toggleEuropeMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus}/>
                 </div>
             </div>
             <div className={`quicklinks-countries d-flex off-screen ${middleEastMenu ? 'right' : '' }`}>
-                <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
+                {/* <button id="close-quick-links" className="card-button close-card second-button" data-tooltip="Close" onClick={closeCountryMenus}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevrons-right mobile"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
-                </button>
+                </button> */}
                 <div className="inner">
-                    <MiddleEastMobileMenu middleEastMenu={middleEastMenu} toggleMiddleEastMenu={toggleMiddleEastMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} dnone={"d-none"}/>
+                    <MiddleEastMobileMenu middleEastMenu={middleEastMenu} toggleMiddleEastMenu={toggleMiddleEastMenu} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus}/>
                 </div>
             </div>
         </>
