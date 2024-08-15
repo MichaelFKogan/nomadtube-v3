@@ -7,7 +7,7 @@ function SouthAmericaMobileMenu({mobileMenu, closeMobileMenu, toggleSouthAmerica
   
     return (
     <>        
-        <div className={`mobile-menu desktop-menu southamerica-menu ${className} ${southAmericaMenu ? 'd-flex' : 'd-none'}`} style={{paddingTop: "0px"}}>
+        <div className={`mobile-menu desktop-menu southamerica-menu ${className} d-flex off-screen ${southAmericaMenu ? 'right' : '' }`} style={{paddingTop: "0px"}}>
 
             <div className="inner-menu">
             <div className="w-55">

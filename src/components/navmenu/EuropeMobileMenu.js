@@ -7,7 +7,7 @@ function EuropeMobileMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europe
   
     return (
     <>        
-        <div className={`mobile-menu desktop-menu europe-menu ${europeMenu ? 'd-flex' : 'd-none'} ${className}`} style={{paddingTop: "0px"}}>
+        <div className={`mobile-menu desktop-menu europe-menu d-flex off-screen ${europeMenu ? 'right' : '' } ${className}`} style={{paddingTop: "0px"}}>
 
             <div className="inner-menu">
             <div className="w-55">

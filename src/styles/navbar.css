@@ -106,7 +106,7 @@
 
         display: flex;
         align-items: flex-start;
-        width: 100%;
+        width: 95%;
         padding: 20px 0px 20px 20px;
         text-align: left;
         column-gap: 5px;
@@ -115,6 +115,7 @@
 
         height: 100vh;
         overflow-y: scroll;
+        transition: right .25s ease;
     }
 
     .main-mobile-menu .nav-menu{
@@ -135,16 +136,20 @@
         overflow-y: scroll;
         row-gap: 15px;
         padding-top: 20px;
+        z-index: 16;
     }
 
-    .mobile-menu.asia-menu, .mobile-menu.southamerica-menu{
+    .mobile-menu.asia-menu,
+    .mobile-menu.southamerica-menu,
+    .mobile-menu.europe-menu,
+    .mobile-menu.middleeast-menu{
         line-height: 20px;
-        /* height: 500px; */
         flex-direction: column;
         align-items: baseline;
         row-gap: 22px;
         flex-wrap: wrap;
-        z-index: 10;
+        z-index: 16;
+        width: 95%;
     }
 
     .mobile-menu #home-categories{

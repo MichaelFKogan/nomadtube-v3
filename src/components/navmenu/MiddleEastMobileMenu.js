@@ -7,7 +7,7 @@ function MiddleEastMobileMenu({mobileMenu, closeMobileMenu, toggleMiddleEastMenu
   
     return (
     <>        
-        <div className={`mobile-menu desktop-menu middleeast-menu ${middleEastMenu ? 'd-flex' : 'd-none'} ${className}`} style={{paddingTop: "0px"}}>
+        <div className={`mobile-menu desktop-menu middleeast-menu d-flex off-screen ${middleEastMenu ? 'right' : '' } ${className}`} style={{paddingTop: "0px"}}>
 
             <div className="inner-menu">
             <div className="w-55">
