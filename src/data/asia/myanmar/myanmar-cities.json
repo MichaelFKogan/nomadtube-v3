@@ -1,7 +1,8 @@
 {
     "name": "🇲🇲 Myanmar",
+    "noemoji": "Myanmar",
     "cities":[
-        {"name": "ရန်ကုန် Yangon","route": "yangon"},
-        {"name": "🛕 Bagan","route": "bagan"}
+        {"name": "ရန်ကုန် Yangon","route": "yangon", "noemoji": "ရန်ကုန် Yangon"},
+        {"name": "🛕 Bagan","route": "bagan", "noemoji": "Bagan"}
     ]
 }

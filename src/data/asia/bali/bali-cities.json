@@ -1,7 +1,8 @@
 {
     "name": "🏝 Bali",
+    "noemoji": "Bali",
     "cities":[
-        {"name": "🏄‍♀️ Canggu","route": "canggu"},
-        {"name": "🐒 Ubud","route": "ubud"}
+        {"name": "🏄‍♀️ Canggu","route": "canggu", "noemoji": "Canggu"},
+        {"name": "🐒 Ubud","route": "ubud", "noemoji": "Ubud"}
     ]
 }

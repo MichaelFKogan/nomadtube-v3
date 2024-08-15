@@ -1,7 +1,8 @@
 {
     "name": "🇨🇳 China",
+    "noemoji": "China",
     "cities":[
-        {"name": "🥟 Beijing","route": "beijing"},
-        {"name": "🧧 Shanghai","route": "shanghai"}
+        {"name": "🥟 Beijing","route": "beijing", "noemoji": "Beijing"},
+        {"name": "🧧 Shanghai","route": "shanghai", "noemoji": "Shanghai"}
     ]
 }

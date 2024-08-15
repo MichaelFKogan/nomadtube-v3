@@ -568,6 +568,7 @@ visibility: visible; /* Make it visible */
     z-index: 4;
     cursor: pointer;
     box-shadow: 0px 0px 5px black;
+    border: 0px solid black;
 }
 
 .pagination .next:hover, .pagination .previous:hover, .back-to-top:hover {transform: scale(1.03);}

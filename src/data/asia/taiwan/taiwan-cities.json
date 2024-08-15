@@ -1,6 +1,7 @@
 {
-    "name": "🇹🇼 Taiwan",
+    "name": "🇹🇼 Taiwan", 
+    "noemoji": "Taiwan",
     "cities":[
-        {"name": "🥢 Taipei","route": "taipei"}
+        {"name": "🥢 Taipei","route": "taipei","noemoji": "Taipei"}
     ]
 }

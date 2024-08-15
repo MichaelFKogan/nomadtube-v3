@@ -1,6 +1,7 @@
 {
     "name": "🇮🇩 Indonesia",
+    "noemoji": "Indonesia",
     "cities":[
-        {"name": "🏙 Jakarta","route": "jakarta"}
+        {"name": "🏙 Jakarta","route": "jakarta", "noemoji": "Jakarta"}
     ]
 }

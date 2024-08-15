@@ -1,7 +1,8 @@
 {
     "name": "🇲🇾 Malaysia",
+    "noemoji": "Malaysia",
     "cities":[
-        {"name": "🏙 Kuala Lumpur","route": "kualalumpur"},
-        {"name": "🦧 Borneo","route": "borneo"}
+        {"name": "🏙 Kuala Lumpur","route": "kualalumpur", "noemoji": "Kuala Lumpur"},
+        {"name": "🦧 Borneo","route": "borneo", "noemoji": "Borneo"}
     ]
 }
