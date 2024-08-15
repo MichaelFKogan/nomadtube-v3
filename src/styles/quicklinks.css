@@ -78,6 +78,7 @@
     height: 100vh;
     top: 0px;
     z-index: 10;
+    margin-top: 0px !important;
 }
 
 .hp-quick-links.d-flex .inner-categories{
