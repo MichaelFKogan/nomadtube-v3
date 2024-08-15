@@ -1,0 +1,8 @@
+{
+    "name": "🇪🇸 Spain",
+    "noemoji": "Spain",
+    "cities":[
+        {"name": "⚽️ Barcelona","route": "barcelona", "noemoji": "Barcelona"},
+        {"name": "🍷 Madrid","route": "madrid", "noemoji": "Madrid"}
+    ]
+}

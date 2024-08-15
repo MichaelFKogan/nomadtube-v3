@@ -21,15 +21,15 @@ function EuropeDesktopMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europ
                 <Link to={"/europe/italy/venice"} className="nav-menu" onClick={closeAllMenus}><div>🚤 Venice</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/spain"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇸 Spain</div></Link>
-                <Link to={"/europe/spain/barcelona"} className="nav-menu" onClick={closeAllMenus}><div>🏰 Barcelona</div></Link>
-                <Link to={"/europe/spain/madrid"} className="nav-menu" onClick={closeAllMenus}><div>🎨 Madrid</div></Link>
+                <Link to={"/europe/spain/barcelona"} className="nav-menu" onClick={closeAllMenus}><div>⚽️ Barcelona</div></Link>
+                <Link to={"/europe/spain/madrid"} className="nav-menu" onClick={closeAllMenus}><div>🍷 Madrid</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/france"} className="nav-menu" onClick={closeAllMenus}><div>🇫🇷 France</div></Link>
                 <Link to={"/europe/france/paris"} className="nav-menu" onClick={closeAllMenus}><div>🗼 Paris</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/amsterdam"} className="nav-menu" onClick={closeAllMenus}><div>🇳🇱 Amsterdam</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/europe/prague"} className="nav-menu" onClick={closeAllMenus}><div>🏰 Prague</div></Link>
+                <Link to={"/europe/prague"} className="nav-menu" onClick={closeAllMenus}><div>🕍 Prague</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/prague"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇪 Estonia</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
