@@ -1,10 +1,11 @@
 {
     "name": "🇹🇭 Thailand",
+    "noemoji": "Thailand",
     "cities":[
-      {"name": "🛺 Bangkok","route": "bangkok"},
-      {"name": "🐘 Chiang Mai","route": "chiangmai"},
-      {"name": "🏝 Ko Phangan","route": "kophangan"},
-      {"name": "🌊 Ko Samui","route": "kosamui"},
-      {"name": "🏖 Phuket","route": "phuket"}
+      {"name": "🛺 Bangkok","route": "bangkok", "noemoji": "Bangkok"},
+      {"name": "🐘 Chiang Mai","route": "chiangmai", "noemoji": "Chiang Mai"},
+      {"name": "🏝 Ko Phangan","route": "kophangan", "noemoji": "Ko Phangan"},
+      {"name": "🌊 Ko Samui","route": "kosamui", "noemoji": "Ko Samui"},
+      {"name": "🏖 Phuket","route": "phuket", "noemoji": "Phuket"}
     ]
 }

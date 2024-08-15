@@ -1,7 +1,8 @@
 {
     "name": "🇻🇳 Vietnam",
+    "noemoji": "Vietnam",
     "cities":[
-        {"name": "🍲 Hanoi","route": "hanoi"},
-        {"name": "🛵 Ho Chi Minh City","route": "hochiminhcity"}
+        {"name": "🍲 Hanoi","route": "hanoi", "noemoji": "Hanoi"},
+        {"name": "🛵 Ho Chi Minh City","route": "hochiminhcity", "noemoji": "Ho Chi Minh City"}
     ]
 }

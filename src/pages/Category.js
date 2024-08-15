@@ -87,7 +87,7 @@ function Category() {
 
         dataCities.cities.map((item, index) => {
             if (city === item.route) {
-                cityName = item.name;
+                cityName = item.noemoji;
             }
             return null; // Ensure that the map function returns something
         });

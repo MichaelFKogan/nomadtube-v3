@@ -137,7 +137,7 @@ function Country() {
 
         {/* CATEGORY TITLE */}
             <div className="category-title">
-                <div className="subtitle">{dataCities.name}</div>
+                <div className="subtitle">{dataCities.noemoji}</div>
                 <h2>💯 All</h2>
             </div>
 
