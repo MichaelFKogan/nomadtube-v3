@@ -43,7 +43,7 @@ function EuropeDesktopMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europ
                 <Link to={"/europe/portugal/madeira"} className="nav-menu" onClick={closeAllMenus}><div>🌴 Madeira</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/germany"} className="nav-menu" onClick={closeAllMenus}><div>🇩🇪 Germany</div></Link>
-                <Link to={"/europe/germanu/berlin"} className="nav-menu" onClick={closeAllMenus}><div>🖼️ Berlin</div></Link>
+                <Link to={"/europe/germanu/berlin"} className="nav-menu" onClick={closeAllMenus}><div>🍺 Berlin</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/poland"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇱 Poland</div></Link>
                 <Link to={"/europe/poland/warsaw"} className="nav-menu" onClick={closeAllMenus}><div>🏢 Warsaw</div></Link>

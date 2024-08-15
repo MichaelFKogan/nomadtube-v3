@@ -1,0 +1,8 @@
+{
+    "name": "🇵🇹 Portugal",
+    "noemoji": "Portugal",
+    "cities":[
+        {"name": "🚋 Lisbon","route": "lisbon", "noemoji": "Lisbon"},
+        {"name": "🌴 Madeira","route": "madeira", "noemoji": "Madeira"}
+    ]
+}
