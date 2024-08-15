@@ -127,7 +127,7 @@
 .barcelona-img {background-image: url('../assets/img/banners/barcelona-banner.jpeg') !important;}
 .madrid-img {background-image: url('../assets/img/banners/madrid-banner.jpeg') !important;}
 
-.germany-img {background-image: url('../assets/img/banners/germany-banner.jpeg') !important;}
+.germany-img {background-image: url('../assets/img/banners/germany-banner.jpeg') !important; background-position-y: 85% !important;}
 .berlin-img {background-image: url('../assets/img/banners/berlin-banner.jpeg') !important;}
 
 .france-img {background-image: url('../assets/img/banners/france-banner.jpeg') !important; background-position-y: 67% !important;}

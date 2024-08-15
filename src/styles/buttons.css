@@ -308,7 +308,8 @@ a.active{
     .indonesia .cities-wrapper .jakarta-img,
     .brazil .cities-wrapper .riodejaneiro-img,
     .peru .cities-wrapper .lima-img,
-    .argentina .cities-wrapper .buenosaires-img{
+    .argentina .cities-wrapper .buenosaires-img,
+    .germany .cities-wrapper .berlin-img{
         width: 100%;
     }
 
