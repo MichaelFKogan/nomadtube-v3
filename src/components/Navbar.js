@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
+
+import AsiaDesktopMenu from './navmenu/AsiaDesktopMenu';
+import SouthAmericaDesktopMenu from './navmenu/SouthAmericaDesktopMenu';
+import EuropeDesktopMenu from './navmenu/EuropeDesktopMenu';
+import MiddleEastDesktopMenu from './navmenu/MiddleEastDesktopMenu';
+
 import AsiaMobileMenu from './navmenu/AsiaMobileMenu';
 import SouthAmericaMobileMenu from './navmenu/SouthAmericaMobileMenu';
 import EuropeMobileMenu from './navmenu/EuropeMobileMenu';
@@ -77,10 +83,10 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
                     {/* <Link to={"/northamerica"} className="nav-menu"><div>Oceania</div></Link> */}
 
 
-                    <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
-                    <SouthAmericaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} southAmericaMenu={southAmericaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
-                    <EuropeMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleEuropeMenu={toggleEuropeMenu} europeMenu={europeMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
-                    <MiddleEastMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleMiddleEastMenu={toggleMiddleEastMenu} middleEastMenu={middleEastMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
+                    <AsiaDesktopMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
+                    <SouthAmericaDesktopMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} southAmericaMenu={southAmericaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
+                    <EuropeDesktopMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleEuropeMenu={toggleEuropeMenu} europeMenu={europeMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
+                    <MiddleEastDesktopMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleMiddleEastMenu={toggleMiddleEastMenu} middleEastMenu={middleEastMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"desktop"} />
                 </div>
 
                 {/* <div className="d-flex align-center">

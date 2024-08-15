@@ -86,7 +86,7 @@
         display: flex;
     }
 
-    .mobile-menu.mobile{
+    .mobile-menu.mobile, .mobile-menu{
         display: none !important;
     }
 }

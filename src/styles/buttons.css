@@ -52,6 +52,7 @@ button {
 
     .hp-quick-links{
         padding-top: 0px;
+        display: none;
     }
 
     .categories-wrapper.hp-quick-links .inner-categories{

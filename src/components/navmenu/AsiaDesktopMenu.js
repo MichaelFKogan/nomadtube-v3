@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../styles/navbar.css"
 
-function AsiaMobileMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, closeCountryMenus, back, closeAllMenus, className, dnone}) {
+function AsiaDesktopMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, closeCountryMenus, back, closeAllMenus, className, dnone}) {
 
   
     return (
     <>        
-        <div className={`mobile-menu mobile-menu asia-menu d-flex off-screen ${asiaMenu ? 'right' : '' } ${className}`} style={{paddingTop: "0px"}}>
+        <div className={`mobile-menu desktop-menu asia-menu ${asiaMenu ? 'd-flex' : 'd-none' } ${className}`} style={{paddingTop: "0px"}}>
 
             <div className="inner-menu">
             <div className="w-55">
@@ -82,4 +82,4 @@ function AsiaMobileMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu, 
     );
 };
 
-export default AsiaMobileMenu;
+export default AsiaDesktopMenu;
