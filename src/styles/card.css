@@ -69,33 +69,40 @@
 /* MAKE CARD LARGER */
 
 .card.small .resize, 
-.card.medium .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
-.card.large .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)}
+.card.medium .resize,
+.card.large .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
+/* .card.large .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)} */
 
 /* SIZES */
 .card.small .resize{width: 175%;}
 .card.medium .resize{width: 275%;}
-.card.large .resize{width: 95%;}
+.card.large .resize{width: 402%;}
 
 .card.window-open .resize{box-shadow: 0px 0px 15px black !important}
 
 
 /* CARDS 5x5 LARGE DESKTOP GRID */
 @media(min-width: 1441px){
-    .card.small:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
-    .card.medium:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
+    .card.small:nth-child(5n+1) .resize,
+    .card.medium:nth-child(5n+1) .resize,
+    .card.large:nth-child(5n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
 
-    .card.small:nth-child(5n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(5n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-
-    .card.small:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-
-    .card.small:nth-child(5n+4) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.small:nth-child(5n+2) .resize,
+    .card.medium:nth-child(5n+2) .resize,
+    .card.small:nth-child(5n+3) .resize,
+    .card.medium:nth-child(5n+3) .resize,
+    .card.small:nth-child(5n+4) .resize,
     .card.medium:nth-child(5n+4) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
-    .card.small:nth-child(5n+5) .resize{top: 50%;transform: translateY(-50%);right:0;}
-    .card.medium:nth-child(5n+5) .resize{top: 50%;transform: translateY(-50%);right:0;}
+    .card.large:nth-child(5n+2) .resize{top: 50%;left: 130%;transform: translate(-50%, -50%);}
+    .card.large:nth-child(5n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.large:nth-child(5n+4) .resize{top: 50%;left: -30%;transform: translate(-50%, -50%);}
+
+    .card.small:nth-child(5n+5) .resize,
+    .card.medium:nth-child(5n+5) .resize,
+    .card.large:nth-child(5n+5) .resize{top: 50%;transform: translateY(-50%);right:0;}
+
+    .card.large .resize{width: 450%;}
 
     .card.window-open .resize{position:fixed; top:10px !important; right:10px !important; z-index:5; left: auto !important; transform:none !important;}
     
@@ -108,17 +115,21 @@
 
 /* CARDS 4x4 DESKTOP GRID */
 @media(min-width: 1025px) and (max-width: 1440px){
-    .card.small:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
-    .card.medium:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
+    .card.small:nth-child(4n+1) .resize,
+    .card.medium:nth-child(4n+1) .resize,
+    .card.large:nth-child(4n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
 
-    .card.small:nth-child(4n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(4n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.small:nth-child(4n+2) .resize,
+    .card.medium:nth-child(4n+2) .resize,
+    .card.large:nth-child(4n+2) .resize,
 
-    .card.small:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
-    .card.medium:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.small:nth-child(4n+3) .resize,
+    .card.medium:nth-child(4n+3) .resize,
+    .card.large:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
 
-    .card.small:nth-child(4n+4) .resize{top: 50%;transform: translateY(-50%);right:0;}
-    .card.medium:nth-child(4n+4) .resize{top: 50%;transform: translateY(-50%);right:0;}
+    .card.small:nth-child(4n+4) .resize,
+    .card.medium:nth-child(4n+4) .resize,
+    .card.large:nth-child(4n+4) .resize{top: 50%;transform: translateY(-50%);right:0;}
 
     .card.window-open .resize{position:fixed; top:10px !important; right:10px !important; z-index:5; left: auto !important; transform:none !important;}
     
@@ -131,12 +142,16 @@
 /* CARDS 3x3 TABLET GRID */
 @media(min-width: 769px) and (max-width: 1024px){
     .card.tablet-small .resize{width: 175%;}
-    .card.tablet-medium .resize{width: 95%;}
-    .card.tablet-medium .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)}
+    .card.tablet-medium .resize{width: 301%;}
+    /* .card.tablet-medium .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)} */
 
     .card.tablet-small:nth-child(3n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
     .card.tablet-small:nth-child(3n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
     .card.tablet-small:nth-child(3n+3) .resize{top: 50%;transform: translateY(-50%);right:0;}
+
+    .card.tablet-medium:nth-child(3n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
+    .card.tablet-medium:nth-child(3n+2) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.tablet-medium:nth-child(3n+3) .resize{top: 50%;transform: translateY(-50%);right:0;}
 
     .card.window-open .resize{position:fixed; top:10px !important; right:10px !important; z-index:5; left: auto !important; transform:none !important;}
     
@@ -144,14 +159,6 @@
     .card.window-open.window-m .resize{width:50%;}
     .card.window-open.window-l .resize{width:70%;}
     .card.window-open.window-xl .resize{width:98%;max-width: 1500px;top: 50%;left: 50%;transform: translate(-50%, -50%);}
-}
-
-@media(min-width: 769px){
-    .card.small, .card.medium, .tablet-small, .tablet-medium{
-    position: sticky;
-    top: 140px;
-    z-index: 12;
-    }
 }
 
 /* CARDS 2x2 MOBILE GRID */
