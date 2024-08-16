@@ -54,9 +54,9 @@ function EuropeDesktopMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europ
                 <Link to={"/europe/greece"} className="nav-menu" onClick={closeAllMenus}><div>🇬🇷 Greece</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/london"} className="nav-menu" onClick={closeAllMenus}><div>🇬🇧 London</div></Link>
-                <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
+                {/* <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/russia"} className="nav-menu" onClick={closeAllMenus}><div>🇷🇺 Russia</div></Link>
-                <Link to={"/europe/russia/moscow"} className="nav-menu" onClick={closeAllMenus}><div>🚇 Moscow</div></Link>
+                <Link to={"/europe/russia/moscow"} className="nav-menu" onClick={closeAllMenus}><div>🚇 Moscow</div></Link> */}
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/romania"} className="nav-menu" onClick={closeAllMenus}><div>🇷🇴 Romania</div></Link>
                 <div style={{height: "500px"}}></div>

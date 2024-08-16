@@ -1,0 +1,8 @@
+{
+    "name": "🇵🇱 Poland",
+    "noemoji": "Poland",
+    "cities":[
+        {"name": "🏢 Warsaw","route": "warsaw", "noemoji": "Warsaw"},
+        {"name": "🏰 Krakow","route": "krakow", "noemoji": "Krakow"}
+    ]
+}

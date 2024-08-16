@@ -307,7 +307,8 @@ a.active{
     .brazil .cities-wrapper .riodejaneiro-img,
     .peru .cities-wrapper .lima-img,
     .argentina .cities-wrapper .buenosaires-img,
-    .germany .cities-wrapper .berlin-img{
+    .germany .cities-wrapper .berlin-img,
+    .france .cities-wrapper .paris-img{
         width: 100%;
     }
 
