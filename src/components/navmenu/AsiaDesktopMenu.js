@@ -28,7 +28,7 @@ function AsiaDesktopMenu({mobileMenu, closeMobileMenu, toggleAsiaMenu, asiaMenu,
                 <Link to={"/asia/vietnam/hochiminhcity"} className="nav-menu" onClick={closeAllMenus}><div>🛵 Ho Chi Minh City</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/taiwan"} className="nav-menu" onClick={closeAllMenus}><div>🇹🇼 Taiwan</div></Link>
-                <Link to={"/asia/taipei"} className="nav-menu" onClick={closeAllMenus}><div>🥢 Taipei</div></Link>
+                <Link to={"/asia/taiwan/taipei"} className="nav-menu" onClick={closeAllMenus}><div>🥢 Taipei</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/asia/hongkong"} className="nav-menu" onClick={closeAllMenus}><div>🇭🇰 Hong Kong</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>

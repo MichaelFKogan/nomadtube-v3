@@ -1,8 +1,6 @@
 {
-    "name": "🇯🇵 Japan",
+    "name": "🇵🇷 Puerto Rico",
+    "noemoji": "Puerto Rico",
     "cities":[
-        {"name": "🗼 Tokyo","route": "tokyo"},
-        {"name": "🏯 Osaka","route": "osaka"},
-        {"name": "🎋 Kyoto","route": "kyoto"}
     ]
 }

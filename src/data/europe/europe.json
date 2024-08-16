@@ -11,8 +11,8 @@
     {"name": "🌴 Madeira","route": "portugal/madeira", "img": "madeira"},
 
     {"name": "🇪🇸 Spain","route": "spain", "img": "spain"},
-    {"name": "🏰 Barcelona","route": "spain/barcelona", "img": "barcelona"},
-    {"name": "🎨 Madrid","route": "spain/madrid", "img": "madrid"},
+    {"name": "⚽️ Barcelona","route": "spain/barcelona", "img": "barcelona"},
+    {"name": "🍷 Madrid","route": "spain/madrid", "img": "madrid"},
 
     {"name": "🇫🇷 France","route": "france", "img": "france"},
     {"name": "🗼 Paris","route": "france/paris", "img": "paris"},
@@ -28,7 +28,7 @@
 
 
     {"name": "🇩🇪 Germany","route": "germany", "img": "germany"},
-    {"name": "🖼️ Berlin","route": "germany/berlin", "img": "berlin"},
+    {"name": " Berlin","route": "germany/berlin", "img": "berlin"},
 
     {"name": "🇵🇱 Poland","route": "poland", "img": "poland"},
     {"name": "🏢 Warsaw","route": "poland/warsaw", "img": "warsaw"},
@@ -41,7 +41,7 @@
     {"name": "🇬🇷 Greece","route": "greece", "img": "greece"},
 
     {"name": "🇷🇺 Russia","route": "russia", "img": "russia"},
-    {"name": "🇷🇺 Moscow","route": "russia/moscow", "img": "moscow"},
+    {"name": "🚇 Moscow","route": "russia/moscow", "img": "moscow"},
 
     {"name": "🇷🇴 Romania","route": "romania", "img": "romania"}
   ]

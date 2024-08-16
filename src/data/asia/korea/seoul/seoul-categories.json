@@ -1,8 +1,9 @@
 {
   "categories": [
+    {"name": "☕️ Cafe Tour","route": "cafetour"},
+    {"name": "🛍 Hongdae","route": "hongdae"},
     {"name": "🗺 Itinerary","route": "itinerary"},
     {"name": "📸 Vlog","route": "vlog"},
-    {"name": "☕️ Cafe Tour","route": "cafetour"},
     {"name": "👨‍💻 Digital Nomad","route": "digitalnomad"},
     {"name": "🍜 Street Food","route": "streetfood"},
     {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},

@@ -52,7 +52,7 @@ button {
 
     .hp-quick-links{
         padding-top: 0px;
-        display: none;
+        /* display: none; */
     }
 
     .categories-wrapper.hp-quick-links .inner-categories{
@@ -186,8 +186,8 @@ a.active{
     .card.tablet-normal .image-plus{
         top: 0px;
         right: 0px;
-        width: 37px;
-        height: 38px;
+        width: 34px;
+        height: 35px;
         border-top-right-radius: 0px;
         /* background: rgba(0,0,0,0.6) !important; */
         background: linear-gradient(180deg, rgba(0,0,0,.8), rgba(0,0,0,.4));
@@ -218,7 +218,7 @@ a.active{
 .image-minus{top: 74px;}
 .new-window{top: 109px;}
 
-.normal .image-plus{top:2px}
+.normal .image-plus{top:0px; right: 0px;}
 .window-open .new-window{display: none;}
 
 .window-open .image-plus{top: 38px !important;}

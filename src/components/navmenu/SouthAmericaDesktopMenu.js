@@ -19,7 +19,7 @@ function SouthAmericaDesktopMenu({mobileMenu, closeMobileMenu, toggleSouthAmeric
                 <Link to={"/southamerica/colombia"} className="nav-menu" onClick={closeAllMenus}><div>🇨🇴 Colombia</div></Link>
                 <Link to={"/southamerica/colombia/medellin"} className="nav-menu" onClick={closeAllMenus}><div>🍻 Medellin</div></Link>
                 <Link to={"/southamerica/colombia/bogota"} className="nav-menu" onClick={closeAllMenus}><div>🌄 Bogota</div></Link>
-                <Link to={"/southamerica/colombia/cartegena"} className="nav-menu" onClick={closeAllMenus}><div>🏖️ Cartegena</div></Link>
+                <Link to={"/southamerica/colombia/cartagena"} className="nav-menu" onClick={closeAllMenus}><div>🏖️ Cartegena</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/southamerica/mexico"} className="nav-menu" onClick={closeAllMenus}><div>🇲🇽 Mexico</div></Link>
                 <Link to={"/southamerica/mexico/mexicocity"} className="nav-menu" onClick={closeAllMenus}><div>🌇 Mexico City</div></Link>

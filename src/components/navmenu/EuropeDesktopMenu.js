@@ -43,7 +43,7 @@ function EuropeDesktopMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europ
                 <Link to={"/europe/portugal/madeira"} className="nav-menu" onClick={closeAllMenus}><div>🌴 Madeira</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/germany"} className="nav-menu" onClick={closeAllMenus}><div>🇩🇪 Germany</div></Link>
-                <Link to={"/europe/germanu/berlin"} className="nav-menu" onClick={closeAllMenus}><div>🏛 Berlin</div></Link>
+                <Link to={"/europe/germany/berlin"} className="nav-menu" onClick={closeAllMenus}><div>🏛 Berlin</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/poland"} className="nav-menu" onClick={closeAllMenus}><div>🇵🇱 Poland</div></Link>
                 <Link to={"/europe/poland/warsaw"} className="nav-menu" onClick={closeAllMenus}><div>🏢 Warsaw</div></Link>
@@ -56,7 +56,7 @@ function EuropeDesktopMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europ
                 <Link to={"/europe/london"} className="nav-menu" onClick={closeAllMenus}><div>🇬🇧 London</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/russia"} className="nav-menu" onClick={closeAllMenus}><div>🇷🇺 Russia</div></Link>
-                <Link to={"/europe/russia/moscow"} className="nav-menu" onClick={closeAllMenus}><div>🇷🇺 Moscow</div></Link>
+                <Link to={"/europe/russia/moscow"} className="nav-menu" onClick={closeAllMenus}><div>🚇 Moscow</div></Link>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/romania"} className="nav-menu" onClick={closeAllMenus}><div>🇷🇴 Romania</div></Link>
                 <div style={{height: "500px"}}></div>

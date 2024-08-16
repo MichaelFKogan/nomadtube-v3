@@ -188,7 +188,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
 
 .home .inner-categories,
 .home-category-page .inner-categories{
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .category-title h2{
@@ -199,7 +199,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   position: sticky;
   top: 0px;
   padding: 15px 0px;
-  background-color: white;
+  /* background-color: white; */
   z-index: 4;
 }
 
@@ -253,7 +253,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .category-title {
     padding: 20px 0px;
     /* background: black; */
-    background: linear-gradient(180deg, black, rgba(0,0,0,.95));
+    background: linear-gradient(180deg, black, rgba(0,0,0,.92));
     color: white;
     z-index: 4;
     /* border-top: 1px solid #ccc;
@@ -262,6 +262,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
     width: 100%;
     margin: 6px auto 10px auto;
     /* border-radius: 4px; */
+    height: 80px;
 }
 
 .categories-wrapper{
