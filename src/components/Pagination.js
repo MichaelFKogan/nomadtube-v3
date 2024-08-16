@@ -4,11 +4,15 @@ function Pagination({handlePageChange, currentPage, pageNumbers, totalPages}) {
 
     return (
         <div className="pagination">
-            <div className='d-flex align-center justify-center'>
+            <div className='d-flex align-center justify-center col-gap-10'>
                 <button className="previous" onClick={() => { handlePageChange(currentPage - 1); document.documentElement.scrollTop = 0; }}
                     disabled={currentPage === 1}>Previous</button>
 
                 {/* <div className='pages'>{`Page ${currentPage} of ${totalPages}`}</div> */}
+
+                <button className="next" onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
+                    disabled={currentPage === totalPages}>Next</button>
+            </div>
 
                 <div className='pages page-numbers'>
                     {pageNumbers.map(pageNumber => (
@@ -19,10 +23,6 @@ function Pagination({handlePageChange, currentPage, pageNumbers, totalPages}) {
                         </div>
                     ))}
                 </div>
-
-                <button className="next" onClick={() => { handlePageChange(currentPage + 1); document.documentElement.scrollTop = 0; }}
-                    disabled={currentPage === totalPages}>Next</button>
-            </div>
         </div>
     );
 };

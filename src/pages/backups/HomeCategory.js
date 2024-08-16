@@ -11,7 +11,7 @@ import QuickLinks from '../components/QuickLinks';
 import QuickLinkCountries from '../components/QuickLinkCountries';
 import "../styles/home.css"
 
-const ITEMS_PER_PAGE = 40;
+const ITEMS_PER_PAGE = 400;
 const INITIAL_CARDS_TO_SHOW = 40;
 const INCREMENT_CARDS = 40;
 
@@ -20,10 +20,6 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
     const data = require(`../data/category/${homeCategory}.json`);
     const dataCities = require(`../data/home-cities.json`);
     const dataCategories = require(`../data/home-categories.json`);
-
-
-
-
 
     // Code For Pagination and Infinite Scroll
     const [currentPage, setCurrentPage] = useState(1);
@@ -39,9 +35,6 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
         }
     };
 
-
-
-
     const scrollToTop = () => {
         document.documentElement.scrollTop = 0;
     }
@@ -51,9 +44,6 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
         // const categoriesSection = document.getElementById("home-categories");
         // categoriesSection.scrollIntoView({ behavior: "smooth" });
     };
-
-
-
 
 
     const [countryMenu, setCountryMenu] = useState(false);
@@ -106,13 +96,6 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
         // Generate page numbers
         const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
-
-
-
-
-
-
-
     return (
         <div className="home home-category-page">
 
@@ -157,10 +140,17 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
         <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
         <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
         <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
+        {/* <div className="mt-10 mb-10" style={{fontFamily: "Edo", fontSize: "19px"}}>See All Countries...</div> */}
     </div>
 
         {/* QUICK LINKS - DESKTOP */}
         <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
+
+            {/* QUICK LINKS - MOBILE */}
+            {/* <div className='d-flex space-between black-bar-title mobile'>
+                <h2 className="">🔗 Quick Links</h2>
+            </div>
+             */}
 
             <div id="home-categories" className={`categories-wrapper hp-quick-links desktop`}>
                 <div className="inner-categories justify-center">
@@ -188,6 +178,16 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
         </div>
 
         <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
+
+
+        {/* CITIES */}
+            {/* <HomeCities dataCities={dataCities} countriesDropdown={countriesDropdown}/>
+
+            <div className='d-flex space-between black-bar-title' onClick={handleCategoriesDropdown}>
+                <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                <h2 className="">📁 Categories</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+            </div> */}
 
 
         {/* CATEGORIES */}
@@ -236,11 +236,15 @@ function HomeCategory({continentsDropdown, handleContinentsDropdown, countriesDr
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title desktop"><h2>{item.name}</h2></div> : null))}
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title mobile"><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
 
+            {/* <div className="page-back d-flex align-center mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                <Link to={"/"} className="" onClick={() => { scrollToCategories(); }}><div>Back</div></Link>
+            </div> */}
+
 
         {/* <Breadcrumbs/> */}
         <Cards data={data} startIndex={startIndex} endIndex={endIndex} numCardsToShow={numCardsToShow} loadMoreRef={loadMoreRef}/>
-        
-        {data.videos.length > 39 && (
+        {data.videos.length > 399 && (
             <Pagination handlePageChange={handlePageChange} currentPage={currentPage} pageNumbers={pageNumbers} totalPages={totalPages}/>
         )}
 

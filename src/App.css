@@ -215,7 +215,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   column-gap: 2px;
   row-gap: 2px;
   margin: 0px 0px 0px 0px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
 }
 
 @media(min-width: 769px){
@@ -253,7 +253,7 @@ h2{font-family: "Nunito Black"; font-size: 26px}
   .category-title {
     padding: 20px 0px;
     /* background: black; */
-    background: linear-gradient(180deg, black, rgba(0,0,0,.92));
+    background: linear-gradient(180deg, black, rgba(0,0,0,.9));
     color: white;
     z-index: 4;
     /* border-top: 1px solid #ccc;
