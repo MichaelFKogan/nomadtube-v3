@@ -1,13 +1,13 @@
 {
     "categories": [
       {"name": "📸 Vlog","route": "vlog"},
+      {"name": "🎒 Gear","route": "gear"},
       {"name": "👨‍💻 How To Become A Digital Nomad","route": "howtobecomeadigitalnomad"},
       {"name": "🍜 Street Food","route": "streetfood"},
       {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
       {"name": "🧍‍♀️ Solo Travel","route": "solotravel"},
       {"name": "👨‍💻 Coworking","route": "coworking"},
       {"name": "🚐 Van Life","route": "vanlife"},
-      {"name": "👩‍🏫 English Teaching","route": "englishteaching"},
-      {"name": "🎒 Gear","route": "gear"}
+      {"name": "👩‍🏫 English Teaching","route": "englishteaching"}
     ]
 }

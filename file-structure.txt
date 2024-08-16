@@ -1,40 +1,112 @@
 .
 ├── node_modules
 ├── public
-|   ├── favicon.ico
-|   ├── index.html
-|   ├── manifest.json
-|   └──  robots.txt
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └──  robots.txt
 ├── server
-|   └── server.js
+│   └── server.js
 ├── src
-|   ├── components
-|   │   └──  CountryPage.js
-|   |
-|   ├── data
-|   │   ├── asia
-|   │   |   └──  thailand
-|   │   |   |     └──  bangkok
-|   │   |   |     |     └──  bangkok.json
-|   │   |   |     |     └──  itinerary.json
-|   │   |   |     ├──  itinerary.json
-|   │   |   |     └──  thailand.json
-|   │   ├── europe
-|   │   ├── home
-|   │   ├── latinamerica
-|   │   └── middleeast
-|   |
-|   ├── App.css
-|   ├── App.js
-|   ├── App.text.js
-|   ├── index.css
-|   ├── index.js
-|   ├── logo.svg
-|   ├── reportWebVitals.js
-|   └── setupTests.js
-|    
+│   ├── components
+│   │   └──  CountryPage.js
+│   │
+│   ├── data
+│   │   ├── asia
+│   │   │   └──  thailand
+│   │   │         └──  bangkok
+│   │   │         │     ├──  itinerary.json
+│   │   │         │     └──  itinerary.json
+│   │   │         └──  category
+│   │   │               ├──  beaches.json
+│   │   │               └──  cost.json
+│   │   │         └──  chiangmai
+│   │   │               ├──  itinerary.json
+│   │   │               └──  thailand.json
+│   │   ├── europe
+│   │   ├── home
+│   │   ├── latinamerica
+│   │   └── middleeast
+│   │
+│   ├── App.css
+│   ├── App.js
+│   ├── App.text.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+│    
 ├── .gitignore
 ├── file-structure.txt
 ├── package-lock.json
 ├── package.json
 └── README.md
+
+
+
+
+I have a data folder in my react app. 
+
+Inside the data folder are subfolders, each of which have other subfolders and json files. 
+
+How can I write a react program that automatically maps through the folders, takes any file named vlog.json, takes the first videoId from each file, and places it into a newly created file.
+
+Then it maps through files again and takes the second videoId and places it into a new file. And so on until all the videoId ket pair values have been added to the new file. There are 100s of vlog.json files and thousands of videoId keys.
+
+
+.
+├── node_modules
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └──  robots.txt
+├── server
+│   └── server.js
+├── src
+│   ├── components
+│   │   └──  CountryPage.js
+│   │
+│   ├── data
+│   │   ├── asia
+│   │   │   └──  thailand
+│   │   │         └──  bangkok
+│   │   │         │     ├──  itinerary.json
+│   │   │         │     └──  itinerary.json
+│   │   │         └──  category
+│   │   │               ├──  beaches.json
+│   │   │               └──  cost.json
+│   │   │         └──  chiangmai
+│   │   │               ├──  itinerary.json
+│   │   │               └──  thailand.json
+│   │   ├── europe
+│   │   ├── home
+│   │   ├── latinamerica
+│   │   └── middleeast
+│   │
+│   ├── App.css
+│   ├── App.js
+│   ├── App.text.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+│    
+├── .gitignore
+├── file-structure.txt
+├── package-lock.json
+├── package.json
+└── README.md
+
+{"videos": [
+{"videoId": "7N4FjzmR9B0"},
+{"videoId": "Mz9-UlbW8iw"},
+{"videoId": "qTcYzgqL3E8"},
+{"videoId": "8m8ReerO060"},
+{"videoId": "b3RL7-GNkeQ"},
+{"videoId": "MlDEpkYDMMY"},
+{"videoId": "SadzfrxVuF0"}
+]
+}
