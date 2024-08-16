@@ -31,7 +31,7 @@ function EuropeMobileMenu({mobileMenu, closeMobileMenu, toggleEuropeMenu, europe
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/prague"} className="nav-menu" onClick={closeAllMenus}><div>🕍 Prague</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
-                <Link to={"/europe/prague"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇪 Estonia</div></Link>
+                <Link to={"/europe/estonia"} className="nav-menu" onClick={closeAllMenus}><div>🇪🇪 Estonia</div></Link>
                 <hr className="w-80" style={{marginRight: "auto", marginLeft: "0px"}}/>
                 <Link to={"/europe/croatia"} className="nav-menu" onClick={closeAllMenus}><div>🇭🇷 Croatia</div></Link>
                 <Link to={"/europe/croatia/zagreb"} className="nav-menu" onClick={closeAllMenus}><div>🏙️ Zagreb</div></Link>

@@ -40,8 +40,7 @@
 
     {"name": "🇬🇷 Greece","route": "greece", "img": "greece"},
 
-    {"name": "🇷🇺 Russia","route": "russia", "img": "russia"},
-    {"name": "🚇 Moscow","route": "russia/moscow", "img": "moscow"},
+
 
     {"name": "🇷🇴 Romania","route": "romania", "img": "romania"}
   ]
