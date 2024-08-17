@@ -85,7 +85,7 @@ function Pagination({ currentPage, totalPages, handlePageChange }) {
                             </> : null}
                                     {renderPageButtonsTen()}
                                 <div className={`page-number`} onClick={() => handlePageChange(currentPage + 4)}>...</div>
-                            <div key={totalPages} onClick={() => handlePageChange(totalPages)} className={`page-number`}>{totalPages}</div>
+                            <div key={totalPages} onClick={() => showAllPages()} className={`page-number`}>{totalPages}</div>
                         </div>
                     </div>
                         <div className={`page-number ${showAll ? "d-none" : ""}`} onClick={showAllPages} style={{width: "auto", marginTop: "-10px", marginBottom: "-10px"}}>Show all pages</div>

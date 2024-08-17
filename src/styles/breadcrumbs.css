@@ -28,6 +28,10 @@
       margin: 5px 15px 5px 5px;
       line-height: 20px;
     }
+
+    .breadcrumb-page-back{
+      margin: 5px 16px 0px 9px;
+    }
   
   }
 
@@ -45,6 +49,10 @@
       border-top: 0px solid #ccc;
       border-bottom: 0px solid #ccc;
       margin-top: 0px;
+    }
+
+    .breadcrumb-page-back{
+      padding: 5px 8px 0px 0px;
     }
 
     .breadcrumbs-and-videos{

@@ -3,7 +3,7 @@ const path = require('path');
 
 // Define the base directory
 const baseDir = path.join(__dirname, '..', 'src', 'data');
-const outputFilePath = path.join(__dirname, '..', 'src', 'data', 'new', 'vlog.json');
+const outputFilePath = path.join(__dirname, '..', 'src', 'data', 'new', 'vlog-duplicates.json');
 
 // Function to recursively find all vlog.json files
 function findVlogFiles(dir) {

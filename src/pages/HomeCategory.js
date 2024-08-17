@@ -156,12 +156,17 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
             </div>
             )}
 
+            {/* CATEGORY TITLE */}
+            <div className={currentPage !== 1 && "margin-top-minus"}>
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title desktop"><h2>{item.name}</h2></div> : null))}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title mobile"><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
+            </div>
 
             {/* BREADCRUMBS */}
-
+            {/* <Breadcrumbs/> */}
             <div className='d-flex flex-col'>
                 {currentPage !== 1 && (
-                    <div className="breadcrumbs-and-videos" style={{paddingBottom: "0px", paddingLeft: "2px", marginTop: "10px"}}>
+                    <div className="d-flex align-center space-between breadcrumb-page-back">
                         <div className="page-back d-flex align-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                             <Link to={`/`} className=""><div>Home</div></Link>
@@ -189,12 +194,6 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
                 </div>
             </div>
 
-            {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title desktop"><h2>{item.name}</h2></div> : null))}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className="category-title mobile"><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
-
-
-            {/* <Breadcrumbs/> */}
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} />
 
             <Pagination
