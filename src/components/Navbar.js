@@ -12,7 +12,7 @@ import SouthAmericaMobileMenu from './navmenu/SouthAmericaMobileMenu';
 import EuropeMobileMenu from './navmenu/EuropeMobileMenu';
 import MiddleEastMobileMenu from './navmenu/MiddleEastMobileMenu';
 
-function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
+function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategoriesDropdown }) {
 
     const [mobileMenu, setMobileMenu] = useState(false);
     const [asiaMenu, setAsiaMenu] = useState(false);
@@ -144,7 +144,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
         {/* MOBILE INNER DROPDOWN MENU */}
             <div className={`mobile-menu main-mobile-menu d-block off-screen ${mobileMenu ? 'right' : '' }`}>
                 <Link to={"/"} className="nav-menu" onClick={closeAllMenus}><div>🏠 Home</div></Link>
-                {/* <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px", paddingTop:"5px", paddingBottom: "27px" }}><div>🔗 Quick Links</div></div> */}
+                <div className="nav-menu" onClick={() => { handleCategoriesDropdown(); }}><div>🔗 Quick Links</div></div>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginTop: "20px", marginBottom: "25px"}}/>
 
                 {/* <h2 className="" style={{color: "white", fontSize: "20px", textAlign: "left", marginBottom: "20px"}}>🌎 Countries</h2> */}

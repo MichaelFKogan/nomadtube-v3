@@ -103,7 +103,7 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
                     <Link to={`/asia/korea/seoul/cafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); }}><div>☕️ Seoul Cafe Tour</div></Link>
                     <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); }}><div>🌙 Full Moon Party</div></Link>
                     <Link to={`/asia/vietnam/category/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
-                    <Link to={`/europe/germany/category/oktoberfest`} className="germany-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇩🇪 Oktoberfest</div></Link>
+                    <Link to={`/europe/germany/category/oktoberfest`} className="germany-img background-img" onClick={() => { scrollToTop(); }}><div>🇩🇪 Oktoberfest</div></Link>
                 </div>
             </div>
             )}
@@ -162,6 +162,10 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
                     <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                     <Link to={`/`} className=""><div>Home</div></Link>
                 </div>
+                    <div className='d-flex bold' style={{marginRight: "8px", fontSize: "12px"}}>
+                        <div style={{marginRight: "3px"}}>Page:</div>
+                        <div>{currentPage}</div>
+                    </div>
             </div>
             )}
 
