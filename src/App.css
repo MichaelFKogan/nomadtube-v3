@@ -535,7 +535,7 @@ h2 {
 
   .total-videos {
     text-wrap: nowrap;
-    padding-right: 7px;
+    /* padding-right: 7px; */
   }
 
   .home .total-videos {
@@ -557,7 +557,7 @@ h2 {
     padding: 0px 0px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     /* margin-top: 5px; */
   }
 
