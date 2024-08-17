@@ -5,17 +5,23 @@ function Pagination({ currentPage, totalPages, handlePageChange }) {
 
     const [showAll, setShowAll] = useState(false);
 
+    const scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
+
     const showAllPages = () => {
         setShowAll(!showAll);
     }
 
     const handlePrevious = () => {
+        scrollToTop();
         if (currentPage > 1) {
             handlePageChange(currentPage - 1);
         }
     };
 
     const handleNext = () => {
+        scrollToTop();
         if (currentPage < totalPages) {
             handlePageChange(currentPage + 1);
         }
@@ -86,6 +92,7 @@ function Pagination({ currentPage, totalPages, handlePageChange }) {
                                     {renderPageButtonsTen()}
                                 <div className={`page-number`} onClick={() => handlePageChange(currentPage + 4)}>...</div>
                             <div key={totalPages} onClick={() => showAllPages()} className={`page-number`}>{totalPages}</div>
+                            {/* <div className={`page-number desktop ${showAll ? "d-none" : ""}`} onClick={showAllPages} style={{width: "auto", marginLeft: "15px"}}>Show all pages</div> */}
                         </div>
                     </div>
                         <div className={`page-number ${showAll ? "d-none" : ""}`} onClick={showAllPages} style={{width: "auto", marginTop: "-10px", marginBottom: "-10px"}}>Show all pages</div>
