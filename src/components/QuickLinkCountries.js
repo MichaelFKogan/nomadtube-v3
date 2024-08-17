@@ -8,7 +8,7 @@ import EuropeMobileMenu from './navmenu/EuropeMobileMenu';
 import MiddleEastMobileMenu from './navmenu/MiddleEastMobileMenu';
 import OceaniaMobileMenu from './navmenu/OceaniaMobileMenu';
 
-function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, className }) {
+function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, scrollToTop }) {
 
     const [asiaMenu, setAsiaMenu] = useState(false);
     const [southAmericaMenu, setSouthAmericaMenu] = useState(false);
@@ -50,10 +50,6 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
         setOceaniaMenu(false);
     }
 
-    const scrollToTop = () => {
-        document.documentElement.scrollTop = 0;
-    }
-
 
     return (
         <>
@@ -90,7 +86,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, clas
                     <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam</div></Link>
 
                     <Link to={`/northamerica/newyork`} className="newyork-img background-img" onClick={() => { scrollToTop(); }}><div>🗽 New York</div></Link>
-                    <Link to={`/northamerica/sanfrancisco`} className="sanfrancisco-img background-img" onClick={() => { scrollToTop(); }}><div>🌉 San Francisco</div></Link>
+                    <Link to={`/northamerica/sanfrancisco`} className="sanfrancisco-img background-img" onClick={() => { scrollToTop(); }}><div>🇺🇸 San Francisco</div></Link>
 
                     <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { scrollToTop(); }}><div>🇧🇷 Brazil</div></Link>
                     <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇴 Colombia</div></Link>

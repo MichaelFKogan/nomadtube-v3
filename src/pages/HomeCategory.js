@@ -151,8 +151,8 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
             )}
 
             {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title desktop ${currentPage !== 1 && "margin-top-minus"}`}><h2>{item.name}</h2></div> : null))}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title mobile ${currentPage !== 1 && "margin-top-minus"}`}><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title desktop`}><h2>{item.name}</h2></div> : null))}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title mobile`}><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
 
             {/* BREADCRUMBS */}
             {/* <Breadcrumbs/> */}

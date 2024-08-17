@@ -11,6 +11,16 @@
     position: relative;
 }
 
+.navbar-white{
+    background: linear-gradient(180deg, #eee, white);
+}
+
+.navbar-white .nav-logo, 
+.navbar-white .hamburger,
+.navbar-white .hamburger svg{
+    color: black;
+}
+
 .nav-menu{
     font-family: "Nunito Black";
     font-size: 17px;

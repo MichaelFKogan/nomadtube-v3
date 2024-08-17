@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 
-function Cities({dataCities, className}) {
+function Cities({dataCities}) {
 
     const { continent, country, city, category } = useParams();
 
@@ -28,7 +28,7 @@ function Cities({dataCities, className}) {
                 </div>
             </div>
 
-            <div className={`cities-wrapper mobile ${className}`}>
+            <div className={`cities-wrapper mobile`}>
                 <div className="inner-cities">
                     {city &&
                         <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} onClick={() => { scrollToTop(); }}>

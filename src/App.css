@@ -404,9 +404,6 @@ h2 {
     color: #666;
   }
 
-  .margin-top-minus{
-    margin-top: -60px;
-  }
 }
 
 @media(max-width: 768px) {
@@ -625,7 +622,8 @@ h2 {
 
 
   .home .hp-quick-links .inner-categories,
-  .home-category-page .hp-quick-links .inner-categories {
+  .home-category-page .hp-quick-links .inner-categories, 
+  .hp-quick-links .inner-categories {
     padding: 0px 10px;
     /* overflow-y: scroll; */
     height: auto;
@@ -638,10 +636,6 @@ h2 {
 
   .cards-wrapper {
     margin: 0px;
-  }
-
-  .margin-top-minus{
-    margin-top: -60px !important;
   }
 
 }

@@ -1,0 +1,7 @@
+{
+    "name": "🇮🇱 Israel",
+    "noemoji": "Israel",
+    "cities":[
+        {"name": "🏖 Tel Aviv","route": "telaviv", "noemoji": "Tel Aviv"}
+    ]
+}

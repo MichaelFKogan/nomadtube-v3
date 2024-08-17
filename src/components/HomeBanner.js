@@ -4,7 +4,7 @@ import "../styles/banner.css";
 
 function HomeBanner({className}) {
     return (
-        <div className={`home-banner ${className}`} style={{ backgroundImage: `url(${bannerImage})` }}>
+        <div className={`home-banner`} style={{ backgroundImage: `url(${bannerImage})` }}>
             <div className="banner-content">
                 <div className="banner-text">
                     <h1 className="banner-title">Find Your <span className="mobile-line-break">Travel Inspiration</span></h1>

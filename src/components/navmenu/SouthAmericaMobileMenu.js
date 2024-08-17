@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../styles/navbar.css"
 
-function SouthAmericaMobileMenu({mobileMenu, closeMobileMenu, toggleSouthAmericaMenu, southAmericaMenu, closeCountryMenus, back, closeAllMenus, className}) {
+function SouthAmericaMobileMenu({mobileMenu, closeMobileMenu, toggleSouthAmericaMenu, southAmericaMenu, closeCountryMenus, back, closeAllMenus}) {
 
   
     return (
     <>        
-        <div className={`mobile-menu desktop-menu southamerica-menu ${className} d-flex off-screen ${southAmericaMenu ? 'right' : '' }`} style={{paddingTop: "0px"}}>
+        <div className={`mobile-menu desktop-menu southamerica-menu mobile d-flex off-screen ${southAmericaMenu ? 'right' : '' }`} style={{paddingTop: "0px"}}>
 
             <div className="inner-menu">
             <div className="w-55">

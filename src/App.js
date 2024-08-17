@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar handleCategoriesDropdown={handleCategoriesDropdown}/>
+        <Navbar categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown}/>
 
         {/* <Asia showAsia={showAsia} toggleAsia={toggleAsia} /> */}
 

@@ -207,7 +207,7 @@ function Home({
         <div className='d-flex space-between black-bar-title mobile quick-links-countries-btn-mobile' onClick={openCountryMenu}>
             <h2 className="">🌏 Countries</h2>
         </div>
-        <QuickLinkCountries openCountryMenu={openCountryMenu} countryMenu={countryMenu} setCountryMenu={setCountryMenu} />
+        <QuickLinkCountries openCountryMenu={openCountryMenu} countryMenu={countryMenu} setCountryMenu={setCountryMenu} scrollToTop={scrollToTop} />
 
         {/* QUICK LINKS - MOBILE */}
         <div className='d-flex space-between black-bar-title mobile quick-links-btn-mobile' onClick={handleCategoriesDropdown}>

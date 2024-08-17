@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
 import AsiaMobileMenu from './navmenu/AsiaMobileMenu';
 
-function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
+function Navbar({ toggleAsia, scrollToTop, countryMenu }) {
 
     const [mobileMenu, setMobileMenu] = useState(false);
     const [asiaMenu, setAsiaMenu] = useState(false);
@@ -64,7 +64,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
 
             {/* MOBILE MENU */}
-            <div className={`navbar d-flex align-center space-between mobile ${className}`}>
+            <div className={`navbar d-flex align-center space-between mobile`}>
 
                 <div className='d-flex align-center'>
                     <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closes(); }}>
@@ -84,7 +84,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu }) {
 
             </div>
 
-            {/* <div className={`navbar d-flex align-center space-between mobile ${className}`} style={{height: "50px"}}>
+            {/* <div className={`navbar d-flex align-center space-between mobile`} style={{height: "50px"}}>
 
                     <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px"}}><div>Asia</div></div>
                     <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu} style={{ textWrap: "nowrap" }}><div>South America</div></Link>

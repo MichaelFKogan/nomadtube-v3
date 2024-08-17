@@ -127,6 +127,11 @@
         height: 250px;
     }
 
+    .city-page .page-banner, 
+    .category-page .page-banner{
+        margin-bottom: 10px;
+    }
+
     .banner-title{
         font-size: 3em;
     }

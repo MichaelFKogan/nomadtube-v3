@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useParams, Link, useSearchParams } from 'react-router-dom';
 import "../styles/navbar.css"
 
 import AsiaDesktopMenu from './navmenu/AsiaDesktopMenu';
@@ -12,7 +12,12 @@ import SouthAmericaMobileMenu from './navmenu/SouthAmericaMobileMenu';
 import EuropeMobileMenu from './navmenu/EuropeMobileMenu';
 import MiddleEastMobileMenu from './navmenu/MiddleEastMobileMenu';
 
-function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategoriesDropdown }) {
+import QuickLinks from './QuickLinks';
+
+function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, handleCategoriesDropdown }) {
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const currentPage = parseInt(searchParams.get('page')) || 1;
 
     const [mobileMenu, setMobileMenu] = useState(false);
     const [asiaMenu, setAsiaMenu] = useState(false);
@@ -67,7 +72,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
     return (
         <>
             {/* DESKTOP MENU */}
-            <div className="navbar d-flex align-center space-between desktop">
+            <div className={`navbar d-flex align-center space-between desktop ${currentPage !== 1 ? "navbar-white" : null}`}>
                 <div className='d-flex align-center'>
                     <Link to={"/"} className="nav-menu nav-logo desktop"><div>🏝 NomadTube</div></Link>
                 </div>
@@ -108,7 +113,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
 
 
             {/* MOBILE NAVBAR */}
-            <div className={`navbar d-flex align-center space-between mobile ${className}`}>
+            <div className={`navbar d-flex align-center space-between mobile ${currentPage !== 1 ? "navbar-white" : null}`}>
 
                 <div className='d-flex align-center'>
                     <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closeCountryMenus(); }}>
@@ -132,7 +137,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
 
             </div>
 
-            {/* <div className={`navbar d-flex align-center space-between mobile ${className}`} style={{height: "50px"}}>
+            {/* <div className={`navbar d-flex align-center space-between mobile`} style={{height: "50px"}}>
 
                     <div className="nav-menu" onClick={() => { closeMobileMenu(); toggleAsiaMenu(); }} style={{ marginLeft: "0px"}}><div>Asia</div></div>
                     <Link to={"/southamerica"} className="nav-menu" onClick={closeMobileMenu} style={{ textWrap: "nowrap" }}><div>South America</div></Link>
@@ -173,7 +178,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
                     <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam</div></Link>
 
                     <Link to={`/northamerica/newyork`} className="newyork-img background-img" onClick={() => { scrollToTop(); }}><div>🗽 New York</div></Link>
-                    <Link to={`/northamerica/sanfrancisco`} className="sanfrancisco-img background-img" onClick={() => { scrollToTop(); }}><div>🌉 San Francisco</div></Link>
+                    <Link to={`/northamerica/sanfrancisco`} className="sanfrancisco-img background-img" onClick={() => { scrollToTop(); }}><div>🇺🇸 San Francisco</div></Link>
 
                     <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { scrollToTop(); }}><div>🇧🇷 Brazil</div></Link>
                     <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇴 Colombia</div></Link>
@@ -187,7 +192,9 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
             </div>
 
             </div>
-
+            
+            <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />    
+            
             <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
             <SouthAmericaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} southAmericaMenu={southAmericaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
             <EuropeMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleEuropeMenu={toggleEuropeMenu} europeMenu={europeMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>

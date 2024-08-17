@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "../../styles/navbar.css"
 
-function MiddleEastMobileMenu({mobileMenu, closeMobileMenu, toggleMiddleEastMenu, middleEastMenu, closeCountryMenus, back, closeAllMenus, className}) {
+function MiddleEastMobileMenu({mobileMenu, closeMobileMenu, toggleMiddleEastMenu, middleEastMenu, closeCountryMenus, back, closeAllMenus}) {
 
   
     return (
     <>        
-        <div className={`mobile-menu desktop-menu middleeast-menu d-flex off-screen ${middleEastMenu ? 'right' : '' } ${className}`} style={{paddingTop: "0px"}}>
+        <div className={`mobile-menu desktop-menu middleeast-menu mobile d-flex off-screen ${middleEastMenu ? 'right' : '' }`} style={{paddingTop: "0px"}}>
 
             <div className="inner-menu">
             <div className="w-55">
