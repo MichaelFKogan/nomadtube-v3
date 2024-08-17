@@ -29,6 +29,7 @@ function QuickLinks({ categoriesDropdown, handleCategoriesDropdown}) {
                     <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🌙 Full Moon Party</div></Link>
                     <Link to={`/asia/vietnam/category/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
                     <Link to={`/europe/germany/category/oktoberfest`} className="germany-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🍺 Oktoberfest</div></Link>
+                    <Link to={`/northamerica/newyork/category/vlog`} className="newyork-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🗽 New York Vlog</div></Link>
                 </div>
             </div>
         </>
