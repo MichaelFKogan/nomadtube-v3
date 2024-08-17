@@ -156,38 +156,37 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
             </div>
             )}
 
-            {currentPage !== 1 && (
-            <div className="d-flex space-between align-center mt-10">
-                <div className="page-back d-flex align-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
-                    <Link to={`/`} className=""><div>Home</div></Link>
-                </div>
-                    <div className='d-flex bold mobile' style={{marginRight: "8px", fontSize: "12px"}}>
-                        <div style={{marginRight: "3px"}}>Page:</div>
-                        <div>{currentPage}</div>
-                    </div>
-            </div>
-            )}
 
             {/* BREADCRUMBS */}
-            <div className="breadcrumbs-and-videos">
-                <div className="breadcrumbs d-flex col-gap-5 align-center">
-                    <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
-                    <Link to={`/category/${homeCategory}`}>
-                        <div className={'bold desktop'}>
-                            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}
+
+            <div className='d-flex flex-col'>
+                {currentPage !== 1 && (
+                    <div className="breadcrumbs-and-videos" style={{paddingBottom: "0px", paddingLeft: "2px", marginTop: "10px"}}>
+                        <div className="page-back d-flex align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                            <Link to={`/`} className=""><div>Home</div></Link>
                         </div>
-                        <div className={'bold mobile'}>
-                            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name.length > 30 ? item.name.substring(0, 30) + "..." : item.name}</> : null))}
-                        </div>
-                    </Link>
+                            <div className='d-flex bold' style={{fontSize: "12px"}}>
+                                <div style={{marginRight: "5px"}}>Page:</div>
+                                <div>{currentPage}</div>
+                            </div>
+                    </div>
+                )}
+
+                <div className="breadcrumbs-and-videos">
+                    <div className="breadcrumbs d-flex col-gap-5 align-center">
+                        <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>
+                        <Link to={`/category/${homeCategory}`}>
+                            <div className={'bold desktop'}>
+                                {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name}</> : null))}
+                            </div>
+                            <div className={'bold mobile'}>
+                                {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <>{item.name.length > 30 ? item.name.substring(0, 30) + "..." : item.name}</> : null))}
+                            </div>
+                        </Link>
+                    </div>
+                    <TotalVideos data={data} />
                 </div>
-                    {currentPage !== 1 && (
-                    <div className='d-flex bold desktop' style={{marginRight: "8px", fontSize: "14px", fontFamily: "Nunito"}}>
-                        <div style={{marginRight: "3px"}}>Page:</div>
-                        <div>{currentPage}</div>
-                    </div> )}
-                <TotalVideos data={data} />
             </div>
 
             {/* CATEGORY TITLE */}

@@ -123,11 +123,10 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
 
                 <Link to={"/"} className="nav-menu nav-logo " onClick={() => { closeAllMenus(); }}><div>🏝 NomadTube</div></Link>
 
-                <div className='d-flex align-center' style={{ opacity: "0", visibility: "0" }}>
-                    <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closes(); }}  style={{ opacity: "0", visibility: "0" }}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
+                <div className='d-flex align-center'>
+                    <div className="nav-menu" onClick={() => { toggleMobileMenu(); closes(); }}>
+                        All
                     </div>
-                    {/* <Link to={"/"} className="nav-menu" style={{ opacity: "0", visibility: "0" }}><div>🏠</div></Link> */}
                 </div>
 
             </div>

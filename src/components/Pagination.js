@@ -77,31 +77,31 @@ function Pagination({ currentPage, totalPages, handlePageChange }) {
             {/* Render page buttons below the main pagination controls */}
 
                 {totalPages > 10 ? <>
-                    <div className={`d-flex flex-col ${showAll ? "" : "d-none"}`}>
-                        <div className={`page-buttons pages page-numbers ${showAll ? "d-flex" : "d-none"}`}>
+                    <div className={`d-flex flex-col ${showAll ? "d-none" : ""}`}>
+                        <div className={`page-buttons pages page-numbers`}>
                             {currentPage !== 1 && currentPage >= 5 ? <>
                             <div key={1} onClick={() => handlePageChange(1)} className={`page-number`}>{1}</div>
-                                <div className={`page-number`}>...</div>
+                                <div className={`page-number`} onClick={() => handlePageChange(currentPage - 4)}>...</div>
                             </> : null}
                                     {renderPageButtonsTen()}
-                                <div className={`page-number`}>...</div>
+                                <div className={`page-number`} onClick={() => handlePageChange(currentPage + 4)}>...</div>
                             <div key={totalPages} onClick={() => handlePageChange(totalPages)} className={`page-number`}>{totalPages}</div>
                         </div>
-                        <div className='page-number' onClick={showAllPages} style={{width: "auto", marginTop: "10px"}}>Show all</div>
                     </div>
+                        <div className={`page-number ${showAll ? "d-none" : ""}`} onClick={showAllPages} style={{width: "auto", marginTop: "-10px", marginBottom: "-10px"}}>Show all pages</div>
+                        <div className={`page-number ${showAll ? "" : "d-none"}`} onClick={showAllPages} style={{width: "auto", marginTop: "-10px", marginBottom: "-10px"}}>Hide</div>
                 </> : null}
 
                 {totalPages >= 10 ? <>
-                    <div className={`d-flex flex-col ${showAll ? "d-none" : ""}`}>
+                    <div className={`d-flex flex-col ${showAll ? "" : "d-none"}`}>
                             <div className={`page-buttons pages page-numbers d-flex`}>
                                 {renderPageButtons()}
                             </div>
-                        <div className='page-number' onClick={showAllPages} style={{width: "auto", marginTop: "10px"}}>Hide</div>
                     </div>
                 </>: null}
 
                 {totalPages < 10 ? <>
-                    <div className={`d-flex flex-col ${showAll ? "d-none" : ""}`}>
+                    <div className={`d-flex flex-col`}>
                         <div className={`page-buttons pages page-numbers d-flex`}>
                             {renderPageButtons()}
                         </div>
