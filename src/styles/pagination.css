@@ -7,6 +7,17 @@
     margin: 20px auto 150px auto;
     max-width: 95%;
   }
+
+  .next-buttons{
+    display: flex;
+    align-items: center;
+  }
+
+  .total-pages{
+    font-family: "Nunito Regular";
+    font-size: 14px;
+    margin: 0px 15px;
+  }
   
   .pagination .pages{
     font-size: 13px;
@@ -41,7 +52,7 @@
     transform: scale(.99);
   }
   
-  .page-number.disabled{
+  .page-number.disabled, .page-number.active{
     background: black;
     color: white;
   }
