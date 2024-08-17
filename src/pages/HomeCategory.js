@@ -158,11 +158,11 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
 
             {currentPage !== 1 && (
             <div className="d-flex space-between align-center mt-10">
-                <div className="page-back d-flex align-center mobile">
+                <div className="page-back d-flex align-center">
                     <svg xmlns="http://www.w3.org/2000/svg" style={{marginLeft: "0px"}} width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                     <Link to={`/`} className=""><div>Home</div></Link>
                 </div>
-                    <div className='d-flex bold' style={{marginRight: "8px", fontSize: "12px"}}>
+                    <div className='d-flex bold mobile' style={{marginRight: "8px", fontSize: "12px"}}>
                         <div style={{marginRight: "3px"}}>Page:</div>
                         <div>{currentPage}</div>
                     </div>
@@ -182,6 +182,11 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
                         </div>
                     </Link>
                 </div>
+                    {currentPage !== 1 && (
+                    <div className='d-flex bold desktop' style={{marginRight: "8px", fontSize: "14px", fontFamily: "Nunito"}}>
+                        <div style={{marginRight: "3px"}}>Page:</div>
+                        <div>{currentPage}</div>
+                    </div> )}
                 <TotalVideos data={data} />
             </div>
 

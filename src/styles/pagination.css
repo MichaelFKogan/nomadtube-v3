@@ -23,9 +23,9 @@
   }
   
   .page-numbers{
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     max-width: 900px;
   }
