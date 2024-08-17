@@ -123,10 +123,11 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
 
                 <Link to={"/"} className="nav-menu nav-logo " onClick={() => { closeAllMenus(); }}><div>🏝 NomadTube</div></Link>
 
-                <div className='d-flex align-center'>
-                    <div className="nav-menu" onClick={() => { toggleMobileMenu(); closes(); }}>
-                        All
+                <div className='d-flex align-center' style={{ opacity: "0", visibility: "0" }}>
+                    <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closes(); }}  style={{ opacity: "0", visibility: "0" }}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
                     </div>
+                    {/* <Link to={"/"} className="nav-menu" style={{ opacity: "0", visibility: "0" }}><div>🏠</div></Link> */}
                 </div>
 
             </div>
@@ -144,6 +145,7 @@ function Navbar({ toggleAsia, className, scrollToTop, countryMenu, handleCategor
             <div className={`mobile-menu main-mobile-menu d-block off-screen ${mobileMenu ? 'right' : '' }`}>
                 <Link to={"/"} className="nav-menu" onClick={closeAllMenus}><div>🏠 Home</div></Link>
                 <div className="nav-menu" onClick={() => { handleCategoriesDropdown(); }}><div>🔗 Quick Links</div></div>
+                <div className="nav-menu" onClick={() => { handleCategoriesDropdown(); }}><div>All Videos</div></div>
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginTop: "20px", marginBottom: "25px"}}/>
 
                 {/* <h2 className="" style={{color: "white", fontSize: "20px", textAlign: "left", marginBottom: "20px"}}>🌎 Countries</h2> */}
