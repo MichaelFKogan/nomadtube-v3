@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Read the JSON file
-const filePath = path.join(__dirname, 'vlog.json');
+const filePath = path.join(__dirname, '..', 'server', 'allbali-with-duplicates.json');
 fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
         console.error('Error reading the file:', err);
@@ -21,7 +21,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
         // const updatedData = { videos: uniqueVideos };
 
         // Define the new file path
-        const newFilePath = path.join(__dirname, 'vlog.json');
+        const newFilePath = path.join(__dirname, 'bali.json');
 
           // Save the videoIds in the desired format
           const formattedVideos = JSON.stringify({ videos: uniqueVideos }, null, 1)

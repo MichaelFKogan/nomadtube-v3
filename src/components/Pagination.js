@@ -86,13 +86,17 @@ function Pagination({ currentPage, totalPages, handlePageChange }) {
                     <div className={`d-flex flex-col ${showAll ? "d-none" : ""}`}>
                         <div className={`page-buttons pages page-numbers`}>
                             {currentPage !== 1 && currentPage >= 5 ? <>
-                            <div key={1} onClick={() => handlePageChange(1)} className={`page-number`}>{1}</div>
+                                <div key={1} onClick={() => handlePageChange(1)} className={`page-number`}>{1}</div>
                                 <div className={`page-number`} onClick={() => showAllPages()}>...</div>
                             </> : null}
+
                                     {renderPageButtonsTen()}
+
+                            {currentPage !== totalPages && currentPage < totalPages - 3 ? <>
                                 <div className={`page-number`} onClick={() => showAllPages()}>...</div>
-                            <div key={totalPages} onClick={() => handlePageChange(totalPages)} className={`page-number`}>{totalPages}</div>
-                            {/* <div className={`page-number desktop ${showAll ? "d-none" : ""}`} onClick={showAllPages} style={{width: "auto", marginLeft: "15px"}}>Show all pages</div> */}
+                                <div key={totalPages} onClick={() => handlePageChange(totalPages)} className={`page-number`}>{totalPages}</div>
+                            </> : null}
+
                         </div>
                     </div>
                         <div className={`page-number ${showAll ? "d-none" : ""}`} onClick={showAllPages} style={{width: "auto", marginTop: "-10px", marginBottom: "-10px"}}>

@@ -2,36 +2,52 @@ const fs = require('fs');
 const path = require('path');
 
 // Define the base directory
-const baseDir = path.join(__dirname, '..', 'src', 'data');
-const outputFilePath = path.join(__dirname, '..', 'src', 'data', 'new', 'vlog-duplicates.json');
+const baseDir = path.join(__dirname, '..', 'src', 'data', 'asia', 'bali');
+
+const outputFilePath = path.join(__dirname, '..', 'src', 'data', 'new', 'allbali-with-duplicates.json');
 
 // Function to recursively find all vlog.json files
-function findVlogFiles(dir) {
-  let vlogFiles = [];
+function findAllFiles(dir) {
+  let allFiles = [];
+
+
+
 
   fs.readdirSync(dir).forEach((file) => {
     const fullPath = path.join(dir, file);
 
-    if (fs.lstatSync(fullPath).isDirectory()) {
-      vlogFiles = vlogFiles.concat(findVlogFiles(fullPath));
-    } else if (file === 'vlog.json') {
-      vlogFiles.push(fullPath);
-    }
+      // Check for a specific file (vlog.json)
+      // if (fs.lstatSync(fullPath).isDirectory()) {
+      //   allFiles = allFiles.concat(findAllFiles(fullPath));
+      // } else if (file === 'vlog.json') {
+      //   allFiles.push(fullPath);
+      // }
+
+      // Check for all files in a directory
+      if (fs.lstatSync(fullPath).isDirectory()) {
+        allFiles = allFiles.concat(findAllFiles(fullPath));
+      } else if (path.extname(file) === '.json') { // Check if the file has a .json extension
+        allFiles.push(fullPath);
+      }
+
   });
 
-  return vlogFiles;
+  return allFiles;
 }
+
+
+
 
 // Function to extract videoIds from vlog files and store them
 function extractVideoIds() {
-  const vlogFiles = findVlogFiles(baseDir);
+  const allFiles = findAllFiles(baseDir);
   const videoIds = [];
   let index = 0;
 
   while (true) {
     let allFilesExhausted = true;
 
-    vlogFiles.forEach((file) => {
+    allFiles.forEach((file) => {
       const fileData = JSON.parse(fs.readFileSync(file, 'utf8'));
 
       if (fileData.videos && fileData.videos.length > index) {

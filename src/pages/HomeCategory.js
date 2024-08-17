@@ -15,7 +15,6 @@ import "../styles/home.css"
 const ITEMS_PER_PAGE = 100;
 
 function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesDropdown, handleCountriesDropdown, categoriesDropdown, handleCategoriesDropdown }) {
-
     const { continent, homeCategory, country, city, category } = useParams();
     const data = require(`../data/category/${homeCategory}.json`);
     const dataCities = require(`../data/home-cities.json`);

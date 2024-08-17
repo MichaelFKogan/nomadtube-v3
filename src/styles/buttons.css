@@ -442,6 +442,10 @@ a.active{
         /* width: 100%; */
     }
 
+    .mexico .cities-wrapper .playadelcarmen-img div{
+        white-space: wrap;
+    }
+
     .home .cities-wrapper a{
         height: 70px;
         border-radius: 2px;
