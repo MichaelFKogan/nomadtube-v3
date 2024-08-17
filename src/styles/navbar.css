@@ -12,14 +12,22 @@
 }
 
 .navbar-white{
-    background: linear-gradient(180deg, #eee, white);
+    background: white;
 }
 
 .navbar-white .nav-logo, 
 .navbar-white .hamburger,
-.navbar-white .hamburger svg{
+.navbar-white .hamburger svg,
+.desktop.navbar-white .continents-menu .nav-menu.continent{
     color: black;
 }
+
+.navbar-white .nav-logo:hover,
+.desktop.navbar-white .continents-menu .nav-menu.continent:hover{
+    color: #666;
+}
+
+
 
 .nav-menu{
     font-family: "Nunito Black";
@@ -50,7 +58,7 @@
 }
 
 .nav-menu:hover{
-    color: #FF516B;
+    color: #ccc;
 }
 
 .hamburger{

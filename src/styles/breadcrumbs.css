@@ -38,6 +38,8 @@
   @media(max-width: 768px){
     .breadcrumbs{
       margin: 0px;
+      overflow: hidden;
+      margin-right: 10px;
     }
     .breadcrumbs-and-videos{
       padding: 5px 8px 6px 8px;

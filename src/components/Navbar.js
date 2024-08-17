@@ -77,11 +77,11 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
                     <Link to={"/"} className="nav-menu nav-logo desktop"><div>🏝 NomadTube</div></Link>
                 </div>
 
-                <div className="d-flex align-center col-gap-5 pos-rel">
-                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleAsiaMenu(); }}><div>Asia</div></div>
-                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleSouthAmericaMenu(); }}><div>South America</div></div>
-                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleEuropeMenu(); }}><div>Europe</div></div>
-                    <div className="nav-menu"  onClick={() => { closeCountryMenus(); toggleMiddleEastMenu(); }}><div>MiddleEast</div></div>
+                <div className="d-flex align-center col-gap-5 pos-rel continents-menu">
+                    <div className="nav-menu continent"  onClick={() => { closeCountryMenus(); toggleAsiaMenu(); }}><div>Asia</div></div>
+                    <div className="nav-menu continent"  onClick={() => { closeCountryMenus(); toggleSouthAmericaMenu(); }}><div>South America</div></div>
+                    <div className="nav-menu continent"  onClick={() => { closeCountryMenus(); toggleEuropeMenu(); }}><div>Europe</div></div>
+                    <div className="nav-menu continent"  onClick={() => { closeCountryMenus(); toggleMiddleEastMenu(); }}><div>MiddleEast</div></div>
 
 
                     {/* <Link to={"/northamerica"} className="nav-menu"><div>North America</div></Link> */}
