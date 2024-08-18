@@ -81,8 +81,22 @@
     .full-width .card.vertical .resize{
         transform: rotate(90deg);
         z-index: 5;
-        width: 170%;
-        margin-left: -35%;
+        width: 160%;
+        margin-left: -30%;
+        border: 2px solid white;
+    }
+
+    .grid .mobile-normal.horizontal .rotate-card,
+    .masonry .mobile-normal.horizontal .rotate-card{
+        display: none;
+    }
+
+    .card.mobile-full.vertical .resize{
+        transform: rotate(90deg);
+        z-index: 5;
+        width: 300%;
+        margin-left: -50%;
+        border: 2px solid white;
     }
 }
 

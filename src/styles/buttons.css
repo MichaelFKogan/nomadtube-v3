@@ -181,6 +181,13 @@ a.active{
     right: 2px;
 }
 
+.vertical .rotate-card,
+.grid .mobile-full.horizontal .rotate-card,
+.masonry .mobile-full.horizontal .rotate-card{
+    left: 2px;
+    top: 2px;
+}
+
 .card-button:hover{
     background: linear-gradient(180deg, rgba(0,0,0,.8), rgba(0,0,0,.6))
 }
