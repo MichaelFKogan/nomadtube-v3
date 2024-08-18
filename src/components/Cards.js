@@ -3,7 +3,7 @@ import Card from "../components/Card"
 
 function Cards({data, startIndex, endIndex}) {
 
-    const [layout, setLayout] = useState("full-width");
+    const [layout, setLayout] = useState("masonry");
 
     const toggleLayout = (prevClass) => {
         setLayout((prevClass) => {

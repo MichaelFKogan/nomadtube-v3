@@ -54,11 +54,13 @@
     .cards-wrapper.grid .card.mobile-full:nth-child(2n + 1) .resize{left: -2px;}
     .cards-wrapper.grid .card.mobile-full:nth-child(2n + 2) .resize{right: -2px; left: unset;}
 
+    .cards-wrapper.full-width .card.mobile-full .resize{width: 100%}
+
     .full-width-btn{
         position: fixed;
         bottom: 75px;
         right: 15px;
-        width: 48px;
+        width: 45px;
         height: 45px;
         z-index: 5;
 
@@ -67,7 +69,7 @@
         justify-content: center;
 
         font-family: "Nunito Black";
-        background: black;
+        background: rgba(0,0,0,.8);
         color: white;
         border-radius: 6px;
         color: white;
