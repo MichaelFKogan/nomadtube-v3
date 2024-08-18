@@ -187,11 +187,7 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} />
 
-            <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                handlePageChange={handlePageChange}
-            />
+            <Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
 
             {/* BOTTOM NAVIGATION BUTTONS */}
             <button className="back-to-top" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Back To Top</button>

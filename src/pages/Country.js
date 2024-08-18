@@ -39,28 +39,28 @@ function Country() {
 
     return (
         <div className={`country-page ${country}`}>
-            
+
             {currentPage === 1 && (
-            <>
-            <PageBanner title={dataCities.name} imgRoute={country} />
+                <>
+                    <PageBanner title={dataCities.name} imgRoute={country} />
 
-            {/* CITIES */}
-            <Cities dataCities={dataCities} />
+                    {/* CITIES */}
+                    <Cities dataCities={dataCities} />
 
-            {/* CATEGORIES */}
-            <div className='categories-wrapper categories-row'>
-                <div className="inner-categories">
-                    <Link to={`/${continent}/${country}`} className="active">
-                        <div>💯 All</div>
-                    </Link>
-                    {dataCategories.categories.map((category, index) => (
-                        <Link to={`/${continent}/${country}/category/${category.route}`} key={index}>
-                            <div>{category.name}</div>
-                        </Link>
-                    ))}
-                </div>
-            </div>
-            </> )}
+                    {/* CATEGORIES */}
+                    <div className='categories-wrapper categories-row'>
+                        <div className="inner-categories">
+                            <Link to={`/${continent}/${country}`} className="active">
+                                <div>💯 All</div>
+                            </Link>
+                            {dataCategories.categories.map((category, index) => (
+                                <Link to={`/${continent}/${country}/category/${category.route}`} key={index}>
+                                    <div>{category.name}</div>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </>)}
 
             {/* CATEGORY TITLE */}
             <div className="category-title">
@@ -74,7 +74,7 @@ function Country() {
                     {currentPage === 1 ? (
                         <Link to={`/`} className=""><div>Home</div></Link>
                     ) : (
-                    <Link to={`/${continent}/${country}`} className=""><div>{capitalizedCountry}</div></Link>
+                        <Link to={`/${continent}/${country}`} className=""><div>{capitalizedCountry}</div></Link>
                     )}
 
                 </div>
@@ -93,11 +93,7 @@ function Country() {
 
             <Cards data={data} startIndex={startIndex} endIndex={endIndex} />
 
-            <Pagination
-                currentPage={currentPage}
-                totalPages={totalPages}
-                handlePageChange={handlePageChange}
-            />
+            <Pagination currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
 
             {/* BOTTOM NAVIGATION BUTTONS */}
             <button className="back-to-top" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Back To Top</button>
