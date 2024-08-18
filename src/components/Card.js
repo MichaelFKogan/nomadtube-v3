@@ -1,7 +1,7 @@
 import "../styles/card.css"
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
-function Card({ data, key, cardKey }) {
+function Card({ data, key, cardKey, layout }) {
 
     const [cardSize, setCurrentCardSize] = useState('normal');
     const [tabletSize, setTabletSize] = useState('tablet-normal');
@@ -101,6 +101,13 @@ function Card({ data, key, cardKey }) {
             if (prevClass === 'vertical') return 'horizontal';
         });
     }
+
+    // Trigger the setAllHorizontal function when layout changes
+    useEffect(() => {
+        setVertical('horizontal');
+        setMobileSize('mobile-normal');
+        setCurrentCardSize('normal');
+    }, [layout]); // Dependency array: runs whenever layout changes
 
     return (
         <div className={`card ${cardSize} ${tabletSize} ${mobileSize} ${windowOpen} ${windowSize} ${vertical} ${cardKey}`} key={key}>

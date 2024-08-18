@@ -17,7 +17,7 @@ function Cards({data, startIndex, endIndex}) {
         <>
         <div className={`cards-wrapper ${layout}`}>
             {data.videos.slice(startIndex, endIndex).map((video, index) => (
-                <Card data={video} key={index} cardKey={index} />
+                <Card data={video} key={index} cardKey={index} layout={layout} />
             ))}
         </div>
                     
