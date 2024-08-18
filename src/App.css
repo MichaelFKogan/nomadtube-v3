@@ -662,11 +662,15 @@ hr {
 }
 
 .page-back a {
+  display: flex;
   text-decoration: none;
   color: black;
 }
 
-
+.page-back a:hover,
+.page-back a:hover svg{
+  color: #666;
+}
 
 
 .d-flex {
