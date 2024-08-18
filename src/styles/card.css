@@ -31,12 +31,41 @@
 
 @media(max-width: 768px){
     .card {
-        width: calc(50% - 4px);
+        width: calc(50% - 5px);
     }
     .card.mobile-full{
         position: sticky;
         top: 60px;
         z-index: 5;
+    }
+    .cards-wrapper.full-width .card{
+        width: calc(100% - 6px);
+    }
+
+    .cards-wrapper.full-width .card-button.image-plus{
+        display: none;
+    }
+
+    .full-width-btn{
+        position: fixed;
+        bottom: 75px;
+        right: 15px;
+        width: 48px;
+        height: 45px;
+        z-index: 5;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: "Nunito Black";
+        background: black;
+        color: white;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0px 0px 5px black;
+        border: 1px solid white;
     }
 }
 
@@ -104,6 +133,13 @@
 
     .card.large .resize{width: 450%;}
 
+    .card.large:nth-child(1) .resize,
+    .card.large:nth-child(2) .resize,
+    .card.large:nth-child(3) .resize,
+    .card.large:nth-child(4) .resize,
+    .card.large:nth-child(5) .resize{top: 150%}
+
+
     .card.window-open .resize{position:fixed; top:10px !important; right:10px !important; z-index:5; left: auto !important; transform:none !important;}
     
     .card.window-open.window-sm .resize{width:30%}
@@ -121,15 +157,21 @@
 
     .card.small:nth-child(4n+2) .resize,
     .card.medium:nth-child(4n+2) .resize,
-    .card.large:nth-child(4n+2) .resize,
 
     .card.small:nth-child(4n+3) .resize,
-    .card.medium:nth-child(4n+3) .resize,
-    .card.large:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .card.medium:nth-child(4n+3) .resize{top: 50%;left: 50%;transform: translate(-50%, -50%);}
+
+    .card.large:nth-child(4n+2) .resize{top: 50%;left: 0;transform: translate(-25%, -50%);}
+    .card.large:nth-child(4n+3) .resize{top: 50%;left: 0;transform: translate(-50%, -50%);}
 
     .card.small:nth-child(4n+4) .resize,
     .card.medium:nth-child(4n+4) .resize,
     .card.large:nth-child(4n+4) .resize{top: 50%;transform: translateY(-50%);right:0;}
+
+    .card.large:nth-child(1) .resize,
+    .card.large:nth-child(2) .resize,
+    .card.large:nth-child(3) .resize,
+    .card.large:nth-child(4) .resize{top: 110%}
 
     .card.window-open .resize{position:fixed; top:10px !important; right:10px !important; z-index:5; left: auto !important; transform:none !important;}
     
@@ -167,7 +209,7 @@
     .card.mobile-full .resize{position: absolute; z-index: 4; box-shadow: 0px 0px 15px black;}
     .card.mobile-full .resize{top: -60px;width: calc(200% + 6px); right: -2px; border:2px solid white;}
 
-    .card:nth-child(5n + 5){width: calc(100% - 5px) !important}
+    .card:nth-child(5n + 5){width: calc(100% - 6px) !important}
     .card:nth-child(5n + 5) .image-plus{display: none;}
 
     .card.mobile-full:nth-child(1) .resize, .card.mobile-full:nth-child(3) .resize,
