@@ -8,7 +8,7 @@ function TotalVideos({data}) {
     return (
         <div className={`total-videos`}>
             <div className='d-flex nowrap'>
-            <div>Videos: </div> <div>{formattedVideoCount}</div>
+            <div className="total-vids-margin">Videos: </div> <div>{formattedVideoCount}</div>
             </div>
         </div>
     );

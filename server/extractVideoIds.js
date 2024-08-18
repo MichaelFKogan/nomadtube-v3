@@ -3,15 +3,11 @@ const path = require('path');
 
 // Define the base directory
 const baseDir = path.join(__dirname, '..', 'src', 'data', 'asia', 'bali');
-
-const outputFilePath = path.join(__dirname, '..', 'server', 'bali-itin-dup.json');
+const outputFilePath = path.join(__dirname, '..', 'server', 'bali-vlog-dup.json');
 
 // Function to recursively find all vlog.json files
 function findAllFiles(dir) {
   let allFiles = [];
-
-
-
 
   fs.readdirSync(dir).forEach((file) => {
     const fullPath = path.join(dir, file);
@@ -19,12 +15,11 @@ function findAllFiles(dir) {
       // Check for a specific file (vlog.json)
       if (fs.lstatSync(fullPath).isDirectory()) {
         allFiles = allFiles.concat(findAllFiles(fullPath));
-      } else if (file === 'itinerary.json') {
+      } else if (file === 'vlog.json') {
         allFiles.push(fullPath);
       }
 
       // Check for all files in a directory
-
       // if (fs.lstatSync(fullPath).isDirectory()) {
       //   allFiles = allFiles.concat(findAllFiles(fullPath));
       // } else if (path.extname(file) === '.json') { // Check if the file has a .json extension

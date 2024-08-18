@@ -84,7 +84,7 @@ function Country() {
 
                 </div>
                 {currentPage !== 1 && (
-                    <div className='d-flex bold' style={{ fontSize: "12px" }}>
+                    <div className='d-flex bold'>
                         <div style={{ marginRight: "5px" }}>Page:</div>
                         <div>{currentPage}</div>
                     </div>
