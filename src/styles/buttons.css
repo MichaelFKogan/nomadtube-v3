@@ -67,7 +67,7 @@ button {
     }
 
     .rotate-card{
-        display: none;
+        display: none !important;
     }
 }
 
@@ -181,8 +181,8 @@ a.active{
     right: 2px;
 }
 
-.rotate-card{
-    /* background: black; */
+.vertical .rotate-card{
+    display: none;
 }
 
 .full-width .rotate-card{
@@ -200,10 +200,19 @@ a.active{
 }
 
 .vertical .rotate-card,
-.grid .mobile-full.horizontal .rotate-card,
 .masonry .mobile-full.horizontal .rotate-card{
     right: 2px;
     bottom: 2px;
+}
+
+.full-width .card.horizontal .rotate-card{
+    right: 0px;
+    top: 0px;
+}
+
+.grid .mobile-full.horizontal .rotate-card{
+    right: 0px;
+    bottom: 0px;
 }
 
 .card.vertical .rotate-card,
