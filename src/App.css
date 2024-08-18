@@ -310,9 +310,6 @@ h2 {
   /* margin-bottom: 200px; */
 }
 
-.hp-quick-links{
-  overflow-y: scroll;
-}
 
 @media(min-width: 769px) {
   .mobile {
@@ -440,6 +437,10 @@ h2 {
 
   .black-bar-title svg {
     color: black;
+  }
+
+  .hp-quick-links{
+    overflow-y: scroll;
   }
 
   .home .mobile-menu {
