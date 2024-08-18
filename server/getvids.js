@@ -1,9 +1,22 @@
 const fs = require('fs');
 const path = require('path');
 
+const continent = "europe"
+const folder = "italy"
+
+const filename = "italy"
+// const filename = "itinerary"
+// const filename = "vlog"
+// const filename = "digitalnomad"
+// const filename = "streetfood"
+// const filename = "walkingtour"
+// const filename = "cost"
+// const filename = "coworking"
+// const filename = "nightlife"
+
 // Define the base directory
-const baseDir = path.join(__dirname, '..', 'src', 'data', 'asia', 'thailand');
-const outputFilePath = path.join(__dirname, '..', 'server', 'nightlife.json');
+const baseDir = path.join(__dirname, '..', 'src', 'data', continent, folder);
+const outputFilePath = path.join(__dirname, '..', 'server', filename+".json");
 
 // Function to recursively find all vlog.json files
 function findAllFiles(dir) {
@@ -12,21 +25,20 @@ function findAllFiles(dir) {
   fs.readdirSync(dir).forEach((file) => {
     const fullPath = path.join(dir, file);
 
-    // Check for a specific file (ex: vlog.json)
-
-    if (fs.lstatSync(fullPath).isDirectory()) {
-      allFiles = allFiles.concat(findAllFiles(fullPath));
-    } else if (file === 'nightlife.json') {
-      allFiles.push(fullPath);
-    }
-
-    // Check for all files in a directory
-
+    // SPECIFIC - Check for a specific file (ex: vlog.json)
     // if (fs.lstatSync(fullPath).isDirectory()) {
     //   allFiles = allFiles.concat(findAllFiles(fullPath));
-    // } else if (path.extname(file) === '.json') { // Check if the file has a .json extension
+    // } else if (file === filename+".json") {
     //   allFiles.push(fullPath);
     // }
+
+    // ALL - Check for all files in a directory
+    if (fs.lstatSync(fullPath).isDirectory()) {
+      allFiles = allFiles.concat(findAllFiles(fullPath));
+    // } else if (path.extname(file) === '.json') { // Check if the file has a .json extension
+    } else if (path.extname(file) === '.json' && path.basename(file) !== 'nightlife.json') {        
+      allFiles.push(fullPath);
+    }
 
   });
 
