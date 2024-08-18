@@ -81,13 +81,13 @@
     .full-width .card.vertical .resize{
         transform: rotate(90deg);
         z-index: 6;
-        width: 160%;
-        margin-left: -30%;
+        width: 150%;
+        margin-left: -25%;
         border: 2px solid white;
     }
 
     .card.mobile-full.vertical:nth-child(2n + 2) .resize{
-        margin-left: -156%;
+        margin-left: -151%;
         left: -2px !important;
     }
 
@@ -99,8 +99,8 @@
     .card.mobile-full.vertical .resize{
         transform: rotate(90deg);
         z-index: 5;
-        width: 315%;
-        margin-left: -56%;
+        width: 305%;
+        margin-left: -51%;
         border: 2px solid white;
     }
 }

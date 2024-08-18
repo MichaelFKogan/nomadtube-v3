@@ -181,8 +181,11 @@ a.active{
     right: 2px;
 }
 
+.rotate-card{
+    /* background: black; */
+}
+
 .full-width .rotate-card{
-    top: 2px;
     width: 36px;
     height: 36px;
 }
@@ -192,11 +195,15 @@ a.active{
     height: 18%;
 }
 
+.full-width .vertical .close-card{
+    display: block;
+}
+
 .vertical .rotate-card,
 .grid .mobile-full.horizontal .rotate-card,
 .masonry .mobile-full.horizontal .rotate-card{
-    left: 2px;
-    top: 2px;
+    right: 2px;
+    bottom: 2px;
 }
 
 .card.vertical .rotate-card,
