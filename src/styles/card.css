@@ -47,7 +47,7 @@
     }
 
     .cards-wrapper.grid .card{
-        width: calc(50% - 6px) !important;
+        width: calc(50% - 4px) !important;
     }
 
     .cards-wrapper.grid .card.mobile-normal:nth-child(5n + 5) .image-plus{display: flex;}
