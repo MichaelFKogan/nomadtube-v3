@@ -392,7 +392,7 @@ h2 {
   }
 
   .hp-quick-links {
-    background-color: white;
+    background: white;
     padding-bottom: 0px;
     border-bottom: 0px solid #ccc;
     margin-bottom: 25px;

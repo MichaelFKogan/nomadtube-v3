@@ -156,10 +156,10 @@
 
 
 .uae-img {background-image: url('../assets/img/banners/uae-banner.jpeg') !important;}
-.dubai-img {background-image: url('../assets/img/banners/dubai-banner.jpeg') !important;}
+.dubai-img {background-image: url('../assets/img/banners/dubai-banner.jpeg') !important; background-position-y: 80% !important;}
 .egypt-img {background-image: url('../assets/img/banners/egypt-banner.jpeg') !important;}
-.turkey-img {background-image: url('../assets/img/banners/turkey-banner.jpeg') !important;}
-.istanbul-img {background-image: url('../assets/img/banners/istanbul-banner.jpeg') !important;}
+.turkey-img {background-image: url('../assets/img/banners/turkey-banner.jpeg') !important; background-position-y: 55% !important;}
+.istanbul-img {background-image: url('../assets/img/banners/istanbul-banner.jpeg') !important; background-position-y: 36% !important;}
 .israel-img {background-image: url('../assets/img/banners/israel-banner.jpeg') !important;}
 .telaviv-img {background-image: url('../assets/img/banners/telaviv-banner.jpeg') !important;}
 
