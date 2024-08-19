@@ -9,17 +9,38 @@
     .card {
         width: calc(20% - 2px);
     }
+
+    .card.small .resize{
+        border: 2px solid white;
+    }
+    .card.medium .resize,
+    .card.large .resize{
+        border: 3px solid white;
+    }
 }
 
 @media(max-width: 1440px) and (min-width: 1025px){
     .card {
         width: calc(25% - 2px);
     }
+    .card.small .resize{
+        border: 2px solid white;
+    }
+    .card.medium .resize,
+    .card.large .resize{
+        border: 3px solid white;
+    }
 }
 
 @media(max-width: 1025px) and (min-width: 769px){
     .card {
         width: calc(25% - 2px);
+    }
+    .card.tablet-small .resize{
+        border: 2px solid white;
+    }
+    .card.tablet-medium .resize{
+        border: 3px solid white;
     }
 }
 
