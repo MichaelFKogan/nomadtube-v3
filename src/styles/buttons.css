@@ -442,11 +442,6 @@ a.active{
         text-wrap: nowrap;
         white-space: nowrap;
     }
-
-    .categories-wrapper.hp-quick-links a{
-        font-size: 19px;
-        box-shadow: 0px 0px 5px black;
-    }
 }
 
 @media(max-width: 500px){
@@ -470,7 +465,7 @@ a.active{
     }
 
     .home .inner-categories, .home-category-page .inner-categories{
-        row-gap: 5px;
+        row-gap: 13px;
     }
 
     .cities-wrapper a{

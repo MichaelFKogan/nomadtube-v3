@@ -63,12 +63,34 @@ function Category() {
             <Cities dataCities={dataCities} className={"desktop"}/>    
         </>)}
 
+        {currentPage === 1 && (<>
+        {/* CATEGORIES - MOBILE */}
+        <div className="categories-wrapper categories-row mobile">
+                <div className="inner-categories">
+                    <Link to={`/${continent}/${country}/${city}`}>
+                        <div>💯 All</div>
+                    </Link>
+                {dataCategories.categories.map((item, index) => (
+                    category === item.route ? (
+                        <Link to={`/${continent}/${country}/${city}/${item.route}`} key={index} className="active">
+                            <div>{item.name}</div>
+                        </Link>
+                    ) : (
+                        <Link to={`/${continent}/${country}/${city}/${item.route}`} key={index}>
+                            <div>{item.name}</div>
+                        </Link>
+                    )
+                ))}
+                </div>
+            </div>
+        </>)}
+
         {/* CATEGORY TITLE */}
         {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><div className="subtitle">{cityName}</div><h2>{item.name}</h2></div> : null))}    
 
         {currentPage === 1 && (<>
-        {/* CATEGORIES */}
-        <div className="categories-wrapper categories-row">
+        {/* CATEGORIES- DESKTOP */}
+        <div className="categories-wrapper categories-row desktop">
                 <div className="inner-categories">
                     <Link to={`/${continent}/${country}/${city}`}>
                         <div>💯 All</div>

@@ -58,6 +58,23 @@ function City() {
                 <Cities dataCities={dataCities} />
             </>)}
 
+            {currentPage === 1 && (<>
+                {/* CATEGORIES - MOBILE */}
+                <div className='categories-wrapper categories-row mobile'>
+                    <div className="inner-categories">
+                        {/* This route is for categories of cities */}
+                        <Link to={`/${continent}/${country}/${city}`} className="active">
+                            <div>💯 All</div>
+                        </Link>
+                        {dataCityCategories.categories.map((category, index) => (
+                            <Link to={`/${continent}/${country}/${city}/${category.route}`} key={index}>
+                                <div>{category.name}</div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </>)}
+
             {/* CATEGORY TITLE */}
             {dataCities.cities.map((item, index) => (
                 city === item.route ?
@@ -65,8 +82,8 @@ function City() {
                 : null))}
 
             {currentPage === 1 && (<>
-                {/* CATEGORIES */}
-                <div className='categories-wrapper categories-row'>
+                {/* CATEGORIES - DESKTOP */}
+                <div className='categories-wrapper categories-row desktop'>
                     <div className="inner-categories">
                         {/* This route is for categories of cities */}
                         <Link to={`/${continent}/${country}/${city}`} className="active">

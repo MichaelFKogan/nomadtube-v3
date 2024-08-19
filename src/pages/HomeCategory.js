@@ -46,7 +46,7 @@ function HomeCategory({
         <div className="home home-category-page">
 
             {currentPage === 1 && (<>
-            
+
             <HomeBanner />
 
             {/* COUNTRIES - DESKTOP */}
@@ -98,13 +98,41 @@ function HomeCategory({
             <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
             </>)}
 
+            {currentPage === 1 && (<>
+            {/* CATEGORIES - MOBILE */}
+            <div className={`categories-wrapper categories-row mobile`}>
+                <div className="inner-categories">
+                    <Link to={`/`}>
+                        <div>💯 All</div>
+                    </Link>
+                    {dataCategories.categories.map((item, index) => (
+                        item.imgRoute ? (
+                            <Link to={`/${item.route}`} className={`${item.imgRoute}-img background-img`} key={index} onClick={() => { scrollToTop(); }}>
+                                <div>{item.name}</div>
+                            </Link>
+                        ) : (
+                            homeCategory === item.route ? (
+                                <Link to={`/category/${item.route}`} key={index} className="active">
+                                    <div>{item.name}</div>
+                                </Link>
+                            ) : (
+                                <Link to={`/category/${item.route}`} key={index}>
+                                    <div>{item.name}</div>
+                                </Link>
+                            )
+                        )
+                    ))}
+                </div>
+            </div>
+            </>)}
+
             {/* CATEGORY TITLE */}
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title desktop`}><h2>{item.name}</h2></div> : null))}
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title mobile`}><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
 
             {currentPage === 1 && (<>
-            {/* CATEGORIES */}
-            <div className={`categories-wrapper categories-row`}>
+            {/* CATEGORIES - DESKTOP */}
+            <div className={`categories-wrapper categories-row desktop`}>
                 <div className="inner-categories">
                     <Link to={`/`}>
                         <div>💯 All</div>

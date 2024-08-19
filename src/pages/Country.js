@@ -49,6 +49,22 @@ function Country() {
 
                 </>)}
 
+            {currentPage === 1 && (<>
+            {/* CATEGORIES - MOBILE */}
+            <div className='categories-wrapper categories-row desktop'>
+                <div className="inner-categories">
+                    <Link to={`/${continent}/${country}`} className="active">
+                        <div>💯 All</div>
+                    </Link>
+                    {dataCategories.categories.map((category, index) => (
+                        <Link to={`/${continent}/${country}/category/${category.route}`} key={index}>
+                            <div>{category.name}</div>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+            </>)}
+
             {/* CATEGORY TITLE */}
             <div className="category-title">
                 <div className="subtitle">{dataCities.noemoji}</div>
@@ -56,8 +72,8 @@ function Country() {
             </div>
 
             {currentPage === 1 && (<>
-            {/* CATEGORIES */}
-            <div className='categories-wrapper categories-row'>
+            {/* CATEGORIES - DESKTOP */}
+            <div className='categories-wrapper categories-row desktop'>
                 <div className="inner-categories">
                     <Link to={`/${continent}/${country}`} className="active">
                         <div>💯 All</div>
