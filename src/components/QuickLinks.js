@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../styles/quicklinks.css"
 
-function QuickLinks({ categoriesDropdown, handleCategoriesDropdown}) {
+function QuickLinks({ categoriesDropdown, handleCategoriesDropdown, closeMobileMenu}) {
 
     const scrollToTop = () => {
         document.documentElement.scrollTop = 0;
@@ -21,15 +21,15 @@ function QuickLinks({ categoriesDropdown, handleCategoriesDropdown}) {
                 <div className="inner-categories justify-center">
 
                 <h2 className="text-center">🔗 Quick Links</h2>
-                    <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🏝 Bali Vlog</div></Link>
-                    <Link to={`/asia/japan/category/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
-                    <Link to={`/asia/taiwan/category/bubbletea`} className="taiwan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🧋 Taiwan Bubble Tea</div></Link>
-                    <Link to={`/asia/thailand/bangkok/khaosanroad`} className="bangkok-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🍻 Khao San Road</div></Link>
-                    <Link to={`/asia/korea/seoul/cafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>☕️ Seoul Cafe Tour</div></Link>
-                    <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🌙 Full Moon Party</div></Link>
-                    <Link to={`/asia/vietnam/category/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
-                    <Link to={`/europe/germany/category/oktoberfest`} className="germany-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🍺 Oktoberfest</div></Link>
-                    <Link to={`/northamerica/newyork/category/vlog`} className="newyork-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🗽 New York Vlog</div></Link>
+                    <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🏝 Bali Vlog</div></Link>
+                    <Link to={`/asia/japan/category/walkingtour`} className="japan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🇯🇵 Japan Walking Tour</div></Link>
+                    <Link to={`/asia/taiwan/category/bubbletea`} className="taiwan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🧋 Taiwan Bubble Tea</div></Link>
+                    <Link to={`/asia/thailand/bangkok/khaosanroad`} className="bangkok-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🍻 Khao San Road</div></Link>
+                    <Link to={`/asia/korea/seoul/cafetour`} className="seoul-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>☕️ Seoul Cafe Tour</div></Link>
+                    <Link to={`/asia/thailand/kophangan/fullmoonparty`} className="kophangan-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🌙 Full Moon Party</div></Link>
+                    <Link to={`/asia/vietnam/category/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
+                    <Link to={`/europe/germany/category/oktoberfest`} className="germany-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🍺 Oktoberfest</div></Link>
+                    <Link to={`/northamerica/newyork/category/vlog`} className="newyork-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🗽 New York Vlog</div></Link>
                 </div>
             </div>
         </>

@@ -353,7 +353,8 @@ a.active{
     .argentina .cities-wrapper .buenosaires-img,
     .germany .cities-wrapper .berlin-img,
     .france .cities-wrapper .paris-img,
-    .croatia .cities-wrapper .zagreb-img{
+    .croatia .cities-wrapper .zagreb-img,
+    .turkey  .cities-wrapper .istanbul-img{
         width: 100%;
     }
 

@@ -193,7 +193,7 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
 
             </div>
             
-            <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />    
+            <QuickLinks scrollToTop={scrollToTop} closeMobileMenu={closeMobileMenu} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />    
             
             <AsiaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleAsiaMenu={toggleAsiaMenu} asiaMenu={asiaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
             <SouthAmericaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} southAmericaMenu={southAmericaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
