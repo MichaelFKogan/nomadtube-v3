@@ -132,6 +132,10 @@ h2 {
   justify-content: center;
 }
 
+.justify-start {
+  justify-content: start !important;
+}
+
 .space-between {
   justify-content: space-between;
 }

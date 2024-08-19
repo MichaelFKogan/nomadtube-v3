@@ -1,10 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const continent = "middleeast"
+const continent = "northamerica"
 
-const country = "turkey";
-const filename = country;
+const country = "newyork";
+// const filename = country;
 
 // const country = "israel"
 // const city = "telaviv"
@@ -18,6 +18,7 @@ const filename = country;
 // const filename = "cost"
 // const filename = "coworking"
 // const filename = "nightlife"
+const filename = "foodtour"
 
 // Define the base directory
 const baseDir = path.join(__dirname, '..', 'src', 'data', continent, country);
@@ -32,19 +33,19 @@ function findAllFiles(dir) {
     const fullPath = path.join(dir, file);
 
     // ALL - Check for all files in a directory
-    if (fs.lstatSync(fullPath).isDirectory()) {
-        allFiles = allFiles.concat(findAllFiles(fullPath));
-        // } else if (path.extname(file) === '.json') { // Check if the file has a .json extension
-        } else if (path.extname(file) === '.json' && path.basename(file) !== 'nightlife.json') {        
-        allFiles.push(fullPath);
-        }
-
-    // SPECIFIC - Check for a specific file (ex: vlog.json)
         // if (fs.lstatSync(fullPath).isDirectory()) {
         // allFiles = allFiles.concat(findAllFiles(fullPath));
-        // } else if (file === filename+".json") {
+        // // } else if (path.extname(file) === '.json') { // Check if the file has a .json extension
+        // } else if (path.extname(file) === '.json' && path.basename(file) !== 'nightlife.json') {        
         // allFiles.push(fullPath);
         // }
+
+    // SPECIFIC - Check for a specific file (ex: vlog.json)
+        if (fs.lstatSync(fullPath).isDirectory()) {
+        allFiles = allFiles.concat(findAllFiles(fullPath));
+        } else if (file === filename+".json") {
+        allFiles.push(fullPath);
+        }
 
   });
 

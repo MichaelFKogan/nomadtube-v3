@@ -354,7 +354,9 @@ a.active{
     .germany .cities-wrapper .berlin-img,
     .france .cities-wrapper .paris-img,
     .croatia .cities-wrapper .zagreb-img,
-    .turkey  .cities-wrapper .istanbul-img{
+    .turkey  .cities-wrapper .istanbul-img,
+    .uae .cities-wrapper .dubai-img,
+    .israel .cities-wrapper .telaviv-img{
         width: 100%;
     }
 
