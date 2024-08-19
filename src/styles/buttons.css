@@ -103,7 +103,7 @@ button {
 @media(min-width: 769px) and (max-width: 1100px){
 
     .categories-wrapper.hp-quick-links a{
-        width: calc(25% - 8px);
+        width: calc(25% - 12px);
     }
 
 }
@@ -472,7 +472,7 @@ a.active{
     }
 
     .home .inner-categories, .home-category-page .inner-categories{
-        row-gap: 16px;
+        row-gap: 8px;
     }
 
     .cities-wrapper a{

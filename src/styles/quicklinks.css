@@ -158,7 +158,7 @@
 .quicklinks-countries #home-categories .inner-categories{
     background: rgba(0,0,0,0);
     padding-top: 0px;
-    row-gap: 10px;
+    row-gap: 16px;
 }
 
 .quicklinks-countries #home-categories .inner-categories h2{
