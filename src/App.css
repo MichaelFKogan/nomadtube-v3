@@ -246,12 +246,14 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: auto;
-  column-gap: 10px;
-  row-gap: 10px;
-  /* max-width: 1400px; */
-  margin-bottom: 10px;
+
   width: 100%;
+
+  row-gap: 16px;
+  column-gap: 16px;
+
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 /* Hide Cities on City Page and City Category Page */
@@ -274,8 +276,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 16px;
+  row-gap: 16px;
   margin: auto;
 }
 
@@ -636,8 +638,6 @@ hr {
 
 @media(max-width: 500px) {
   .categories-wrapper.hp-quick-links a {
-    width: 80%;
-    margin: auto;
-    min-width: 280px;
+    margin: auto; 
   }
 }
