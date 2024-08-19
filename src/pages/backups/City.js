@@ -111,7 +111,7 @@ function City() {
         ))}
 
         {/* CITIES */}
-            <Cities dataCities={dataCities} className={"desktop"} />
+            <Cities dataCities={dataCities} />
 
 
         {/* <h2 style={{fontFamily: "Edo", fontWeight: "100", fontSize: "2em", marginTop: "10px", marginBottom: "5px"}}>Cities</h2> */}

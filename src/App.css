@@ -2,12 +2,13 @@
   .App {
     /* max-width: 1800px; */
     margin: auto;
-    border: 2px solid #eee
+    /* border: 2px solid #eee */
   }
 }
 
 .App {
   text-align: center;
+  background: #DFE5F2;
 }
 
 .App-logo {
@@ -253,17 +254,19 @@ h2 {
   width: 100%;
 }
 
+/* Hide Cities on City Page and City Category Page */
 .city-page .cities-wrapper, .category-page .cities-wrapper{
   display: none;
 }
 
-.categories-wrapper {
-  padding: 5px 0px 20px 0px;
+.categories-wrapper.categories-row {
+  width: calc(100% - 16px);
+  margin: auto;
+  margin-bottom: 40px;
   z-index: 3;
-  background: linear-gradient(45deg, #eee, transparent);
-  /* background: #eee; */
-  /* border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc; */
+
+  border: 2px solid black;
+  box-shadow: 4px 4px 0px 0px black;
 }
 
 .inner-categories {
@@ -273,18 +276,7 @@ h2 {
   flex-wrap: wrap;
   column-gap: 10px;
   row-gap: 10px;
-  /* max-width: 1300px; */
   margin: auto;
-}
-
-.categories-row .inner-categories {
-  column-gap: 5px;
-  row-gap: 5px;
-}
-
-.home .inner-categories,
-.home-category-page .inner-categories {
-  /* margin-top: 10px; */
 }
 
 .category-title h2 {
@@ -293,10 +285,25 @@ h2 {
 
 .category-title {
   position: sticky;
+
+  width: 99%;
   top: 0px;
-  padding: 15px 0px;
-  /* background-color: white; */
+
+  display: flex;
+  justify-content: center;
+
+  background: white;
+  margin: auto;
+  padding: 20px 0px;
   z-index: 4;
+
+  border: 2px solid black;
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px 0px black;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
 }
 
 .total-videos {
@@ -318,6 +325,12 @@ h2 {
   /* margin-bottom: 200px; */
 }
 
+.black-bar-title h2 {
+  font-family: "Edo";
+  font-weight: 100;
+  margin: 0px;
+}
+
 
 @media(min-width: 769px) {
   .mobile {
@@ -325,53 +338,32 @@ h2 {
   }
 
   .black-bar-title {
+    display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    /* background: black; */
-    background: linear-gradient(45deg, black, rgba(0, 0, 0, .9));
-    color: white;
+
+    width: 100%;
+
+    /* background: #4d80E6; */
+    color: black;
+
     padding: 15px;
-    margin-top: 25px;
-    /* border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc; */
-    box-shadow: 0px 2px 5px black;
-    width: calc(100% - 16px);
-    margin: 25px auto 10px auto;
-    border-radius: 4px;
+    margin: 25px auto 0px auto;
+
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black; */
+    /* box-shadow: 4px 4px 0px 0px black; */
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
   }
 
   .black-bar-title h2 {
-    font-family: "Edo";
-    font-weight: 100;
     font-size: 30px;
-    margin: 0px;
   }
 
   .cards-wrapper {
     padding: 0px 1px;
-  }
-
-  .category-title {
-    padding: 20px 0px;
-    /* background: black; */
-    background: linear-gradient(180deg, black, rgba(0, 0, 0, .9));
-    color: white;
-    z-index: 4;
-    /* border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc; */
-    box-shadow: 0px 0px 5px black;
-    width: 100%;
-    margin: 0px auto 0px auto;
-    /* border-radius: 4px; */
-    height: 80px;
-  }
-
-  .categories-wrapper {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 15px 0px 15px 0px;
-    margin-bottom: 10px;
-    /* margin-top: 15px; */
   }
 
   .category-title h2 {
@@ -397,7 +389,6 @@ h2 {
   }
 
   .hp-quick-links {
-    background: white;
     padding-bottom: 0px;
     border-bottom: 0px solid #ccc;
     margin-bottom: 25px;
@@ -424,23 +415,8 @@ h2 {
     display: none !important;
   }
 
-  .black-bar-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: white;
-
-    padding: 12px 20px 5px 20px;
-    cursor: pointer;
-  }
-
   .black-bar-title h2 {
-    font-family: "Edo";
-    font-weight: 100;
     font-size: 26px;
-    color: black;
-    margin: 0px;
   }
 
   .black-bar-title svg {
@@ -454,29 +430,6 @@ h2 {
   .home .mobile-menu {
     flex-direction: column;
     align-items: baseline;
-    /* position: relative; */
-  }
-
-  .home .category-title,
-  .category-title {
-    margin: 0px;
-    padding: 15px 5px;
-    background: black;
-    background: linear-gradient(180deg, black, rgba(0, 0, 0, .9));
-    color: white;
-    box-shadow: 0px 0px 5px black;
-    /* margin-bottom: 5px; */
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .home .category-title {
-    padding: 15px 5px;
-  }
-
-  .category-title {
-    display: flex;
-    flex-direction: column;
   }
 
   .category-title .subtitle {
@@ -488,11 +441,6 @@ h2 {
     color: #666;
   }
 
-  .home .category-title {
-    /* margin-top: 10px; */
-    margin-bottom: 0px;
-  }
-
   .home .category-title h2,
   .category-title h2 {
     font-family: "Edo";
@@ -502,13 +450,6 @@ h2 {
     white-space: nowrap;
     overflow: hidden;
   }
-
-  .home-category-page .category-title {
-    /* margin-bottom: 10px; */
-    padding: 15px 5px;
-  }
-
-  /* .home-category-page .total-videos{margin-right: 3px;} */
 
   .cities-wrapper {
     margin-bottom: 0px;
@@ -561,21 +502,16 @@ h2 {
   }
 
   .home .categories-wrapper {
-    padding-top: 0px;
-    padding-right: 0px;
-    margin-right: 0px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .categories-wrapper {
     padding: 0px 0px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    /* margin-bottom: 5px; */
-    /* margin-top: 5px; */
   }
 
   .hp-quick-links,
@@ -603,10 +539,8 @@ h2 {
     column-gap: 5px;
     row-gap: 5px;
     max-width: 100%;
-    /* margin: auto 5px; */
     width: 100%;
     padding: 10px 0px;
-    background: #f1f1f1;
   }
 
   .hp-quick-links .inner-categories {
@@ -630,7 +564,7 @@ h2 {
     row-gap: 5px;
     max-width: 1300px;
     margin: auto;
-    padding: 10px 5px;
+    padding: 20px 5px;
   }
 
   .home .categories-row .inner-categories {

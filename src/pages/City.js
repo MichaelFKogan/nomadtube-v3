@@ -55,7 +55,7 @@ function City() {
         ))}
 
         {/* CITIES */}
-            <Cities dataCities={dataCities} className={"desktop"} />
+            <Cities dataCities={dataCities} />
 
         {/* CATEGORIES */}
             <div className='categories-wrapper categories-row'>

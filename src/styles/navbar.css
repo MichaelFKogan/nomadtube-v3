@@ -1,14 +1,14 @@
 .navbar{
     height: 60px;
-    background:black;
-    background: linear-gradient(180deg, black, rgba(0,0,0,.9));
+    background:white;
     padding: 0px 10px;
-
     width: 100%;
     margin: auto;
-    box-shadow: 0px 2px 5px black;
     border-radius: 2px;
     position: relative;
+
+    border-bottom: 4px solid black;
+    margin-bottom: 20px;
 }
 
 .navbar-white{
@@ -27,13 +27,11 @@
     color: #666;
 }
 
-
-
 .nav-menu{
     font-family: "Nunito Black";
     font-size: 17px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0px 7px;
     cursor: pointer;
@@ -58,7 +56,7 @@
 }
 
 .nav-menu:hover{
-    color: #ccc;
+    color: rgba(0,0,0,.8);
 }
 
 .hamburger{

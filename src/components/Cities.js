@@ -11,6 +11,7 @@ function Cities({dataCities}) {
 
     return (
         <>
+        {/* DESKTOP: Showing on Homepage, HomeCategory, Country, and CountryCategory */}
             <div className={`cities-wrapper desktop`}>
                 <div className="inner-cities">
 
@@ -28,6 +29,7 @@ function Cities({dataCities}) {
                 </div>
             </div>
 
+        {/* MOBILE: Showing on Homepage, HomeCategory, Country, and CountryCategory */}
             <div className={`cities-wrapper mobile`}>
                 <div className="inner-cities">
                     {city &&

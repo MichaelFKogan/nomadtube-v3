@@ -30,18 +30,23 @@
 }
 
 .home-banner, .page-banner {
-    width: 100%;
-    background-size: cover; /* Ensure the image covers the entire div */
-    background-position-y: 40%;
-    background-repeat: no-repeat; /* Prevent the image from repeating */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Optional: Text color for content inside the banner */
-    /* margin: 25px auto 10px auto; */
+
+    width: calc(100% - 16px);
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position-y: 40%;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+
+    color: white;
+    margin: auto;
     margin-bottom: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-    border-radius: 4px;
+
+    border: 2px solid black;
+
+    box-shadow: 4px 4px 0px 0px black;
+
 }
 
 /* Optional: Style any content inside the banner */
@@ -110,13 +115,6 @@
 
     .home-banner{width: 100%;}
     .page-banner {width: 100%;}
-
-    .home-banner, .page-banner {
-        margin: 0px;
-        /* margin-bottom: 5px; */
-        box-shadow: 0px 0px 5px black;
-        border-radius: 0px;
-    }
 
     .home-banner{
         margin: 0px;

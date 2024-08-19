@@ -1,20 +1,20 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 import { useParams, Link, useSearchParams } from 'react-router-dom';
 
 import HomeBanner from '../components/HomeBanner';
-import HomeCities from '../components/HomeCities';
 import TotalVideos from "../components/TotalVideos"
-import Breadcrumbs from "../components/Breadcrumbs"
 import Cards from "../components/Cards"
 import Pagination from "../components/Pagination"
-
 import QuickLinks from '../components/QuickLinks';
 import QuickLinkCountries from '../components/QuickLinkCountries';
 import "../styles/home.css"
 
 const ITEMS_PER_PAGE = 100;
 
-function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesDropdown, handleCountriesDropdown, categoriesDropdown, handleCategoriesDropdown }) {
+function HomeCategory({  
+    countriesDropdown, handleCountriesDropdown, 
+    categoriesDropdown, handleCategoriesDropdown }) {
+
     const { continent, homeCategory, country, city, category } = useParams();
     const data = require(`../data/category/${homeCategory}.json`);
     const dataCities = require(`../data/home-cities.json`);
@@ -49,32 +49,14 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
             <>
             <HomeBanner />
 
-            {/* <div className='d-flex space-between black-bar-title' onClick={handleContinentsDropdown}>
-            <svg style={{opacity:"0", visibility: "0"}} xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-            <h2 className="">🌎 Continents</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
-            </div> */}
-
-            {/* CONTINENTS */}
-            {/* <div className={`cities-wrapper continents-wrapper ${continentsDropdown ? 'd-flex' : 'd-none'}`}>
-                <Link to={`/asia`} className="asia-img background-img" onClick={() => { scrollToTop(); }}><div>⛩ Asia</div></Link>
-                <Link to={`/southamerica`} className="southamerica-img background-img" onClick={() => { scrollToTop(); }}><div>💃🏻 South America</div></Link>
-                <Link to={`/europe`} className="europe-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇺 Europe</div></Link>
-                <Link to={`/middleeast`} className="middleeast-img background-img" onClick={() => { scrollToTop(); }}><div>🕋 Middle East</div></Link>
-            </div> */}
-
-
-            {/* QUICK LINKS - DESKTOP */}
-            <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🌎 Countries</h2></div>
-
-            {/* COUNTRIES */}
+            {/* COUNTRIES - DESKTOP */}
+            <div className='black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🌎 Countries</h2></div>
             <div className={`cities-wrapper desktop`}>
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
                 <Link to={`/asia/japan`} className="japan-img background-img" onClick={() => { scrollToTop(); }}><div>🇯🇵 Japan</div></Link>
                 <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { scrollToTop(); }}><div>🇰🇷 Korea</div></Link>
                 <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam</div></Link>
-
                 <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { scrollToTop(); }}><div>🇧🇷 Brazil</div></Link>
                 <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇴 Colombia</div></Link>
                 <Link to={`/southamerica/mexico`} className="mexico-img background-img" onClick={() => { scrollToTop(); }}><div>🇲🇽 Mexico</div></Link>
@@ -86,8 +68,7 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
 
 
             {/* QUICK LINKS - DESKTOP */}
-            <div className='d-flex space-between black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
-
+            <div className='black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
             <div id="home-categories" className={`categories-wrapper hp-quick-links desktop`}>
                 <div className="inner-categories justify-center">
                     <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali Vlog</div></Link>
@@ -104,26 +85,21 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
             </div>
 
 
-            {/* COUNTRIES */}
-            <div className='d-flex space-between black-bar-title mobile quick-links-countries-btn-mobile' onClick={openCountryMenu}>
+            {/* COUNTRIES - MOBILE */}
+            <div className='d-flex space-between mobile quick-links-countries-btn-mobile' onClick={openCountryMenu}>
                 <h2 className="">🌏 Countries</h2>
             </div>
-
             <QuickLinkCountries openCountryMenu={openCountryMenu} countryMenu={countryMenu} setCountryMenu={setCountryMenu} />
 
-
             {/* QUICK LINKS - MOBILE */}
-
-            <div className='d-flex space-between black-bar-title mobile quick-links-btn-mobile' onClick={handleCategoriesDropdown}>
+            <div className='mobile quick-links-btn-mobile' onClick={handleCategoriesDropdown}>
                 <h2 className="">🔗 Quick Links</h2>
             </div>
-
-
             <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
 
 
             {/* CATEGORIES */}
-
+            <div className='black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">📁 Categories</h2></div>
             <div className={`categories-wrapper categories-row`}>
                 <div className="inner-categories">
                     <Link to={`/`}>
@@ -156,7 +132,6 @@ function HomeCategory({ continentsDropdown, handleContinentsDropdown, countriesD
             {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title mobile`}><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
 
             {/* BREADCRUMBS */}
-            {/* <Breadcrumbs/> */}
             <div className='d-flex flex-col'>
                 {currentPage !== 1 && (
                     <div className="d-flex align-center space-between breadcrumb-page-back">
