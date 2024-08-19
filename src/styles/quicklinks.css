@@ -81,14 +81,8 @@
     margin-top: 0px !important;
 }
 
-.hp-quick-links.d-flex .inner-categories{
-    /* background: rgba(0, 0, 0, .95); */
-    background:white;
-}
-
 .categories-wrapper.hp-quick-links a{
     border: 0px solid #ccc;
-    box-shadow: 0 0 0px #ccc;
 }
 
 #close-quick-links{

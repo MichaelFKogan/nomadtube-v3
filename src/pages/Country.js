@@ -51,7 +51,7 @@ function Country() {
 
             {currentPage === 1 && (<>
             {/* CATEGORIES - MOBILE */}
-            <div className='categories-wrapper categories-row desktop'>
+            <div className='categories-wrapper categories-row mobile'>
                 <div className="inner-categories">
                     <Link to={`/${continent}/${country}`} className="active">
                         <div>💯 All</div>

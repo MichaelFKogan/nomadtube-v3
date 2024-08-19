@@ -168,7 +168,7 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
 
 
        
-            <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`} style={{overflowY: "visible"}}>
+            <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex shortcuts`} style={{overflowY: "visible"}}>
                 <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
                     <h2 className="text-center" style={{marginTop:"20px"}}>⏩ Shortcuts</h2>
                     <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { closeMobileMenu(); scrollToTop(); }}><div>🏝 Bali</div></Link>

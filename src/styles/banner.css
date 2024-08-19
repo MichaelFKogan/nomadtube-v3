@@ -41,9 +41,8 @@
 
     color: white;
     margin: auto;
-    margin-bottom: 10px;
 
-    border-bottom: 4px solid black;
+    border-bottom: 3px solid black;
 
     /* box-shadow: 4px 4px 0px 0px black; */
 
@@ -108,6 +107,12 @@
 
     .banner-subtitle{
         font-size: 28px;
+    }
+}
+
+@media(min-width: 769px){
+    .home-banner, .page-banner {
+        margin-bottom: 15px;
     }
 }
 

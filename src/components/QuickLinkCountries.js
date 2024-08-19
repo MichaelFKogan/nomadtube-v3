@@ -76,7 +76,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, scro
 
                     <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginTop: "25px", marginBottom: "5px"}}/>
 
-                <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex`}>
+                <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex shortcuts`}>
                 <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
                     <h2 className="text-center" style={{marginTop:"20px"}}>⏩ Shortcuts</h2>
                     <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
