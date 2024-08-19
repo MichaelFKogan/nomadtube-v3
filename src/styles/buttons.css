@@ -186,13 +186,13 @@ a.active{
 }
 
 .full-width .rotate-card{
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
 }
 
 .grid .rotate-card{
-    width: 10%;
-    height: 18%;
+    width: 32px;
+    height: 32px;
 }
 
 .full-width .vertical .close-card{
@@ -212,7 +212,7 @@ a.active{
 
 .grid .mobile-full.horizontal .rotate-card{
     right: 0px;
-    top: 55px;
+    top: 35px;
 }
 
 .card.vertical .rotate-card,
@@ -293,8 +293,8 @@ a.active{
     .card-button.close-card{
         top: 0px !important;
         right: 0px;
-        width: 10%;
-        height: 18%;
+        width: 32px;
+        height: 32px;
         /* border-radius: 4px; */
         border-bottom-left-radius: 4px;
         background: rgba(0, 0, 0, .6);

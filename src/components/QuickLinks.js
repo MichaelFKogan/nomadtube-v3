@@ -30,7 +30,7 @@ function QuickLinks({ categoriesDropdown, handleCategoriesDropdown, closeMobileM
                     <Link to={`/asia/vietnam/category/streetfood`} className="vietnam-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🇻🇳 Vietnam Street Food</div></Link>
                     <Link to={`/europe/germany/category/oktoberfest`} className="germany-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🍺 Oktoberfest</div></Link>
                     <Link to={`/northamerica/newyork/category/foodtour`} className="newyork-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🍕 New York Food Tour</div></Link>
-                    <Link to={`/northamerica/sanfrancisco/category/vlog`} className="sanfrancisco-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🇺🇸 San Francisco Food Tour</div></Link>
+                    <Link to={`/northamerica/sanfrancisco/category/vlog`} className="sanfrancisco-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); closeMobileMenu(); }}><div>🇺🇸 San Francisco Vlog</div></Link>
                 </div>
             </div>
         </>
