@@ -265,8 +265,8 @@ h2 {
   margin-bottom: 40px;
   z-index: 3;
 
-  border: 2px solid black;
-  box-shadow: 4px 4px 0px 0px black;
+  /* border: 2px solid black;
+  box-shadow: 4px 4px 0px 0px black; */
 }
 
 .inner-categories {
@@ -286,7 +286,7 @@ h2 {
 .category-title {
   position: sticky;
 
-  width: 99%;
+  width: calc(100% - 16px);
   top: 0px;
 
   display: flex;
@@ -502,16 +502,12 @@ h2 {
   }
 
   .home .categories-wrapper {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     margin-top: 20px;
   }
 
   .categories-wrapper {
     padding: 0px 0px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
   }
 
   .hp-quick-links,
@@ -564,7 +560,6 @@ h2 {
     row-gap: 5px;
     max-width: 1300px;
     margin: auto;
-    padding: 20px 5px;
   }
 
   .home .categories-row .inner-categories {
