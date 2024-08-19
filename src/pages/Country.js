@@ -47,19 +47,6 @@ function Country() {
                     {/* CITIES */}
                     <Cities dataCities={dataCities} />
 
-                    {/* CATEGORIES */}
-                    <div className='categories-wrapper categories-row'>
-                        <div className="inner-categories">
-                            <Link to={`/${continent}/${country}`} className="active">
-                                <div>💯 All</div>
-                            </Link>
-                            {dataCategories.categories.map((category, index) => (
-                                <Link to={`/${continent}/${country}/category/${category.route}`} key={index}>
-                                    <div>{category.name}</div>
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
                 </>)}
 
             {/* CATEGORY TITLE */}
@@ -68,6 +55,23 @@ function Country() {
                 <h2>💯 All</h2>
             </div>
 
+            {currentPage === 1 && (<>
+            {/* CATEGORIES */}
+            <div className='categories-wrapper categories-row'>
+                <div className="inner-categories">
+                    <Link to={`/${continent}/${country}`} className="active">
+                        <div>💯 All</div>
+                    </Link>
+                    {dataCategories.categories.map((category, index) => (
+                        <Link to={`/${continent}/${country}/category/${category.route}`} key={index}>
+                            <div>{category.name}</div>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+            </>)}
+
+            {/* PAGE BACK and PAGE NUMBER */}
             <div className="d-flex align-center space-between breadcrumb-page-back">
                 <div className="page-back d-flex align-center">
                     {currentPage === 1 ? (
@@ -91,6 +95,7 @@ function Country() {
                 )}
             </div>
 
+            {/* BREADCRUMBS */}
             <div className="breadcrumbs-and-videos">
                 <Breadcrumbs />
                 <TotalVideos data={data} className={"desktop"} />

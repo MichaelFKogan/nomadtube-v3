@@ -52,6 +52,7 @@ function Category() {
         <div className={`category-page ${country} ${city}`}>
 
         {currentPage === 1 && (<>
+
             {dataCities.cities.map((item, index) => (
                 city === item.route ? 
                     <PageBanner key={index} title={item.name} imgRoute={city} /> 
@@ -60,7 +61,12 @@ function Category() {
 
         {/* CITIES */}
             <Cities dataCities={dataCities} className={"desktop"}/>    
+        </>)}
 
+        {/* CATEGORY TITLE */}
+        {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><div className="subtitle">{cityName}</div><h2>{item.name}</h2></div> : null))}    
+
+        {currentPage === 1 && (<>
         {/* CATEGORIES */}
         <div className="categories-wrapper categories-row">
                 <div className="inner-categories">
@@ -82,9 +88,7 @@ function Category() {
             </div>
         </>)}
 
-        {/* CATEGORY TITLE */}
-        {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><div className="subtitle">{cityName}</div><h2>{item.name}</h2></div> : null))}    
-
+        {/* PAGE BACK and PAGE NUMBER */}
         <div className="d-flex align-center space-between breadcrumb-page-back">
                 <div className="page-back d-flex align-center">
                     {currentPage === 1 ? (

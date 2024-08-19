@@ -1,6 +1,6 @@
 .navbar{
     height: 60px;
-    /* background:white; */
+    background:black;
     padding: 0px 10px;
     width: 100%;
     margin: auto;
@@ -21,14 +21,14 @@
 
 .navbar-white .nav-logo:hover,
 .desktop.navbar-white .continents-menu .nav-menu.continent:hover{
-    color: #666;
+    color: rgba(0,0,0,.75);
 }
 
 .nav-menu{
     font-family: "Nunito Black";
     font-size: 17px;
     font-weight: bold;
-    color: black;
+    color: white;
     text-decoration: none;
     margin: 0px 7px;
     cursor: pointer;
@@ -53,7 +53,7 @@
 }
 
 .nav-menu:hover{
-    color: rgba(0,0,0,.8);
+    color: #ccc
 }
 
 .hamburger{

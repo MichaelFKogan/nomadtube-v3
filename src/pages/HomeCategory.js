@@ -45,8 +45,8 @@ function HomeCategory({
     return (
         <div className="home home-category-page">
 
-            {currentPage === 1 && (
-            <>
+            {currentPage === 1 && (<>
+            
             <HomeBanner />
 
             {/* COUNTRIES - DESKTOP */}
@@ -96,10 +96,14 @@ function HomeCategory({
                 <h2 className="">🔗 Quick Links</h2>
             </div>
             <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
+            </>)}
 
+            {/* CATEGORY TITLE */}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title desktop`}><h2>{item.name}</h2></div> : null))}
+            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title mobile`}><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
 
+            {currentPage === 1 && (<>
             {/* CATEGORIES */}
-            <div className='black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">📁 Categories</h2></div>
             <div className={`categories-wrapper categories-row`}>
                 <div className="inner-categories">
                     <Link to={`/`}>
@@ -124,14 +128,9 @@ function HomeCategory({
                     ))}
                 </div>
             </div>
-            </>
-            )}
+            </>)}
 
-            {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title desktop`}><h2>{item.name}</h2></div> : null))}
-            {dataCategories.categories.map((item, index) => (homeCategory === item.route ? <div className={`category-title mobile`}><h2>{item.name.length > 22 ? item.name.substring(0, 22) + "..." : item.name}</h2></div> : null))}
-
-            {/* BREADCRUMBS */}
+            {/* PAGE BACK and PAGE NUMBER*/}
             <div className='d-flex flex-col'>
                 {currentPage !== 1 && (
                     <div className="d-flex align-center space-between breadcrumb-page-back">
@@ -148,6 +147,7 @@ function HomeCategory({
                     </div>
                 )}
 
+                {/* BREADCRUMBS */}
                 <div className="breadcrumbs-and-videos">
                     <div className="breadcrumbs d-flex col-gap-5 align-center">
                         <Link to={"/"}><div>Home</div></Link><div>{`>`}</div>

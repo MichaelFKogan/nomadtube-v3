@@ -51,12 +51,12 @@ function Home({
     return (
         <div className="home">
 
-            {currentPage === 1 && (
-            <>
+            {currentPage === 1 && (<>
+
             <HomeBanner />
 
             {/* COUNTRIES - DESKTOP */}
-            <div className='=black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🌎 Countries</h2></div>
+            <div className='black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🌎 Countries</h2></div>
             <div className={`cities-wrapper desktop`}>
                 <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                 <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
@@ -74,7 +74,7 @@ function Home({
             </div>
 
             {/* QUICK LINKS - DESKTOP */}
-            <div className='=black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
+            <div className='black-bar-title desktop' onClick={handleCountriesDropdown}><h2 className="">🔗 Quick Links</h2></div>
             <div id="home-categories" className={`categories-wrapper hp-quick-links desktop`}>
                 <div className="inner-categories justify-center">
                     <Link to={`/asia/bali/category/vlog`} className="bali-img background-img" onClick={() => { scrollToTop(); handleCategoriesDropdown(); }}><div>🏝 Bali Vlog</div></Link>
@@ -102,37 +102,31 @@ function Home({
             </div>
 
             <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
-
-
-            {/* CATEGORIES */}
-            <h2 className="">📁 Categories</h2>
-            <div id="home-categories" className={`categories-wrapper categories-row`}>
-                <div className="inner-categories">
-                    <Link to={`/`} className="active"><div>💯 All</div></Link>
-                    <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
-
-                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
-                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
-
-                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
-                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
-                    <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
-
-                    <Link to={`/category/budgettravel`}><div>💵 Budget Travel</div></Link>
-                    <Link to={`/category/coworking`}><div>👨‍💻 Coworking</div></Link>
-                    <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
-                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
-
-
-                </div>
-            </div>
-            </>
-            )}
-
+            </>)}
 
             {/* CATEGORY TITLE */}
             <div className="category-title"><h2>💯 All</h2></div>
 
+            {currentPage === 1 && (<>
+            {/* CATEGORIES */}
+            <div id="home-categories" className={`categories-wrapper categories-row`}>
+                <div className="inner-categories">
+                    <Link to={`/`} className="active"><div>💯 All</div></Link>
+                    <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
+                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
+                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
+                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
+                    <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
+                    <Link to={`/category/budgettravel`}><div>💵 Budget Travel</div></Link>
+                    <Link to={`/category/coworking`}><div>👨‍💻 Coworking</div></Link>
+                    <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
+                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
+                </div>
+            </div>
+            </>)}
+
+            {/* PAGE BACK and PAGE NUMBER*/}
             <div className='d-flex flex-col'>
                 {currentPage !== 1 && (
                     <div className="d-flex align-center space-between breadcrumb-page-back">

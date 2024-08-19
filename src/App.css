@@ -8,7 +8,7 @@
 
 .App {
   text-align: center;
-  background: #DFE5F2;
+  /* background: #DFE5F2; */
 }
 
 .App-logo {
@@ -262,7 +262,7 @@ h2 {
 .categories-wrapper.categories-row {
   width: calc(100% - 16px);
   margin: auto;
-  margin-bottom: 40px;
+  margin-top: 10px;
   z-index: 3;
 
   /* border: 2px solid black;
@@ -279,31 +279,30 @@ h2 {
   margin: auto;
 }
 
-.category-title h2 {
-  margin: 0px;
-}
-
 .category-title {
   position: sticky;
 
-  width: calc(100% - 16px);
+  width: 100%;
   top: 0px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
-  background: white;
+  background: black;
   margin: auto;
   padding: 20px 0px;
   z-index: 4;
 
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   border-radius: 0px;
-  box-shadow: 4px 4px 0px 0px black;
+  /* box-shadow: 4px 4px 0px 0px black; */
+}
 
-  transition-property: all;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
+.category-title h2 {
+  margin: 0px;
+  color: white;
 }
 
 .total-videos {
@@ -342,16 +341,9 @@ h2 {
     justify-content: center;
 
     width: 100%;
-
-    /* background: #4d80E6; */
     color: black;
 
-    padding: 15px;
-    margin: 25px auto 0px auto;
-
-    /* border-top: 2px solid black;
-    border-bottom: 2px solid black; */
-    /* box-shadow: 4px 4px 0px 0px black; */
+    margin: 20px auto 20px auto;
 
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);

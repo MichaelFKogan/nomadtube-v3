@@ -41,14 +41,18 @@ function CountryCategory() {
     return (
         <div className={`country-category-page ${country}`}>
 
-            {currentPage === 1 && (
-            <>
+            {currentPage === 1 && (<>
+
             <PageBanner title={dataCities.name} imgRoute={country} />
 
             {/* CITIES */}
             <Cities dataCities={dataCities} />
+            </>)}
 
+            {/* CATEGORY TITLE */}
+            {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><div className="subtitle">{dataCities.noemoji}</div><h2>{item.name}</h2></div> : null))}
 
+            {currentPage === 1 && (<>
             {/* CATEGORIES */}
             <div className="categories-wrapper categories-row">
                 <div className="inner-categories">
@@ -70,9 +74,7 @@ function CountryCategory() {
             </div>
             </>)}
 
-            {/* CATEGORY TITLE */}
-            {dataCategories.categories.map((item, index) => (category === item.route ? <div className="category-title"><div className="subtitle">{dataCities.noemoji}</div><h2>{item.name}</h2></div> : null))}
-
+        {/* PAGE BACK and PAGE NUMBER */}
             <div className="d-flex align-center space-between breadcrumb-page-back">
                 <div className="page-back d-flex align-center">
                     {currentPage === 1 ? (
@@ -96,6 +98,7 @@ function CountryCategory() {
                 )}
             </div>
 
+            {/* BREACRUMBS */}
             <div className="breadcrumbs-and-videos">
                 <Breadcrumbs />
                 <TotalVideos data={data} className={"desktop"} />

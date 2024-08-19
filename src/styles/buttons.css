@@ -5,18 +5,23 @@ button {
 .card-button:hover {transform: scale(1.06);}
 .card-button:active {transform: scale(.98);}
 
+.categories-wrapper a:hover{
+    transform: translate(1px, 1px);
+}
+
 .cities-wrapper a:hover,
-.categories-wrapper a:hover,
 .categories-wrapper.hp-quick-links a:hover {
-    box-shadow: 0px 0px 0px black;
     transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px black;
+}
+
+.categories-wrapper a:active{
+    transform: translate(2px, 2px);
 }
 
 .cities-wrapper a:active,
-.categories-wrapper a:active,
 .categories-wrapper.hp-quick-links a:active {
-    box-shadow: 0px 0px 0px black;
-    transform: translate(4px, 4px);
+    transform: translate(6px, 6px);
 }
 
 .cities-wrapper a{
@@ -115,17 +120,16 @@ button {
 .categories-wrapper a{
     display: flex;
     align-items: center;
-    font-family: "Nunito Extra Bold";
+    /* font-family: "Nunito Extra Bold"; */
+    font-weight: 700;
     font-size: 14px;
     text-decoration: none;
-    background: white;
+    background: #0000000D;
     color: black;
     border-radius: 25px;
     padding: 8px 12px;
 
-    border: 2px solid black;
     border-radius: 8px;
-    box-shadow: 4px 4px 0px 0px black;
 
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
