@@ -454,7 +454,7 @@ a.active{
 @media(max-width: 500px){
 
     .categories-wrapper.hp-quick-links a{
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .home .continents-wrapper a,
@@ -472,7 +472,7 @@ a.active{
     }
 
     .home .inner-categories, .home-category-page .inner-categories{
-        row-gap: 13px;
+        row-gap: 8px;
     }
 
     .cities-wrapper a{
