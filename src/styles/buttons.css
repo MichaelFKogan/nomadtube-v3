@@ -202,7 +202,7 @@ a.active{
 .vertical .rotate-card,
 .masonry .mobile-full.horizontal .rotate-card{
     right: 2px;
-    bottom: 2px;
+    top: 2px;
 }
 
 .full-width .card.horizontal .rotate-card{
@@ -212,7 +212,7 @@ a.active{
 
 .grid .mobile-full.horizontal .rotate-card{
     right: 0px;
-    bottom: 0px;
+    top: 55px;
 }
 
 .card.vertical .rotate-card,
