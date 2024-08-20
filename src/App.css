@@ -296,7 +296,7 @@ h2 {
   padding: 20px 0px;
   z-index: 4;
 
-  border-top: 2px solid black;
+  border-top: 1px solid #666;
   border-bottom: 2px solid black;
   border-radius: 0px;
   /* box-shadow: 4px 4px 0px 0px black; */
