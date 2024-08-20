@@ -381,43 +381,21 @@ a.active{
         width: calc(48% - 8px)      
     }
 
-    /* .bali .cities-wrapper a, 
-    .canggu .cities-wrapper a,
-    .ubud .cities-wrapper a{
-        width: 100%
-    } */
-
     .korea .cities-wrapper a, 
     .seoul .cities-wrapper a{
-        width: 100%;
+        width: calc(100% - 5px);
     }
 
     .bali .cities-wrapper a{
-        width: calc(50% - 2.5px)
+        width: calc(50% - 8px)
     }
 
-    /* .japan .inner-cities,
-    .tokyo .inner-cities,
-    .osaka .inner-cities,
-    .kyoto .inner-cities{
-        overflow-y: visible;
-        padding-right: 2px;
-    } */
-
-    /* .japan .cities-wrapper a,
-    .tokyo .cities-wrapper a,
-    .osaka .cities-wrapper a,
-    .kyoto .cities-wrapper a{
-        min-width: 150px;
-        width: 100%;
-    } */
-
     .japan .cities-wrapper .tokyo-img{
-        width: 100%;
+        width: calc(100% - 5px);
     }
 
     .japan .cities-wrapper .kyoto-img{
-        width: calc(50% - 3px) !important;
+        width: calc(50% - 8px) !important;
     }
 
     .vietnam .cities-wrapper a{width: 100%}
