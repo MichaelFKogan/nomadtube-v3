@@ -180,6 +180,7 @@
         margin-bottom: 5px;
 
         border: 0px solid #000;
+        border-bottom: 4px solid black;
     }
 
     .page-banner{

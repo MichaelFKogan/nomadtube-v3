@@ -105,7 +105,7 @@
     box-shadow: 6px 6px 0px 0px black;
     border-radius: 0px;
     border: 2px solid black;
-    background: white;
+    background: aliceblue;
 
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
