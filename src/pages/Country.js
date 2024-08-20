@@ -52,7 +52,7 @@ function Country() {
             {currentPage === 1 && (<>
             {/* CATEGORIES - MOBILE */}
             <div className='categories-wrapper categories-row mobile'>
-                <div className="inner-categories">
+                <div className="inner-categories marquee">
                     <Link to={`/${continent}/${country}`} className="active">
                         <div>💯 All</div>
                     </Link>

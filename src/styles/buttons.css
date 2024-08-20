@@ -717,6 +717,35 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
 }
 
 
+
+@media(max-width: 768px){
+
+    .marquee{
+        animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 25px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+
+
 /* 
                                                                   o8o        .o8      .   oooo        
                                                                   `"'       "888    .o8   `888        
@@ -926,16 +955,6 @@ visibility: visible; /* Make it visible */
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-@media(max-width: 768px){
-    .back-to-top {
-        position: fixed;
-        bottom: 25px;
-        right: 15px;
-        width: 45px;
-        height: 45px;
-    }
 }
 
 .pagination .next:hover, .pagination .previous:hover, .back-to-top:hover {transform: scale(1.03);}
