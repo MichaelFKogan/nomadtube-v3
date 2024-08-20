@@ -90,6 +90,7 @@ function Home({
                 </div>
             </div>
 
+            <div className='d-flex col-gap-12 w-100 mt-10 justify-center align-center'>
             {/* COUNTRIES - MOBILE */}
             <div className='d-flex space-between mobile quick-links-countries-btn-mobile' onClick={openCountryMenu}>
                 <h2 className="">🌏 Countries</h2>
@@ -102,6 +103,8 @@ function Home({
             </div>
 
             <QuickLinks scrollToTop={scrollToTop} categoriesDropdown={categoriesDropdown} handleCategoriesDropdown={handleCategoriesDropdown} />
+            </div>
+
             </>)}
 
             {currentPage === 1 && (<>
