@@ -81,7 +81,7 @@
 }
 
 .spotify-player.enter-left {
-    right: 30px; /* Slide in to visible area */
+    right: 10px; /* Slide in to visible area */
 }
 
 .spotify-player.exit-right {
