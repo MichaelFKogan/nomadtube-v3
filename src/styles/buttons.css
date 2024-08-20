@@ -346,10 +346,10 @@ a.active{
     .cities-wrapper a{
         font-family: "Nunito Black";
         font-size: 17px;
-        box-shadow: 0px 3px 5px rgba(0,0,0,0.4);
+        /* box-shadow: 0px 3px 5px rgba(0,0,0,0.4); */
         width: auto;
         padding: 0px 20px;
-        width: calc(50% - 3px);
+        width: calc(50% - 8px);
     }
 
     /* .thailand .cities-wrapper .bangkok-img,
@@ -370,15 +370,15 @@ a.active{
     .turkey  .cities-wrapper .istanbul-img,
     .uae .cities-wrapper .dubai-img,
     .israel .cities-wrapper .telaviv-img{
-        width: 100%;
+        width: calc(100% - 5px);
     }
 
     .thailand .cities-wrapper .kophangan-img{
-        width: calc(50% - 3px) !important;
+        width: calc(50% - 8px) !important;
     }
 
     .continent-page .cities-wrapper a{
-        width: calc(48% - 2px)      
+        width: calc(48% - 8px)      
     }
 
     /* .bali .cities-wrapper a, 
@@ -502,9 +502,9 @@ a.active{
         align-items: center;
         justify-content: center;
 
-        border-radius: 4px;
+        /* border-radius: 4px; */
         /* box-shadow: 0px 2px 5px #ccc; */
-        white-space: nowrap;
+        /* white-space: nowrap; */
         /* width: 100%; */
     }
 

@@ -11,6 +11,12 @@
     transition: right .5s ease-in-out;
 } */
 
+@media(max-width: 768px){
+    .continent-page{
+        padding-bottom: 500px;
+    }
+}
+
 .continent-title{
     font-family: "Edo";
     font-weight: 100;

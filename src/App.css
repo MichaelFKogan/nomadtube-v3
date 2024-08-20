@@ -461,8 +461,8 @@ h2 {
     /* flex-wrap: nowrap; */
     /* flex-direction: column; */
 
-    column-gap: 5px;
-    row-gap: 10px;
+    column-gap: 12px;
+    row-gap: 12px;
     max-width: 100%;
     width: 100%;
 
