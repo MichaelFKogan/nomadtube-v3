@@ -164,7 +164,7 @@
 /* SIZES */
 .card.small .resize{width: 175%;}
 .card.medium .resize{width: 275%;}
-.card.large .resize{width: 402%;}
+.card.large .resize{width: 372%;}
 
 .card.window-open .resize{
     box-shadow: 0px 0px 15px black !important;
@@ -250,7 +250,7 @@
 /* CARDS 3x3 TABLET GRID */
 @media(min-width: 769px) and (max-width: 1024px){
     .card.tablet-small .resize{width: 175%;}
-    .card.tablet-medium .resize{width: 301%;}
+    .card.tablet-medium .resize{width: 275%;}
     /* .card.tablet-medium .resize{position: fixed; z-index: 4; max-width:1500px; top: 50%;left: 50%;transform: translate(-50%, -50%); box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)} */
 
     .card.tablet-small:nth-child(3n+1) .resize{top: 50%;transform: translateY(-50%);left:0;}
