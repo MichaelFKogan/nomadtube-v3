@@ -518,11 +518,11 @@ h2 {
 
   .categories-wrapper.hp-quick-links a {
     font-size: 19px;
-    width: 100%;
+    width: 97%;
     height: 65px;
 
     border: 2px solid black;
-    border-radius: 3px !important;
+    border-radius: 0px !important;
     box-shadow: 6px 6px 0px 0px black
   }
 
