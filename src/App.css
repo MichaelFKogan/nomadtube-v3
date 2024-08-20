@@ -291,7 +291,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
 
-  background: black;
+  background: rgba(0,0,0,.95);
   margin: auto;
   padding: 20px 0px;
   z-index: 4;
