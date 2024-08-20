@@ -471,10 +471,6 @@ h2 {
     /* overflow-y: scroll; */
   }
 
-  .bali .inner-cities {
-    overflow-y: hidden;
-  }
-
   .home .cities-wrapper {
     padding-bottom: 0px;
     margin: 0px 0px;
