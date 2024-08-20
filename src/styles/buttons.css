@@ -166,10 +166,6 @@ button {
     text-shadow: 1px 1px 0 #000, 1px 1px 5px #000;
 }
 
-#home-categories .categories-row .background-img{
-    font-family: "Nunito";
-}
-
 a.active{
     background: #0d6efd;
     color: white;
@@ -486,6 +482,10 @@ a.active{
         /* box-shadow: 0 0 5px #ccc; */
         line-height: 25px;
     }
+
+    #home-categories .categories-row .background-img{
+        font-family: "Nunito";
+    }    
 
     .home .inner-categories, .home-category-page .inner-categories{
         row-gap: 8px;
