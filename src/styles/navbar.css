@@ -35,6 +35,135 @@
     line-height: 20px;
 }
 
+.spotify-play-btn{
+    width: fit-content;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.9);
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.spotify-play-btn:hover{
+    border: 1px solid #666;
+    color: #ccc;
+}
+
+.spotify-play-btn:hover svg{
+    color: #ccc;
+}
+
+.spotify-play-btn svg{
+    color: white;
+}
+
+.spotify-player{
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    transition: right 0.3s ease-in-out;
+
+    width: 450px;
+    z-index: 10;
+
+    background: rgba(0,0,0,.9);
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 12px;
+}
+
+.spotify-player iframe{
+    height: 500px;
+}
+
+.spotify-player.enter-left {
+    right: 30px; /* Slide in to visible area */
+}
+
+.spotify-player.exit-right {
+    right: -100%; /* Slide out back to off-screen */
+}
+
+.close-spotify-player-btn{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    width: fit-content;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.9);
+
+}
+
+.close-spotify-player-btn:hover{
+    border: 1px solid #666;
+}
+
+.close-spotify-player-btn:hover svg{
+    border: #666;
+}
+
+.close-spotify-player-btn svg{
+    color: white
+}
+
+@media(min-width: 500px) and (max-width: 768px){
+    .spotify-player{
+        width: 350px;
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    .spotify-player iframe{
+        height: 500px !important;
+    }
+
+    .spotify-play-btn{
+        margin-right: 0px;
+    }
+
+    .close-spotify-player-btn{
+        margin-bottom: 0px;
+    }
+
+    .spotify-player.enter-left {
+        right: 2.5% /* Slide in to visible area */
+    }
+}
+
+@media(max-width: 500px){
+    .spotify-player{
+        width: 95%;
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    .spotify-player iframe{
+        height: 400px;
+    }
+
+    .spotify-play-btn{
+        margin-right: 0px;
+    }
+
+    .close-spotify-player-btn{
+        margin-bottom: 0px;
+    }
+
+    .spotify-player.enter-left {
+        right: 2.5% /* Slide in to visible area */
+    }
+}
+
+
 @media(min-width:769px){
     .nav-logo{
         font-size: 24px;

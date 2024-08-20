@@ -13,6 +13,7 @@ import EuropeMobileMenu from './navmenu/EuropeMobileMenu';
 import MiddleEastMobileMenu from './navmenu/MiddleEastMobileMenu';
 
 import QuickLinks from './QuickLinks';
+import SpotifyPlayer from './SpotifyPlayer';
 
 function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, handleCategoriesDropdown }) {
 
@@ -24,6 +25,8 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
     const [southAmericaMenu, setSouthAmericaMenu] = useState(false);
     const [europeMenu, setEuropeMenu] = useState(false);
     const [middleEastMenu, setMiddleEastMenu] = useState(false);
+
+    const [openSpotify, setOpenSpotify] = useState(false);
 
     const toggleMobileMenu = () => { 
         if (asiaMenu || southAmericaMenu || europeMenu || middleEastMenu) {
@@ -60,6 +63,10 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
         setMiddleEastMenu(false);
         // setNorthAmericaMenu(false);
         // setOceaniaMenu(false);
+    }
+
+    const toggleSpotifyPlayer = () => {
+        setOpenSpotify(!openSpotify);
     }
 
 
@@ -100,8 +107,12 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
                     <div className="nav-menu nav-sound desktop">🔈</div>
                 </div> */}
 
-                <div className='d-flex align-center' style={{opacity: "0", visibility: "0"}}>
-                    <Link to={"/"} className="nav-menu nav-logo desktop"><div>🏝 NomadTube</div></Link>
+
+                <div className='d-flex align-center'>
+                    <div className="nav-menu nav-logo desktop" style={{opacity: "0", visibility: "0"}}><div>🏝 NomadTu</div></div>
+                    <div className="spotify-play-btn" onClick={toggleSpotifyPlayer}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                    </div>
                 </div>
 
             </div>
@@ -128,11 +139,10 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
 
                 <Link to={"/"} className="nav-menu nav-logo " onClick={() => { closeAllMenus(); }}><div>🏝 NomadTube</div></Link>
 
-                <div className='d-flex align-center' style={{ opacity: "0", visibility: "0" }}>
-                    <div className="nav-menu hamburger" onClick={() => { toggleMobileMenu(); closes(); }}  style={{ opacity: "0", visibility: "0" }}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12" /><line x1="4" x2="20" y1="6" y2="6" /><line x1="4" x2="20" y1="18" y2="18" /></svg>
+                <div className='d-flex align-center'>
+                    <div className="spotify-play-btn" onClick={toggleSpotifyPlayer}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-play"><polygon points="6 3 20 12 6 21 6 3"/></svg>
                     </div>
-                    {/* <Link to={"/"} className="nav-menu" style={{ opacity: "0", visibility: "0" }}><div>🏠</div></Link> */}
                 </div>
 
             </div>
@@ -199,6 +209,8 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
             <SouthAmericaMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleSouthAmericaMenu={toggleSouthAmericaMenu} southAmericaMenu={southAmericaMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
             <EuropeMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleEuropeMenu={toggleEuropeMenu} europeMenu={europeMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
             <MiddleEastMobileMenu mobileMenu={mobileMenu} closeMobileMenu={closeMobileMenu} toggleMiddleEastMenu={toggleMiddleEastMenu} middleEastMenu={middleEastMenu} closes={closes} back={back} closeCountryMenus={closeCountryMenus} closeAllMenus={closeAllMenus} className={"mobile"}/>
+
+            <SpotifyPlayer openSpotify={openSpotify} toggleSpotifyPlayer={toggleSpotifyPlayer}/>
 
         </>
     );
