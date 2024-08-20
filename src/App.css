@@ -182,7 +182,7 @@ h2 {font-family: "Nunito Black";font-size: 26px}
   justify-content: center;
 
   background: rgba(0,0,0,.9);
-  padding: 20px 0px;
+  padding: 10px 0px;
   z-index: 4;
 
   /* border: 4px solid black;
@@ -372,7 +372,7 @@ d"""""""8'   .88'     d88'   `8.
   .srilanka .cities-wrapper,
   .india .cities-wrapper,
 
-  .new-york .cities-wrapper,
+  .newyork .cities-wrapper,
   .sanfrancisco .cities-wrapper,
 
   .puertorico .cities-wrapper,
@@ -423,7 +423,12 @@ d"""""""8'   .88'     d88'   `8.
 
   .home .categories-wrapper {margin-bottom: 20px;margin-top: 20px;}
   .categories-wrapper {padding: 0px 0px;}
-  .categories-wrapper.categories-row {margin: 0px auto 10px auto;}
+
+  .categories-wrapper.categories-row {
+    margin: 0px auto 10px auto;
+    background-image: radial-gradient(#80808080 1px, transparent 0);
+    background-size: 16px 16px;
+  }
 
   .hp-quick-links,
   .hp-quick-links .inner-categories {
@@ -464,7 +469,7 @@ d"""""""8'   .88'     d88'   `8.
     row-gap: 13px;
     max-width: 100%;
     width: 100%;
-    padding: 10px 0px;
+    padding: 15px 0px;
   }
 
   .hp-quick-links .inner-categories {justify-content: start !important;}

@@ -174,7 +174,7 @@
         height: 225px;
         width: calc(100% - 14px);
 
-        margin: 10px auto 5px auto;
+        margin: 5px auto;
 
         border-radius: 6px;
         border: 3px solid black;
@@ -185,7 +185,7 @@
         height: 200px;
         width: calc(100% - 14px);
 
-        margin: 10px auto 5px auto;
+        margin: 5px auto;
 
         border-radius: 6px;
         border: 3px solid black;
