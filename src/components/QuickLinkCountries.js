@@ -77,7 +77,7 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, scro
                     <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginTop: "25px", marginBottom: "5px"}}/>
 
                 <div id="home-categories" className={`categories-wrapper hp-quick-links d-flex shortcuts`}>
-                <div className="inner-categories justify-center" style={{marginBottom: "100px"}}>
+                <div className="inner-categories justify-center" style={{marginBottom: "400px"}}>
                     <h2 className="text-center" style={{marginTop:"20px"}}>⏩ Shortcuts</h2>
                     <Link to={`/asia/bali`} className="bali-img background-img" onClick={() => { scrollToTop(); }}><div>🏝 Bali</div></Link>
                     <Link to={`/asia/thailand`} className="thailand-img background-img" onClick={() => { scrollToTop(); }}><div>🇹🇭 Thailand</div></Link>
@@ -95,7 +95,9 @@ function QuickLinkCountries({ openCountryMenu, countryMenu, setCountryMenu, scro
                     <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                     <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                     <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
-                    <div style={{height:"400px"}}></div>
+
+                    <div style={{height: "400px", width: "100%"}}></div>
+
                 </div>
             </div>
 

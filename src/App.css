@@ -343,9 +343,11 @@ h2 {
     justify-content: center;
 
     width: 100%;
-    color: black;
+    background: black;
+    color: white;
 
     margin: 20px auto 20px auto;
+    padding: 20px 0px;
 
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
