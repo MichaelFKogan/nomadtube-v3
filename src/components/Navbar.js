@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, Link, useSearchParams } from 'react-router-dom';
 import "../styles/navbar.css"
 
@@ -25,8 +25,10 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
     const [southAmericaMenu, setSouthAmericaMenu] = useState(false);
     const [europeMenu, setEuropeMenu] = useState(false);
     const [middleEastMenu, setMiddleEastMenu] = useState(false);
+    const menuRef = useRef(null);
 
     const [openSpotify, setOpenSpotify] = useState(false);
+
 
     const toggleMobileMenu = () => { 
         if (asiaMenu || southAmericaMenu || europeMenu || middleEastMenu) {
@@ -65,6 +67,21 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
         // setOceaniaMenu(false);
     }
 
+    // Handle Clicks Outside the Menu to Close the Menu
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                closeAllMenus();
+            }
+        }
+    
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+    
+
     const toggleSpotifyPlayer = () => {
         setOpenSpotify(!openSpotify);
     }
@@ -84,7 +101,7 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
                     <Link to={"/"} className="nav-menu nav-logo desktop"><div>🏝 NomadTube</div></Link>
                 </div>
 
-                <div className="d-flex align-center col-gap-5 pos-rel continents-menu">
+                <div ref={menuRef} className="d-flex align-center col-gap-5 pos-rel continents-menu">
                     <div className="nav-menu continent"  onClick={() => { closeCountryMenus(); toggleAsiaMenu(); }}><div>Asia</div></div>
                     <div className="nav-menu continent"  onClick={() => { closeCountryMenus(); toggleSouthAmericaMenu(); }}><div>South America</div></div>
                     <div className="nav-menu continent"  onClick={() => { closeCountryMenus(); toggleEuropeMenu(); }}><div>Europe</div></div>
