@@ -466,6 +466,9 @@ h2 {
   .srilanka .cities-wrapper,
   .india .cities-wrapper,
 
+  .new-york .cities-wrapper,
+  .sanfrancisco .cities-wrapper,
+
   .puertorico .cities-wrapper,
   .costarica .cities-wrapper,
   .cuba .cities-wrapper,
@@ -605,9 +608,13 @@ h2 {
   }
 
   .categories-row .inner-categories {
-    justify-content: start;
+    justify-content: center;
     column-gap: 12px;
     row-gap: 12px;
+  }
+
+  .home .categories-row .inner-categories {
+    justify-content: start;
   }
 
 
