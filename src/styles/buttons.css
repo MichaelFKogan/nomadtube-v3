@@ -91,7 +91,7 @@ button {
 
     .categories-wrapper.hp-quick-links a{
         border-radius: 1px;
-        height: 55px;
+        height: 65px;
     }
 
     .rotate-card{
@@ -149,17 +149,6 @@ button {
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-duration: .15s;
 }
-
-.categories-row .inner-categories {
-    column-gap: 8px;
-    row-gap: 8px;
-
-    padding: 0px 0px;
-
-    /* background: white;
-    background-image: radial-gradient(#80808080 1px,transparent 0);
-    background-size: 16px 16px; */
-  }
 
 .categories-wrapper .background-img{font-family: "Nunito Black";}
 .categories-wrapper div{z-index: 1;}
@@ -233,6 +222,35 @@ a.active{
 
 .card-button:hover{
     background: linear-gradient(180deg, rgba(0,0,0,.8), rgba(0,0,0,.6))
+}
+
+@media(min-width: 769px){
+    
+    .categories-row .inner-categories {
+        column-gap: 12px;
+        row-gap: 12px;
+        padding: 0px 0px;
+    }
+
+    .categories-wrapper.categories-row a{
+    border: 2px solid black;
+    box-shadow: 6px 6px 0px 0px black;
+
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.4,0,.2,1);
+      transition-duration: .15s;
+    }
+
+    .categories-wrapper.categories-row a:hover{
+        transform: translate(4px, 4px);
+        box-shadow: 0px 0px 0px black;
+    }
+
+    .categories-wrapper.categories-row a:active{
+        transform: translate(5px, 5px);
+        box-shadow: 0px 0px 0px black;
+    }
+    
 }
 
 @media(min-width:769px) and (max-width: 1440px){
@@ -427,16 +445,34 @@ a.active{
     }
 
     .home .categories-wrapper.categories-row .inner-categories{
-        width: 1100px;
+        width: 1200px;
+        padding-bottom: 15px;
+        padding-top: 10px;
     }
 
     .quick-links-countries{
         padding: 0px 10px;
     }
 
-    .categories-wrapper a{
+    .categories-wrapper.categories-row a{
+        border: 2px solid black;
+        box-shadow: 6px 6px 0px 0px black;
+
         text-wrap: nowrap;
         white-space: nowrap;
+
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+        transition-duration: .15s;
+    }
+
+    .categories-wrapper.categories-row a:active{
+        transform: translate(4px, 4px);
+        box-shadow: 0px 0px 0px black;
+    }
+
+    .categories-wrapper .background-img{
+        font-size: 15px;
     }
 }
 
@@ -447,7 +483,7 @@ a.active{
     }
 
     .home .categories-wrapper.categories-row .inner-categories{
-        width: 800px;
+        width: 1200px;
     }
 
     .home .continents-wrapper a,
@@ -468,9 +504,6 @@ a.active{
         font-family: "Nunito";
     }    
 
-    .home .inner-categories, .home-category-page .inner-categories{
-        row-gap: 8px;
-    }
 
     .cities-wrapper a{
         /* width: calc(50% - 2px); */

@@ -260,6 +260,7 @@ h2 {
   width: calc(100% - 16px);
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
   z-index: 3;
 
   /* border: 2px solid black;
@@ -556,7 +557,11 @@ h2 {
 
     border: 2px solid black;
     border-radius: 0px !important;
-    box-shadow: 6px 6px 0px 0px black
+    box-shadow: 6px 6px 0px 0px black;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
   }
 
   .categories-wrapper.hp-quick-links.shortcuts a {
@@ -599,10 +604,10 @@ h2 {
     margin: auto;
   }
 
-  .home .categories-row .inner-categories {
-    column-gap: 5px;
+  .categories-row .inner-categories {
     justify-content: start;
-    /* overflow-y: scroll; */
+    column-gap: 12px;
+    row-gap: 12px;
   }
 
 
