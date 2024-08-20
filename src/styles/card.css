@@ -166,7 +166,14 @@
 .card.medium .resize{width: 275%;}
 .card.large .resize{width: 402%;}
 
-.card.window-open .resize{box-shadow: 0px 0px 15px black !important}
+.card.window-open .resize{
+    box-shadow: 0px 0px 15px black !important;
+    border: 4px solid black;
+}
+
+.card.window-open .window-xl{
+    border: 6px solid black;
+}
 
 
 /* CARDS 5x5 LARGE DESKTOP GRID */
