@@ -167,23 +167,25 @@
 
     .home-banner{
         height: 225px;
-        width: calc(100% - 14px);
+        width: 100%;
 
-        margin: 10px auto 5px auto;
+        margin: 0px;
+        margin-bottom: 10px;
 
-        border-radius: 3px;
-        border: 3px solid black;
+        border-radius: 0px;
+        border: 0px solid black;
         box-shadow: 0px 0px 5px black;
     }
 
     .page-banner{
         height: 200px;
-        width: calc(100% - 14px);
+        width: 100%;
 
-        margin: 10px auto 5px auto;
+        margin: 0px;
+        margin-bottom: 10px;
 
-        border-radius: 6px;
-        border: 3px solid black;
+        border-radius: 0px;
+        border: 0px solid black;
         box-shadow: 0px 0px 5px black;
     }
 
