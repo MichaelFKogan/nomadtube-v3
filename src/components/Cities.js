@@ -31,7 +31,7 @@ function Cities({dataCities}) {
 
         {/* MOBILE: Showing on Homepage, HomeCategory, Country, and CountryCategory */}
             <div className={`cities-wrapper mobile`}>
-                <div className="inner-cities marquee">
+                <div className="inner-cities">
                     {city &&
                         <Link to={`/${continent}/${country}`} className={`${country}-img background-img`} onClick={() => { scrollToTop(); }}>
                             <div>{dataCities.name}</div>
