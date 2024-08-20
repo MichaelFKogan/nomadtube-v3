@@ -24,6 +24,22 @@
     color: rgba(0,0,0,.75);
 }
 
+.navbar-white .spotify-play-btn svg{
+    color: rgba(0,0,0,.75)
+}
+
+.navbar-white .spotify-play-btn:hover{
+    border: 1px solid #ccc
+}
+
+.navbar-white .spotify-play-btn{
+    border: 1px solid white;
+}
+
+.navbar-white .spotify-play-btn:hover svg{
+    color: rgba(0,0,0,.75);
+}
+
 .nav-menu{
     font-family: "Nunito Black";
     font-size: 17px;
