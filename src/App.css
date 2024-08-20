@@ -568,6 +568,8 @@ h2 {
 
   .home .categories-row .inner-categories {
     column-gap: 5px;
+    justify-content: start;
+    overflow-y: scroll;
   }
 
 
