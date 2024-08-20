@@ -4,11 +4,11 @@
       {"name": "🍜 Street Food","route": "streetfood"},
       {"name": "🚶‍♂️ Walking Tour","route": "walkingtour"},
 
+      {"name": "🧍‍♀️ Solo Travel","route": "solotravel"},
+      {"name": "💵 Budget Travel","route": "budgettravel"},
+
       {"name": "👨‍💻 How To Become A Digital Nomad","route": "howtobecomeadigitalnomad"},
 
-      {"name": "🧍‍♀️ Solo Travel","route": "solotravel"},
-
-      {"name": "💵 Budget Travel","route": "budgettravel"},
       {"name": "👨‍💻 Coworking","route": "coworking"},
       {"name": "👩‍🏫 English Teaching","route": "englishteaching"},
       {"name": "🎒 Gear","route": "gear"},

@@ -113,10 +113,11 @@ function Home({
                     <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
                     <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
 
-                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
                     <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
-
                     <Link to={`/category/budgettravel`}><div>💵 Budget Travel</div></Link>
+
+                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+
                     <Link to={`/category/coworking`}><div>👨‍💻 Coworking</div></Link>
                     <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
                     <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
@@ -129,7 +130,7 @@ function Home({
                     <Link to={`/asia/korea`} className="korea-img background-img" onClick={() => { scrollToTop(); }}><div>🇰🇷 Korea</div></Link>
                     <Link to={`/asia/vietnam`} className="vietnam-img background-img" onClick={() => { scrollToTop(); }}><div>🇻🇳 Vietnam</div></Link>
 
-                    
+
                     <Link to={`/southamerica/brazil`} className="brazil-img background-img" onClick={() => { scrollToTop(); }}><div>🇧🇷 Brazil</div></Link>
                     <Link to={`/southamerica/mexico`} className="mexico-img background-img" onClick={() => { scrollToTop(); }}><div>🇲🇽 Mexico</div></Link>
                     <Link to={`/southamerica/colombia`} className="colombia-img background-img" onClick={() => { scrollToTop(); }}><div>🇨🇴 Colombia</div></Link>

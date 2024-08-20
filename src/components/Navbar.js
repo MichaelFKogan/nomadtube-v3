@@ -150,7 +150,7 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
             <div className={`mobile-menu main-mobile-menu d-block off-screen ${mobileMenu ? 'right' : '' }`}>
                 <Link to={"/"} className="nav-menu" onClick={closeAllMenus}><div>🏠 Home</div></Link>
                 <div className="nav-menu" onClick={() => { handleCategoriesDropdown(); }}><div>🔗 Quick Links</div></div>
-                <div className="nav-menu" onClick={() => { handleCategoriesDropdown(); }}><div>💯 All Videos</div></div>
+                {/* <div className="nav-menu" onClick={() => { handleCategoriesDropdown(); }}><div>💯 All Videos</div></div> */}
                 <hr className="w-95" style={{marginRight: "auto", marginLeft: "0px", marginTop: "20px", marginBottom: "25px"}}/>
 
                 {/* <h2 className="" style={{color: "white", fontSize: "20px", textAlign: "left", marginBottom: "20px"}}>🌎 Countries</h2> */}
