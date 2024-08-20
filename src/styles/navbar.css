@@ -141,9 +141,10 @@
 
 @media(max-width: 500px){
     .spotify-player{
-        width: 95%;
+        width: 325px;
         padding: 20px;
         padding-top: 0px;
+        padding-bottom: 40px;
     }
 
     .spotify-player iframe{
@@ -159,7 +160,7 @@
     }
 
     .spotify-player.enter-left {
-        right: 2.5% /* Slide in to visible area */
+        right: 10px; /* Slide in to visible area */
     }
 }
 
