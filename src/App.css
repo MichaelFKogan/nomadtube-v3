@@ -361,6 +361,7 @@ d"""""""8'   .88'     d88'   `8.
   .cities-wrapper {
     margin-bottom: 0px;
     padding: 10px;
+    padding-bottom: 0px;
     /* background-image: radial-gradient(#80808080 1px,#0000 0);
     background-size: 16px 16px; */
   }
@@ -428,7 +429,12 @@ d"""""""8'   .88'     d88'   `8.
 
   .home .categories-wrapper {margin-bottom: 20px;margin-top: 20px;}
   .categories-wrapper {
-    padding: 10px 10px 25px 10px;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 5px;
+  }
+
+  .city-page .categories-wrapper{
+    padding-top: 10px;
   }
 
   .categories-wrapper.categories-row {
@@ -497,8 +503,8 @@ d"""""""8'   .88'     d88'   `8.
 
   .categories-row .inner-categories {
     justify-content: center;
-    column-gap: 8px;
-    row-gap: 8px;
+    column-gap: 12px;
+    row-gap: 12px;
   }
 
   .home .categories-row .inner-categories {
