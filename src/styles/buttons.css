@@ -696,7 +696,7 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
 
         transition-property: all;
         transition-timing-function: cubic-bezier(.4,0,.2,1);
-        transition-duration: .05s;
+        transition-duration: .5s;
     }
 
     .categories-wrapper.categories-row a:active{
