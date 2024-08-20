@@ -256,11 +256,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Hide Cities on City Page and City Category Page */
-.city-page .cities-wrapper, .category-page .cities-wrapper{
-  display: none;
-}
-
 .categories-wrapper.categories-row {
   width: calc(100% - 16px);
   margin: auto;
@@ -446,6 +441,11 @@ h2 {
 
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  /* Hide Cities on City Page and City Category Page on Mobile */
+  .city-page .cities-wrapper, .category-page .cities-wrapper{
+    display: none;
   }
 
   .cities-wrapper {

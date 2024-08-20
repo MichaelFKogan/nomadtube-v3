@@ -1,14 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-const continent = "northamerica"
+const continent = "southamerica"
 
-const country = "newyork";
+// const country = "peru";
 // const filename = country;
 
-// const country = "israel"
-// const city = "telaviv"
-// const filename = city;
+const country = "peru"
+const city = "lima"
+const filename = city;
 
 // const filename = "itinerary"
 // const filename = "vlog"
@@ -18,11 +18,11 @@ const country = "newyork";
 // const filename = "cost"
 // const filename = "coworking"
 // const filename = "nightlife"
-const filename = "foodtour"
+// const filename = "foodtour"
 
 // Define the base directory
-const baseDir = path.join(__dirname, '..', 'src', 'data', continent, country);
-// const baseDir = path.join(__dirname, '..', 'src', 'data', continent, country, city);
+// const baseDir = path.join(__dirname, '..', 'src', 'data', continent, country);
+const baseDir = path.join(__dirname, '..', 'src', 'data', continent, country, city);
 const outputFilePath = path.join(__dirname, '..', 'server', filename+".json");
 
 // Function to recursively find all vlog.json files
@@ -33,19 +33,19 @@ function findAllFiles(dir) {
     const fullPath = path.join(dir, file);
 
     // ALL - Check for all files in a directory
-        // if (fs.lstatSync(fullPath).isDirectory()) {
-        // allFiles = allFiles.concat(findAllFiles(fullPath));
-        // // } else if (path.extname(file) === '.json') { // Check if the file has a .json extension
-        // } else if (path.extname(file) === '.json' && path.basename(file) !== 'nightlife.json') {        
-        // allFiles.push(fullPath);
-        // }
-
-    // SPECIFIC - Check for a specific file (ex: vlog.json)
         if (fs.lstatSync(fullPath).isDirectory()) {
         allFiles = allFiles.concat(findAllFiles(fullPath));
-        } else if (file === filename+".json") {
+        // } else if (path.extname(file) === '.json') { // Check if the file has a .json extension
+        } else if (path.extname(file) === '.json' && path.basename(file) !== 'nightlife.json') {        
         allFiles.push(fullPath);
         }
+
+    // SPECIFIC - Check for a specific file (ex: vlog.json)
+        // if (fs.lstatSync(fullPath).isDirectory()) {
+        // allFiles = allFiles.concat(findAllFiles(fullPath));
+        // } else if (file === filename+".json") {
+        // allFiles.push(fullPath);
+        // }
 
   });
 
