@@ -437,6 +437,14 @@ a.active{
         position: relative;
     }
 
+    .home .categories-wrapper.categories-row{
+        overflow-y: scroll;
+    }
+
+    .home .categories-wrapper.categories-row .inner-categories{
+        width: 115%;
+    }
+
     .home .categories-wrapper.hp-quick-links{
         /* overflow-y: hidden; */
     }
@@ -455,6 +463,10 @@ a.active{
 
     .categories-wrapper.hp-quick-links a{
         font-size: 19px;
+    }
+
+    .home .categories-wrapper.categories-row .inner-categories{
+        width: 200%;
     }
 
     .home .continents-wrapper a,

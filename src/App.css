@@ -505,6 +505,10 @@ h2 {
     padding: 0px 0px;
   }
 
+  .categories-wrapper.categories-row {
+    margin: 10px auto 10px auto;
+  }
+
   .hp-quick-links,
   .hp-quick-links .inner-categories {
     background: white;
@@ -569,7 +573,7 @@ h2 {
   .home .categories-row .inner-categories {
     column-gap: 5px;
     justify-content: start;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
 

@@ -108,25 +108,24 @@ function Home({
             {/* CATEGORIES - MOBILE */}
             <div id="home-categories" className={`categories-wrapper categories-row mobile`}>
                 <div className="inner-categories">
-                    <div className='d-flex col-gap-5'>
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
                     <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
                     <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
-                    </div>
-                    <div className='d-flex col-gap-5'>
+
+                    <Link to={`/asia/japan/tokyo/akhihabara`} className="tokyo-img background-img"><div>👾 Akhihabara</div></Link>
+                    <Link to={`/asia/thailand/bangkok/khaosanroad`} className="bangkok-img background-img"><div>🍻 Khao San Road</div></Link>
+                    <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
+                    <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
+
                     <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
-                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
-                    </div>
-                    <div className='d-flex col-gap-5'>
+
                     <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
                     <Link to={`/category/budgettravel`}><div>💵 Budget Travel</div></Link>
-                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
-                    </div>
-                    <div className='d-flex col-gap-5'>
                     <Link to={`/category/coworking`}><div>👨‍💻 Coworking</div></Link>
                     <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
-                    </div>
+                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
+                    <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
                 </div>
             </div>
             </>)}
@@ -140,14 +139,16 @@ function Home({
                 <div className="inner-categories">
                     <Link to={`/`} className="active"><div>💯 All</div></Link>
                     <Link to={`/category/vlog`}><div>📸 Vlog</div></Link>
-                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
-                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
                     <Link to={`/category/streetfood`}><div>🍜 Street Food</div></Link>
                     <Link to={`/category/walkingtour`}><div>🚶‍♂️ Walking Tour</div></Link>
+
+                    <Link to={`/category/howtobecomeadigitalnomad`}><div>👨‍💻 How To Become A Digital Nomad</div></Link>
+
                     <Link to={`/category/solotravel`}><div>🧍‍♀️ Solo Travel</div></Link>
                     <Link to={`/category/budgettravel`}><div>💵 Budget Travel</div></Link>
                     <Link to={`/category/coworking`}><div>👨‍💻 Coworking</div></Link>
                     <Link to={`/category/englishteaching`}><div>👩‍🏫 English Teaching</div></Link>
+                    <Link to={`/category/gear`}><div>🎒 Gear</div></Link>
                     <Link to={`/category/vanlife`}><div>🚐 Van Life</div></Link>
                 </div>
             </div>
