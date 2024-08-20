@@ -453,6 +453,37 @@ h2 {
     padding: 5px 5px 5px 5px
   }
 
+  .hongkong .cities-wrapper, 
+  .singapore .cities-wrapper,
+  .thephilippines .cities-wrapper,
+  .laos .cities-wrapper, 
+  .cambodia .cities-wrapper,
+  .nepal .cities-wrapper,
+  .bhutan .cities-wrapper, 
+  .mongolia .cities-wrapper,
+  .bangladesh .cities-wrapper,
+  .srilanka .cities-wrapper,
+  .india .cities-wrapper,
+
+  .puertorico .cities-wrapper,
+  .costarica .cities-wrapper,
+  .cuba .cities-wrapper,
+  .ecuador .cities-wrapper,
+  .chile .cities-wrapper,
+
+  .amsterdam .cities-wrapper, 
+  .prague .cities-wrapper,
+  .estonia .cities-wrapper,
+  .iceland .cities-wrapper, 
+  .greece .cities-wrapper,
+  .london .cities-wrapper,
+  .romania .cities-wrapper, 
+
+  .egypt.cities-wrapper{
+    display: none;
+  }
+
+
   .inner-cities {
     display: flex;
     justify-content: start;
