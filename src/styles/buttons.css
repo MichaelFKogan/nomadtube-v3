@@ -605,6 +605,8 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
         padding: 0px 20px;
         width: calc(50% - 8px);
         text-wrap: nowrap;
+        word-wrap: nowrap;
+        width: fit-content;
         border-radius: 6px;
     }
 
