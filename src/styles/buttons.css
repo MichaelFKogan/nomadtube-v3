@@ -35,17 +35,103 @@ button {
     transition-duration: .15s;
 }
 
+
+
+
+/* 
+                   o8o                                        o8o        .o8      .   oooo        
+                   `"'                                        `"'       "888    .o8   `888        
+ooo. .oo.  .oo.   oooo  ooo. .oo.           oooo oooo    ooo oooo   .oooo888  .o888oo  888 .oo.   
+`888P"Y88bP"Y88b  `888  `888P"Y88b           `88. `88.  .8'  `888  d88' `888    888    888P"Y88b  
+ 888   888   888   888   888   888  8888888   `88..]88..8'    888  888   888    888    888   888  
+ 888   888   888   888   888   888             `888'`888'     888  888   888    888 .  888   888  
+o888o o888o o888o o888o o888o o888o             `8'  `8'     o888o `Y8bod88P"   "888" o888o o888o 
+                                                                                                                                                                                                                                                                                                  
+  .o        .o     .oooo.     .o                                                                  
+o888      .d88    d8P'`Y8b  o888                                                                  
+ 888    .d'888   888    888  888  oo.ooooo.  oooo    ooo                                          
+ 888  .d'  888   888    888  888   888' `88b  `88b..8P'                                           
+ 888  88ooo888oo 888    888  888   888   888    Y888'                                             
+ 888       888   `88b  d88'  888   888   888  .o8"'88b                                            
+o888o     o888o   `Y8bd8P'  o888o  888bod8P' o88'   888o                                          
+                                   888                                                            
+                                  o888o                                                           
+                                                                                              
+*/
+
 @media(min-width: 1401px){
     .categories-wrapper.hp-quick-links a{
         width: calc(20% - 13px);
     }
 }
 
+
+
+
+
+
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+
+/* 
+  .oooooo.                                    .o8   o8o                     
+ d'     `b                                   "888   `"'                     
+d' .d"bd  8 ooo. .oo.  .oo.    .ooooo.   .oooo888  oooo   .oooo.            
+8  8. 8  .d `888P"Y88bP"Y88b  d88' `88b d88' `888  `888  `P  )88b           
+Y.  YoP"b'   888   888   888  888ooo888 888   888   888   .oP"888           
+ 8.      .8  888   888   888  888    .o 888   888   888  d8(  888           
+  YooooooP  o888o o888o o888o `Y8bod8P' `Y8bod88P" o888o `Y888""8o          
+                                                                            
+                                                                            
+                                                                            
+  .o    .o    .oooo.     .o            .o        .o     .oooo.     .oooo.   
+o888  o888   d8P'`Y8b  o888          o888      .d88    d8P'`Y8b   d8P'`Y8b  
+ 888   888  888    888  888           888    .d'888   888    888 888    888 
+ 888   888  888    888  888           888  .d'  888   888    888 888    888 
+ 888   888  888    888  888  8888888  888  88ooo888oo 888    888 888    888 
+ 888   888  `88b  d88'  888           888       888   `88b  d88' `88b  d88' 
+o888o o888o  `Y8bd8P'  o888o         o888o     o888o   `Y8bd8P'   `Y8bd8P'                                                                                                                                                                                                                                                                               
+*/
+
+
 @media(min-width: 1101px) and (max-width: 1400px){
     .categories-wrapper.hp-quick-links a{
         width: calc(25% - 12px);
     }
 }
+
+
+
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+
+
+
+/* 
+                   o8o                                        o8o        .o8      .   oooo        
+                   `"'                                        `"'       "888    .o8   `888        
+ooo. .oo.  .oo.   oooo  ooo. .oo.           oooo oooo    ooo oooo   .oooo888  .o888oo  888 .oo.   
+`888P"Y88bP"Y88b  `888  `888P"Y88b           `88. `88.  .8'  `888  d88' `888    888    888P"Y88b  
+ 888   888   888   888   888   888  8888888   `88..]88..8'    888  888   888    888    888   888  
+ 888   888   888   888   888   888             `888'`888'     888  888   888    888 .  888   888  
+o888o o888o o888o o888o o888o o888o             `8'  `8'     o888o `Y8bod88P"   "888" o888o o888o 
+                                                                                                  
+                                                                                                  
+                                                                                                  
+ ooooooooo     .ooo    .ooooo.                                                                    
+d"""""""8'   .88'     888' `Y88.                                                                  
+      .8'   d88'      888    888 oo.ooooo.  oooo    ooo                                           
+     .8'   d888P"Ybo.  `Vbood888  888' `88b  `88b..8P'                                            
+    .8'    Y88[   ]88       888'  888   888    Y888'                                              
+   .8'     `Y88   88P     .88P'   888   888  .o8"'88b                                             
+  .8'       `88bod8'    .oP'      888bod8P' o88'   888o                                           
+                                  888                                                             
+                                 o888o                                                                        
+*/
 
 @media(min-width: 769px){
 
@@ -99,6 +185,31 @@ button {
     }
 }
 
+
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+/* 
+  .oooooo.                                    .o8   o8o                    
+ d'     `b                                   "888   `"'                    
+d' .d"bd  8 ooo. .oo.  .oo.    .ooooo.   .oooo888  oooo   .oooo.           
+8  8. 8  .d `888P"Y88bP"Y88b  d88' `88b d88' `888  `888  `P  )88b          
+Y.  YoP"b'   888   888   888  888ooo888 888   888   888   .oP"888          
+ 8.      .8  888   888   888  888    .o 888   888   888  d8(  888          
+  YooooooP  o888o o888o o888o `Y8bod8P' `Y8bod88P" o888o `Y888""8o         
+                                                                           
+                                                                           
+                                                                           
+ ooooooooo     .ooo    .ooooo.             .o    .o    .oooo.     .oooo.   
+d"""""""8'   .88'     888' `Y88.         o888  o888   d8P'`Y8b   d8P'`Y8b  
+      .8'   d88'      888    888          888   888  888    888 888    888 
+     .8'   d888P"Ybo.  `Vbood888          888   888  888    888 888    888 
+    .8'    Y88[   ]88       888' 8888888  888   888  888    888 888    888 
+   .8'     `Y88   88P     .88P'           888   888  `88b  d88' `88b  d88' 
+  .8'       `88bod8'    .oP'             o888o o888o  `Y8bd8P'   `Y8bd8P'                                                                                                                                                                                                                      
+*/
+
 @media(min-width: 769px) and (max-width: 1100px){
 
     .categories-wrapper.hp-quick-links a{
@@ -108,22 +219,90 @@ button {
     .categories-wrapper.hp-quick-links a{
         font-size: 17px;
     }
-
 }
+
+
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+
+/* 
+  .oooooo.                                    .o8   o8o                   
+ d'     `b                                   "888   `"'                   
+d' .d"bd  8 ooo. .oo.  .oo.    .ooooo.   .oooo888  oooo   .oooo.          
+8  8. 8  .d `888P"Y88bP"Y88b  d88' `88b d88' `888  `888  `P  )88b         
+Y.  YoP"b'   888   888   888  888ooo888 888   888   888   .oP"888         
+ 8.      .8  888   888   888  888    .o 888   888   888  d8(  888         
+  YooooooP  o888o o888o o888o `Y8bod8P' `Y8bod88P" o888o `Y888""8o        
+                                                                          
+                                                                          
+                                                                          
+ ooooooooo     .ooo    .ooooo.            .ooooo.     .oooo.     oooooooo 
+d"""""""8'   .88'     888' `Y88.         888' `Y88. .dP""Y88b   dP""""""" 
+      .8'   d88'      888    888         888    888       ]8P' d88888b.   
+     .8'   d888P"Ybo.  `Vbood888          `Vbood888     .d8P'      `Y88b  
+    .8'    Y88[   ]88       888' 8888888       888'   .dP'           ]88  
+   .8'     `Y88   88P     .88P'              .88P'  .oP     .o o.   .88P  
+  .8'       `88bod8'    .oP'               .oP'     8888888888 `8bd88P'   
+*/
+
 
 @media(min-width: 769px) and (max-width: 925px){
 
     .categories-wrapper.hp-quick-links a{
         width: calc(33.33% - 11px);
     }
-
 }
+
+
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+
+
+/* 
+  .oooooo.                                    .o8   o8o                                                
+ d'     `b                                   "888   `"'                                                
+d' .d"bd  8 ooo. .oo.  .oo.    .ooooo.   .oooo888  oooo   .oooo.                                       
+8  8. 8  .d `888P"Y88bP"Y88b  d88' `88b d88' `888  `888  `P  )88b                                      
+Y.  YoP"b'   888   888   888  888ooo888 888   888   888   .oP"888                                      
+ 8.      .8  888   888   888  888    .o 888   888   888  d8(  888                                      
+  YooooooP  o888o o888o o888o `Y8bod8P' `Y8bod88P" o888o `Y888""8o                                     
+                                                                                                       
+                                                                                                       
+                                                                                                       
+ ooooooooo     .ooo    .ooooo.             .o    .oooo.     .oooo.     .oooo.                          
+d"""""""8'   .88'     888' `Y88.         o888  .dP""Y88b   d8P'`Y8b   d8P'`Y8b                         
+      .8'   d88'      888    888          888        ]8P' 888    888 888    888 oo.ooooo.  oooo    ooo 
+     .8'   d888P"Ybo.  `Vbood888          888      .d8P'  888    888 888    888  888' `88b  `88b..8P'  
+    .8'    Y88[   ]88       888' 8888888  888    .dP'     888    888 888    888  888   888    Y888'    
+   .8'     `Y88   88P     .88P'           888  .oP     .o `88b  d88' `88b  d88'  888   888  .o8"'88b   
+  .8'       `88bod8'    .oP'             o888o 8888888888  `Y8bd8P'   `Y8bd8P'   888bod8P' o88'   888o 
+                                                                                 888                   
+                                                                                o888o                                                                                                                    
+*/
+
 
 @media(min-width:769px) and (max-width: 1200px){
     .cities-wrapper a{
         width: calc(25% - 16px);
     }
 }
+
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+
+
+
+
+
+
+
+
 
 .cities-wrapper a div {
     position: relative; /* Ensure text is above the gradient */
@@ -224,6 +403,30 @@ a.active{
     background: linear-gradient(180deg, rgba(0,0,0,.8), rgba(0,0,0,.6))
 }
 
+
+/* 
+                   o8o                                        o8o        .o8      .   oooo        
+                   `"'                                        `"'       "888    .o8   `888        
+ooo. .oo.  .oo.   oooo  ooo. .oo.           oooo oooo    ooo oooo   .oooo888  .o888oo  888 .oo.   
+`888P"Y88bP"Y88b  `888  `888P"Y88b           `88. `88.  .8'  `888  d88' `888    888    888P"Y88b  
+ 888   888   888   888   888   888  8888888   `88..]88..8'    888  888   888    888    888   888  
+ 888   888   888   888   888   888             `888'`888'     888  888   888    888 .  888   888  
+o888o o888o o888o o888o o888o o888o             `8'  `8'     o888o `Y8bod88P"   "888" o888o o888o 
+                                                                                                  
+                                                                                                  
+                                                                                                  
+ ooooooooo     .ooo    .ooooo.                                                                    
+d"""""""8'   .88'     888' `Y88.                                                                  
+      .8'   d88'      888    888 oo.ooooo.  oooo    ooo                                           
+     .8'   d888P"Ybo.  `Vbood888  888' `88b  `88b..8P'                                            
+    .8'    Y88[   ]88       888'  888   888    Y888'                                              
+   .8'     `Y88   88P     .88P'   888   888  .o8"'88b                                             
+  .8'       `88bod8'    .oP'      888bod8P' o88'   888o                                           
+                                  888                                                             
+                                 o888o                                                                                                                                                         
+*/
+
+
 @media(min-width: 769px){
     
     .categories-row .inner-categories {
@@ -253,6 +456,29 @@ a.active{
     
 }
 
+
+
+/* 
+  .oooooo.                                    .o8   o8o                         
+ d'     `b                                   "888   `"'                         
+d' .d"bd  8 ooo. .oo.  .oo.    .ooooo.   .oooo888  oooo   .oooo.                
+8  8. 8  .d `888P"Y88bP"Y88b  d88' `88b d88' `888  `888  `P  )88b               
+Y.  YoP"b'   888   888   888  888ooo888 888   888   888   .oP"888               
+ 8.      .8  888   888   888  888    .o 888   888   888  d8(  888               
+  YooooooP  o888o o888o o888o `Y8bod8P' `Y8bod88P" o888o `Y888""8o              
+                                                                                
+                                                                                
+                                                                                
+ ooooooooo     .ooo    .ooooo.             .o        .o         .o     .oooo.   
+d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b  
+      .8'   d88'      888    888          888    .d'888     .d'888   888    888 
+     .8'   d888P"Ybo.  `Vbood888          888  .d'  888   .d'  888   888    888 
+    .8'    Y88[   ]88       888' 8888888  888  88ooo888oo 88ooo888oo 888    888 
+   .8'     `Y88   88P     .88P'           888       888        888   `88b  d88' 
+  .8'       `88bod8'    .oP'             o888o     o888o      o888o   `Y8bd8P'                                                                                                                                                                                                                                        
+*/
+
+
 @media(min-width:769px) and (max-width: 1440px){
     .card.normal .image-plus,
     .card.tablet-normal .image-plus{
@@ -278,10 +504,7 @@ a.active{
 
 }
 
-/* .close-card{top: 2px}
-.image-plus{top: 36px;}
-.image-minus{top: 56px;}
-.new-window{top: 83px;} */
+
 
 .close-card{top: 2px}
 .image-plus{top: 38px;}
@@ -295,6 +518,9 @@ a.active{
 .window-open .image-plus,
 .window-open .image-minus,
 .window-open .close-card{display: flex !important}
+
+
+
 
 /* CARDS 4x4 and 5x5 GRID */
 @media(min-width: 1025px){
@@ -475,6 +701,29 @@ a.active{
         font-size: 15px;
     }
 }
+
+
+/* 
+                                                                  o8o        .o8      .   oooo        
+                                                                  `"'       "888    .o8   `888        
+ooo. .oo.  .oo.    .oooo.   oooo    ooo         oooo oooo    ooo oooo   .oooo888  .o888oo  888 .oo.   
+`888P"Y88bP"Y88b  `P  )88b   `88b..8P'           `88. `88.  .8'  `888  d88' `888    888    888P"Y88b  
+ 888   888   888   .oP"888     Y888'    8888888   `88..]88..8'    888  888   888    888    888   888  
+ 888   888   888  d8(  888   .o8"'88b              `888'`888'     888  888   888    888 .  888   888  
+o888o o888o o888o `Y888""8o o88'   888o             `8'  `8'     o888o `Y8bod88P"   "888" o888o o888o 
+                                                                                                      
+                                                                                                      
+                                                                                                      
+  oooooooo   .oooo.     .oooo.                                                                        
+ dP"""""""  d8P'`Y8b   d8P'`Y8b                                                                       
+d88888b.   888    888 888    888 oo.ooooo.  oooo    ooo                                               
+    `Y88b  888    888 888    888  888' `88b  `88b..8P'                                                
+      ]88  888    888 888    888  888   888    Y888'                                                  
+o.   .88P  `88b  d88' `88b  d88'  888   888  .o8"'88b                                                 
+`8bd88P'    `Y8bd8P'   `Y8bd8P'   888bod8P' o88'   888o                                               
+                                  888                                                                 
+                                 o888o                                                                                                                                                                    
+*/
 
 @media(max-width: 500px){
 

@@ -87,19 +87,6 @@
     z-index: 1; /* Ensure text appears above the gradient background */
 }
 
-/* .banner-text::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 150%;
-    height: 150%;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: -1;
-} */
-
 @media (min-width: 769px) and (max-width: 900px){
     .banner-title{
         font-size: 50px;
@@ -118,16 +105,32 @@
 
 @media(max-width: 768px){
 
-    .home-banner{width: 100%;}
-    .page-banner {width: 100%;}
-
     .home-banner{
-        margin: 0px;
         height: 250px;
+        width: calc(100% - 8px);
+
+        border-top: 6px solid black;
+        border: 6px solid black;
+        box-shadow: 8px 8px 0px 0px black;
+
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
     }
 
-    .page-banner{
+    .page-banner {
         height: 250px;
+        width: calc(100% - 8px);
+
+        border-top: 6px solid black;
+        border: 6px solid black;
+        box-shadow: 8px 8px 0px 0px black;
+
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    
     }
 
     .city-page .page-banner, 
@@ -171,7 +174,16 @@
     }
 
     .page-banner{
-        height: 150px;
+        height: 200px;
+        width: calc(100% - 8px);
+
+        border-top: 6px solid black;
+        border: 6px solid black;
+        box-shadow: 8px 8px 0px 0px black;
+
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .banner-title{

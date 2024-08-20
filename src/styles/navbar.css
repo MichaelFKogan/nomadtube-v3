@@ -8,9 +8,7 @@
     position: relative;
 }
 
-.navbar-white{
-    background: white;
-}
+.navbar-white{background: white;}
 
 .navbar-white .nav-logo, 
 .navbar-white .hamburger,
@@ -24,21 +22,11 @@
     color: rgba(0,0,0,.75);
 }
 
-.navbar-white .spotify-play-btn svg{
-    color: rgba(0,0,0,.75)
-}
+.navbar-white .spotify-play-btn svg{color: rgba(0,0,0,.75)}
 
-.navbar-white .spotify-play-btn:hover{
-    border: 1px solid #ccc
-}
-
-.navbar-white .spotify-play-btn{
-    border: 1px solid white;
-}
-
-.navbar-white .spotify-play-btn:hover svg{
-    color: rgba(0,0,0,.75);
-}
+.navbar-white .spotify-play-btn:hover{border: 1px solid #ccc}
+.navbar-white .spotify-play-btn{border: 1px solid white;}
+.navbar-white .spotify-play-btn:hover svg{color: rgba(0,0,0,.75);}
 
 .nav-menu{
     font-family: "Nunito Black";
@@ -64,18 +52,9 @@
     margin-right: 20px;
 }
 
-.spotify-play-btn:hover{
-    border: 1px solid #666;
-    color: #ccc;
-}
-
-.spotify-play-btn:hover svg{
-    color: #ccc;
-}
-
-.spotify-play-btn svg{
-    color: white;
-}
+.spotify-play-btn:hover{border: 1px solid #666;color: #ccc;}
+.spotify-play-btn:hover svg{color: #ccc;}
+.spotify-play-btn svg{color: white;}
 
 .spotify-player{
     position: fixed;
@@ -92,17 +71,9 @@
     border-radius: 12px;
 }
 
-.spotify-player iframe{
-    height: 500px;
-}
-
-.spotify-player.enter-left {
-    right: 10px; /* Slide in to visible area */
-}
-
-.spotify-player.exit-right {
-    right: -100%; /* Slide out back to off-screen */
-}
+.spotify-player iframe{height: 500px;}
+.spotify-player.enter-left {right: 10px; /* Slide in to visible area */}
+.spotify-player.exit-right {right: -100%; /* Slide out back to off-screen */}
 
 .close-spotify-player-btn{
     display: flex;
@@ -119,17 +90,9 @@
 
 }
 
-.close-spotify-player-btn:hover{
-    border: 1px solid #666;
-}
-
-.close-spotify-player-btn:hover svg{
-    border: #666;
-}
-
-.close-spotify-player-btn svg{
-    color: white
-}
+.close-spotify-player-btn:hover{border: 1px solid #666;}
+.close-spotify-player-btn:hover svg{border: #666;}
+.close-spotify-player-btn svg{color: white}
 
 @media(min-width: 500px) and (max-width: 768px){
     .spotify-player{
@@ -138,21 +101,10 @@
         padding-top: 0px;
     }
 
-    .spotify-player iframe{
-        height: 500px !important;
-    }
-
-    .spotify-play-btn{
-        margin-right: 0px;
-    }
-
-    .close-spotify-player-btn{
-        margin-bottom: 0px;
-    }
-
-    .spotify-player.enter-left {
-        right: 2.5% /* Slide in to visible area */
-    }
+    .spotify-player iframe{height: 500px !important;}
+    .spotify-play-btn{margin-right: 0px;}
+    .close-spotify-player-btn{margin-bottom: 0px;}
+    .spotify-player.enter-left {right: 2.5% /* Slide in to visible area */}
 }
 
 @media(max-width: 500px){
@@ -181,32 +133,10 @@
 }
 
 
-@media(min-width:769px){
-    .nav-logo{
-        font-size: 24px;
-    }
-}
+.nav-logo{font-family: "Edo";font-weight: 100;}
+.nav-menu:hover{color: #ccc}
 
-@media(max-width:768px){
-    .nav-logo{
-        font-size: 23px;
-    }
-}
-
-.nav-logo{
-    font-family: "Edo";
-    font-weight: 100;
-}
-
-.nav-menu:hover{
-    color: #ccc
-}
-
-.hamburger{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.hamburger{display: flex;align-items: center;justify-content: center;}
 
 @media(min-width: 769px){
     .desktop-menu{
@@ -232,32 +162,22 @@
         border-bottom-right-radius: 12px;
     }
 
+    .nav-logo{font-size: 24px;}
+
     .asia-menu{left: -210px;}
     .southamerica-menu{left: -120px}
     .europe-menu{left: 30px}
     .middleeast-menu{left: 100px}
 
-    .desktop-menu.d-flex{
-        display: block !important;
-    }
-
-    .desktop-menu .inner-menu{
-        display: flex;
-    }
-
-    .mobile-menu.mobile, .mobile-menu{
-        display: none !important;
-    }
+    .desktop-menu.d-flex{display: block !important;}
+    .desktop-menu .inner-menu{ display: flex;}
+    .mobile-menu.mobile, .mobile-menu{display: none !important;}
 }
 
 @media(max-width: 768px){
-    .navbar{
-        border-radius: 0px;
-    }
+    .navbar{border-radius: 0px;}
 
-    .mobile-menu.desktop{
-        display: none !important;
-    }
+    .mobile-menu.desktop{display: none !important;}
 
     .mobile-menu{
         position: fixed;
@@ -277,17 +197,10 @@
         transition: right .4s ease;
     }
 
-    .main-mobile-menu .nav-menu{
-        margin: 25px 0px;
-    }
-
-    .nav-menu:hover{
-        color: white;
-    }
-
-    .hamburger:hover{
-        color: #eee;
-    }
+    .main-mobile-menu .nav-menu{margin: 25px 0px;}
+    .nav-menu:hover{color: white;}
+    .nav-logo{font-size: 23px;}
+    .hamburger:hover{color: #eee;}
 
     .mobile-menu .inner-menu{
         width: 100%;

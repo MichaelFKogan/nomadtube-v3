@@ -1,41 +1,22 @@
-@media(min-width: 1401px) {
-  .App {
-    /* max-width: 1800px; */
-    margin: auto;
-    /* border: 2px solid #eee */
-  }
-}
+@media(min-width: 1401px) {.App {margin: auto;}}
 
-.App {
-  text-align: center;
-  /* background: #DFE5F2; */
-}
+.App {text-align: center;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.App-logo {height: 40vmin;pointer-events: none;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.App-link {color: #61dafb;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+
+/* 
+oooooooooooo                           .            
+`888'     `8                         .o8            
+ 888          .ooooo.  ooo. .oo.   .o888oo  .oooo.o 
+ 888oooo8    d88' `88b `888P"Y88b    888   d88(  "8 
+ 888    "    888   888  888   888    888   `"Y88b.  
+ 888         888   888  888   888    888 . o.  )88b 
+o888o        `Y8bod8P' o888o o888o   "888" 8""888P' 
+*/
 
 @font-face {
   font-family: "Edo";
@@ -91,151 +72,66 @@
     url("./assets/fonts/Nunito/static/Nunito-Black.ttf") format("truetype");
 }
 
+
+
+
+/* 
+  .oooooo.    oooo             .o8                 oooo  
+ d8P'  `Y8b   `888            "888                 `888  
+888            888   .ooooo.   888oooo.   .oooo.    888  
+888            888  d88' `88b  d88' `88b `P  )88b   888  
+888     ooooo  888  888   888  888   888  .oP"888   888  
+`88.    .88'   888  888   888  888   888 d8(  888   888  
+ `Y8bood8P'   o888o `Y8bod8P'  `Y8bod8P' `Y888""8o o888o 
+*/
+
 /* Apply box-sizing to all elements */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after {box-sizing: border-box;}
 
-html,
-body {
-  box-sizing: border-box;
-}
+html, body { box-sizing: border-box; }
 
-h1 {
-  font-family: "Nunito Black";
-  margin: .5em 0px;
-}
+h1 {font-family: "Nunito Black"; margin: .5em 0px;}
+h2 {font-family: "Nunito Black";font-size: 26px}
 
-h2 {
-  font-family: "Nunito Black";
-  font-size: 26px
-}
+.bold {font-weight: bold;}
+.text-center {text-align: center;}
 
-.bold {
-  font-weight: bold;
-}
+.pos-rel {position: relative;}
 
-.text-center {
-  text-align: center;
-}
+.flex-col {flex-direction: column;}
+.nowrap {flex-wrap: nowrap;}
+.justify-center {justify-content: center;}
+.justify-start {justify-content: start !important;}
+.space-between {justify-content: space-between;}
+.align-center {align-items: center;}
 
-.pos-rel {
-  position: relative;
-}
+.col-gap-5 {column-gap: 5px;}
+.col-gap-10 {column-gap: 10px;}
+.row-gap-5 {row-gap: 5px;}
 
-.flex-col {
-  flex-direction: column;
-}
+.w-45 {width: 45%;}
+.w-50 {width: 50%;}
+.w-55 {width: 55%;}
+.w-80 {width: 80%;}
+.w-90 {width: 90%;}
+.w-95 {width: 95%;}
 
-.justify-center {
-  justify-content: center;
-}
 
-.justify-start {
-  justify-content: start !important;
-}
+.mt-5 {margin-top: 5px;}
+.mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
+.mt-20 {margin-top: 20px;}
+.mt-25 {margin-top: 25px;}
+.mb-5 {margin-bottom: 5px;}
+.mb-10 {margin-bottom: 10px;}
+.mb-15 {margin-bottom: 15px;}
+.mr-5 {margin-right: 5px;}
+.mx-2 {margin-left: 2px;margin-right: 2px} 
+.mx-3 {margin-left: 3px;margin-right: 3px}
+.my-5 {margin-top: 5px;margin-bottom: 5px;}
+.my-10 {margin-top: 10px;margin-bottom: 10px;}
 
-.space-between {
-  justify-content: space-between;
-}
 
-.align-center {
-  align-items: center;
-}
-
-.w-45 {
-  width: 45%;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.w-55 {
-  width: 55%;
-}
-
-.w-80 {
-  width: 80%;
-}
-
-.w-90 {
-  width: 90%;
-}
-
-.w-95 {
-  width: 95%;
-}
-
-.col-gap-5 {
-  column-gap: 5px;
-}
-
-.col-gap-10 {
-  column-gap: 10px;
-}
-
-.row-gap-5 {
-  row-gap: 5px;
-}
-
-.mt-5 {
-  margin-top: 5px;
-}
-
-.mt-10 {
-  margin-top: 10px;
-}
-
-.mt-15 {
-  margin-top: 15px;
-}
-
-.mt-20 {
-  margin-top: 20px;
-}
-
-.mt-25 {
-  margin-top: 25px;
-}
-
-.mb-5 {
-  margin-bottom: 5px;
-}
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.mb-15 {
-  margin-bottom: 15px;
-}
-
-.mr-5 {
-  margin-right: 5px;
-}
-
-.mx-2 {
-  margin-left: 2px;
-  margin-right: 2px
-}
-
-.mx-3 {
-  margin-left: 3px;
-  margin-right: 3px
-}
-
-.my-5 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.my-10 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
 .home .continents-wrapper,
 .home-category-page .continents-wrapper {
@@ -262,9 +158,6 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   z-index: 3;
-
-  /* border: 2px solid black;
-  box-shadow: 4px 4px 0px 0px black; */
 }
 
 .inner-categories {
@@ -280,22 +173,21 @@ h2 {
 .category-title {
   position: sticky;
 
-  width: 100%;
+  width: calc(100% - 6px);
   top: 0px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  background: rgba(0,0,0,.95);
-  margin: auto;
+  background: rgba(0,0,0,.9);
+  margin-right: auto;
   padding: 20px 0px;
   z-index: 4;
 
-  border-top: 1px solid #666;
-  border-bottom: 2px solid black;
-  border-radius: 0px;
-  /* box-shadow: 4px 4px 0px 0px black; */
+  border: 4px solid black;
+  box-shadow: 6px 6px 0px 0px black;
+
 }
 
 .category-title h2 {
@@ -305,7 +197,6 @@ h2 {
 
 .total-videos {
   font-size: 12px;
-  /* margin-top: 10px; */
 }
 
 .total-vids-margin{
@@ -319,7 +210,6 @@ h2 {
   column-gap: 2px;
   row-gap: 2px;
   margin: 0px 0px 0px 0px;
-  /* margin-bottom: 200px; */
 }
 
 .black-bar-title h2 {
@@ -328,30 +218,32 @@ h2 {
   margin: 0px;
 }
 
+/* 
+                   o8o                                        o8o        .o8      .   oooo        
+                   `"'                                        `"'       "888    .o8   `888        
+ooo. .oo.  .oo.   oooo  ooo. .oo.           oooo oooo    ooo oooo   .oooo888  .o888oo  888 .oo.   
+`888P"Y88bP"Y88b  `888  `888P"Y88b           `88. `88.  .8'  `888  d88' `888    888    888P"Y88b  
+ 888   888   888   888   888   888  8888888   `88..]88..8'    888  888   888    888    888   888  
+ 888   888   888   888   888   888             `888'`888'     888  888   888    888 .  888   888  
+o888o o888o o888o o888o o888o o888o             `8'  `8'     o888o `Y8bod88P"   "888" o888o o888o 
+                                                                                                  
+                                                                                                  
+                                                                                                  
+ ooooooooo     .ooo    .ooooo.                                                                    
+d"""""""8'   .88'     888' `Y88.                                                                  
+      .8'   d88'      888    888 oo.ooooo.  oooo    ooo                                           
+     .8'   d888P"Ybo.  `Vbood888  888' `88b  `88b..8P'                                            
+    .8'    Y88[   ]88       888'  888   888    Y888'                                              
+   .8'     `Y88   88P     .88P'   888   888  .o8"'88b                                             
+  .8'       `88bod8'    .oP'      888bod8P' o88'   888o                                           
+                                  888                                                             
+                                 o888o                                                                        
+*/
+
 
 @media(min-width: 769px) {
   .mobile {
     display: none !important;
-  }
-
-  .black-bar-title {
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    background: black;
-    color: white;
-
-    margin: 20px auto 20px auto;
-    padding: 20px 0px;
-
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s;
-  }
-
-  .black-bar-title h2 {
-    font-size: 30px;
   }
 
   .cards-wrapper {
@@ -376,7 +268,6 @@ h2 {
     margin: auto;
     column-gap: 10px;
     row-gap: 10px;
-    /* max-width: 1400px; */
     margin-bottom: 0px;
     width: 100%;
   }
@@ -403,27 +294,45 @@ h2 {
 
 }
 
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+
+
+/* 
+                                                                  o8o        .o8      .   oooo        
+                                                                  `"'       "888    .o8   `888        
+ooo. .oo.  .oo.    .oooo.   oooo    ooo         oooo oooo    ooo oooo   .oooo888  .o888oo  888 .oo.   
+`888P"Y88bP"Y88b  `P  )88b   `88b..8P'           `88. `88.  .8'  `888  d88' `888    888    888P"Y88b  
+ 888   888   888   .oP"888     Y888'    8888888   `88..]88..8'    888  888   888    888    888   888  
+ 888   888   888  d8(  888   .o8"'88b              `888'`888'     888  888   888    888 .  888   888  
+o888o o888o o888o `Y888""8o o88'   888o             `8'  `8'     o888o `Y8bod88P"   "888" o888o o888o 
+                                                                                                      
+                                                                                                      
+                                                                                                      
+ ooooooooo     .ooo    .ooooo.                                                                        
+d"""""""8'   .88'     d88'   `8.                                                                      
+      .8'   d88'      Y88..  .8' oo.ooooo.  oooo    ooo                                               
+     .8'   d888P"Ybo.  `88888b.   888' `88b  `88b..8P'                                                
+    .8'    Y88[   ]88 .8'  ``88b  888   888    Y888'                                                  
+   .8'     `Y88   88P `8.   .88P  888   888  .o8"'88b                                                 
+  .8'       `88bod8'   `boood8'   888bod8P' o88'   888o                                               
+                                  888                                                                 
+                                 o888o                                                                                                                                                                  
+*/
+
+
 @media(max-width: 768px) {
-  .desktop {
-    display: none !important;
-  }
+  .desktop {display: none !important;}
 
-  .black-bar-title h2 {
-    font-size: 26px;
-  }
+  .black-bar-title h2 {font-size: 26px;}
 
-  .black-bar-title svg {
-    color: black;
-  }
+  .black-bar-title svg {color: black;}
 
-  .hp-quick-links{
-    overflow-y: scroll;
-  }
+  .hp-quick-links{overflow-y: scroll;}
 
-  .home .mobile-menu {
-    flex-direction: column;
-    align-items: baseline;
-  }
+  .home .mobile-menu {flex-direction: column;align-items: baseline;}
 
   .category-title .subtitle {
     font-family: "Edo";
@@ -449,10 +358,7 @@ h2 {
     display: none;
   }
 
-  .cities-wrapper {
-    margin-bottom: 0px;
-    padding: 5px 5px 5px 5px
-  }
+  .cities-wrapper {margin-bottom: 0px;padding: 5px 5px 5px 5px}
 
   .hongkong .cities-wrapper, 
   .singapore .cities-wrapper,
@@ -493,8 +399,6 @@ h2 {
     justify-content: start;
     align-items: center;
     flex-wrap: wrap;
-    /* flex-wrap: nowrap; */
-    /* flex-direction: column; */
 
     column-gap: 12px;
     row-gap: 12px;
@@ -502,8 +406,6 @@ h2 {
     width: 100%;
 
     padding: 2px 2px 2px 2px;
-
-    /* overflow-y: scroll; */
   }
 
   .home .cities-wrapper {
@@ -511,36 +413,17 @@ h2 {
     margin: 0px 0px;
   }
 
-  /* .home .d-flex{display: flex;}
-  .home .d-none{display: none;} */
-
   .breadcrumbs-and-videos {
     position: relative;
     line-height: 20px;
   }
 
-  .total-videos {
-    text-wrap: nowrap;
-    /* padding-right: 7px; */
-  }
+  .total-videos {text-wrap: nowrap;}
+  .home .total-videos {padding-top: 0px;padding-right: 0px;}
 
-  .home .total-videos {
-    padding-top: 0px;
-    padding-right: 0px;
-  }
-
-  .home .categories-wrapper {
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .categories-wrapper {
-    padding: 0px 0px;
-  }
-
-  .categories-wrapper.categories-row {
-    margin: 10px auto 10px auto;
-  }
+  .home .categories-wrapper {margin-bottom: 20px;margin-top: 20px;}
+  .categories-wrapper {padding: 0px 0px;}
+  .categories-wrapper.categories-row {margin: 10px auto 10px auto;}
 
   .hp-quick-links,
   .hp-quick-links .inner-categories {
@@ -584,16 +467,10 @@ h2 {
     padding: 10px 0px;
   }
 
-  .hp-quick-links .inner-categories {
-    justify-content: start !important;
-  }
+  .hp-quick-links .inner-categories {justify-content: start !important;}
 
   .home .inner-categories,
-  .home.category-page .inner-categories {
-    /* border-left: 4px solid black;
-      border-right: 4px solid black; */
-    padding: 0px 0px;
-  }
+  .home.category-page .inner-categories {padding: 0px 0px;}
 
   .home .inner-categories,
   .home-category-page .inner-categories {
@@ -622,29 +499,29 @@ h2 {
   .home-category-page .hp-quick-links .inner-categories, 
   .hp-quick-links .inner-categories {
     padding: 0px 10px;
-    /* overflow-y: scroll; */
     height: auto;
     margin-top: 20px;
     row-gap: 16px;
   }
 
-  .hp-quick-links .inner-categories{
-    margin-bottom: 200px;
-  }
+  .hp-quick-links .inner-categories{margin-bottom: 200px;}
 
-  .cards-wrapper {
-    margin: 0px;
-  }
+  .cards-wrapper {margin: 0px;}
 
 }
 
-hr {
-  border-top: 1px solid #eee;
-}
 
-/* .home-category-page{
-  margin-top: -20px;
-} */
+/*                                                                                                                                        
+8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 8888888 
+*/
+
+
+
+
+
+
+
+hr {border-top: 1px solid #eee;}
 
 .page-back {
   text-align: left;
@@ -652,12 +529,9 @@ hr {
   font-size: 17px;
   background: white;
   width: 100%;
-  /* padding-top: 5px; */
 }
 
-.page-back svg {
-  color: black;
-}
+.page-back svg {color: black}
 
 .page-back a {
   display: flex;
@@ -670,22 +544,8 @@ hr {
   color: #666;
 }
 
-
-.d-flex {
-  display: flex;
-}
-
-.d-none {
-  display: none;
-}
-
-.nowrap {
-  flex-wrap: nowrap;
-}
+.d-flex {display: flex;}
+.d-none {display: none;}
 
 
-@media(max-width: 500px) {
-  .categories-wrapper.hp-quick-links a {
-    margin: auto; 
-  }
-}
+@media(max-width: 500px) {.categories-wrapper.hp-quick-links a {margin: auto; }}

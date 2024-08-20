@@ -60,17 +60,6 @@
     text-align: left;
 }
 
-/* .quick-links-countries, .hp-quick-links {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.75s ease-in-out;
-    margin: 0px !important;
-}
-
-.quick-links-countries.d-flex, .hp-quick-links.d-flex {
-    max-height: 1000px;
-} */
-
 .hp-quick-links.d-flex,
 .quick-links-countries.d-flex{
     position: fixed !important;
@@ -111,7 +100,6 @@
     display: inline-block !important;
     cursor: pointer;
 
-    /* border: 2px solid black; */
     border-radius: 3px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,.2);
 
@@ -149,9 +137,7 @@
 
 .quicklinks-countries #home-categories{
     position: relative !important;
-    /* padding-right: 20px; */
     background: rgba(0,0,0,0);
-    /* margin-bottom: 300px; */
     overflow: visible;
 }
 
