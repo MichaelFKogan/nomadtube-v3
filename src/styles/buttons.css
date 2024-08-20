@@ -90,7 +90,6 @@ button {
     }
 
     .categories-wrapper.hp-quick-links a{
-        font-size: 19px;
         border-radius: 1px;
         height: 55px;
     }
@@ -104,6 +103,10 @@ button {
 
     .categories-wrapper.hp-quick-links a{
         width: calc(25% - 12px);
+    }
+
+    .categories-wrapper.hp-quick-links a{
+        font-size: 17px;
     }
 
 }
@@ -278,6 +281,10 @@ a.active{
 /* CARDS 4x4 and 5x5 GRID */
 @media(min-width: 1025px){
     .normal .second-button{display: none;}
+
+    .categories-wrapper.hp-quick-links a{
+        font-size: 19px;
+    }
 }
 
 /* CARDS 3x3 GRID */
@@ -421,10 +428,6 @@ a.active{
 
     .home .categories-wrapper.categories-row .inner-categories{
         width: 1100px;
-    }
-
-    .home .categories-wrapper.hp-quick-links{
-        /* overflow-y: hidden; */
     }
 
     .quick-links-countries{
