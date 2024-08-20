@@ -174,7 +174,7 @@ h2 {font-family: "Nunito Black";font-size: 26px}
 .category-title {
   position: sticky;
 
-  width: calc(100% - 6px);
+  width: 100%;
   top: 0px;
 
   display: flex;
@@ -182,7 +182,6 @@ h2 {font-family: "Nunito Black";font-size: 26px}
   justify-content: center;
 
   background: rgba(0,0,0,.9);
-  margin-right: auto;
   padding: 20px 0px;
   z-index: 4;
 
@@ -424,7 +423,7 @@ d"""""""8'   .88'     d88'   `8.
 
   .home .categories-wrapper {margin-bottom: 20px;margin-top: 20px;}
   .categories-wrapper {padding: 0px 0px;}
-  .categories-wrapper.categories-row {margin: 10px auto 10px auto;}
+  .categories-wrapper.categories-row {margin: 0px auto 10px auto;}
 
   .hp-quick-links,
   .hp-quick-links .inner-categories {

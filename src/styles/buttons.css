@@ -681,10 +681,10 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
     }
 
     .categories-wrapper.categories-row a{
-        /* border: 2px solid black;
-        box-shadow: 6px 6px 0px 0px black; */
+        border: 2px solid black;
+        box-shadow: 6px 6px 0px 0px black;
 
-        background: rgba(0,0,0,0.05);
+        /* background: rgba(0,0,0,0.05); */
 
         text-wrap: nowrap;
         white-space: nowrap;
@@ -699,13 +699,13 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
         box-shadow: 0px 0px 0px black;
     }
 
-    .categories-wrapper .background-img{
+    /* .categories-wrapper .background-img{
         font-size: 15px;
         border: 0px solid black;
         background-image: none !important;
         text-shadow: none;
         color: black;
-    }
+    } */
 }
 
 
