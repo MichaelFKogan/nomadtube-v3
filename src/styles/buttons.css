@@ -672,14 +672,14 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
 
     .home .categories-wrapper.categories-row{
         overflow-y: scroll;
-        margin-top: 7px;
+        margin-top: 0px;
         padding-top: 5px;
         padding-bottom: 10px;
     }
 
     .home .categories-wrapper.categories-row .inner-categories{
         width: 1200px;
-        padding-bottom: 15px;
+        padding-bottom: 0px;
         padding-top: 10px;
     }
 

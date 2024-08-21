@@ -410,7 +410,7 @@ d"""""""8'   .88'     d88'   `8.
     row-gap: 12px;
     max-width: 100%;
     width: 100%;
-    
+
     margin-top: 5px;
     padding-bottom: 10px;
   }
@@ -485,7 +485,7 @@ d"""""""8'   .88'     d88'   `8.
     row-gap: 13px;
     max-width: 100%;
     width: 100%;
-    min-width: 500px;
+    /* min-width: 500px; */
   }
 
   .hp-quick-links .inner-categories {justify-content: start !important;}

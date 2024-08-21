@@ -189,6 +189,10 @@
         box-shadow: 0px 0px 5px black;
     }
 
+    .city-page .page-banner{
+        margin-bottom: 5px;
+    }
+
     .banner-title{
         font-size: 36px;
     }
