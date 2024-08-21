@@ -214,7 +214,7 @@ function Navbar({ toggleAsia, scrollToTop, countryMenu, categoriesDropdown, hand
                     <Link to={`/europe/portugal`} className="portugal-img background-img" onClick={() => { closeMobileMenu(); scrollToTop(); }}><div>🇵🇹 Portugal</div></Link>
                     <Link to={`/europe/italy`} className="italy-img background-img" onClick={() => { closeMobileMenu(); scrollToTop(); }}><div>🇮🇹 Italy</div></Link>
                     <Link to={`/europe/spain`} className="spain-img background-img" onClick={() => { closeMobileMenu(); scrollToTop(); }}><div>🇪🇸 Spain</div></Link>
-                    <div style={{height:"400px"}}></div>
+                    <div style={{height:"400px", width: "100%"}}></div>
                 </div>
             </div>
 
