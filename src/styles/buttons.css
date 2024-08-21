@@ -551,12 +551,6 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
         display: none;
     }
 
-    .cities-wrapper a:active,
-    .categories-wrapper.hp-quick-links a:active {
-    transform: translate(4px, 4px);
-    box-shadow: 0px 0px 0px black;
-    }
-
     .card-button.close-card{
         top: 0px !important;
         right: 0px;
@@ -606,7 +600,10 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
         width: calc(50% - 8px);
         text-wrap: nowrap;
         word-wrap: nowrap;
+
         width: fit-content;
+        min-width: -webkit-fit-content;
+
         border-radius: 6px;
     }
 
@@ -719,30 +716,6 @@ d"""""""8'   .88'     888' `Y88.         o888      .d88       .d88    d8P'`Y8b
 }
 
 
-
-@media(max-width: 768px){
-
-    .marquee{
-        animation: marquee 20s linear infinite;
-    }
-
-    @keyframes marquee {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-
-    .back-to-top {
-        position: fixed;
-        bottom: 25px;
-        right: 15px;
-        width: 45px;
-        height: 45px;
-    }
-}
 
 
 
@@ -961,3 +934,18 @@ visibility: visible; /* Make it visible */
 
 .pagination .next:hover, .pagination .previous:hover, .back-to-top:hover {transform: scale(1.03);}
 .pagination .next:active, .pagination .previous:active, .back-to-top:active {transform: scale(.98);}
+
+
+
+
+/* Needs to stay below other button code */
+@media(max-width: 768px){
+
+    .back-to-top {
+        position: fixed;
+        bottom: 25px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
