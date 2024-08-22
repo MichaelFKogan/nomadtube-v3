@@ -156,7 +156,12 @@
 
 
 
-
+@media(max-width: 768px) and (min-width: 501px){
+    .home-banner{
+        margin-bottom: 20px;
+        width: calc(100% - 18px);
+    }
+}
 
 
 @media(max-width: 500px){
