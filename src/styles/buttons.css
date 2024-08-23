@@ -135,6 +135,10 @@ d"""""""8'   .88'     888' `Y88.
 
 @media(min-width: 769px){
 
+    .cities-wrapper a{
+        border: 2px solid black;
+    }
+
 
     .categories-wrapper.hp-quick-links a{
         border: 2px solid black;
